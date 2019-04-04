@@ -1,0 +1,8 @@
+{
+  "name": "docgenerator-for-ace",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^3.0.0",
+    "typedoc": "latest"
+  }
+}

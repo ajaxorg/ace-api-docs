@@ -1,0 +1,4856 @@
+{
+    "Anchor": {
+        "line": 4,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 5,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 6,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "change_event": {
+            "line": 6,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getPosition": {
+            "line": 7,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDocument": {
+            "line": 8,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setPosition": {
+            "line": 9,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "detach": {
+            "line": 10,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "attach": {
+            "line": 11,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipPositionToDocument": {
+            "line": 12,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChange": {
+            "line": 13,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 14,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 15,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 16,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 18,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Document": {
+        "line": 21,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 22,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 23,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "change_event": {
+            "line": 23,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setValue": {
+            "line": 24,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getValue": {
+            "line": 25,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "createAnchor": {
+            "line": 26,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNewLineCharacter": {
+            "line": 27,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setNewLineMode": {
+            "line": 28,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNewLineMode": {
+            "line": 29,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isNewLine": {
+            "line": 30,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLine": {
+            "line": 31,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLines": {
+            "line": 32,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAllLines": {
+            "line": 33,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTextRange": {
+            "line": 34,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLinesForRange": {
+            "line": 35,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insert": {
+            "line": 36,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insertInLine": {
+            "line": 37,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clippedPos": {
+            "line": 38,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clonePos": {
+            "line": 39,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "pos": {
+            "line": 40,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insertFullLines": {
+            "line": 41,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insertMergedLines": {
+            "line": 42,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "remove": {
+            "line": 43,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeInLine": {
+            "line": 44,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFullLines": {
+            "line": 45,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeNewLine": {
+            "line": 46,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "replace": {
+            "line": 47,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "applyDeltas": {
+            "line": 48,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "revertDeltas": {
+            "line": 49,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "applyDelta": {
+            "line": 50,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "revertDelta": {
+            "line": 51,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "indexToPosition": {
+            "line": 52,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "positionToIndex": {
+            "line": 53,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 54,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 55,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 56,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 58,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$split": {
+            "line": 59,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$detectNewLine": {
+            "line": 60,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLength": {
+            "line": 61,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipPosition": {
+            "line": 62,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$splitAndapplyLargeDelta": {
+            "line": 63,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "FoldLine": {
+        "line": 66,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "folds_prop": {
+            "line": 67,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "range_prop": {
+            "line": 68,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 69,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "end_prop": {
+            "line": 70,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "shiftRow": {
+            "line": 72,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addFold": {
+            "line": 73,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "containsRow": {
+            "line": 74,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "walk": {
+            "line": 75,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNextFoldTo": {
+            "line": 76,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addRemoveChars": {
+            "line": 77,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "split": {
+            "line": 78,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "merge": {
+            "line": 79,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "idxToPosition": {
+            "line": 80,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Fold": {
+        "line": 83,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "range_prop": {
+            "line": 84,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 85,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "end_prop": {
+            "line": 86,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "foldLine_prop": {
+            "line": 87,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "sameRow_prop": {
+            "line": 88,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "subFolds_prop": {
+            "line": 89,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFoldLine": {
+            "line": 91,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clone": {
+            "line": 92,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addSubFold": {
+            "line": 93,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "restoreRange": {
+            "line": 94,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Folding": {
+        "line": 97,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "getFoldAt": {
+            "line": 98,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldsInRange": {
+            "line": 99,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldsInRangeList": {
+            "line": 100,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAllFolds": {
+            "line": 101,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addFold": {
+            "line": 102,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addFolds": {
+            "line": 103,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFold": {
+            "line": 104,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFolds": {
+            "line": 105,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "expandFold": {
+            "line": 106,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "expandFolds": {
+            "line": 107,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "foldAll": {
+            "line": 108,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldStringAt": {
+            "line": 109,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldLine": {
+            "line": 110,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNextFoldLine": {
+            "line": 111,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldedRowCount": {
+            "line": 112,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$addFoldLine": {
+            "line": 113,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "unfold": {
+            "line": 114,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isRowFolded": {
+            "line": 115,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowFoldEnd": {
+            "line": 116,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowFoldStart": {
+            "line": 117,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldDisplayLine": {
+            "line": 118,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDisplayLine": {
+            "line": 119,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$cloneFoldData": {
+            "line": 120,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleFold": {
+            "line": 121,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCommentFoldRange": {
+            "line": 122,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFoldStyle": {
+            "line": 123,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$setFolding": {
+            "line": 124,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getParentFoldRangeData": {
+            "line": 125,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onFoldWidgetClick": {
+            "line": 126,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$toggleFoldWidget": {
+            "line": 127,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleFoldWidget": {
+            "line": 128,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateFoldWidgets": {
+            "line": 129,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tokenizerUpdateFoldWidgets": {
+            "line": 130,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Range": {
+        "line": 133,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 134,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fromPoints": {
+            "line": 135,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "comparePoints": {
+            "line": 136,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 137,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "end_prop": {
+            "line": 138,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isEqual": {
+            "line": 140,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "contains": {
+            "line": 142,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "compareRange": {
+            "line": 143,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "comparePoint": {
+            "line": 144,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "containsRange": {
+            "line": 145,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "intersects": {
+            "line": 146,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isEnd": {
+            "line": 147,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isStart": {
+            "line": 148,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setStart": {
+            "line": 149,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setEnd": {
+            "line": 150,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "inside": {
+            "line": 151,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insideStart": {
+            "line": 152,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insideEnd": {
+            "line": 153,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "compare": {
+            "line": 154,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "compareStart": {
+            "line": 155,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "compareEnd": {
+            "line": 156,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "compareInside": {
+            "line": 157,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clipRows": {
+            "line": 158,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "extend": {
+            "line": 159,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isEmpty": {
+            "line": 160,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isMultiLine": {
+            "line": 161,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clone": {
+            "line": 162,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "collapseRows": {
+            "line": 163,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toScreenRange": {
+            "line": 164,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveBy": {
+            "line": 165,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "EditSessionOptions": {
+        "line": 168,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "wrap_prop": {
+            "line": 169,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "wrapMethod_prop": {
+            "line": 170,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "indentedSoftWrap_prop": {
+            "line": 171,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "firstLineNumber_prop": {
+            "line": 172,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "useWorker_prop": {
+            "line": 173,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "useSoftTabs_prop": {
+            "line": 174,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tabSize_prop": {
+            "line": 175,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateWithinSoftTabs_prop": {
+            "line": 176,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "foldStyle_prop": {
+            "line": 177,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "overwrite_prop": {
+            "line": 178,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "newLineMode_prop": {
+            "line": 179,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "mode_prop": {
+            "line": 180,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "VirtualRendererOptions": {
+        "line": 183,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "animatedScroll_prop": {
+            "line": 184,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showInvisibles_prop": {
+            "line": 185,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showPrintMargin_prop": {
+            "line": 186,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "printMarginColumn_prop": {
+            "line": 187,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "printMargin_prop": {
+            "line": 188,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showGutter_prop": {
+            "line": 189,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fadeFoldWidgets_prop": {
+            "line": 190,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showFoldWidgets_prop": {
+            "line": 191,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showLineNumbers_prop": {
+            "line": 192,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "displayIndentGuides_prop": {
+            "line": 193,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "highlightGutterLine_prop": {
+            "line": 194,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "vScrollBarAlwaysVisible_prop": {
+            "line": 195,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "hScrollBarAlwaysVisible_prop": {
+            "line": 196,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fontSize_prop": {
+            "line": 197,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fontFamily_prop": {
+            "line": 198,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "maxLines_prop": {
+            "line": 199,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "minLines_prop": {
+            "line": 200,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollPastEnd_prop": {
+            "line": 201,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fixedWidthGutter_prop": {
+            "line": 202,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "theme_prop": {
+            "line": 203,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "hasCssTransforms_prop": {
+            "line": 204,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "maxPixelHeight_prop": {
+            "line": 205,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "useTextareaForIME_prop": {
+            "line": 206,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "MouseHandlerOptions": {
+        "line": 209,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "scrollSpeed_prop": {
+            "line": 210,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "dragDelay_prop": {
+            "line": 211,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "dragEnabled_prop": {
+            "line": 212,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "focusTimeout_prop": {
+            "line": 213,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tooltipFollowsMouse_prop": {
+            "line": 214,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "EditorOptions": {
+        "line": 217,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "selectionStyle_prop": {
+            "line": 220,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "highlightActiveLine_prop": {
+            "line": 221,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "highlightSelectedWord_prop": {
+            "line": 222,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "readOnly_prop": {
+            "line": 223,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "copyWithEmptySelection_prop": {
+            "line": 224,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "cursorStyle_prop": {
+            "line": 225,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "mergeUndoDeltas_prop": {
+            "line": 226,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "behavioursEnabled_prop": {
+            "line": 227,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "wrapBehavioursEnabled_prop": {
+            "line": 228,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "autoScrollEditorIntoView_prop": {
+            "line": 229,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "keyboardHandler_prop": {
+            "line": 230,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "value_prop": {
+            "line": 231,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "session_prop": {
+            "line": 232,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showLineNumbers_prop": {
+            "line": 233,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "relativeLineNumbers_prop": {
+            "line": 234,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "useElasticTabstops_prop": {
+            "line": 235,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableEmmet_prop": {
+            "line": 236,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableBasicAutocompletion_prop": {
+            "line": 237,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableLiveAutocompletion_prop": {
+            "line": 238,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableSnippets_prop": {
+            "line": 239,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableLinking_prop": {
+            "line": 240,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "rtlText_prop": {
+            "line": 241,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "spellcheck_prop": {
+            "line": 242,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "useIncrementalSearch_prop": {
+            "line": 243,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableMultiselect_prop": {
+            "line": 244,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "enableBlockSelect_prop": {
+            "line": 245,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "SearchOptions": {
+        "line": 248,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "needle_prop": {
+            "line": 249,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "preventScroll_prop": {
+            "line": 250,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "backwards_prop": {
+            "line": 251,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 252,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "skipCurrent_prop": {
+            "line": 253,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "range_prop": {
+            "line": 254,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "preserveCase_prop": {
+            "line": 255,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "regExp_prop": {
+            "line": 256,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "wholeWord_prop": {
+            "line": 257,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "caseSensitive_prop": {
+            "line": 258,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "wrap_prop": {
+            "line": 259,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "EventEmitter": {
+        "line": 262,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "once": {
+            "line": 263,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 264,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 265,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 266,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 267,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Point": {
+        "line": 270,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "row_prop": {
+            "line": 271,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "column_prop": {
+            "line": 272,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Delta": {
+        "line": 275,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "action_prop": {
+            "line": 276,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 277,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "end_prop": {
+            "line": 278,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "lines_prop": {
+            "line": 279,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Annotation": {
+        "line": 282,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "row_prop": {
+            "line": 283,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "column_prop": {
+            "line": 284,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "text_prop": {
+            "line": 285,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "type_prop": {
+            "line": 286,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Command": {
+        "line": 289,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "name_prop": {
+            "line": 290,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "bindKey_prop": {
+            "line": 291,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "readOnly_prop": {
+            "line": 292,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "exec_prop": {
+            "line": 293,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "KeyboardHandler": {
+        "line": 298,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "handleKeyboard_prop": {
+            "line": 299,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "MarkerLike": {
+        "line": 302,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "range_prop": {
+            "line": 303,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "type_prop": {
+            "line": 304,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "renderer_prop": {
+            "line": 305,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clazz_prop": {
+            "line": 306,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "inFront_prop": {
+            "line": 307,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "id_prop": {
+            "line": 308,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "update_prop": {
+            "line": 309,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Token": {
+        "line": 322,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "type_prop": {
+            "line": 323,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "value_prop": {
+            "line": 324,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "index_prop": {
+            "line": 325,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "start_prop": {
+            "line": 326,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Completion": {
+        "line": 329,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "value_prop": {
+            "line": 330,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "score_prop": {
+            "line": 331,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "meta_prop": {
+            "line": 332,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "name_prop": {
+            "line": 333,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "caption_prop": {
+            "line": 334,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Tokenizer": {
+        "line": 337,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "removeCapturingGroups": {
+            "line": 338,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "createSplitterRegexp": {
+            "line": 339,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLineTokens": {
+            "line": 340,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$setMaxTokenCount": {
+            "line": 341,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$applyToken": {
+            "line": 342,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$arrayTokens": {
+            "line": 343,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "TokenIterator": {
+        "line": 346,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 347,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCurrentToken": {
+            "line": 348,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCurrentTokenColumn": {
+            "line": 349,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCurrentTokenRow": {
+            "line": 350,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCurrentTokenPosition": {
+            "line": 351,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCurrentTokenRange": {
+            "line": 352,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "stepBackward": {
+            "line": 353,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "stepForward": {
+            "line": 354,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Mode": {
+        "line": 357,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "$id_prop": {
+            "line": 358,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tokenRe_prop": {
+            "line": 359,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "nonTokenRe_prop": {
+            "line": 360,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$defaultBehaviour_prop": {
+            "line": 361,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "lineCommentStart_prop": {
+            "line": 362,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "blockComment_prop": {
+            "line": 363,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getIndent": {
+            "line": 364,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$delegator": {
+            "line": 365,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$createKeywordList": {
+            "line": 366,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTokenizer": {
+            "line": 367,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleCommentLines": {
+            "line": 368,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleBlockComment": {
+            "line": 372,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNextLineIndent": {
+            "line": 376,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "checkOutdent": {
+            "line": 377,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "autoOutdent": {
+            "line": 378,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "createWorker": {
+            "line": 380,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "createModeDelegates": {
+            "line": 381,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "transformAction": {
+            "line": 382,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getKeywords": {
+            "line": 387,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCompletions": {
+            "line": 388,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Config": {
+        "line": 394,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "get": {
+            "line": 395,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "set": {
+            "line": 396,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "all": {
+            "line": 397,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moduleUrl": {
+            "line": 398,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setModuleUrl": {
+            "line": 399,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "loadModule": {
+            "line": 400,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "init": {
+            "line": 402,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "defineOptions": {
+            "line": 403,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "resetOptions": {
+            "line": 404,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultValue": {
+            "line": 405,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultValues": {
+            "line": 406,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "OptionsProvider": {
+        "line": 409,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "setOptions": {
+            "line": 410,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOptions": {
+            "line": 411,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOption": {
+            "line": 412,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOption": {
+            "line": 413,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "UndoManager": {
+        "line": 416,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 417,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addSession": {
+            "line": 418,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "add": {
+            "line": 419,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addSelection": {
+            "line": 420,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "startNewGroup": {
+            "line": 421,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "markIgnored": {
+            "line": 422,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelection": {
+            "line": 423,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRevision": {
+            "line": 424,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDeltas": {
+            "line": 425,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "undo": {
+            "line": 426,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "redo": {
+            "line": 427,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "reset": {
+            "line": 428,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "canUndo": {
+            "line": 429,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "canRedo": {
+            "line": 430,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "bookmark": {
+            "line": 431,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isAtBookmark": {
+            "line": 432,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getChangedRanges": {
+            "line": 433,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getChangedLines": {
+            "line": 434,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$syncRev": {
+            "line": 435,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toJSON": {
+            "line": 436,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fromJSON": {
+            "line": 437,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$prettyPrint": {
+            "line": 438,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "CstyleBehaviour": {
+        "line": 441,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "isSaneInsertion": {
+            "line": 442,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$matchTokenType": {
+            "line": 443,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "recordAutoInsert": {
+            "line": 444,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "recordMaybeInsert": {
+            "line": 445,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isAutoInsertedClosing": {
+            "line": 446,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "popAutoInsertedClosing": {
+            "line": 447,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearMaybeInsertedClosing": {
+            "line": 448,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "EditSession": {
+        "line": 451,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 452,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selection_prop": {
+            "line": 453,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 455,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "change_event": {
+            "line": 455,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeTabSize_event": {
+            "line": 456,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeOverwrite_event": {
+            "line": 457,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeBreakpoint_event": {
+            "line": 458,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeAnnotation_event": {
+            "line": 459,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeMode_event": {
+            "line": 460,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeWrapMode_event": {
+            "line": 461,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeWrapLimit_event": {
+            "line": 462,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeFrontMarker_event": {
+            "line": 463,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeBackMarker_event": {
+            "line": 464,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeFold_event": {
+            "line": 466,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeScrollLeft_event": {
+            "line": 468,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeScrollTop_event": {
+            "line": 469,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tokenizerUpdate_event": {
+            "line": 470,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOption": {
+            "line": 474,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "getOption": {
+            "line": 475,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "setDocument": {
+            "line": 477,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDocument": {
+            "line": 478,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "resetCaches": {
+            "line": 479,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setValue": {
+            "line": 480,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getValue": {
+            "line": 481,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelection": {
+            "line": 482,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getState": {
+            "line": 483,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTokens": {
+            "line": 484,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTokenAt": {
+            "line": 485,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setUndoManager": {
+            "line": 486,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "markUndoGroup": {
+            "line": 487,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getUndoManager": {
+            "line": 488,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTabString": {
+            "line": 489,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setUseSoftTabs": {
+            "line": 490,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getUseSoftTabs": {
+            "line": 491,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setTabSize": {
+            "line": 492,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTabSize": {
+            "line": 493,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isTabStop": {
+            "line": 494,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setNavigateWithinSoftTabs": {
+            "line": 495,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNavigateWithinSoftTabs": {
+            "line": 496,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOverwrite": {
+            "line": 497,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOverwrite": {
+            "line": 498,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleOverwrite": {
+            "line": 499,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addGutterDecoration": {
+            "line": 500,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeGutterDecoration": {
+            "line": 501,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getBreakpoints": {
+            "line": 502,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setBreakpoints": {
+            "line": 503,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearBreakpoints": {
+            "line": 504,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setBreakpoint": {
+            "line": 505,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearBreakpoint": {
+            "line": 506,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addMarker": {
+            "line": 507,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addDynamicMarker": {
+            "line": 511,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeMarker": {
+            "line": 512,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getMarkers": {
+            "line": 513,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "highlight": {
+            "line": 514,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "highlightLines": {
+            "line": 515,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAnnotations": {
+            "line": 519,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAnnotations": {
+            "line": 520,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearAnnotations": {
+            "line": 521,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getWordRange": {
+            "line": 522,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAWordRange": {
+            "line": 523,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setNewLineMode": {
+            "line": 524,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNewLineMode": {
+            "line": 525,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setUseWorker": {
+            "line": 526,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getUseWorker": {
+            "line": 527,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setMode": {
+            "line": 528,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getMode": {
+            "line": 529,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setScrollTop": {
+            "line": 530,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollTop": {
+            "line": 531,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setScrollLeft": {
+            "line": 532,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollLeft": {
+            "line": 533,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScreenWidth": {
+            "line": 534,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLineWidgetMaxWidth": {
+            "line": 535,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLine": {
+            "line": 536,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLines": {
+            "line": 537,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLength": {
+            "line": 538,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTextRange": {
+            "line": 539,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insert": {
+            "line": 540,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "remove": {
+            "line": 541,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFullLines": {
+            "line": 542,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "undoChanges": {
+            "line": 543,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "redoChanges": {
+            "line": 544,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setUndoSelect": {
+            "line": 545,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "replace": {
+            "line": 546,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveText": {
+            "line": 547,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "indentRows": {
+            "line": 548,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "outdentRows": {
+            "line": 549,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveLinesUp": {
+            "line": 550,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveLinesDown": {
+            "line": 551,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "duplicateLines": {
+            "line": 552,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setUseWrapMode": {
+            "line": 553,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getUseWrapMode": {
+            "line": 554,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setWrapLimitRange": {
+            "line": 555,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "adjustWrapLimit": {
+            "line": 556,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getWrapLimit": {
+            "line": 557,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setWrapLimit": {
+            "line": 558,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getWrapLimitRange": {
+            "line": 559,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowLineCount": {
+            "line": 560,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowWrapIndent": {
+            "line": 561,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScreenLastRowColumn": {
+            "line": 562,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDocumentLastRowColumn": {
+            "line": 563,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getdocumentLastRowColumnPosition": {
+            "line": 564,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowSplitData": {
+            "line": 565,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScreenTabSize": {
+            "line": 566,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "screenToDocumentRow": {
+            "line": 567,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "screenToDocumentColumn": {
+            "line": 568,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "screenToDocumentPosition": {
+            "line": 569,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "documentToScreenPosition": {
+            "line": 572,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "documentToScreenColumn": {
+            "line": 574,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "documentToScreenRow": {
+            "line": 575,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScreenLength": {
+            "line": 576,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "destroy": {
+            "line": 577,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 578,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 579,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 580,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 581,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldAt": {
+            "line": 582,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldsInRange": {
+            "line": 583,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldsInRangeList": {
+            "line": 584,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAllFolds": {
+            "line": 585,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addFold": {
+            "line": 586,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addFolds": {
+            "line": 587,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFold": {
+            "line": 588,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeFolds": {
+            "line": 589,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "expandFold": {
+            "line": 590,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "expandFolds": {
+            "line": 591,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "foldAll": {
+            "line": 592,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "setOptions": {
+            "line": 593,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOptions": {
+            "line": 594,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$resetRowCache": {
+            "line": 597,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getRowCacheIndex": {
+            "line": 598,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeFold": {
+            "line": 599,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChange": {
+            "line": 600,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$syncInformUndoManager": {
+            "line": 601,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$detectNewLine": {
+            "line": 602,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onReloadTokenizer": {
+            "line": 603,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onChangeMode": {
+            "line": 604,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$stopWorker": {
+            "line": 605,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$startWorker": {
+            "line": 606,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$computeWidth": {
+            "line": 607,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getUndoSelection": {
+            "line": 608,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$moveLines": {
+            "line": 609,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipRowToDocument": {
+            "line": 610,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipColumnToRow": {
+            "line": 611,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipPositionToDocument": {
+            "line": 612,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$clipRangeToDocument": {
+            "line": 613,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$constrainWrapLimit": {
+            "line": 614,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateInternalDataOnChange": {
+            "line": 615,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateRowLengthCache": {
+            "line": 616,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateWrapData": {
+            "line": 617,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$computeWrapSplits": {
+            "line": 618,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getDisplayTokens": {
+            "line": 619,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getStringScreenWidth": {
+            "line": 620,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowLength": {
+            "line": 621,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDocumentLastRowColumnPosition": {
+            "line": 622,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFontMetrics": {
+            "line": 623,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectionMarkers": {
+            "line": 624,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldStringAt": {
+            "line": 626,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldLine": {
+            "line": 627,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNextFoldLine": {
+            "line": 628,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldedRowCount": {
+            "line": 629,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$addFoldLine": {
+            "line": 630,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "unfold": {
+            "line": 631,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isRowFolded": {
+            "line": 632,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowFoldEnd": {
+            "line": 633,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRowFoldStart": {
+            "line": 634,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFoldDisplayLine": {
+            "line": 635,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDisplayLine": {
+            "line": 636,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$cloneFoldData": {
+            "line": 637,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleFold": {
+            "line": 638,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCommentFoldRange": {
+            "line": 639,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFoldStyle": {
+            "line": 640,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$setFolding": {
+            "line": 641,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getParentFoldRangeData": {
+            "line": 642,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onFoldWidgetClick": {
+            "line": 643,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$toggleFoldWidget": {
+            "line": 644,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleFoldWidget": {
+            "line": 645,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateFoldWidgets": {
+            "line": 646,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "tokenizerUpdateFoldWidgets": {
+            "line": 647,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "KeyBinding": {
+        "line": 650,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "setDefaultHandler": {
+            "line": 651,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setKeyboardHandler": {
+            "line": 652,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addKeyboardHandler": {
+            "line": 653,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeKeyboardHandler": {
+            "line": 654,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getKeyboardHandler": {
+            "line": 655,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getStatusText": {
+            "line": 656,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$callKeyboardHandlers": {
+            "line": 657,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCommandKey": {
+            "line": 658,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onTextInput": {
+            "line": 659,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "CommandManager": {
+        "line": 662,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "on": {
+            "line": 663,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "exec_event": {
+            "line": 663,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 668,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 669,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 670,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addEventListener": {
+            "line": 672,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 673,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeListener": {
+            "line": 674,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeEventListener": {
+            "line": 675,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "exec": {
+            "line": 677,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleRecording": {
+            "line": 678,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "replay": {
+            "line": 679,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addCommand": {
+            "line": 680,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeCommand": {
+            "line": 681,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "bindKey": {
+            "line": 682,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "trimMacro": {
+            "line": 685,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "VirtualRenderer": {
+        "line": 688,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 689,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "container_prop": {
+            "line": 690,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOption": {
+            "line": 692,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "getOption": {
+            "line": 693,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "setSession": {
+            "line": 695,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateLines": {
+            "line": 696,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateText": {
+            "line": 697,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateFull": {
+            "line": 698,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateFontSize": {
+            "line": 699,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "adjustWrapLimit": {
+            "line": 700,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAnimatedScroll": {
+            "line": 701,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAnimatedScroll": {
+            "line": 702,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowInvisibles": {
+            "line": 703,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowInvisibles": {
+            "line": 704,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDisplayIndentGuides": {
+            "line": 705,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDisplayIndentGuides": {
+            "line": 706,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowPrintMargin": {
+            "line": 707,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowPrintMargin": {
+            "line": 708,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setPrintMarginColumn": {
+            "line": 709,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getPrintMarginColumn": {
+            "line": 710,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowGutter": {
+            "line": 711,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowGutter": {
+            "line": 712,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFadeFoldWidgets": {
+            "line": 713,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFadeFoldWidgets": {
+            "line": 714,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setHighlightGutterLine": {
+            "line": 715,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getHighlightGutterLine": {
+            "line": 716,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getContainerElement": {
+            "line": 717,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getMouseEventTarget": {
+            "line": 718,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTextAreaContainer": {
+            "line": 719,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFirstVisibleRow": {
+            "line": 720,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFirstFullyVisibleRow": {
+            "line": 721,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLastFullyVisibleRow": {
+            "line": 722,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLastVisibleRow": {
+            "line": 723,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setPadding": {
+            "line": 724,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setScrollMargin": {
+            "line": 725,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setHScrollBarAlwaysVisible": {
+            "line": 729,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getHScrollBarAlwaysVisible": {
+            "line": 730,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setVScrollBarAlwaysVisible": {
+            "line": 731,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getVScrollBarAlwaysVisible": {
+            "line": 732,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "freeze": {
+            "line": 733,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "unfreeze": {
+            "line": 734,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateFrontMarkers": {
+            "line": 735,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateBackMarkers": {
+            "line": 736,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateBreakpoints": {
+            "line": 737,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAnnotations": {
+            "line": 738,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateCursor": {
+            "line": 739,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "hideCursor": {
+            "line": 740,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showCursor": {
+            "line": 741,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollSelectionIntoView": {
+            "line": 742,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollCursorIntoView": {
+            "line": 745,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollTop": {
+            "line": 746,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollLeft": {
+            "line": 747,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollTopRow": {
+            "line": 748,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollBottomRow": {
+            "line": 749,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToRow": {
+            "line": 750,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "alignCursor": {
+            "line": 751,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToLine": {
+            "line": 752,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "animateScrolling": {
+            "line": 756,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToY": {
+            "line": 757,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToX": {
+            "line": 758,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollTo": {
+            "line": 759,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollBy": {
+            "line": 760,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isScrollableBy": {
+            "line": 761,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "textToScreenCoordinates": {
+            "line": 762,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "visualizeFocus": {
+            "line": 763,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "visualizeBlur": {
+            "line": 764,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "showComposition": {
+            "line": 765,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setCompositionText": {
+            "line": 766,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "hideComposition": {
+            "line": 767,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setTheme": {
+            "line": 768,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTheme": {
+            "line": 769,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setStyle": {
+            "line": 770,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "unsetStyle": {
+            "line": 771,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setCursorStyle": {
+            "line": 772,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setMouseCursor": {
+            "line": 773,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "attachToShadowRoot": {
+            "line": 774,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "destroy": {
+            "line": 775,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOptions": {
+            "line": 776,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOptions": {
+            "line": 777,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 780,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 781,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 782,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 783,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 784,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateCharacterSize": {
+            "line": 785,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeNewLineMode": {
+            "line": 786,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeTabSize": {
+            "line": 787,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateSizeAsync": {
+            "line": 788,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onResize": {
+            "line": 789,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateCachedSize": {
+            "line": 790,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onGutterResize": {
+            "line": 791,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updatePrintMargin": {
+            "line": 792,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$moveTextAreaToCursor": {
+            "line": 793,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setMargin": {
+            "line": 794,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateScrollBarV": {
+            "line": 795,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateScrollBarH": {
+            "line": 796,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$renderChanges": {
+            "line": 797,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$autosize": {
+            "line": 798,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$computeLayerConfig": {
+            "line": 799,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateLines": {
+            "line": 800,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getLongestLine": {
+            "line": 801,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$calcSteps": {
+            "line": 802,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "pixelToScreenCoordinates": {
+            "line": 803,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "screenToTextCoordinates": {
+            "line": 804,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addToken": {
+            "line": 805,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Selection": {
+        "line": 809,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 810,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 811,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "changeCursor_event": {
+            "line": 811,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeSelection_event": {
+            "line": 812,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorWordLeft": {
+            "line": 813,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorWordRight": {
+            "line": 814,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fromOrientedRange": {
+            "line": 815,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setSelectionRange": {
+            "line": 816,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAllRanges": {
+            "line": 817,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addRange": {
+            "line": 818,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isEmpty": {
+            "line": 819,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isMultiLine": {
+            "line": 820,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setCursor": {
+            "line": 821,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAnchor": {
+            "line": 822,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAnchor": {
+            "line": 823,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCursor": {
+            "line": 824,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isBackwards": {
+            "line": 825,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRange": {
+            "line": 826,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearSelection": {
+            "line": 827,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectAll": {
+            "line": 828,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setRange": {
+            "line": 829,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectTo": {
+            "line": 830,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectToPosition": {
+            "line": 831,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectUp": {
+            "line": 832,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectDown": {
+            "line": 833,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectRight": {
+            "line": 834,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectLeft": {
+            "line": 835,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectLineStart": {
+            "line": 836,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectLineEnd": {
+            "line": 837,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectFileEnd": {
+            "line": 838,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectFileStart": {
+            "line": 839,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectWordRight": {
+            "line": 840,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectWordLeft": {
+            "line": 841,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getWordRange": {
+            "line": 842,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectWord": {
+            "line": 843,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectAWord": {
+            "line": 844,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectLine": {
+            "line": 845,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorUp": {
+            "line": 846,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorDown": {
+            "line": 847,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorLeft": {
+            "line": 848,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorRight": {
+            "line": 849,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorLineStart": {
+            "line": 850,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorLineEnd": {
+            "line": 851,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorFileEnd": {
+            "line": 852,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorFileStart": {
+            "line": 853,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorLongWordRight": {
+            "line": 854,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorLongWordLeft": {
+            "line": 855,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorBy": {
+            "line": 856,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorToPosition": {
+            "line": 857,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorTo": {
+            "line": 858,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorToScreen": {
+            "line": 859,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 860,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 861,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 862,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 864,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toSingleRange": {
+            "line": 865,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "substractPoint": {
+            "line": 866,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "mergeOverlappingRanges": {
+            "line": 867,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onAddRange": {
+            "line": 868,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onRemoveRange": {
+            "line": 869,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$initRangeList": {
+            "line": 870,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "splitIntoLines": {
+            "line": 871,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleBlockSelection": {
+            "line": 872,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "rectangularRangeBlock": {
+            "line": 873,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setSelectionAnchor": {
+            "line": 874,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectionAnchor": {
+            "line": 875,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectionLead": {
+            "line": 876,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$setSelection": {
+            "line": 877,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$moveSelection": {
+            "line": 878,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveTo": {
+            "line": 879,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveToPosition": {
+            "line": 880,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLineRange": {
+            "line": 881,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "wouldMoveIntoSoftTab": {
+            "line": 882,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$shortWordEndIndex": {
+            "line": 883,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorShortWordRight": {
+            "line": 884,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorShortWordLeft": {
+            "line": 885,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "detach": {
+            "line": 886,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toOrientedRange": {
+            "line": 887,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getRangeOfMovements": {
+            "line": 888,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toJSON": {
+            "line": 889,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "fromJSON": {
+            "line": 890,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isEqual": {
+            "line": 891,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    },
+    "Editor": {
+        "line": 894,
+        "jsDoc": [],
+        "sourceName": "ace.d.ts",
+        "construct": {
+            "line": 895,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "container_prop": {
+            "line": 896,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "renderer_prop": {
+            "line": 897,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "id_prop": {
+            "line": 898,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "commands_prop": {
+            "line": 899,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "keyBinding_prop": {
+            "line": 900,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "session_prop": {
+            "line": 901,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selection_prop": {
+            "line": 902,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "on": {
+            "line": 904,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "blur_event": {
+            "line": 904,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "change_event": {
+            "line": 905,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeSelectionStyle_event": {
+            "line": 906,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "changeSession_event": {
+            "line": 907,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "copy_event": {
+            "line": 909,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "focus_event": {
+            "line": 910,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "paste_event": {
+            "line": 911,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOption": {
+            "line": 913,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "getOption": {
+            "line": 914,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "setKeyboardHandler": {
+            "line": 916,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getKeyboardHandler": {
+            "line": 917,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setSession": {
+            "line": 918,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSession": {
+            "line": 919,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setValue": {
+            "line": 920,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getValue": {
+            "line": 921,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelection": {
+            "line": 922,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "resize": {
+            "line": 923,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setTheme": {
+            "line": 924,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getTheme": {
+            "line": 925,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setStyle": {
+            "line": 926,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "unsetStyle": {
+            "line": 927,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFontSize": {
+            "line": 928,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFontSize": {
+            "line": 929,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "focus": {
+            "line": 930,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isFocused": {
+            "line": 931,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "flur": {
+            "line": 932,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectedText": {
+            "line": 933,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCopyText": {
+            "line": 934,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "execCommand": {
+            "line": 935,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insert": {
+            "line": 936,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOverwrite": {
+            "line": 937,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOverwrite": {
+            "line": 938,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleOverwrite": {
+            "line": 939,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setScrollSpeed": {
+            "line": 940,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getScrollSpeed": {
+            "line": 941,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDragDelay": {
+            "line": 942,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDragDelay": {
+            "line": 943,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setSelectionStyle": {
+            "line": 944,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectionStyle": {
+            "line": 945,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setHighlightActiveLine": {
+            "line": 946,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getHighlightActiveLine": {
+            "line": 947,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setHighlightGutterLine": {
+            "line": 948,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getHighlightGutterLine": {
+            "line": 949,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setHighlightSelectedWord": {
+            "line": 950,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getHighlightSelectedWord": {
+            "line": 951,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAnimatedScroll": {
+            "line": 952,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getAnimatedScroll": {
+            "line": 953,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowInvisibles": {
+            "line": 954,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowInvisibles": {
+            "line": 955,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDisplayIndentGuides": {
+            "line": 956,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getDisplayIndentGuides": {
+            "line": 957,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowPrintMargin": {
+            "line": 958,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowPrintMargin": {
+            "line": 959,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setPrintMarginColumn": {
+            "line": 960,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getPrintMarginColumn": {
+            "line": 961,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setReadOnly": {
+            "line": 962,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getReadOnly": {
+            "line": 963,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setBehavioursEnabled": {
+            "line": 964,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getBehavioursEnabled": {
+            "line": 965,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setWrapBehavioursEnabled": {
+            "line": 966,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getWrapBehavioursEnabled": {
+            "line": 967,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setShowFoldWidgets": {
+            "line": 968,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getShowFoldWidgets": {
+            "line": 969,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setFadeFoldWidgets": {
+            "line": 970,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFadeFoldWidgets": {
+            "line": 971,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "remove": {
+            "line": 972,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeWordRight": {
+            "line": 973,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeWordLeft": {
+            "line": 974,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeLineToEnd": {
+            "line": 975,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "splitLine": {
+            "line": 976,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "transposeLetters": {
+            "line": 977,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toLowerCase": {
+            "line": 978,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toUpperCase": {
+            "line": 979,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "indent": {
+            "line": 980,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "blockIndent": {
+            "line": 981,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "blockOutdent": {
+            "line": 982,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "sortLines": {
+            "line": 983,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleCommentLines": {
+            "line": 984,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleBlockComment": {
+            "line": 985,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "modifyNumber": {
+            "line": 986,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeLines": {
+            "line": 987,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "duplicateSelection": {
+            "line": 988,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveLinesDown": {
+            "line": 989,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveLinesUp": {
+            "line": 990,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveText": {
+            "line": 991,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "copyLinesUp": {
+            "line": 992,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "copyLinesDown": {
+            "line": 993,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getFirstVisibleRow": {
+            "line": 994,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLastVisibleRow": {
+            "line": 995,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isRowVisible": {
+            "line": 996,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "isRowFullyVisible": {
+            "line": 997,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectPageDown": {
+            "line": 998,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectPageUp": {
+            "line": 999,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "gotoPageDown": {
+            "line": 1000,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "gotoPageUp": {
+            "line": 1001,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollPageDown": {
+            "line": 1002,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollPageUp": {
+            "line": 1003,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToRow": {
+            "line": 1004,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "scrollToLine": {
+            "line": 1005,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "centerSelection": {
+            "line": 1006,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCursorPosition": {
+            "line": 1007,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getCursorPositionScreen": {
+            "line": 1008,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getSelectionRange": {
+            "line": 1009,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectAll": {
+            "line": 1010,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "clearSelection": {
+            "line": 1011,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorTo": {
+            "line": 1012,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "moveCursorToPosition": {
+            "line": 1013,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "jumpToMatching": {
+            "line": 1014,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "gotoLine": {
+            "line": 1015,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateTo": {
+            "line": 1016,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateUp": {
+            "line": 1017,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateDown": {
+            "line": 1018,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateLeft": {
+            "line": 1019,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateRight": {
+            "line": 1020,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateLineStart": {
+            "line": 1021,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateLineEnd": {
+            "line": 1022,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateFileEnd": {
+            "line": 1023,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateFileStart": {
+            "line": 1024,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateWordRight": {
+            "line": 1025,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "navigateWordLeft": {
+            "line": 1026,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "replace": {
+            "line": 1027,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "replaceAll": {
+            "line": 1028,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getLastSearchOptions": {
+            "line": 1029,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "find": {
+            "line": 1030,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "findNext": {
+            "line": 1031,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "findPrevious": {
+            "line": 1032,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "undo": {
+            "line": 1033,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "redo": {
+            "line": 1034,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "destroy": {
+            "line": 1035,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setAutoScrollEditorIntoView": {
+            "line": 1036,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "once": {
+            "line": 1037,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setDefaultHandler": {
+            "line": 1038,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeDefaultHandler": {
+            "line": 1039,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "off": {
+            "line": 1041,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "setOptions": {
+            "line": 1042,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getOptions": {
+            "line": 1043,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$initOperationListeners": {
+            "line": 1046,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "startOperation": {
+            "line": 1047,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "endOperation": {
+            "line": 1048,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$historyTracker": {
+            "line": 1049,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$highlightBrackets": {
+            "line": 1050,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$highlightTags": {
+            "line": 1051,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "blur": {
+            "line": 1052,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onFocus": {
+            "line": 1053,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onBlur": {
+            "line": 1054,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$cursorChange": {
+            "line": 1055,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onDocumentChange": {
+            "line": 1056,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onTokenizerUpdate": {
+            "line": 1057,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onScrollTopChange": {
+            "line": 1058,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onScrollLeftChange": {
+            "line": 1059,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCursorChange": {
+            "line": 1060,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$updateHighlightActiveLine": {
+            "line": 1061,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onSelectionChange": {
+            "line": 1062,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getSelectionHighLightRegexp": {
+            "line": 1063,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeFrontMarker": {
+            "line": 1064,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeBackMarker": {
+            "line": 1065,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeBreakpoint": {
+            "line": 1066,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeAnnotation": {
+            "line": 1067,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeMode": {
+            "line": 1068,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeWrapLimit": {
+            "line": 1069,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeWrapMode": {
+            "line": 1070,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onChangeFold": {
+            "line": 1071,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCopy": {
+            "line": 1072,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCut": {
+            "line": 1073,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onPaste": {
+            "line": 1074,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$handlePaste": {
+            "line": 1075,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onTextInput": {
+            "line": 1076,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "applyComposition": {
+            "line": 1077,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCommandKey": {
+            "line": 1078,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeToLineStart": {
+            "line": 1079,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeToLineEnd": {
+            "line": 1080,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "getNumberAt": {
+            "line": 1081,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "toggleWord": {
+            "line": 1082,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$moveLines": {
+            "line": 1083,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getSelectedRows": {
+            "line": 1084,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCompositionStart": {
+            "line": 1085,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCompositionUpdate": {
+            "line": 1086,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "onCompositionEnd": {
+            "line": 1087,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$getVisibleRowCount": {
+            "line": 1088,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$moveByPage": {
+            "line": 1089,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$tryReplace": {
+            "line": 1090,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "revealRange": {
+            "line": 1091,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$resetCursorStyle": {
+            "line": 1092,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "updateSelectionMarkers": {
+            "line": 1093,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "addSelectionMarker": {
+            "line": 1094,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeSelectionMarker": {
+            "line": 1095,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "removeSelectionMarkers": {
+            "line": 1096,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onAddRange": {
+            "line": 1097,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onRemoveRange": {
+            "line": 1098,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onMultiSelect": {
+            "line": 1099,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onSingleSelect": {
+            "line": 1100,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$onMultiSelectExec": {
+            "line": 1101,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "forEachSelection": {
+            "line": 1102,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "exitMultiSelectMode": {
+            "line": 1103,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$checkMultiselectChange": {
+            "line": 1104,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "findAll": {
+            "line": 1105,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectMoreLines": {
+            "line": 1106,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "transposeSelections": {
+            "line": 1107,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "selectMore": {
+            "line": 1108,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "alignCursors": {
+            "line": 1109,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "$reAlignText": {
+            "line": 1110,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "insertSnippet": {
+            "line": 1111,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        },
+        "expandSnippet": {
+            "line": 1112,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts"
+        }
+    }
+}
