@@ -1,7 +1,7 @@
 var ConverterComponent = require("typedoc/dist/lib/converter/components").ConverterComponent;
-var Converter = require("typedoc/dist/lib/converter/converter").Converter;
+var Converter = require("typedoc/dist/lib/converter").Converter;
 var fs = require("fs");
-var modelTypes = require("typedoc/dist/lib/models/types/index");
+var modelTypes = require("typedoc/dist/lib/models/types");
 var modelReflections = require("typedoc/dist/lib/models/reflections/index");
 
 class AceGitLinkPlugin extends ConverterComponent {
