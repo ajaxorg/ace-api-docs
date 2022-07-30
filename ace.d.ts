@@ -332,6 +332,9 @@ export namespace Ace {
         meta?: string;
         name?: string;
         caption?: string;
+        docHTML?: string;
+        docText?: string;
+        snippet?: string;
     }
 
     export class Tokenizer {
