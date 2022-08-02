@@ -1,4 +1,5 @@
 "use strict";
+
 Object.defineProperty(exports, "__esModule", {value: true});
 var ts = require("typescript");
 var fs = require("fs");
@@ -8,6 +9,77 @@ var foundClassName = '';
 var dir = "generated";
 if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
+}
+
+function createLanguageServiceHost(options) {
+    return {
+        files: {},
+        addFile(fileName, text) {
+            this.files[fileName] = ts.ScriptSnapshot.fromString(text);
+        },
+        "getCompilationSettings": function () {
+            return ts.getDefaultCompilerOptions()
+        },
+        "getScriptFileNames": function () {
+            return Object.keys(this.files)
+        },
+        "getScriptVersion": function (_fileName) {
+            return "0"
+        },
+        "getScriptSnapshot": function (fileName) {
+            return this.files[fileName];
+        },
+        "getCurrentDirectory": function () {
+            return process.cwd();
+        },
+        "getDefaultLibFileName": function () {
+            return ts.getDefaultLibFilePath(options);
+        }
+    }
+
+}
+
+function createDefaultFormatCodeSettings() {
+    return {
+        baseIndentSize: 0,
+        indentSize: 4,
+        tabSize: 4,
+        indentStyle: ts.IndentStyle.Smart,
+        newLineCharacter: "\r\n",
+        convertTabsToSpaces: true,
+        insertSpaceAfterCommaDelimiter: true,
+        insertSpaceAfterSemicolonInForStatements: true,
+        insertSpaceBeforeAndAfterBinaryOperators: true,
+        insertSpaceAfterConstructor: false,
+        insertSpaceAfterKeywordsInControlFlowStatements: true,
+        insertSpaceAfterFunctionKeywordForAnonymousFunctions: false,
+        insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: false,
+        insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: false,
+        insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: true,
+        insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: false,
+        insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: false,
+        insertSpaceAfterTypeAssertion: false,
+        insertSpaceBeforeFunctionParenthesis: false,
+        placeOpenBraceOnNewLineForFunctions: false,
+        placeOpenBraceOnNewLineForControlBlocks: false,
+        insertSpaceBeforeTypeAnnotation: false,
+    };
+}
+
+function formatDts(filename, text, options) {
+    var host = createLanguageServiceHost(options);
+    host.addFile(filename, text);
+    const languageService = ts.createLanguageService(host);
+    let formatEdits = languageService.getFormattingEditsForDocument(filename, createDefaultFormatCodeSettings());
+    formatEdits
+        .sort((a, b) => a.span.start - b.span.start)
+        .reverse()
+        .forEach(edit => {
+            const head = text.slice(0, edit.span.start);
+            const tail = text.slice(edit.span.start + edit.span.length);
+            text = `${head}${edit.newText}${tail}`;
+        });
+    return text;
 }
 
 function generateDocumentation(fileNames, options) {
@@ -23,7 +95,8 @@ function generateDocumentation(fileNames, options) {
                 classes[foundClassName] = {
                     line: currentLine,
                     jsDoc: [],
-                    sourceName: fileNames[0].match(/ace\.d\.ts/)[0]
+                    sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
+                    described: true
                 }
             }
         } else {
@@ -36,7 +109,8 @@ function generateDocumentation(fileNames, options) {
                     classes[foundClassName]["construct"] = {
                         line: currentLine,
                         jsDoc: [],
-                        sourceName: fileNames[0].match(/ace\.d\.ts/)[0]
+                        sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
+                        described: true
                     }
                 }
             } else {
@@ -49,7 +123,8 @@ function generateDocumentation(fileNames, options) {
                         classes[foundClassName][node.type.literal.text + "_event"] = {
                             line: currentLine,
                             jsDoc: [],
-                            sourceName: fileNames[0].match(/ace\.d\.ts/)[0]
+                            sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
+                            described: true
                         }
                     }
                 } else {
@@ -62,7 +137,8 @@ function generateDocumentation(fileNames, options) {
                             classes[foundClassName][node.escapedText] = {
                                 line: currentLine,
                                 jsDoc: [],
-                                sourceName: fileNames[0].match(/ace\.d\.ts/)[0]
+                                sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
+                                described: true
                             }
                         }
                     } else {
@@ -76,7 +152,8 @@ function generateDocumentation(fileNames, options) {
                                     classes[foundClassName][node.escapedText + "_prop"] = {
                                         line: currentLine,
                                         jsDoc: [],
-                                        sourceName: fileNames[0].match(/ace\.d\.ts/)[0]
+                                        sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
+                                        described: true
                                     }
                                 }
                             }
@@ -86,16 +163,6 @@ function generateDocumentation(fileNames, options) {
             }
         }
         ts.forEachChild(node, print);
-    }
-
-    function jsDocPrettify(aceObject) {
-        let jsDoc = '';
-        if (aceObject.jsDoc) {
-            for (var k = 0; k < aceObject.jsDoc.length; k++) {
-                jsDoc = jsDoc + aceObject.jsDoc[k] + "\r\n";
-            }
-        }
-        return jsDoc;
     }
 
     function methodResolver(methodName) {
@@ -144,28 +211,165 @@ function generateDocumentation(fileNames, options) {
     }
 }
 
-function createDiagnosticForDeclarationFile() {
+function jsDocPrettify(aceObject) {
+    let jsDoc = '';
+    if (aceObject && aceObject.jsDoc) {
+        for (var k = 0; k < aceObject.jsDoc.length; k++) {
+            jsDoc = jsDoc + aceObject.jsDoc[k] + "\r\n";
+        }
+    }
+    jsDoc = jsDoc.replace(/\s{2,}/g,'\r\n ');
+    return jsDoc;
+}
+
+function implicitlyCreateClasses(content, withJsDoc) {
     for (var className in classes) {
         if (!classes[className].described) {
-            logs = logs + "No such class name '" + className + "' in declaration file\r\n"
+            let regExp = new RegExp('namespace Ace .*\\r\\n', 'g');
+            let match = regExp.exec(content);
+            if (regExp.lastIndex != 0) {
+                let jsDoc = '';
+                if (withJsDoc) {
+                    jsDoc = jsDocPrettify(classes[className]);
+                }
+                edits.push({
+                    pos: regExp.lastIndex,
+                    text: jsDoc + "export class " + className + " {\r\n}\r\n\r\n"
+                });
+            }
+
+            logs = logs + "No such class name '" + className + "' in declaration file. Implicitly created.\r\n"
         }
+    }
+}
+
+function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
+    for (var className in classes) {
         for (var method in classes[className]) {
+            let regExp, match;
             if (method !== 'jsDoc' && classes[className][method] === Object(classes[className][method])) {
                 if (!classes[className][method].described) {
                     switch (true) {
                         case /_prop/.test(method):
-                            let propName = method.match(/([\w]*)_prop/)[1];
-                            logs = logs + "No such property name '" + propName + "' in declaration file. Class: " + className + "\r\n";
+                            let propName = method.match(/([\w$]*)_prop/)[1];
+                            regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
+                            match = regExp.exec(content);
+                            if (regExp.lastIndex != 0) {
+                                let type;
+                                if (classes[className][method].params) {
+                                    type = classes[className][method].params["return"];
+                                } else {
+                                    type = "any";
+                                }
+                                let jsDoc = '';
+                                if (withJsDoc) {
+                                    jsDoc = jsDocPrettify(classes[className][method]);
+                                }
+                                edits.push({
+                                    pos: regExp.lastIndex + 3,
+                                    text: jsDoc + "" + propName + ": " + type + ";\r\n"
+                                });
+                            }
+                            logs = logs + "No such property name '" + propName + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
                             break;
                         case /_event/.test(method):
-                            let eventName = method.match(/([\w]*)_event/)[1];
-                            logs = logs + "No such event name '" + eventName + "' in declaration file. Class: " + className + "\r\n";
+                            let eventName = method.match(/([\w$]*)_event/)[1];
+                            regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
+                            match = regExp.exec(content);
+                            if (regExp.lastIndex != 0) {
+                                let allParams = [];
+                                if (classes[className][method].params) {
+                                    for (let prop in classes[className][method].params) {
+                                        allParams.push(prop + ": " + classes[className][method].params[prop]);
+                                    }
+                                }
+                                let callbackExpr;
+                                if (allParams.length > 0) {
+                                    callbackExpr = ", callback: (" + allParams.join(', ') + ") => void";
+                                } else {
+                                    callbackExpr = "";
+                                }
+                                let jsDoc = '';
+                                if (withJsDoc) {
+                                    jsDoc = jsDocPrettify(classes[className][method]);
+                                }
+                                edits.push({
+                                    pos: regExp.lastIndex + 3,
+                                    text: jsDoc + "on(name: '" + eventName + "'" + callbackExpr + "): void" + ";\r\n"
+                                });
+                            }
+                            logs = logs + "No such event name '" + eventName + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
                             break;
                         case (method === "construct"):
-                            logs = logs + "No constructor in declaration file. Class: " + className + "\r\n";
+                            regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
+                            match = regExp.exec(content);
+                            if (regExp.lastIndex != 0) {
+                                let allParams = [];
+                                let returnType = '';
+                                if (classes[className][method].params) {
+                                    for (let prop in classes[className][method].params) {
+                                        let paramType;
+                                        let questionMark;
+                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length - 1] == "?") {
+                                            paramType = classes[className][method].params[prop].substring(0, classes[className][method].params[prop].length - 1);
+                                            questionMark = '?';
+                                        } else {
+                                            paramType = classes[className][method].params[prop];
+                                            questionMark = '';
+                                        }
+                                        if (prop == 'return') {
+                                            returnType = questionMark + ": " + paramType;
+                                        } else {
+                                            allParams.push(prop + questionMark + ": " + paramType);
+                                        }
+                                    }
+                                }
+                                let jsDoc = '';
+                                if (withJsDoc) {
+                                    jsDoc = jsDocPrettify(classes[className][method]);
+                                }
+                                edits.push({
+                                    pos: regExp.lastIndex + 3,
+                                    text: jsDoc + "constructor(" + allParams.join(', ') + ")" + returnType + ";\r\n"
+                                });
+                            }
+                            logs = logs + "No constructor in declaration file. Class: " + className + ". Implicitly created.\r\n";
                             break;
                         default:
-                            logs = logs + "No such method name '" + method + "' in declaration file. Class: " + className + "\r\n";
+                            regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
+                            match = regExp.exec(content);
+                            if (regExp.lastIndex != 0) {
+                                let allParams = [];
+                                let returnType = '';
+                                if (classes[className][method].params) {
+                                    for (let prop in classes[className][method].params) {
+                                        let paramType;
+                                        let questionMark;
+                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length - 1] == "?") {
+                                            paramType = classes[className][method].params[prop].substring(0, classes[className][method].params[prop].length - 1);
+                                            questionMark = '?';
+                                        } else {
+                                            paramType = classes[className][method].params[prop];
+                                            questionMark = '';
+                                        }
+                                        if (prop == 'return') {
+                                            returnType = questionMark + ": " + paramType;
+                                        } else {
+                                            allParams.push(prop + questionMark + ": " + paramType);
+                                        }
+                                    }
+                                }
+                                let jsDoc = '';
+                                if (withJsDoc) {
+                                    jsDoc = jsDocPrettify(classes[className][method]);
+                                }
+                                edits.push({
+                                    pos: regExp.lastIndex + 3,
+                                    text: jsDoc + method + "(" + allParams.join(', ') + ")" + returnType + ";\r\n"
+                                });
+                            }
+
+                            logs = logs + "No such method name '" + method + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
                             break;
                     }
                 }
@@ -175,29 +379,51 @@ function createDiagnosticForDeclarationFile() {
     fs.writeFileSync(dir + "/declarations.log", logs);
 }
 
+function applyEditsToFile(filename, format) {
+    var start = fs.readFileSync(filename, "utf8");
+    var end = "";
+    edits
+        .sort((a, b) => b.pos - a.pos)
+        .forEach(edit => {
+            end = edit.text + start.slice(edit.pos) + end;
+            start = start.slice(0, edit.pos)
+        });
+    end = start + end;
+    if (format) {
+        end = formatDts(filename, end, options);
+    }
+    fs.writeFileSync(filename, end);
+    return end;
+}
+
 fs.copyFileSync(process.argv[2], dir + "/ace.d.ts");
 var data = fs.readFileSync(dir + "/classes.json", "utf8");
 var classes = JSON.parse(data.toString());
-generateDocumentation([dir + "/ace.d.ts"], {
+var options = {
     target: ts.ScriptTarget.ES5,
     module: ts.ModuleKind.CommonJS,
     allowJs: true,
     declaration: true,
     lib: [],
     "types": []
-}, false);
+};
+generateDocumentation([dir + "/ace.d.ts"], options, false);
 
-var contents = fs.readFileSync(dir + "/ace.d.ts", "utf8");
-var start = contents;
-var end = "";
-edits
-    .sort((a, b) => b.pos - a.pos)
-    .forEach(edit => {
-        end = edit.text + start.slice(edit.pos) + end;
-        start = start.slice(0, edit.pos)
-    });
-end = start + end;
-fs.writeFileSync(dir + "/ace.d.ts", end);
 fs.writeFileSync(dir + "/classes.json", JSON.stringify(classes, undefined, 4));
-createDiagnosticForDeclarationFile();
 
+var content = applyEditsToFile(dir + "/ace.d.ts");
+edits = [];
+implicitlyCreateClasses(content, true);
+content = applyEditsToFile(dir + "/ace.d.ts");
+edits = [];
+implictlyCreateLowLevelDeclarations(content, true);
+applyEditsToFile(dir + "/ace.d.ts", true);
+
+fs.copyFileSync(process.argv[2], dir + "/ace-without-comments.d.ts");
+edits = [];
+content = fs.readFileSync(dir + "/ace-without-comments.d.ts", "utf8");
+implicitlyCreateClasses(content);
+content = applyEditsToFile(dir + "/ace-without-comments.d.ts");
+edits = [];
+implictlyCreateLowLevelDeclarations(content);
+applyEditsToFile(dir + "/ace-without-comments.d.ts", true);
