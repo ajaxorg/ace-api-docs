@@ -1,4 +1,259 @@
 export namespace Ace {
+    export class Map {
+    }
+
+    export class NodeBuffer {
+    }
+
+    export class XQLint {
+    }
+
+    export class SetCache {
+    }
+
+    export class LodashWrapper {
+    }
+
+    export class ArrayBuffer {
+    }
+
+    export class XQDoc {
+    }
+
+    export class StyleChecker {
+    }
+
+    export class Translator {
+    }
+
+    export class JSONParseTreeHandler {
+    }
+
+    export class XQueryParser {
+    }
+
+    export class JSONiqParser {
+    }
+
+    export class XQueryTokenizer {
+    }
+
+    export class Handlers {
+    }
+
+    export class StaticContext {
+    }
+
+    export class SchemaBuiltinTypes {
+    }
+
+    export class EQNameHandler {
+    }
+
+    export class SchemaPrefixHandler {
+    }
+
+    export class Errors {
+    }
+
+    export class TreeOps {
+    }
+
+    export class StaticWarning {
+    }
+
+    export class StaticError {
+    }
+
+    export class TokenHandler {
+    }
+
+    export class JSONiqTokenizer {
+    }
+
+    export class ElementAttributes {
+    }
+
+    export class XMLReader {
+    }
+
+    export class EntityReference {
+    }
+
+    export class Notation {
+    }
+
+    export class DocumentType {
+    }
+
+    export class CDATASection {
+    }
+
+    export class CharacterData {
+    }
+
+    export class Attr {
+    }
+
+    export class DOMImplementation {
+    }
+
+    export class NamedNodeMap {
+    }
+
+    export class NodeList {
+    }
+
+    export class DOMException {
+    }
+
+    export class ExceptionMessage {
+    }
+
+    export class ExceptionCode {
+    }
+
+    export class VisualforceMode {
+    }
+
+    export class SnippetGroupHighlightRules {
+    }
+
+    export class SnippetHighlightRules {
+    }
+
+    export class NameStack {
+    }
+
+    export class Context {
+    }
+
+    export class CompArray {
+    }
+
+    export class FutureReservedWord {
+    }
+
+    export class Lexer {
+    }
+
+    export class SymbolProto {
+    }
+
+    export class ArrayProto {
+    }
+
+    export class Ctor {
+    }
+
+    export class Stack {
+        constructor(entries: any[]);
+    }
+
+    export class MapCache {
+    }
+
+    export class ListCache {
+        constructor(entries: any[]);
+    }
+
+    export class Hash {
+        constructor(entries: any[]);
+    }
+
+    export class DataView {
+    }
+
+    export class Buffer {
+    }
+
+    export class TempCtor {
+    }
+
+    export class StackItem {
+    }
+
+    export class SpecialElements {
+    }
+
+    export class EntityParser {
+    }
+
+    export class InputStream {
+    }
+
+    export class ElementStack {
+    }
+
+    export class Tag {
+    }
+
+    export class EjsHighlightRules {
+    }
+
+    export class DjangoHtmlHighlightRules {
+    }
+
+    export class DjangoHighlightRules {
+    }
+
+    export class Properties {
+    }
+
+    export class XQueryBehaviour {
+    }
+
+    export class XmlBehaviour {
+    }
+
+    export class LiquidBehaviour {
+    }
+
+    export class HtmlBehaviour {
+    }
+
+    export class CssBehaviour {
+    }
+
+    export class ApexMode {
+    }
+
+    export class Keys {
+    }
+
+    export class UnicodeTBL20 {
+    }
+
+    export class UnicodeTBL00 {
+    }
+
+    export class ArabicAlefBetIntervalsEnd {
+    }
+
+    export class ArabicAlefBetIntervalsBegine {
+    }
+
+    export class TextInput {
+    }
+
+    export class MultiHashHandler {
+    }
+
+    export class ISearchKbd {
+    }
+
+    export class SimpleTextLayer {
+    }
+
+    export class AceEmmetEditor {
+    }
+
+    export class AcePopup {
+    }
+
+    export class UIWorkerClient {
+    }
+
     export class WorkerClient {
         $createWorkerFromOldConfig(topLevelNamespaces: any, mod: any, classname: any, workerUrl: any, importScripts: any): any;
         $sendDeltaQueue(): void;
@@ -11,6 +266,9 @@ export namespace Ace {
         $normalizePath(path: any): any;
         reportError(err: any): void;
         onMessage(e: any): void;
+    }
+
+    export class BlobBuilder {
     }
 
     export class Sender {
@@ -530,6 +788,7 @@ export namespace Ace {
     }
 
     export class Node {
+        ___format(indent: any): string;
         blur(): void;
         focus(): void;
         contains(node: any): boolean;
@@ -1117,13 +1376,13 @@ export namespace Ace {
     }
 
     export class Document implements EventEmitter {
-        constructor(textOrLines: string | string[]);
         revisit(treeParser: any): void;
         visit(treeParser: any): void;
         $safeApplyDelta(delta: any): void;
         insertNewLine(position: any): any;
         removeLines(firstRow: any, lastRow: any): any;
         insertLines(row: any, lines: any): any;
+        constructor(textOrLines: string | string[]);
         on(name: 'change', callback: (delta: Delta) => void): void;
         setValue(text: string): void;
         getValue(): string;
@@ -1462,17 +1721,17 @@ export namespace Ace {
         inFront: boolean;
         id: number;
         update?: (html: string[],
-                  // TODO maybe define Marker class
-                  marker: any,
-                  session: EditSession,
-                  config: any) => void;
+            // TODO maybe define Marker class
+            marker: any,
+            session: EditSession,
+            config: any) => void;
     }
 
     export type MarkerRenderer = (html: string[],
-                                  range: Range,
-                                  left: number,
-                                  top: number,
-                                  config: any) => void;
+        range: Range,
+        left: number,
+        top: number,
+        config: any) => void;
 
     export interface Token {
         type: string;
@@ -1533,13 +1792,13 @@ export namespace Ace {
         $createKeywordList(): any;
         getTokenizer(): Tokenizer;
         toggleCommentLines(state: any,
-                           session: EditSession,
-                           startRow: number,
-                           endRow: number): void;
+            session: EditSession,
+            startRow: number,
+            endRow: number): void;
         toggleBlockComment(state: any,
-                           session: EditSession,
-                           range: Range,
-                           cursor: Point): void;
+            session: EditSession,
+            range: Range,
+            cursor: Point): void;
         getNextLineIndent(state: any, line: string, tab: string): string;
         checkOutdent(state: any, line: string, input: string): boolean;
         autoOutdent(state: any, doc: Document, row: number): void;
@@ -1547,15 +1806,15 @@ export namespace Ace {
         createWorker(session: EditSession): any;
         createModeDelegates(mapping: { [key: string]: string }): void;
         transformAction(state: string,
-                        action: string,
-                        editor: Editor,
-                        session: EditSession,
-                        text: string): any;
+            action: string,
+            editor: Editor,
+            session: EditSession,
+            text: string): any;
         getKeywords(append?: boolean): Array<string | RegExp>;
         getCompletions(state: string,
-                       session: EditSession,
-                       pos: Point,
-                       prefix: string): Completion[];
+            session: EditSession,
+            pos: Point,
+            prefix: string): Completion[];
     }
 
     export class Config {
@@ -1565,7 +1824,7 @@ export namespace Ace {
         moduleUrl(name: string, component?: string): string;
         setModuleUrl(name: string, subst: string): string;
         loadModule(moduleName: string | [string, string],
-                   onLoad: (module: any) => void): void;
+            onLoad: (module: any) => void): void;
         init(packaged: any): any;
         defineOptions(obj: any, path: string, options: { [key: string]: any }): Config;
         resetOptions(obj: any): void;
@@ -1667,11 +1926,11 @@ export namespace Ace {
         on(name: 'changeBackMarker'): void;
 
         on(name: 'changeFold',
-           callback: (obj: { data: Fold, action: string }) => void): void;
+            callback: (obj: { data: Fold, action: string }) => void): void;
         on(name: 'changeScrollLeft', callback: (scrollLeft: number) => void): void;
         on(name: 'changeScrollTop', callback: (scrollTop: number) => void): void;
         on(name: 'tokenizerUpdate',
-           callback: (obj: { data: { first: number, last: number } }) => void): void;
+            callback: (obj: { data: { first: number, last: number } }) => void): void;
 
 
         setOption<T extends keyof EditSessionOptions>(name: T, value: EditSessionOptions[T]): void;
@@ -1708,17 +1967,17 @@ export namespace Ace {
         setBreakpoint(row: number, className: string): void;
         clearBreakpoint(row: number): void;
         addMarker(range: Range,
-                  clazz: string,
-                  type: MarkerRenderer,
-                  inFront: boolean): number;
+            clazz: string,
+            type: MarkerRenderer,
+            inFront: boolean): number;
         addDynamicMarker(marker: MarkerLike, inFront: boolean): MarkerLike;
         removeMarker(markerId: number): void;
         getMarkers(inFront?: boolean): MarkerLike[];
         highlight(re: RegExp): void;
         highlightLines(startRow: number,
-                       endRow: number,
-                       clazz: string,
-                       inFront?: boolean): Range;
+            endRow: number,
+            clazz: string,
+            inFront?: boolean): Range;
         setAnnotations(annotations: Annotation[]): void;
         getAnnotations(): Annotation[];
         clearAnnotations(): void;
@@ -1770,8 +2029,8 @@ export namespace Ace {
         screenToDocumentRow(screenRow: number, screenColumn: number): number;
         screenToDocumentColumn(screenRow: number, screenColumn: number): number;
         screenToDocumentPosition(screenRow: number,
-                                 screenColumn: number,
-                                 offsetX?: number): Point;
+            screenColumn: number,
+            offsetX?: number): Point;
         documentToScreenPosition(docRow: number, docColumn: number): Point;
         documentToScreenPosition(position: Point): Point;
         documentToScreenColumn(row: number, docColumn: number): number;
@@ -1884,8 +2143,8 @@ export namespace Ace {
         addCommand(command: Command): void;
         removeCommand(command: Command, keepCommand?: boolean): void;
         bindKey(key: string | { mac?: string, win?: string },
-                command: CommandLike,
-                position?: number): void;
+            command: CommandLike,
+            position?: number): void;
         trimMacro(m: any): string;
 
         _emit(eventName: any, e: any): any;
@@ -1957,9 +2216,9 @@ export namespace Ace {
         getLastVisibleRow(): number;
         setPadding(padding: number): void;
         setScrollMargin(top: number,
-                        bottom: number,
-                        left: number,
-                        right: number): void;
+            bottom: number,
+            left: number,
+            right: number): void;
         setHScrollBarAlwaysVisible(alwaysVisible: boolean): void;
         getHScrollBarAlwaysVisible(): boolean;
         setVScrollBarAlwaysVisible(alwaysVisible: boolean): void;
@@ -1974,8 +2233,8 @@ export namespace Ace {
         hideCursor(): void;
         showCursor(): void;
         scrollSelectionIntoView(anchor: Point,
-                                lead: Point,
-                                offset?: number): void;
+            lead: Point,
+            offset?: number): void;
         scrollCursorIntoView(cursor: Point, offset?: number): void;
         getScrollTop(): number;
         getScrollLeft(): number;
@@ -1984,9 +2243,9 @@ export namespace Ace {
         scrollToRow(row: number): void;
         alignCursor(cursor: Point | number, alignment: number): number;
         scrollToLine(line: number,
-                     center: boolean,
-                     animate: boolean,
-                     callback: () => void): void;
+            center: boolean,
+            animate: boolean,
+            callback: () => void): void;
         animateScrolling(fromValue: number, callback: () => void): void;
         scrollToY(scrollTop: number): void;
         scrollToX(scrollLeft: number): void;
@@ -2200,7 +2459,7 @@ export namespace Ace {
         on(name: 'change', callback: (delta: Delta) => void): void;
         on(name: 'changeSelectionStyle', callback: (obj: { data: string }) => void): void;
         on(name: 'changeSession',
-           callback: (obj: { session: EditSession, oldSession: EditSession }) => void): void;
+            callback: (obj: { session: EditSession, oldSession: EditSession }) => void): void;
         on(name: 'copy', callback: (obj: { text: string }) => void): void;
         on(name: 'focus', callback: (e: Event) => void): void;
         on(name: 'paste', callback: (obj: { text: string }) => void): void;
@@ -2435,7 +2694,7 @@ export namespace Ace {
         setMaxListeners(n: any): any;
     }
 
-    export class Reader {}
+    export class Reader { }
 }
 
 export namespace parserlib {
@@ -2444,6 +2703,8 @@ export namespace parserlib {
 
     export namespace util {
         export class SyntaxUnit {
+            fromToken(token: Object): parserlib.util.SyntaxUnit;
+            constructor(text: String, line: Number, col: Number);
         }
         export class EventTarget {
         }
@@ -2452,10 +2713,13 @@ export namespace parserlib {
         export class SyntaxError {
         }
         export class TokenStreamBase {
+            createTokenData(tokens: any[]): any[];
+            constructor(input: String | StringReader);
         }
         export class Combinator extends SyntaxUnit {
         }
         export class MediaFeature extends SyntaxUnit {
+            constructor(name: SyntaxUnit, value: SyntaxUnit);
         }
         export class ValidationError {
         }
@@ -2463,26 +2727,45 @@ export namespace parserlib {
 
     export namespace css {
         export class Specificity {
+            calculate(selector: any): parserlib.css.Specificity;
+            constructor(a: Number, b: Number, c: Number, d: Number);
         }
         export class PropertyValuePart extends util.SyntaxUnit {
+            fromToken(token: Object): parserlib.css.PropertyValuePart;
+            serializeString(value: any): string;
+            parseString(str: any): any;
+            constructor(text: String, line: Number, col: Number);
         }
         export class PropertyValue extends util.SyntaxUnit {
         }
         export class PropertyValueIterator {
+            drop(): void;
+            restore(): void;
+            previous(): parserlib.css.PropertyValuePart;
+            next(): parserlib.css.PropertyValuePart;
+            peek(count: any): parserlib.css.PropertyValuePart;
+            mark(): void;
+            hasNext(): boolean;
+            isFirst(): boolean;
+            count(): Number;
+            constructor(value: parserlib.css.PropertyValue);
         }
         export class Parser {
         }
         export class PropertyName extends util.SyntaxUnit {
         }
         export class Selector extends util.SyntaxUnit {
+            constructor(parts: any[], line: Number, col: Number);
         }
         export class SelectorPart extends util.SyntaxUnit {
+            constructor(elementName: String, modifiers: any[], text: String, line: Number, col: Number);
         }
         export class SelectorSubPart extends util.SyntaxUnit {
         }
         export class TokenStream {
         }
         export class MediaQuery extends util.SyntaxUnit {
+            constructor(modifier: String, mediaType: String, parts: any[], line: Number, col: Number);
         }
     }
 }
