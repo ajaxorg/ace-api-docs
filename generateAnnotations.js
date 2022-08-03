@@ -2,7 +2,7 @@
 var ts = require("typescript");
 var fs = require("fs");
 var propObjects = {};
-var excludeIdentifiers = ["Array"];
+var excludeIdentifiers = ["Array", "Element", "Type"];
 
 
 function createCompilerHost(options) {
@@ -338,7 +338,7 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: " + output[className][functionName].sourceName + ":" + output[className][functionName].line + "\r\n";
                     }
                     if (secondFunctionName) {
-                        if (!output[className].hasOwnProperty(secondFunctionName)) {
+                        if (!output[className].hasOwnProperty(secondFunctionName) || output[className][secondFunctionName] == undefined) {
                             output[className][secondFunctionName] = {
                                 line: currentLine,
                                 jsDoc: docs,

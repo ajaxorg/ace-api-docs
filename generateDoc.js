@@ -21,7 +21,7 @@ app.options.setCompilerOptions(entryPoints, {
 app.options.addDeclaration({name: 'acegitlink'});
 app.converter.addComponent('acegitlink', acegitlink);
 app.renderer.addComponent('borrowstag', borrowsTag);
-app.options.setValue("acegitlink", "https://github.com/ajaxorg/ace/tree/v1.4.2/");
+app.options.setValue("acegitlink", "https://github.com/ajaxorg/ace/tree/v1.8.1/");
 var projectReflection = app.convert();
 
 app.generateDocs(projectReflection, process.argv[2]);
