@@ -108,7 +108,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#_padding" class="tsd-kind-icon">$padding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#characterWidth" class="tsd-kind-icon">character<wbr>Width</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#container" class="tsd-kind-icon">container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#lineHeight" class="tsd-kind-icon">line<wbr>Height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scrollLeft" class="tsd-kind-icon">scroll<wbr>Left</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scrollTop" class="tsd-kind-icon">scroll<wbr>Top</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scroller" class="tsd-kind-icon">scroller</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -188,13 +195,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Virtual<wbr>Renderer<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, theme<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.VirtualRenderer.html" class="tsd-signature-type" data-tsd-kind="Class">VirtualRenderer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Virtual<wbr>Renderer<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, theme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.VirtualRenderer.html" class="tsd-signature-type" data-tsd-kind="Class">VirtualRenderer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L67">lib/ace/virtual_renderer.js:67</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L36">ace_new/ace/src/virtual_renderer.js:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,7 +212,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>container: <span class="tsd-signature-type">HTMLElement</span></h5>
+									<h5>container: <span class="tsd-signature-type">Element</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The root element of the editor</p>
@@ -213,7 +220,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> theme: <span class="tsd-signature-type">string</span></h5>
+									<h5>theme: <span class="tsd-signature-type">String</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The starting theme</p>
@@ -229,12 +236,82 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_padding" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> $padding</h3>
+					<div class="tsd-signature tsd-kind-icon">$padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L659">ace.d.ts:659</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="characterWidth" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> character<wbr>Width</h3>
+					<div class="tsd-signature tsd-kind-icon">character<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L655">ace.d.ts:655</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="container" class="tsd-anchor"></a>
-					<h3>container</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> container</h3>
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L1930">ace.d.ts:1930</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L652">ace.d.ts:652</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="content" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L654">ace.d.ts:654</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="lineHeight" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> line<wbr>Height</h3>
+					<div class="tsd-signature tsd-kind-icon">line<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L656">ace.d.ts:656</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scrollLeft" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> scroll<wbr>Left</h3>
+					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L657">ace.d.ts:657</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scrollTop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> scroll<wbr>Top</h3>
+					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L658">ace.d.ts:658</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scroller" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> scroller</h3>
+					<div class="tsd-signature tsd-kind-icon">scroller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L653">ace.d.ts:653</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L633">lib/ace/virtual_renderer.js:633</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L602">ace_new/ace/src/virtual_renderer.js:602</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -273,7 +350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1158">lib/ace/virtual_renderer.js:1158</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1127">ace_new/ace/src/virtual_renderer.js:1127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +385,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L469">lib/ace/virtual_renderer.js:469</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L438">ace_new/ace/src/virtual_renderer.js:438</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -330,7 +407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1733">lib/ace/virtual_renderer.js:1733</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1702">ace_new/ace/src/virtual_renderer.js:1702</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -352,7 +429,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L488">lib/ace/virtual_renderer.js:488</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L457">ace_new/ace/src/virtual_renderer.js:457</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L609">lib/ace/virtual_renderer.js:609</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L578">ace_new/ace/src/virtual_renderer.js:578</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -396,7 +473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L697">lib/ace/virtual_renderer.js:697</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L666">ace_new/ace/src/virtual_renderer.js:666</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +495,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L688">lib/ace/virtual_renderer.js:688</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L657">ace_new/ace/src/virtual_renderer.js:657</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L770">lib/ace/virtual_renderer.js:770</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L739">ace_new/ace/src/virtual_renderer.js:739</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +539,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L706">lib/ace/virtual_renderer.js:706</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L675">ace_new/ace/src/virtual_renderer.js:675</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -484,7 +561,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L720">lib/ace/virtual_renderer.js:720</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L689">ace_new/ace/src/virtual_renderer.js:689</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L618">lib/ace/virtual_renderer.js:618</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L587">ace_new/ace/src/virtual_renderer.js:587</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -528,7 +605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L546">lib/ace/virtual_renderer.js:546</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L515">ace_new/ace/src/virtual_renderer.js:515</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1292">lib/ace/virtual_renderer.js:1292</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1261">ace_new/ace/src/virtual_renderer.js:1261</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -572,7 +649,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1276">lib/ace/virtual_renderer.js:1276</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1245">ace_new/ace/src/virtual_renderer.js:1245</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -599,7 +676,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1267">lib/ace/virtual_renderer.js:1267</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1236">ace_new/ace/src/virtual_renderer.js:1236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -626,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1284">lib/ace/virtual_renderer.js:1284</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1253">ace_new/ace/src/virtual_renderer.js:1253</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -648,7 +725,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L554">lib/ace/virtual_renderer.js:554</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L523">ace_new/ace/src/virtual_renderer.js:523</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -670,7 +747,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L506">lib/ace/virtual_renderer.js:506</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L475">ace_new/ace/src/virtual_renderer.js:475</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -692,7 +769,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L530">lib/ace/virtual_renderer.js:530</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L499">ace_new/ace/src/virtual_renderer.js:499</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -714,7 +791,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L627">lib/ace/virtual_renderer.js:627</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L596">ace_new/ace/src/virtual_renderer.js:596</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -736,7 +813,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1688">lib/ace/virtual_renderer.js:1688</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1657">ace_new/ace/src/virtual_renderer.js:1657</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +835,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L785">lib/ace/virtual_renderer.js:785</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L754">ace_new/ace/src/virtual_renderer.js:754</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -780,7 +857,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1583">lib/ace/virtual_renderer.js:1583</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1552">ace_new/ace/src/virtual_renderer.js:1552</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -802,7 +879,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1200">lib/ace/virtual_renderer.js:1200</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1169">ace_new/ace/src/virtual_renderer.js:1169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -824,7 +901,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1453">lib/ace/virtual_renderer.js:1453</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1422">ace_new/ace/src/virtual_renderer.js:1422</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -855,13 +932,13 @@
 					<a name="onResize" class="tsd-anchor"></a>
 					<h3>on<wbr>Resize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, gutterWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Boolean</span>, gutterWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L359">lib/ace/virtual_renderer.js:359</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L328">ace_new/ace/src/virtual_renderer.js:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,31 +949,31 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>force: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>force: <span class="tsd-signature-type">Boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>If <code>true</code>, recomputes the size, even if the height and width haven&#39;t changed</p>
 									</div>
 								</li>
 								<li>
-									<h5>gutterWidth: <span class="tsd-signature-type">number</span></h5>
+									<h5>gutterWidth: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The width of the gutter in pixels</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> width: <span class="tsd-signature-type">number</span></h5>
+									<h5>width: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The width of the editor in pixels</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> height: <span class="tsd-signature-type">number</span></h5>
+									<h5>height: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The hiehgt of the editor, in pixels</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -910,7 +987,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1166">lib/ace/virtual_renderer.js:1166</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1135">ace_new/ace/src/virtual_renderer.js:1135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -945,7 +1022,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1441">lib/ace/virtual_renderer.js:1441</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1410">ace_new/ace/src/virtual_renderer.js:1410</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -976,13 +1053,13 @@
 					<a name="scrollCursorIntoView" class="tsd-anchor"></a>
 					<h3>scroll<wbr>Cursor<wbr>Into<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View<span class="tsd-signature-symbol">(</span>cursor<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View<span class="tsd-signature-symbol">(</span>cursor<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1222">lib/ace/virtual_renderer.js:1222</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1191">ace_new/ace/src/virtual_renderer.js:1191</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -993,7 +1070,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>cursor: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+									<h5>cursor: <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> offset: <span class="tsd-signature-type">number</span></h5>
@@ -1013,7 +1090,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1431">lib/ace/virtual_renderer.js:1431</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1400">ace_new/ace/src/virtual_renderer.js:1400</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1050,7 +1127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1342">lib/ace/virtual_renderer.js:1342</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1311">ace_new/ace/src/virtual_renderer.js:1311</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1111,7 +1188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1302">lib/ace/virtual_renderer.js:1302</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1271">ace_new/ace/src/virtual_renderer.js:1271</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1147,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1420">lib/ace/virtual_renderer.js:1420</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1389">ace_new/ace/src/virtual_renderer.js:1389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1178,7 +1255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1405">lib/ace/virtual_renderer.js:1405</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1374">ace_new/ace/src/virtual_renderer.js:1374</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1209,7 +1286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L480">lib/ace/virtual_renderer.js:480</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L449">ace_new/ace/src/virtual_renderer.js:449</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1240,7 +1317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1183">lib/ace/virtual_renderer.js:1183</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1152">ace_new/ace/src/virtual_renderer.js:1152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1271,7 +1348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1573">lib/ace/virtual_renderer.js:1573</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1542">ace_new/ace/src/virtual_renderer.js:1542</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1298,7 +1375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L778">lib/ace/virtual_renderer.js:778</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L747">ace_new/ace/src/virtual_renderer.js:747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1329,7 +1406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1722">lib/ace/virtual_renderer.js:1722</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1691">ace_new/ace/src/virtual_renderer.js:1691</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1355,7 +1432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L731">lib/ace/virtual_renderer.js:731</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L700">ace_new/ace/src/virtual_renderer.js:700</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,7 +1463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L538">lib/ace/virtual_renderer.js:538</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L507">ace_new/ace/src/virtual_renderer.js:507</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1417,7 +1494,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L243">lib/ace/virtual_renderer.js:243</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L212">ace_new/ace/src/virtual_renderer.js:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1445,7 +1522,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L563">lib/ace/virtual_renderer.js:563</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L532">ace_new/ace/src/virtual_renderer.js:532</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1476,7 +1553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L497">lib/ace/virtual_renderer.js:497</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L466">ace_new/ace/src/virtual_renderer.js:466</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1507,7 +1584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L522">lib/ace/virtual_renderer.js:522</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L491">ace_new/ace/src/virtual_renderer.js:491</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1538,7 +1615,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1701">lib/ace/virtual_renderer.js:1701</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1670">ace_new/ace/src/virtual_renderer.js:1670</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1569,7 +1646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1633">lib/ace/virtual_renderer.js:1633</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1602">ace_new/ace/src/virtual_renderer.js:1602</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1615,7 +1692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L793">lib/ace/virtual_renderer.js:793</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L762">ace_new/ace/src/virtual_renderer.js:762</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1646,7 +1723,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1549">lib/ace/virtual_renderer.js:1549</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1518">ace_new/ace/src/virtual_renderer.js:1518</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1671,7 +1748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1208">lib/ace/virtual_renderer.js:1208</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1177">ace_new/ace/src/virtual_renderer.js:1177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1693,7 +1770,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1512">lib/ace/virtual_renderer.js:1512</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1481">ace_new/ace/src/virtual_renderer.js:1481</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1738,7 +1815,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1710">lib/ace/virtual_renderer.js:1710</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1679">ace_new/ace/src/virtual_renderer.js:1679</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1769,7 +1846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1148">lib/ace/virtual_renderer.js:1148</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1117">ace_new/ace/src/virtual_renderer.js:1117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1791,7 +1868,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1174">lib/ace/virtual_renderer.js:1174</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1143">ace_new/ace/src/virtual_renderer.js:1143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1813,7 +1890,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1192">lib/ace/virtual_renderer.js:1192</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1161">ace_new/ace/src/virtual_renderer.js:1161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1835,7 +1912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L340">lib/ace/virtual_renderer.js:340</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L309">ace_new/ace/src/virtual_renderer.js:309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1857,7 +1934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1139">lib/ace/virtual_renderer.js:1139</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1108">ace_new/ace/src/virtual_renderer.js:1108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1879,7 +1956,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L330">lib/ace/virtual_renderer.js:330</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L299">ace_new/ace/src/virtual_renderer.js:299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1910,7 +1987,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L274">lib/ace/virtual_renderer.js:274</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L243">ace_new/ace/src/virtual_renderer.js:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1950,7 +2027,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L321">lib/ace/virtual_renderer.js:321</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L290">ace_new/ace/src/virtual_renderer.js:290</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1972,7 +2049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1540">lib/ace/virtual_renderer.js:1540</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1509">ace_new/ace/src/virtual_renderer.js:1509</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1994,7 +2071,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/virtual_renderer.js#L1532">lib/ace/virtual_renderer.js:1532</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/virtual_renderer.js#L1501">ace_new/ace/src/virtual_renderer.js:1501</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2017,15 +2094,6 @@
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/Ace.html">Ace</a>
 					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/parserlib.html">parserlib</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.css.html">parserlib.css</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.util.html">parserlib.util</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -2039,7 +2107,28 @@
 								<a href="Ace.VirtualRenderer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#_padding" class="tsd-kind-icon">$padding</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#characterWidth" class="tsd-kind-icon">character<wbr>Width</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#container" class="tsd-kind-icon">container</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#lineHeight" class="tsd-kind-icon">line<wbr>Height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#scrollLeft" class="tsd-kind-icon">scroll<wbr>Left</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#scrollTop" class="tsd-kind-icon">scroll<wbr>Top</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#scroller" class="tsd-kind-icon">scroller</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#_moveTextAreaToCursor" class="tsd-kind-icon">$move<wbr>Text<wbr>Area<wbr>ToCursor</a>

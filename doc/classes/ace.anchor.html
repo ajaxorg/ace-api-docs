@@ -109,9 +109,11 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#_clipPositionToDocument" class="tsd-kind-icon">$clip<wbr>Position<wbr>ToDocument</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#attach" class="tsd-kind-icon">attach</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#detach" class="tsd-kind-icon">detach</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#getDocument" class="tsd-kind-icon">get<wbr>Document</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#getPosition" class="tsd-kind-icon">get<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#setPosition" class="tsd-kind-icon">set<wbr>Position</a></li>
 							</ul>
 						</section>
@@ -124,13 +126,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Anchor<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Anchor<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L54">lib/ace/anchor.js:54</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L23">ace_new/ace/src/anchor.js:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -149,7 +151,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<h5>row: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The starting row position</p>
@@ -157,7 +159,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<h5>column: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The starting column position</p>
@@ -176,7 +178,7 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;change&quot;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;change&quot;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="Ace.Object.html" class="tsd-signature-type" data-tsd-kind="Class">Object</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, capturing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
@@ -184,7 +186,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L89">lib/ace/anchor.js:89</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/lib/event_emitter.js#L96">ace_new/ace/src/lib/event_emitter.js:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,18 +202,18 @@
 									<h5>name: <span class="tsd-signature-type">&quot;change&quot;</span></h5>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="Ace.Object.html" class="tsd-signature-type" data-tsd-kind="Class">Object</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="Ace.Object.html" class="tsd-signature-type" data-tsd-kind="Class">Object</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>delta: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a></h5>
+															<h5>e: <a href="Ace.Object.html" class="tsd-signature-type" data-tsd-kind="Class">Object</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -252,13 +254,13 @@
 					<a name="_clipPositionToDocument" class="tsd-anchor"></a>
 					<h3>$clip<wbr>Position<wbr>ToDocument</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">$clip<wbr>Position<wbr>ToDocument<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></li>
+						<li class="tsd-signature tsd-kind-icon">$clip<wbr>Position<wbr>ToDocument<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L203">lib/ace/anchor.js:203</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L183">ace_new/ace/src/anchor.js:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,19 +271,50 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<h5>row: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The row index to clip the anchor to</p>
 									</div>
 								</li>
 								<li>
-									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<h5>column: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The column index to clip the anchor to</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attach" class="tsd-anchor"></a>
+					<h3>attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L171">ace_new/ace/src/anchor.js:171</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>When called, the <code>&quot;change&quot;</code> event listener is appended.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>doc: <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The document to associate with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -295,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L189">lib/ace/anchor.js:189</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L162">ace_new/ace/src/anchor.js:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -317,7 +350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L81">lib/ace/anchor.js:81</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L50">ace_new/ace/src/anchor.js:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -333,13 +366,13 @@
 					<a name="getPosition" class="tsd-anchor"></a>
 					<h3>get<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L72">lib/ace/anchor.js:72</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L41">ace_new/ace/src/anchor.js:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +380,37 @@
 									<p>Returns an object identifying the <code>row</code> and <code>column</code> position of the current anchor.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onChange" class="tsd-anchor"></a>
+					<h3>on<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L75">ace_new/ace/src/anchor.js:75</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Internal function called when <code>&quot;change&quot;</code> event fired.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>delta: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -361,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/anchor.js#L158">lib/ace/anchor.js:158</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/anchor.js#L131">ace_new/ace/src/anchor.js:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -405,15 +468,6 @@
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/Ace.html">Ace</a>
 					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/parserlib.html">parserlib</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.css.html">parserlib.css</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.util.html">parserlib.util</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -433,6 +487,9 @@
 								<a href="Ace.Anchor.html#_clipPositionToDocument" class="tsd-kind-icon">$clip<wbr>Position<wbr>ToDocument</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Anchor.html#attach" class="tsd-kind-icon">attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#detach" class="tsd-kind-icon">detach</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -440,6 +497,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#getPosition" class="tsd-kind-icon">get<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Anchor.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#setPosition" class="tsd-kind-icon">set<wbr>Position</a>

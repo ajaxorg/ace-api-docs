@@ -1,691 +1,191 @@
 export namespace Ace {
-    /** Built-in method references that are verified to be native. **/
-    export class Map {
-    }
-
-    /**eslint-disable no-bitwise**/
-    export class NodeBuffer {
-    }
-
-    export class XQLint {
-    }
-
-    /**
-     *
-     * Creates a cache object to store unique values.
-     *
-     * @private
-     * @param {Array} [values] The values to cache.
-     */
-    /**------------------------------------------------------------------------**/
-    export class SetCache {
-    }
-
-    /**
-     * The base constructor for creating `lodash` wrapper objects.
-     *
-     * @private
-     * @param {*} value The value to wrap.
-     * @param {boolean} [chainAll] Enable chaining for all wrapper methods.
-     * @param {Array} [actions=[]] Actions to peform to resolve the unwrapped value.
-     */
-    export class LodashWrapper {
-    }
-
-    /** Native method references. */
-    export class ArrayBuffer {
-    }
-
-    export class XQDoc {
-    }
-
-    export class StyleChecker {
-    }
-
-    export class Translator {
-    }
-
-    export class JSONParseTreeHandler {
-    }
-
-    export class XQueryParser {
-    }
-
-    export class JSONiqParser {
-    }
-
-    export class XQueryTokenizer {
-    }
-
-    export class Handlers {
-    }
-
-    export class StaticContext {
-    }
-
-    export class SchemaBuiltinTypes {
-    }
-
-    export class EQNameHandler {
-    }
-
-    export class SchemaPrefixHandler {
-    }
-
-    export class Errors {
-    }
-
-    export class TreeOps {
-    }
-
-    export class StaticWarning {
-    }
-
-    export class StaticError {
-    }
-
-    export class TokenHandler {
-    }
-
-    export class JSONiqTokenizer {
-    }
-
-    /**
-     * @param source
-     */
-    export class ElementAttributes {
-    }
-
-    export class XMLReader {
-    }
-
-    export class EntityReference {
-    }
-
-    export class Notation {
-    }
-
-    export class DocumentType {
-    }
-
-    export class CDATASection {
-    }
-
-    export class CharacterData {
-    }
-
-    export class Attr {
-    }
-
-    /**
-     * @see http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#ID-102161490
-     */
-    export class DOMImplementation {
-    }
-
-    /**
-     *
-     * Objects implementing the NamedNodeMap interface are used to represent collections of nodes that can be accessed by name. Note that NamedNodeMap does not inherit from NodeList; NamedNodeMaps are not maintained in any particular order. Objects contained in an object implementing NamedNodeMap may also be accessed by an ordinal index, but this is simply to allow convenient enumeration of the contents of a NamedNodeMap, and does not imply that the DOM specifies an order to these Nodes.
-     * NamedNodeMap objects in the DOM are live.
-     * used for attributes or DocumentType entities
-     */
-    export class NamedNodeMap {
-    }
-
-    /**
-     * @see http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/core.html#ID-536297177
-     * The NodeList interface provides the abstraction of an ordered collection of nodes, without defining or constraining how this collection is implemented. NodeList objects in the DOM are live.
-     * The items in the NodeList are accessible via an integral index, starting from 0.
-     */
-    export class NodeList {
-    }
-
-    export class DOMException {
-    }
-
-    export class ExceptionMessage {
-    }
-
-    /** ExceptionCode**/
-    export class ExceptionCode {
-    }
-
-    export class VisualforceMode {
-    }
-
-    export class SnippetGroupHighlightRules {
-    }
-
-    export class SnippetHighlightRules {
-    }
-
-    export class NameStack {
-    }
-
-    export class Context {
-    }
-
-    export class CompArray {
-    }
-
-    /**
-     * Convenience function for defining JSHint symbols for keywords that are
-     * only reserved in some circumstances.
-     *
-     * @param {string} name - the name of the symbol
-     * @param {object} [meta] - a collection of optional arguments
-     * @param {function} [meta.nud] -the null denotation function for the symbol;
-     *
-     see the `expression` function for more detail
-     * @param {boolean} [meta.es5] - `true` if the identifier is reserved
-     *
-     in ECMAScript 5 or later
-     * @param {boolean} [meta.strictOnly] - `true` if the identifier is only
-     *
-     reserved in strict mode code.
-     *
-     * @returns {object} - the object describing the JSHint symbol (provided to
-     *
-     support cases where further refinement is necessary)
-     */
-    export class FutureReservedWord {
-    }
-
-    /**
-     * Lexer for JSHint.
-     *
-     * This object does a char-by-char scan of the provided source code
-     * and produces a sequence of tokens.
-     *
-     *
-     var lex = new Lexer("var i = 0;");
-     *
-     lex.start();
-     *
-     lex.token(); // returns the next token
-     *
-     * You have to use the token() method to move the lexer forward
-     * but you don't have to use its return value to get tokens. In addition
-     * to token() method returning the next token, the Lexer object also
-     * emits events.
-     *
-     *
-     lex.on("Identifier", function(data) {
-     *
-     if (data.name.indexOf("_") >= 0) {
-     *
-     // Produce a warning.
-     *
-     }
-     *
-     });
-     *
-     * Note that the token() method returns tokens in a JSLint-compatible
-     * format while the event emitter uses a slightly modified version of
-     * Mozilla's JavaScript Parser API. Eventually, we will move away from
-     * JSLint format.
-     **/
-    export class Lexer {
-    }
-
-    export class SymbolProto {
-    }
-
-    /** Save bytes in the minified (but not gzipped) version:**/
-    export class ArrayProto {
-    }
-
-    /** Naked function reference for surrogate-prototype-swapping.**/
-    export class Ctor {
-    }
-
-    export class Stack {
-        /**
-         * Creates a stack cache object to store key-value pairs.
-         *
-         * @private
-         * @constructor
-         * @param {any[]} entries The key-value pairs to cache.
-         */
-        constructor(entries: any[]);
-    }
-
-    /**
-     * Creates a cache object to store key/value pairs.
-     *
-     * @private
-     * @static
-     * @name Cache
-     * @memberOf _.memoize
-     */
-    /**------------------------------------------------------------------------**/
-    export class MapCache {
-    }
-
-    export class ListCache {
-        /**
-         * Creates an list cache object.
-         *
-         * @private
-         * @constructor
-         * @param {any[]} entries The key-value pairs to cache.
-         */
-        constructor(entries: any[]);
-    }
-
-    export class Hash {
-        /**
-         * Creates a hash object.
-         *
-         * @private
-         * @constructor
-         * @param {any[]} entries The key-value pairs to cache.
-         */
-        constructor(entries: any[]);
-    }
-
-    /** Built-in method references that are verified to be native. **/
-    export class DataView {
-    }
-
-    /** Built-in value references. */
-    export class Buffer {
-    }
-
-    export class TempCtor {
-    }
-
-    export class StackItem {
-    }
-
-    export class SpecialElements {
-    }
-
-    export class EntityParser {
-    }
-
-    export class InputStream {
-    }
-
-    export class ElementStack {
-    }
-
-    export class Tag {
-    }
-
-    export class EjsHighlightRules {
-    }
-
-    export class DjangoHtmlHighlightRules {
-    }
-
-    export class DjangoHighlightRules {
-    }
-
-    export class Properties {
-    }
-
-    export class XQueryBehaviour {
-    }
-
-    export class XmlBehaviour {
-    }
-
-    export class LiquidBehaviour {
-    }
-
-    export class HtmlBehaviour {
-    }
-
-    export class CssBehaviour {
-    }
-
-    export class ApexMode {
-    }
-
-    /**
-     * Helper functions and hashes for key handling.
-     **/
-    export class Keys {
-    }
-
-    export class UnicodeTBL20 {
-    }
-
-    export class UnicodeTBL00 {
-    }
-
-    export class ArabicAlefBetIntervalsEnd {
-    }
-
-    export class ArabicAlefBetIntervalsBegine {
-    }
-
-    export class TextInput {
-    }
-
-    export class MultiHashHandler {
-    }
-
-    export class ISearchKbd {
-    }
-
-    export class SimpleTextLayer {
-    }
-
-    /**
-     * Implementation of {@link IEmmetEditor} interface for Ace
-     */
-    export class AceEmmetEditor {
-    }
-
-    export class AcePopup {
-    }
-
-
-    export class UIWorkerClient {
-    }
-
-
-    export class WorkerClient {
-
-        $createWorkerFromOldConfig(topLevelNamespaces: any, mod: any, classname: any, workerUrl: any, importScripts: any): any;
-
-        $sendDeltaQueue(): void;
-
-        changeListener(delta: any): void;
-
-        attachToDocument(doc: any): void;
-
-        emit(event: any, data: any): void;
-
-        call(cmd: any, args: any, callback: any): void;
-
-        send(cmd: any, args: any): void;
-
-        terminate(): void;
-
-        $normalizePath(path: any): any;
-
-        reportError(err: any): void;
-
-        onMessage(e: any): void;
-    }
-    /** Backwards-compatibility**/
-
-
-    export class BlobBuilder {
-    }
-
-
-    export class Sender {
-
-        emit(name: any, data: any): void;
-
-        callback(data: any, callbackId: any): void;
-    }
-
-
-    export class Mirror {
-
-        isPending(): any;
-
-        onUpdate(): void;
-
-        getValue(callbackId: any): void;
-
-        setValue(value: any): void;
-
-        setTimeout(timeout: any): void;
-    }
     /**
      * @class Tooltip
      **/
-
-
     export class Tooltip {
-
         destroy(): void;
         /**
          * @returns {Number}
          **/
-
         getWidth(): Number;
         /**
          * @returns {Number}
          **/
-
         getHeight(): Number;
-
         hide(): void;
         /**
          * @param {String} text
          * @param {Number} x
          * @param {Number} y
          **/
-
         show(text: String, x: Number, y: Number): void;
         /**
          * @param {String} className
          **/
-
         setClassName(className: String): void;
         /**
          * @param {Number} x
          * @param {Number} y
          **/
-
         setPosition(x: Number, y: Number): void;
         /**
          * @param {String} html
          **/
-
         setHtml(html: String): void;
         /**
          * @param {String} text
          **/
-
         setText(text: String): void;
         /**
          * @returns {Element}
          **/
-
         getElement(): Element;
-
         $init(): any;
         /**
          * @param {Element} parentNode
          *
          * @constructor
          **/
-
         constructor(parentNode: Element);
     }
 
-
     export class MockRenderer {
-
         adjustWrapLimit(): void;
-
         screenToTextCoordinates(): { row: number; column: number; };
-
         textToScreenCoordinates(): { pageX: number; pageY: number; };
-
         unsetStyle(): void;
-
         setStyle(): void;
-
         setAnnotations(): void;
-
         visualizeFocus(): void;
-
         showCursor(): void;
-
         updateText(): void;
-
         updateFull(): void;
-
         onResize(): void;
-
         updateBreakpoints(): void;
-
         updateFrontMarkers(): void;
-
         updateBackMarkers(): void;
-
         updateLines(startRow: any, endRow: any): void;
-
         onChangeTabSize(startRow: any, endRow: any): void;
-
         draw(): void;
-
         getScrollTopRow(): any;
-
         scrollToRow(row: any): void;
-
         scrollCursorIntoView(): void;
-
         scrollSelectionIntoView(): void;
-
         scrollToLine(line: any, center: any): void;
-
         scrollToY(scrollLeft: any): void;
-
         scrollToX(scrollTop: any): void;
-
         animateScrolling(fromValue: any, callback: any): void;
-
         updateCursor(): void;
-
         on(): void;
-
         setTokenizer(): void;
-
         getSession(session: any): any;
-
         setSession(session: any): void;
-
         moveTextAreaToCursor(): void;
-
         removeGutterDecoration(): void;
-
         addGutterDecoration(): void;
-
         getTextAreaContainer(): any;
-
         getMouseEventTarget(): any;
-
         getContainerElement(): any;
-
         getLastFullyVisibleRow(): any;
-
         getFirstFullyVisibleRow(): any;
-
         getLastVisibleRow(): any;
-
         getFirstVisibleRow(): any;
     }
 
-
     export class TextNode {
-
         cloneNode(): any;
     }
 
-
     export class Event {
-
         stopPropagation(): void;
-
         preventDefault(): void;
-
         initMouseEvent(type: any, _1: any, _2: any, window: any, detail: any, x: any, y: any, _x: any, _y: any, ctrl: any, alt: any, shift: any, meta: any, button: any, relatedTarget: any): void;
     }
 
+    export class Node {
+        blur(): void;
+        focus(): void;
+        contains(node: any): boolean;
+        dispatchEvent(e: any): void;
+        createEvent(v: any): any;
+        removeEventListener(name: any, listener: any): void;
+        addEventListener(name: any, listener: any, capturing: any): void;
+        getBoundingClientRect(v: any): { top: number; left: number; width: number; height: number; right: number; bottom: number; };
+        insertAdjacentElement(position: any, element: any): void;
+        insertAdjacentHTML(position: any, markup: any): void;
+        ___format(indent: any): string;
+        getAttribute(a: any, v: any): any;
+        setAttribute(a: any, v: any): void;
+        removeAttribute(a: any): void;
+        closest(s: any): any;
+        matches(selector: any): boolean;
+        getElementById(s: any): any;
+        getElementsByTagName(s: any): {};
+        querySelector(s: any): any;
+        querySelectorAll(selector: any): {};
+        hasAttributes(): boolean;
+        hasChildNodes(): boolean;
+        before(node: any): void;
+        insertBefore(node: any, before: any): any;
+        replaceChild(node: any, oldNode: any): any;
+        remove(): void;
+        removeChild(node: any): void;
+        appendChild(node: any): any;
+        cloneNode(recursive: any): any;
+    }
+
+    export class Attr {
+    }
 
     export class ClassList {
-
         contains(str: any): void;
-
         toggle(str: any): void;
-
         remove(str: any): void;
-
         add(str: any): void;
     }
 
-
     export class Style {
-
         getPropertyValue(): string;
     }
 
-
     export class TestGenerator {
-
         setupTest(): any;
-
         summary(callback: any): void;
-
         report(): any;
-
         run(): any;
-
         exec(): void;
     }
 
-
     export class Generator {
-
         toArray(breakOnError: any, callback: any): void;
-
         end(breakOnError: any, callback: any): void;
-
         $arrayOp(arrayMethod: any, args: any): any;
-
         reverse(): any;
-
         join(separator: any): any;
-
         sort(compare: any): any;
-
         expand(inserter: any, constructor: any): any;
-
         zip(generator: any): any;
-
         concat(generator: any): any;
-
         call(context: any): any;
-
         every(condition: any): any;
-
         some(condition: any): any;
-
         forEach(fn: any): any;
-
         each(fn: any): any;
-
         reduce(reduce: any, initialValue: any): any;
-
         slice(begin: any, end: any): any;
-
         filter(filter: any): any;
-
         map(mapper: any): any;
-
         next(callback: any): void;
     }
+
     /**
      * @class Split
      *
      **/
-
-
     export class Split {
         /**
          * Resizes the editor.
          **/
-
         resize(): void;
         /**
          *
@@ -694,14 +194,12 @@ export namespace Ace {
          *
          *
          **/
-
         setOrientation(orientation: Number): void;
         /**
          *
          * Returns the orientation.
          * @returns {Number}
          **/
-
         getOrientation(): Number;
         /**
          *
@@ -711,9 +209,7 @@ export namespace Ace {
          * Sets a new [[EditSession `EditSession`]] for the indicated editor.
          * @related Editor.setSession
          **/
-
         setSession(session: EditSession, idx: Number): any;
-
         $cloneSession(session: any): any;
         /**
          * @param {Number} size The new font size
@@ -721,7 +217,6 @@ export namespace Ace {
          * Sets the font size, in pixels, for all the available editors.
          *
          **/
-
         setFontSize(size: Number): void;
         /**
          *
@@ -731,7 +226,6 @@ export namespace Ace {
          * Executes `callback` on all of the available editors.
          *
          **/
-
         forEach(callback: Function, scope: String): void;
         /**
          *
@@ -740,7 +234,6 @@ export namespace Ace {
          * Sets the keyboard handler for the editor.
          * @related editor.setKeyboardHandler
          **/
-
         setKeyboardHandler(keybinding: String): void;
         /**
          *
@@ -749,26 +242,22 @@ export namespace Ace {
          * Sets a theme for each of the available editors.
          * @related Editor.setTheme
          **/
-
         setTheme(theme: String): void;
         /**
          * Blurs the current editor.
          * @related Editor.blur
          **/
-
         blur(): void;
         /**
          * Focuses the current editor.
          * @related Editor.focus
          **/
-
         focus(): void;
         /**
          *
          * Returns the current editor.
          * @returns {Editor}
          **/
-
         getCurrentEditor(): Editor;
         /**
          * @param {Number} idx The index of the editor you want
@@ -776,117 +265,72 @@ export namespace Ace {
          * Returns the editor identified by the index `idx`.
          *
          **/
-
         getEditor(idx: Number): any;
         /**
          *
          * Returns the number of splits.
          * @returns {Number}
          **/
-
         getSplits(): Number;
-
         setSplits(splits: any): void;
-
         $createEditor(): any;
     }
 
-
     export class TabstopManager {
-
         removeRange(range: any): void;
-
         removeTabstopMarkers(ts: any): void;
-
         addTabstopMarkers(ts: any): void;
-
         addTabstops(tabstops: any, start: any, end: any): void;
-
         selectTabstop(index: any): void;
-
         tabNext(dir: any): void;
-
         onChangeSession(): void;
-
         onChangeSelection(): void;
-
         onAfterExec(e: any): void;
-
         updateLinkedFields(): void;
-
         onChange(delta: any): void;
-
         detach(): void;
-
         attach(editor: any): void;
     }
-
 
     export class TabstopToken {
     }
 
-
     export class SnippetManager {
-
         getSnippetByName(name: any, editor: any): any;
-
         parseSnippetFile(str: any): {};
-
         unregister(snippets: any, scope: any): void;
-
         register(snippets: any, scope: any): void;
-
         findMatchingSnippet(snippetList: any, before: any, after: any): any;
-
         expandSnippetForSelection(editor: any, options: any): boolean;
-
         expandWithTab(editor: any, options: any): any;
-
         getActiveScopes(editor: any): {};
-
         $getScope(editor: any): any;
-
         insertSnippet(editor: any, snippetText: any): any;
-
         insertSnippetForSelection(editor: any, snippetText: any): void;
-
         resolveVariables(snippet: any, editor: any): {};
-
         tmFormatFunction(str: any, ch: any, editor: any): any;
         /** returns string formatted according to http://manual.macromates.com/en/regular_expressions#replacement_string_syntax_format_strings**/
-
         tmStrFormat(str: any, ch: any, editor: any): any;
-
         getVariableValue(editor: any, name: any, indentation: any): any;
-
         tokenizeTmSnippet(str: any, startState: any): any;
-
         createTokenizer(): any;
-
         getTokenizer(): any;
     }
 
-
     export class SearchHighlight {
-
         update(html: any, markerLayer: any, session: any, config: any): void;
-
         setRegexp(regExp: any): void;
     }
+
     /**
      * @class Search
      *
      * A class designed to handle all sorts of text searches within a [[Document `Document`]].
      *
      **/
-
-
     export class Search {
-
         $matchIterator(session: any, options: any): false | { forEach: (callback: any) => void; };
-
         $assembleMultilineRegExp(needle: any, modifier: any): {};
-
         $assembleRegExp(options: any, $disableFakeMultiline: any): any;
         /**
          * Searches for `options.needle` in `input`, and, if found, replaces it with `replacement`.
@@ -898,7 +342,6 @@ export namespace Ace {
          *
          * @returns {String}
          **/
-
         replace(input: String, replacement: String): String;
         /**
          * Searches for all occurrances `options.needle`. If found, this method returns an array of [[Range `Range`s]] where the text first occurs. If `options.backwards` is `true`, the search goes backwards in the session.
@@ -907,7 +350,6 @@ export namespace Ace {
          *
          * @returns {[Range]}
          **/
-
         findAll(session: EditSession): [Range];
         /**
          * Searches for `options.needle`. If found, this method returns the [[Range `Range`]] where the text first occurs. If `options.backwards` is `true`, the search goes backwards in the session.
@@ -916,20 +358,17 @@ export namespace Ace {
          *
          * @returns {Range}
          **/
-
         find(session: EditSession): Range;
         /**
          * Sets the search options via the `options` parameter.
          * @param {Object} An object containing all the search propertie
          * @related Search.set
          **/
-
         setOptions(options: any): void;
         /**
          * [Returns an object containing all the search options.]{: #Search.getOptions}
          * @returns {Object}
          **/
-
         getOptions(): Object;
         /**
          * Sets the search options via the `options` parameter.
@@ -939,7 +378,6 @@ export namespace Ace {
          * @returns {Search}
          * @chainable
          **/
-
         set(options: Object): Search;
         /**
          *
@@ -958,193 +396,153 @@ export namespace Ace {
          *
          * @constructor
          **/
-
         constructor();
     }
+
     /**
      * Represents a horisontal scroll bar.
      * @class HScrollBar
      **/
-
-
     export class HScrollBar {
         /**
          * Sets the scroll left of the scroll bar.
          * @param {Number} scrollTop The new scroll left
          **/
-
         setScrollLeft(scrollLeft: any): void;
         /**
          * Sets the scroll width of the scroll bar, in pixels.
          * @param {Number} width The new scroll width
          **/
-
         setScrollWidth(width: Number): void;
         /**
          * Sets the inner width of the scroll bar, in pixels.
          * @param {Number} width The new inner width
          * @deprecated Use setScrollWidth instead
          **/
-
         setInnerWidth(width: Number): void;
         /**
          * Sets the width of the scroll bar, in pixels.
          * @param {Number} width The new width
          **/
-
         setWidth(width: Number): void;
         /**
          * Returns the height of the scroll bar.
          * @returns {Number}
          **/
-
         getHeight(): Number;
         /**
          * Emitted when the scroll bar, well, scrolls.
          * @event scroll
          * @param {Object} e Contains one property, `"data"`, which indicates the current scroll left position
          **/
-
         on(name: 'scroll', callback: (e: Object) => void): void;
-
         onScroll(): void;
         /**
          * Creates a new `HScrollBar`. `parent` is the owner of the scroll bar.
-         * @param {DOMElement} parent A DOM element
+         * @param {Element} parent A DOM element
          * @param {Object} renderer An editor renderer
          *
          * @constructor
          **/
-
         constructor(parent: Element, renderer: Object);
     }
+
     /**
      * Represents a vertical scroll bar.
      * @class VScrollBar
      **/
-
-
     export class VScrollBar {
         /**
          * Sets the scroll top of the scroll bar.
          * @param {Number} scrollTop The new scroll top
          **/
-
         setScrollTop(scrollTop: Number): void;
         /**
          * Sets the inner height of the scroll bar, in pixels.
          * @param {Number} height The new inner height
          * @deprecated Use setScrollHeight instead
          **/
-
         setInnerHeight(height: Number): void;
         /**
          * Sets the inner height of the scroll bar, in pixels.
          * @param {Number} height The new inner height
          * @deprecated Use setScrollHeight instead
          **/
-
         setScrollHeight(height: Number): void;
         /**
          * Sets the height of the scroll bar, in pixels.
          * @param {Number} height The new height
          **/
-
         setHeight(height: Number): void;
         /**
          * Returns the width of the scroll bar.
          * @returns {Number}
          **/
-
         getWidth(): Number;
         /**
          * Emitted when the scroll bar, well, scrolls.
          * @event scroll
          * @param {Object} e Contains one property, `"data"`, which indicates the current scroll top position
          **/
-
         on(name: 'scroll', callback: (e: Object) => void): void;
-
         onScroll(): void;
         /**
          * Creates a new `VScrollBar`. `parent` is the owner of the scroll bar.
-         * @param {DOMElement} parent A DOM element
+         * @param {Element} parent A DOM element
          * @param {Object} renderer An editor renderer
          *
          * @constructor
          **/
-
         constructor(parent: Element, renderer: Object);
     }
+
     /**
      * An abstract class representing a native scrollbar control.
      * @class ScrollBar
      **/
-
-
     export class ScrollBar {
-
         setVisible(isVisible: any): void;
         /**
          * Creates a new `ScrollBar`. `parent` is the owner of the scroll bar.
-         * @param {DOMElement} parent A DOM element
+         * @param {Element} parent A DOM element
          *
          * @constructor
          **/
-
         constructor(parent: Element);
     }
+
     /**
      *
      *
      * Batches changes (that force something to be redrawn) in the background.
      * @class RenderLoop
      **/
-
-
     export class RenderLoop {
-
         clear(change: any): any;
-
         schedule(change: any): void;
     }
 
-
     export class RangeList {
-
         $onChange(delta: any): void;
-
         detach(): void;
-
         attach(session: any): void;
-
         removeAll(): any;
-
         clipRows(startRow: any, endRow: any): {};
-
         rangeAtPoint(pos: any): any;
-
         containsPoint(pos: any): boolean;
-
         contains(row: any, column: any): boolean;
         /** merge overlapping ranges**/
-
         merge(): {};
-
         substractPoint(pos: any): any;
-
         addList(list: any): {};
-
         add(range: any): any;
-
         pointIndex(pos: any, excludeEdges: any, startIndex: any): any;
     }
+
     /**
      * @class PlaceHolder
      *
      **/
-
-
     export class PlaceHolder {
         /**
          * PlaceHolder.cancel()
@@ -1152,7 +550,6 @@ export namespace Ace {
          * TODO
          *
          **/
-
         cancel(): void;
         /**
          * PlaceHolder.detach()
@@ -1160,7 +557,6 @@ export namespace Ace {
          * TODO
          *
          **/
-
         detach(): void;
         /**
          * PlaceHolder@onCursorChange(e)
@@ -1168,11 +564,8 @@ export namespace Ace {
          * Emitted when the cursor changes.
          *
          **/
-
         onCursorChange(event: any): void;
-
         updateMarkers(): void;
-
         updateAnchors(delta: any): void;
         /**
          * PlaceHolder@onUpdate(e)
@@ -1180,7 +573,6 @@ export namespace Ace {
          * Emitted when the place holder updates.
          *
          **/
-
         onUpdate(delta: any): any;
         /**
          * PlaceHolder.hideOtherMarkers()
@@ -1188,7 +580,6 @@ export namespace Ace {
          * Hides all over markers in the [[EditSession `EditSession`]] that are not the currently selected one.
          *
          **/
-
         hideOtherMarkers(): void;
         /**
          * PlaceHolder.showOtherMarkers()
@@ -1196,7 +587,6 @@ export namespace Ace {
          * TODO
          *
          **/
-
         showOtherMarkers(): void;
         /**
          * PlaceHolder.setup()
@@ -1204,7 +594,6 @@ export namespace Ace {
          * TODO
          *
          **/
-
         setup(): void;
         /**
          * - session (Document): The document to associate with the anchor
@@ -1216,9 +605,9 @@ export namespace Ace {
          *
          * @constructor
          **/
-
         constructor();
     }
+
     /**
      * @class Occur
      *
@@ -1227,10 +616,7 @@ export namespace Ace {
      * track of the mapping between the occur doc and the original doc.
      *
      **/
-
-
     export class Occur {
-
         matchingLines(session: any, options: any): any;
         /**
          * Translates the position from the occur document to the original document
@@ -1239,7 +625,6 @@ export namespace Ace {
          * @param {Object} pos The position in the occur session document
          * @return {Object} position
          **/
-
         occurToOriginalPosition(session: EditSession, pos: Object): Object;
         /**
          * Translates the position from the original document to the occur lines in
@@ -1249,13 +634,9 @@ export namespace Ace {
          * @param {Object} pos The position in the original document
          * @return {Object} position in occur doc
          **/
-
         originalToOccurPosition(session: EditSession, pos: Object): { row: number; column: any; };
-
         displayOriginalContent(editor: any): void;
-
         displayOccurContent(editor: any, options: any): void;
-
         highlight(sess: any, regexp: any): void;
         /**
          * Disables occur mode. Resets the [[Sessions `EditSession`]] [[Document
@@ -1266,7 +647,6 @@ export namespace Ace {
          * @return {Boolean} Whether occur deactivation was successful
          *
          **/
-
         exit(editor: Editor, options: Object): boolean;
         /**
          * Enables occur mode. expects that `options.needle` is a search term.
@@ -1279,1582 +659,447 @@ export namespace Ace {
          * @return {Boolean} Whether occur activation was successful
          *
          **/
-
         enter(editor: Editor, options: Object): boolean;
         /**
          * Creates a new `Occur` object.
          *
          * @constructor
          **/
-
         constructor();
     }
+
     /** MultiSelect(editor)**/
-
-
     export class MultiSelect {
     }
 
-
     export class MouseHandler {
-
         destroy(): void;
-
         cancelContextMenu(): void;
-
         captureMouse(ev: any, mouseMoveHandler: any): any;
-
         setState(state: any): void;
-
         onMouseWheel(name: any, e: any): void;
-
         onMouseMove(name: any, e: any): void;
-
         onMouseEvent(name: any, e: any): void;
     }
+
     /**
      * Custom Ace mouse event
      **/
-
-
     export class MouseEvent {
         /**
          * @return {Boolean} whether the shift key was pressed when the event was emitted
          **/
-
         getShiftKey(): any;
         /**
          * Get the clicked mouse button
          *
          * @return {Number} 0 for left button, 1 for middle button, 2 for right button
          **/
-
         getButton(): any;
         /**
          * Check if the mouse cursor is inside of the text selection
          *
          * @return {Boolean} whether the mouse cursor is inside of the selection
          **/
-
         inSelection(): any;
         /**
          * Get the document position below the mouse cursor
          *
          * @return {Object} 'row' and 'column' of the document position
          **/
-
         getDocumentPosition(): any;
-
         stop(): void;
-
         preventDefault(): void;
-
         stopPropagation(): void;
     }
-
 
     export class FoldHandler {
     }
 
-
     export class DragdropHandler {
-
         onMouseDown(e: any): void;
-
         onMouseDrag(e: any): void;
-
         startDrag(): void;
-
         dragReadyEnd(e: any): void;
-
         dragWaitEnd(): void;
-
         dragWait(): void;
-
         onDrop(e: any): any;
-
         onDragLeave(e: any): any;
-
         onDragOver(e: any): any;
-
         onDragEnter(e: any): any;
-
         onDragEnd(e: any): void;
-
         onDragStart(e: any): any;
     }
 
-
     export class DefaultHandlers {
-
         onMouseWheel(ev: any): any;
-
         onQuadClick(ev: any): void;
-
         onTripleClick(ev: any): void;
-
         onDoubleClick(ev: any): void;
-
         focusWait(): void;
-
         selectAllEnd(): void;
-
         selectByLinesEnd(): void;
-
         extendSelectionBy(unitName: any): void;
-
         select(): void;
-
         startSelect(pos: any, waitForClickSelection: any): void;
-
         onMouseDown(ev: any): any;
     }
 
-
     export class GutterTooltip {
-
         setPosition(x: any, y: any): void;
     }
-
 
     export class GutterHandler {
     }
 
-
-    export class YamlWorker {
-
-        onUpdate(): void;
-
-        changeOptions(newOptions: any): void;
-
-        setOptions(): void;
+    export class VisualforceMode {
     }
 
-
-    export class Schema {
-
-        create(): any;
+    export class SnippetGroupHighlightRules {
     }
 
-
-    export class Mark {
-
-        toString(compact: any): string;
-
-        getSnippet(indent: any, maxLength: any): string;
+    export class SnippetHighlightRules {
     }
-
-
-    export class YAMLException {
-
-        toString(compact: any): string;
-    }
-
-
-    export class State {
-    }
-
-
-    export class XQueryWorker {
-
-        onUpdate(): void;
-    }
-    /**
-     * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
-     *
-     * @private
-     * @param {*} value The value to wrap.
-     */
-    /**------------------------------------------------------------------------**/
-
-
-    export class LazyWrapper {
-
-        toArray(): any;
-
-        takeRightWhile(predicate: any, thisArg: any): any;
-
-        slice(start: any, end: any): any;
-
-        reject(predicate: any, thisArg: any): any;
-
-        compact(): any;
-
-        LazyWrapper(): any;
-    }
-
-
-    export class Rules {
-
-        exports(): any;
-    }
-
-
-    export class XMLSerializer {
-
-        serializeToString(node: any): any;
-    }
-
-
-    export class LiveNodeList {
-
-        item(i: any): any;
-    }
-    /**
-     * +ContentHandler+ErrorHandler
-     * +LexicalHandler+EntityResolver2
-     * -DeclHandler-DTDHandler
-     *
-     * DefaultHandler:EntityResolver, DTDHandler, ContentHandler, ErrorHandler
-     * DefaultHandler2:DefaultHandler,LexicalHandler, DeclHandler, EntityResolver2
-     * @link http://www.saxproject.org/apidoc/org/xml/sax/helpers/DefaultHandler.html
-     */
-
-
-    export class DOMHandler {
-
-        DOMHandler(): any;
-    }
-
-
-    export class DOMParser {
-
-        parseFromString(source: any, mimeType: any): any;
-    }
-
 
     export class RazorCompletions {
-
         getKeywordCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getShortStartCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
     }
-
-
-    export class PhpWorker {
-
-        onUpdate(): void;
-
-        setOptions(opts: any): void;
-    }
-
 
     export class PhpCompletions {
-
         getArrayKeyCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getVariableCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getFunctionCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getTagCompletions(state: any, session: any, pos: any, prefix: any): {};
-
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
     }
 
-
     export class PhpMode {
-
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         autoOutdent(state: any, doc: any, row: any): void;
-
         checkOutdent(state: any, line: any, input: any): any;
-
         getNextLineIndent(state: any, line: any, tab: any): any;
     }
 
-
     export class MatchingParensOutdent {
-
         $getIndent(line: any): any;
-
         autoOutdent(doc: any, row: any): number;
-
         checkOutdent(line: any, input: any): any;
     }
-
 
     export class MatchingBraceOutdent {
-
         $getIndent(line: any): any;
-
         autoOutdent(doc: any, row: any): number;
-
         checkOutdent(line: any, input: any): any;
     }
-    /** Simplified context that only checks the validity of loop breaks.**/
-
-
-    export class LoopFlowContext {
-
-        addLocal(): void;
-
-        addGoto(): never;
-
-        popScope(): void;
-
-        pushScope(isLoop: any): void;
-
-        isInLoop(): boolean;
-    }
-    /** Control flow tracking**/
-
-
-    export class FullFlowContext {
-
-        raiseDeferredErrors(): void;
-
-        currentScope(): any;
-
-        addLocal(name: any, token: any): void;
-
-        addLabel(name: any, token: any): void;
-
-        addGoto(target: any, token: any): void;
-
-        popScope(): void;
-
-        pushScope(isLoop: any): void;
-
-        isInLoop(): boolean;
-    }
-
-
-    export class JsonWorker {
-
-        onUpdate(): void;
-    }
-
-
-    export class JavaScriptWorker {
-
-        onUpdate(): any;
-
-        changeOptions(newOptions: any): void;
-
-        setOptions(options: any): void;
-    }
-    /** v8 likes predictible objects**/
-
-
-    export class Item {
-
-        run(): void;
-    }
-
 
     export class HtmlCompletions {
-
         getHTMLEntityCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getAttributeValueCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getAttributeCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getTagCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
     }
-    /**
-     * A lexical handler that does nothing.
-     * @version $Id$
-     * @author hsivonen
-     */
 
-
-    export class NullLexicalHandler {
-
-        startEntity(): void;
-
-        startDTD(): void;
-
-        startCDATA(): void;
-
-        endEntity(): void;
-
-        endDTD(): void;
-
-        endCDATA(): void;
-
-        comment(): void;
+    export class Tag {
     }
-    /**
-     * A processing instruction.
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * PI target.
-    */
-    /**
-    * PI data.
-    */
-    /**
-    * Constructor.
-    * @param locator the locator
-    * @param target PI target
-    * @param data PI data
-    */
-
-
-    export class ProcessingInstruction {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#getNodeType()
-         */
-
-        getNodeType(): number;
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * A skipped entity.
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * Constructor.
-    * @param locator the locator
-    * @param name the name
-    */
-
-
-    export class SkippedEntity {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * An entity.
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * The constructor.
-    * @param locator the locator
-    * @param name the name
-    */
-
-
-    export class Entity {
-        /**
-         * @see nu.validator.saxtree.Node#revisit(nu.validator.saxtree.TreeParser)
-         */
-
-        revisit(treeParser: any): void;
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * A comment.
-     *
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * The constructor.
-    * @param locator the locator
-    * @param buf the buffer
-    * @param start the offset
-    * @param length the length
-    */
-
-
-    export class Comment {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * The constructor.
-     * @param buf the buffer
-     * @param start the offset
-     * @param length the length
-     */
-
-
-    export class IgnorableWhitespace {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * The constructor.
-     * @param locator the locator
-     * @param {String} data the buffer
-     */
-
-
-    export class Characters {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-    /**
-     * A document fragment.
-     *
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * The constructor.
-    */
-
-
-    export class DocumentFragment {
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-    }
-
-
-    export class ParentNode {
-        /**
-         * Remove a child from this node.
-         * @param node the child to remove
-         */
-
-        removeChild(node: any): any;
-        /**
-         * Append the children of another node to this node removing them from the other node .
-         * @param parent the other node whose children to append to this one
-         */
-
-        appendChildren(parent: any): void;
-        /**
-         * Append a child to this node and return the child.
-         *
-         * @param child the child to append.
-         * @return <code>child</code>
-         */
-
-        appendChild(child: any): any;
-
-        insertBetween(child: any, prev: any, next: any): any;
-        /**
-         * Insert a new child before a pre-existing child and return the newly inserted child.
-         * @param child the new child
-         * @param sibling the existing child before which to insert (must be a child of this node) or <code>null</code> to append
-         * @return <code>child</code>
-         */
-
-        insertBefore(child: any, sibling: any): any;
-    }
-    /**
-     * The common node superclass.
-     * @version $Id$
-     * @author hsivonen
-     */
-
-
-    export class Node {
-        ___format(indent: any): string;
-
-        blur(): void;
-
-        focus(): void;
-
-        contains(node: any): boolean;
-
-        dispatchEvent(e: any): void;
-
-        createEvent(v: any): any;
-
-        removeEventListener(name: any, listener: any): void;
-
-        addEventListener(name: any, listener: any, capturing: any): void;
-
-        getBoundingClientRect(v: any): { top: number; left: number; width: number; height: number; right: number; bottom: number; };
-
-        insertAdjacentElement(position: any, element: any): void;
-
-        insertAdjacentHTML(position: any, markup: any): void;
-        ___format(indent: any): string;
-
-        getAttribute(a: any, v: any): any;
-
-        setAttribute(a: any, v: any): void;
-
-        removeAttribute(a: any): void;
-
-        closest(s: any): any;
-
-        matches(selector: any): boolean;
-
-        getElementById(s: any): any;
-
-        getElementsByTagName(s: any): {};
-
-        querySelector(s: any): any;
-
-        querySelectorAll(selector: any): {};
-
-        hasAttributes(): boolean;
-
-        hasChildNodes(): boolean;
-
-        before(node: any): void;
-
-        insertBefore(node: any, before: any): any;
-
-        replaceChild(node: any, oldNode: any): any;
-
-        remove(): void;
-
-        removeChild(node: any): void;
-
-        appendChild(node: any): any;
-
-        cloneNode(recursive: any): any;
-
-        toString(): any;
-        /**
-         * Detach this node from its parent.
-         */
-        /** Subclass-specific accessors that are hoisted here to **/
-
-        detach(): void;
-        /**
-         * Revisit the node.
-         *
-         * @param treeParser the visitor
-         * @throws SAXException if stuff goes wrong
-         */
-
-        revisit(treeParser: any): void;
-        /**
-         * Visit the node.
-         *
-         * @param treeParser the visitor
-         * @throws SAXException if stuff goes wrong
-         */
-
-        visit(treeParser: any): never;
-    }
-    /** Node Types**/
-
-
-    export class NodeType {
-    }
-
-
-    export class SAXParser {
-
-        parseFragment(source: any, context: any): void;
-
-        parse(source: any, context: any): void;
-    }
-    /**
-     * A tree visitor that replays a tree as SAX events.
-     * @version $Id$
-     * @author hsivonen
-     */
-    /**
-    * The constructor.
-    *
-    * @param contentHandler
-    *
-    must not be <code>null</code>
-    * @param lexicalHandler
-    *
-    may be <code>null</code>
-    */
-
-
-    export class TreeParser {
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#startEntity(java.lang.String)
-         */
-
-        startEntity(name: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#startDTD(java.lang.String,
-         *
-         java.lang.String, java.lang.String)
-         */
-
-        startDTD(name: any, publicId: any, systemId: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#startCDATA()
-         */
-
-        startCDATA(locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#endEntity(java.lang.String)
-         */
-
-        endEntity(name: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#endDTD()
-         */
-
-        endDTD(locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#endCDATA()
-         */
-
-        endCDATA(locator: any): void;
-        /**
-         * @see org.xml.sax.ext.LexicalHandler#comment(char[], int, int)
-         */
-
-        comment(ch: any, start: any, length: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#startPrefixMapping(java.lang.String,
-         *
-         java.lang.String)
-         */
-
-        startPrefixMapping(prefix: any, uri: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#startElement(java.lang.String,
-         *
-         java.lang.String, java.lang.String, org.xml.sax.Attributes)
-         */
-
-        startElement(uri: any, localName: any, qName: any, atts: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#startDocument()
-         */
-
-        startDocument(locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#skippedEntity(java.lang.String)
-         */
-
-        skippedEntity(name: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#processingInstruction(java.lang.String,
-         *
-         java.lang.String)
-         */
-
-        processingInstruction(target: any, data: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#ignorableWhitespace(char[], int, int)
-         */
-
-        ignorableWhitespace(ch: any, start: any, length: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#endPrefixMapping(java.lang.String)
-         */
-
-        endPrefixMapping(prefix: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#endElement(java.lang.String,
-         *
-         java.lang.String, java.lang.String)
-         */
-
-        endElement(uri: any, localName: any, qName: any, locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#endDocument()
-         */
-
-        endDocument(locator: any): void;
-        /**
-         * @see org.xml.sax.ContentHandler#characters(char[], int, int)
-         */
-
-        characters(ch: any, start: any, length: any, locator: any): void;
-        /**
-         * Causes SAX events for the tree rooted at the argument to be emitted.
-         * <code>startDocument()</code> and <code>endDocument()</code> are only
-         * emitted for a <code>Document</code> node.
-         *
-         * @param node
-         *
-         the root
-         * @throws SAXException
-         */
-
-        parse(node: any): void;
-    }
-
-
-    export class SAXTreeBuilder {
-
-        addAttributesToElement(element: any, attributes: any): void;
-
-        getFragment(): any;
-
-        reparentChildren(oldParent: any, newParent: any): void;
-
-        detachFromParent(element: any): void;
-
-        attachNodeToFosterParent(child: any, table: any, stackParent: any): void;
-
-        attachNode(node: any, parent: any): void;
-
-        insertText(data: any): any;
-
-        appendCharacters(parent: any, data: any): void;
-
-        insertComment(data: any, parent: any): void;
-
-        createElement(namespaceURI: any, localName: any, attributes: any): any;
-
-        insertDoctype(name: any, publicId: any, systemId: any): void;
-
-        end(): void;
-
-        start(tokenizer: any): void;
-    }
-
-
-    export class TreeBuilder {
-    }
-
-
-    export class CharacterBuffer {
-
-        takeLeadingWhitespace(): any;
-
-        takeRemaining(): any;
-
-        skipLeadingNonWhitespace(): void;
-
-        skipLeadingWhitespace(): void;
-
-        skipAtMostOneLeadingNewline(): void;
-    }
-
 
     export class FoldMode {
-
         _pop(stack: any, tag: any): any;
-
         _readTagBackward(iterator: any): any;
         /**
          * reads a full tag and places the iterator after the tag
          **/
-
         _readTagForward(iterator: any): any;
-
         _findEndTagInLine(session: any, row: any, tagName: any, startColumn: any): boolean;
         /**
          * returns a first tag (or a fragment) in a line
          **/
-
         _getFirstTagInLine(session: any, row: any): any;
-
         getCommentFoldWidget(session: any, row: any): "" | "start";
-
         vbsBlock(session: any, row: any, column: any, tokenRange: any): any;
         /**
-         * @returns {range} folding block for sequence that starts with 'CASE' or 'BEGIN' and ends with 'END'
+         * @returns {Range} folding block for sequence that starts with 'CASE' or 'BEGIN' and ends with 'END'
          * @param {string} matchSequence - the sequence of charaters that started the fold widget, which should remain visible when the fold widget is folded
          */
-
         getBeginEndBlock(session: any, row: any, column: any, matchSequence: string): Range;
-
         rubyBlock(session: any, row: any, column: any, tokenRange: any): any;
-
         $tryMode(state: any, session: any, foldStyle: any, row: any): any;
-
         $getMode(state: any): any;
-
         luaBlock(session: any, row: any, column: any, tokenRange: any): any;
-
         latexSection(session: any, row: any, column: any): any;
-
         latexBlock(session: any, row: any, column: any, returnRange: any): any;
         /**
          is the row a heading?
          */
-
         isHeading(session: any, row: any): boolean;
-
         closingBracketBlock(session: any, bracket: any, row: any, column: any, typeRe: any): any;
-
         openingBracketBlock(session: any, bracket: any, row: any, column: any, typeRe: any): any;
-
         indentationBlock(session: any, row: any, column: any): any;
         /**
          * gets comment region block with end region assumed to be start of comment in any cstyle mode or SQL mode (--) which inherits from this.
          * There may optionally be a pound symbol before the region/endregion statement
          */
-
         getCommentRegionBlock(session: any, line: any, row: any): any;
-
         getSectionRange(session: any, row: any): any;
-
         getRegionBlock(session: any, line: any, row: any): any;
-
         getUsingStatementBlock(session: any, line: any, row: any): any;
-
         getFoldWidgetRange(session: any, foldStyle: any, row: any): any;
-
         getFoldWidget(session: any, foldStyle: any, row: any): any;
     }
 
+    export class EjsHighlightRules {
+    }
+
+    export class DjangoHtmlHighlightRules {
+    }
+
+    export class DjangoHighlightRules {
+    }
 
     export class CssCompletions {
-
         getPropertyValueCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getPropertyCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
-
         defineCompletions(): void;
     }
 
-
-    export class Reporter {
-        /**
-         * An instance of Report is used to report results of the
-         * verification back to the main API.
-         * @class Reporter
-         * @constructor
-         * @param {String[]} lines The text lines of the source.
-         * @param {Object} ruleset The set of rules to work with, including if
-         *
-         they are errors or warnings.
-         * @param {Object} explicitly allowed lines
-         * @param {[][]} ignore list of line ranges to be ignored
-         */
-
-        constructor(lines: String[], ruleset: Object, explicitly: Object, ignore: [][]);
-    }
-    /**
-     * Main CSSLint object.
-     * @class CSSLint
-     * @static
-     * @extends parserlib.util.EventTarget
-     */
-
-
-    export class CSSLint {
-    }
-
-
-    export class SyntaxError {
-        /**
-         * Type to use when a syntax error occurs.
-         * @class SyntaxError
-         * @namespace parserlib.util
-         * @constructor
-         * @param {String} message The error message.
-         * @param {Number} line The line at which the error occurred.
-         * @param {Number} col The column at which the error occurred.
-         */
-
-        constructor(message: String, line: Number, col: Number);
-    }
-
-
-    export class StringReader {
-        /**
-         * Convenient way to read through strings.
-         * @namespace parserlib.util
-         * @class StringReader
-         * @constructor
-         * @param {String} text The text to read.
-         */
-
-        constructor(text: String);
-    }
-
-
-    export class EventTarget {
-        /**
-         * A generic base to inherit from for any object
-         * that needs event handling.
-         * @class EventTarget
-         * @constructor
-         */
-
-        constructor();
-    }
-
-
-    export class ValidationTypes {
-    }
-
-
-    export class ValidationError {
-        /**
-         * Type to use when a validation error occurs.
-         * @class ValidationError
-         * @namespace parserlib.util
-         * @constructor
-         * @param {String} message The error message.
-         * @param {Number} line The line at which the error occurred.
-         * @param {Number} col The column at which the error occurred.
-         */
-
-        constructor(message: String, line: Number, col: Number);
-    }
-
-
-    export class Validation {
-    }
-
-
-    export class Tokens {
-
-        type(c: any): any;
-
-        name(tt: any): any;
-    }
-    /**-----------------------------------------------------------------------------**/
-
-
-    export class TokenStream {
-        /**
-         * A token stream that produces CSS tokens.
-         * @param {String|Reader} input The source of text to tokenize.
-         * @constructor
-         * @class TokenStream
-         * @namespace parserlib.css
-         */
-
-        constructor(input: String | Reader);
-    }
-
-
-    export class SelectorSubPart {
-        /**
-         * Represents a selector modifier string, meaning a class name, element name,
-         * element ID, pseudo rule, etc.
-         * @namespace parserlib.css
-         * @class SelectorSubPart
-         * @extends parserlib.util.SyntaxUnit
-         * @constructor
-         * @param {String} text The text representation of the unit.
-         * @param {String} type The type of selector modifier.
-         * @param {Number} line The line of text on which the unit resides.
-         * @param {Number} col The column of text on which the unit resides.
-         */
-
-        constructor(text: String, type: String, line: Number, col: Number);
-    }
-
-
-    export class Pseudos {
-
-        isElement(pseudo: any): boolean;
-    }
-
-
-    export class PropertyValue {
-        /**
-         * Represents a single part of a CSS property value, meaning that it represents
-         * just everything single part between ":" and ";". If there are multiple values
-         * separated by commas, this type represents just one of the values.
-         * @param {String[]} parts An array of value parts making up this value.
-         * @param {Number} line The line of text on which the unit resides.
-         * @param {Number} col The column of text on which the unit resides.
-         * @namespace parserlib.css
-         * @class PropertyValue
-         * @extends parserlib.util.SyntaxUnit
-         * @constructor
-         */
-
-        constructor(parts: String[], line: Number, col: Number);
-    }
-
-
-    export class PropertyName {
-
-        toString(): any;
-        /**
-         * Represents a selector combinator (whitespace, +, >).
-         * @namespace parserlib.css
-         * @class PropertyName
-         * @extends parserlib.util.SyntaxUnit
-         * @constructor
-         * @param {String} text The text representation of the unit.
-         * @param {String} hack The type of IE hack applied ("*", "_", or null).
-         * @param {Number} line The line of text on which the unit resides.
-         * @param {Number} col The column of text on which the unit resides.
-         */
-
-        constructor(text: String, hack: String, line: Number, col: Number);
-    }
-
-
-    export class Parser {
-        /**
-         * A CSS3 parser.
-         * @namespace parserlib.css
-         * @class Parser
-         * @constructor
-         * @param {Object} options (Optional) Various options for the parser:
-         *
-         starHack (true|false) to allow IE6 star hack as valid,
-         *
-         underscoreHack (true|false) to interpret leading underscores
-         *
-         as IE6-7 targeting for known properties, ieFilters (true|false)
-         *
-         to indicate that IE < 8 filters should be accepted and not throw
-         *
-         syntax errors.
-         */
-
-        constructor(options: Object);
-    }
-    /**
-     * This class implements a combinator library for matcher functions.
-     * The combinators are described at:
-     * https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#Component_value_combinators
-     */
-
-
-    export class Matcher {
-        /**
-         * Create a matcher for two or more options, where options are
-         * optional and may appear in any order, but at least one must be
-         * present.
-         */
-
-        oror(): any;
-        /**
-         * Create a matcher for two or more options, where all options are
-         * mandatory but they may appear in any order.
-         */
-
-        andand(): any;
-        /**
-         * Create a matcher for two or more options.
-         This implements the
-         * double bar (||) and double ampersand (&&) operators, as well as
-         * variants of && where some of the alternatives are optional.
-         * This will backtrack through even successful matches to try to
-         * maximize the number of items matched.
-         */
-
-        many(required: any): any;
-        /**
-         * Create a matcher for one or more alternatives, where exactly one
-         * must occur.
-         */
-
-        alt(): any;
-        /**
-         * Create a matcher for one or more juxtaposed words, which all must
-         * occur, in the given order.
-         */
-
-        seq(): any;
-        /**
-         * Create a matcher for a single type.
-         */
-
-        fromType(type: any): any;
-        /**
-         * Convert a string to a matcher (parsing simple alternations),
-         * or do nothing if the argument is already a matcher.
-         */
-
-        cast(m: any): any;
-        /** Simple recursive-descent grammar to build matchers from strings. */
-
-        parse(str: any): any;
-
-        match(expression: any): any;
-    }
-
-
-    export class Combinator {
-        /**
-         * Represents a selector combinator (whitespace, +, >).
-         * @namespace parserlib.css
-         * @class Combinator
-         * @extends parserlib.util.SyntaxUnit
-         * @constructor
-         * @param {String} text The text representation of the unit.
-         * @param {Number} line The line of text on which the unit resides.
-         * @param {Number} col The column of text on which the unit resides.
-         */
-
-        constructor(text: String, line: Number, col: Number);
-    }
-
-
-    export class Colors {
-    }
-
-
-    export class Worker {
-
-        setOptions(options: any): void;
-
-        setDisabledRules(ruleNames: any): void;
-
-        setInfoRules(ruleNames: any): void;
-
-        onUpdate(): void;
-    }
-
-
     export class Behaviour {
-
         getBehaviours(filter: any): any;
-
         inherit(mode: any, filter: any): void;
-
         remove(name: any): void;
-
         addBehaviours(behaviours: any): void;
-
         add(name: any, action: any, callback: any): void;
     }
 
+    export class XQueryBehaviour {
+    }
+
+    export class XmlBehaviour {
+    }
+
+    export class LiquidBehaviour {
+    }
+
+    export class HtmlBehaviour {
+    }
+
+    export class CstyleBehaviour {
+        clearMaybeInsertedClosing(): void;
+        popAutoInsertedClosing(): void;
+        isMaybeInsertedClosing(cursor: any, line: any): boolean;
+        isAutoInsertedClosing(cursor: any, line: any, bracket: any): boolean;
+        recordMaybeInsert(editor: any, session: any, bracket: any): void;
+        recordAutoInsert(editor: any, session: any, bracket: any): void;
+        $matchTokenType(token: any, types: any): boolean;
+        isSaneInsertion(editor: any, session: any): any;
+    }
+
+    export class CssBehaviour {
+    }
+
+    export class ApexMode {
+    }
 
     export class LineWidgets {
-
         renderWidgets(e: any, renderer: any): void;
-
         measureWidgets(e: any, renderer: any): void;
-
         onWidgetChanged(w: any): void;
-
         getWidgetsAtRow(row: any): {};
-
         removeLineWidget(w: any): void;
-
         addLineWidget(w: any): any;
-
         $registerLineWidget(w: any): any;
-
         $updateRows(): void;
-
         updateOnChange(delta: any): void;
-
         updateOnFold(e: any, session: any): void;
-
         detach(e: any): void;
-
         attach(editor: any): void;
-
         $onChangeEditor(e: any): void;
-
         $getWidgetScreenLength(): number;
-
         getRowLength(row: any): any;
     }
 
+    /**
+     * Helper functions and hashes for key handling.
+     **/
+    export class Keys {
+    }
 
     export class EventListener {
-
         destroy(): void;
     }
 
-
     export class Object {
-
         values(o: any): any;
-
         assign(target: any): any;
     }
 
+    export class UnicodeTBL20 {
+    }
+
+    export class UnicodeTBL00 {
+    }
+
+    export class ArabicAlefBetIntervalsEnd {
+    }
+
+    export class ArabicAlefBetIntervalsBegine {
+    }
 
     export class AppConfig {
-
         setDefaultValues(path: any, optionHash: any): void;
-
         setDefaultValue(path: any, name: any, value: any): boolean;
-
         resetOptions(obj: any): void;
         /**
          * option {name, value, initialValue, setterName, set, get }
          **/
-
         defineOptions(obj: any, path: any, options: any): any;
     }
 
-
     export class Text {
-
         destroy(): void;
-
         $useLineGroups(): any;
-
         $getFoldLineTokens(row: any, foldLine: any): {};
         /** row is either first row of foldline or not in fold**/
-
         $renderLine(parent: any, row: any, foldLine: any): void;
-
         $renderOverflowMessage(parent: any, screenColumn: any, token: any, value: any, hide: any): void;
-
         $renderSimpleLine(parent: any, tokens: any): any;
-
         $renderWrappedLine(parent: any, tokens: any, splits: any): void;
-
         $createLineElement(parent: any): any;
-
         renderIndentGuide(parent: any, value: any, max: any): any;
-
         $renderToken(parent: any, screenColumn: any, token: any, value: any): any;
-
         update(config: any): void;
-
         $renderLinesFragment(config: any, firstRow: any, lastRow: any): {};
-
         scrollLines(config: any): any;
-
         updateLines(config: any, firstRow: any, lastRow: any): any;
-
         onChangeTabSize(): void;
-
         $computeTabString(): void;
-
         setDisplayIndentGuides(display: any): boolean;
-
         setShowInvisibles(showInvisibles: any): boolean;
-
         setSession(session: any): void;
-
         $pollSizeChanges(): any;
-
         checkForSizeChanges(): void;
-
         $setFontMetrics(measure: any): void;
-
         getCharacterWidth(): any;
-
         getLineHeight(): any;
-
         setPadding(padding: any): void;
-
         $updateEolChar(): boolean;
     }
 
-
     export class Marker {
-
-        bless(node: any): void;
-        /** Complete the location data stored in the `Marker` by adding the location**/
-
-        complete(): void;
-
         drawScreenLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
-
         drawFullLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         /** Draws Bidi marker which covers part or whole width of a single screen line**/
-
         drawBidiSingleLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraLength: any, extraStyle: any): void;
         /** Draws a marker which covers part or whole width of a single screen line**/
-
         drawSingleLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraLength: any, extraStyle: any): any;
         /** Draws a multi line marker, where lines span the full width**/
-
         drawMultiLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         /** Draws a marker, which spans a range of text on multiple lines **/
-
         drawTextMarker(stringBuilder: any, range: any, clazz: any, layerConfig: any, extraStyle: any): void;
-
         $getTop(row: any, layerConfig: any): number;
-
         update(config: any): void;
-
         elt(className: any, css: any): void;
-
         setMarkers(markers: any): void;
-
         setSession(session: any): void;
-
         setPadding(padding: any): void;
     }
 
-
     export class Lines {
-
         createCell(row: any, config: any, session: any, initElement: any): any;
-
         $cacheCell(cell: any): void;
-
         last(): any;
-
         unshift(cell: any): void;
-
         push(cell: any): void;
-
         pop(): void;
-
         shift(): void;
-
         get(index: any): any;
-
         getLength(): any;
-
         computeLineHeight(row: any, config: any, session: any): number;
-
         computeLineTop(row: any, config: any, session: any): number;
-
         pageChanged(oldConfig: any, newConfig: any): boolean;
-
         moveContainer(config: any): void;
     }
 
-
     export class Gutter {
-
         getRegion(point: any): "markers" | "foldWidgets";
-
         $computePadding(): any;
-
         getShowFoldWidgets(): any;
-
         setShowFoldWidgets(show: any): void;
-
         getShowLineNumbers(): any;
-
         setShowLineNumbers(show: any): void;
-
         setHighlightGutterLine(highlightGutterLine: any): void;
-
         $renderCell(cell: any, config: any, fold: any, row: any): any;
-
         $renderLines(config: any, firstRow: any, lastRow: any): {};
-
         scrollLines(config: any): any;
-
         updateLineHighlight(): void;
-
         $updateCursorRow(): void;
-
         $updateGutterWidth(config: any): void;
-
         update(config: any): void;
-
         $updateAnnotations(delta: any): void;
-
         setAnnotations(annotations: any): void;
-
         removeGutterDecoration(row: any, className: any): void;
-
         addGutterDecoration(row: any, className: any): void;
-
         setSession(session: any): void;
     }
-
 
     export class FontMetrics {
         /** general transforms from element coordinates x to screen coordinates u have the form**/
-
         transformCoordinates(clientPos: any, elPos: any): {};
-
         $initTransformMeasureNodes(): void;
-
         $getZoom(element: any): any;
-
         destroy(): void;
-
         getCharacterWidth(ch: any): any;
-
         $measureCharWidth(ch: any): number;
-
         $measureSizes(node: any): { height: any; width: number; };
-
         setPolling(val: any): void;
-
         $pollSizeChanges(): any;
-
         $addObserver(): void;
-
         checkForSizeChanges(size: any): void;
-
         $setMeasureNodeStyles(style: any, isRoot: any): void;
     }
 
-
     export class Cursor {
-
         destroy(): void;
-
         $setOverwrite(overwrite: any): void;
-
         update(config: any): void;
-
         isCursorInView(pixelPos: any, config: any): boolean;
-
         getPixelPosition(position: any, onScreen: any): { left: any; top: number; };
-
         restartTimer(): void;
-
         showCursor(): void;
-
         hideCursor(): void;
-
         removeCursor(): any;
-
         addCursor(): any;
-
         setSmoothBlinking(smoothBlinking: any): void;
-
         setBlinkInterval(blinkInterval: any): void;
-
         setBlinking(blinking: any): void;
-
         setSession(session: any): void;
-
         setPadding(padding: any): void;
-
         $stopCssAnimation(): void;
-
         $startCssAnimation(): void;
-
         $updateOpacity(val: any): void;
     }
 
+    export class MultiHashHandler {
+    }
 
     export class HashHandler {
-
         getStatusText(editor: any, data: any): any;
-
         handleKeyboard(data: any, hashId: any, keyString: any, keyCode: any): { command: any; };
-
         findKeyCommand(hashId: any, keyString: any): any;
         /** accepts keys in the form ctrl+Enter or ctrl-Enter**/
-
         parseKeys(keys: any): false | { key: any; hashId: number; };
-
         _buildKeyHash(command: any): void;
-
         bindKeys(keyList: any): void;
-
         removeCommands(commands: any): void;
-
         addCommands(commands: any): void;
-
         _addCommandToBinding(keyId: any, command: any, position: any): void;
-
         bindKey(key: any, command: any, position: any): any;
-
         removeCommand(command: any, keepCommand: any): void;
-
         addCommand(command: any): void;
     }
+
     /**
      * @class IncrementalSearch
      *
@@ -2865,38 +1110,21 @@ export namespace Ace {
      * - the cursor is moved to the next match
      *
      **/
-
-
     export class IncrementalSearch {
-
         message(msg: any): void;
-
         statusMessage(found: any): void;
-
         convertNeedleToString(): any;
-
         convertNeedleToRegExp(): any;
-
         onPaste(text: any): void;
-
         onMouseDown(evt: any): boolean;
-
         next(options: any): any;
-
         removeChar(c: any): any;
-
         addString(s: any): any;
-
         highlightAndFindWithNeedle(moveToNext: any, needleUpdateFunc: any): any;
-
         cancelSearch(reset: any): any;
-
         highlight(regexp: any): void;
-
         selectionFix(editor: any): void;
-
         deactivate(reset: any): void;
-
         activate(editor: any, backwards: any): void;
         /**
          *
@@ -2905,105 +1133,96 @@ export namespace Ace {
          *
          * @constructor
          **/
-
         constructor();
     }
 
+    export class ISearchKbd {
+    }
 
     export class StatusBar {
-
         updateStatus(editor: any): void;
     }
 
+    export class SimpleTextLayer {
+    }
 
     export class SearchBox {
-
         isFocused(): boolean;
-
         show(value: any, isReplace: any): void;
-
         hide(): void;
-
         replaceAll(): void;
-
         replaceAndFindNext(): void;
-
         replace(): void;
-
         findAll(): void;
-
         findPrev(): void;
-
         findNext(): void;
-
         updateCounter(): void;
-
         find(skipCurrent: any, backwards: any, preventScroll: any): void;
-
         highlight(re: any): void;
-
         $syncOptions(preventScroll: any): void;
-
         setSearchRange(range: any): void;
-
         $init(): void;
-
         $initElements(sb: any): void;
-
         setSession(e: any): void;
-
         setEditor(editor: any): void;
     }
 
-
     export class OptionPanel {
-
         getOption(option: any): any;
-
         setOption(option: any, value: any): void;
-
         renderOption(key: any, option: any): {};
-
         renderOptionControl(key: any, option: any): any;
-
         renderOptionGroup(group: any): any;
-
         render(): void;
-
         add(config: any): void;
     }
 
+    /** Make life easier, don't do these right now
+     var SweaveBackgroundHighlighter = require("mode/sweave_background_highlighter").SweaveBackgroundHighlighter;
+     var RCodeModel = require("mode/r_code_model").RCodeModel;
+     **/
+    export class Mode {
+        $createKeywordList(): any;
+        getKeywords(append: any): any;
+        transformAction(state: any, action: any, editor: any, session: any, param: any): any;
+        $delegator(method: any, args: any, defaultHandler: any): any;
+        allowAutoInsert(): boolean;
+        getLanguageMode(position: any): "R" | "HTML";
+        toggleCommentLines(state: any, doc: any, startRow: any, endRow: any): void;
+        getMatching(session: any, row: any, column: any, tokenRange: any): any;
+        getCompletions(state: any, session: any, pos: any, prefix: any): any;
+        createWorker(session: any): any;
+        $calculateIndent(line: any, tab: any): any;
+        $toIndent(str: any): any;
+        autoOutdent(state: any, doc: any, row: any): void;
+        checkOutdent(state: any, line: any, input: any): any;
+        getNextLineIndent(state: any, line: any, tab: any): any;
+        supportsFile(filename: any): any;
+    }
+
+    /**
+     * Implementation of {@link IEmmetEditor} interface for Ace
+     */
+    export class AceEmmetEditor {
+    }
 
     export class ElasticTabstopsLite {
         /** an even more (naive) Python port**/
-
         $izip(widths: any, tabs: any): {};
         /** the is a (naive) Python port--but works for these purposes**/
-
         $izip_longest(iterables: any): {};
-
         $adjustRow(row: any, widths: any): void;
-
         $tabsForRow(row: any): {};
-
         $rightmostSelectionInCell(selectionColumns: any, cellRightEdge: any): number;
-
         $setBlockCellWidthsToMax(cellWidths: any): any;
-
         $selectionColumnsForRow(row: any): {};
-
         $cellWidthsForRow(row: any): any;
-
         $findCellWidthsForBlock(row: any): { cellWidths: {}; firstRow: any; };
-
         processRows(rows: any): void;
     }
 
-
     export class BracketMatch {
-
         $findClosingBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
-
         $findOpeningBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
         /**
          * Returns:
@@ -3014,42 +1233,29 @@ export namespace Ace {
          * @param {Point} pos
          * @returns {null|Range[]}
          */
-
         getMatchingBracketRanges(pos: Point): null | Range[];
-
         getBracketRange(pos: any): any;
-
         findMatchingBracket(position: any, chr: any): any;
     }
 
-
     export class OccurKeyboardHandler {
-
         uninstallFrom(editor: any): void;
-
         installIn(editor: any): void;
-
         handleKeyboard(data: any, hashId: any, key: any, keyCode: any): any;
-
         attach(editor: any): void;
     }
-
 
     export class IncrementalSearchKeyboardHandler {
-
         handleKeyboard(data: any, hashId: any, key: any, keyCode: any): any;
-
         detach(editor: any): void;
-
         attach(editor: any): void;
     }
+
     /**
      * This object is used to ensure Bi-Directional support (for languages with text flowing from right to left, like Arabic or Hebrew)
      * including correct caret positioning, text selection mouse and keyboard arrows functioning
      * @class BidiHandler
      **/
-
-
     export class BidiHandler {
         /**
          * Converts character coordinates on the screen to respective document column number
@@ -3057,56 +1263,41 @@ export namespace Ace {
          *
          * @return {Number} screen column number corresponding to given pixel offset
          **/
-
-        offsetToCol(posX: any): Number;
+        offsetToCol(posX: Number): Number;
         /**
          * Returns 'selections' - array of objects defining set of selection rectangles
-         * @param {Number} the start column position
-         * @param {Number} the end column position
+         * @param {Number} startCol the start column position
+         * @param {Number} endCol the end column position
          *
-         * @return {Array of Objects} Each object contains 'left' and 'width' values defining selection rectangle.
+         * @return {Object[]} Each object contains 'left' and 'width' values defining selection rectangle.
          **/
-
-        getSelections(startCol: any, endCol: any): Object[];
+        getSelections(startCol: Number, endCol: Number): Object[];
         /**
          * Returns offset of character at position defined by column.
          * @param {Number} col the screen column position
          *
          * @return {Number} horizontal pixel offset of given screen column
          **/
-
-        getPosLeft(col: any): number;
-
+        getPosLeft(col: Number): number;
         setRtlDirection(editor: any, isRtlDir: any): void;
-
         isRtlLine(row: any): any;
-
         setContentWidth(width: any): void;
-
         setEolChar(eolChar: any): void;
-
         setShowInvisibles(showInvisibles: any): void;
         /**
          * Updates array of character widths
          * @param {Object} font metrics
          *
          **/
-
         updateCharacterWidths(fontMetrics: any): void;
         /**
          * Resets stored info related to current screen row
          **/
-
         markAsDirty(): void;
-
         updateBidiMap(): void;
-
         updateRowLine(docRow: any, splitIndex: any): void;
-
         getSplitIndex(): number;
-
         getDocumentRow(): number;
-
         onChange(delta: any): void;
         /**
          * Returns 'true' if row contains Bidi characters, in such case
@@ -3116,7 +1307,6 @@ export namespace Ace {
          * @param {Number} the document row to be checked [optional]
          * @param {Number} the wrapped screen line index [ optional]
          **/
-
         isBidiRow(screenRow: any, docRow: any, splitIndex: any): any;
         /**
          * Creates a new `BidiHandler` object
@@ -3124,9 +1314,9 @@ export namespace Ace {
          *
          * @constructor
          **/
-
         constructor(session: EditSession);
     }
+
     /**
      * Tokenizes the current [[Document `Document`]] in the background, and caches the tokenized rows for future use.
      *
@@ -3134,47 +1324,34 @@ export namespace Ace {
      *
      * @class BackgroundTokenizer
      **/
-
-
     export class BackgroundTokenizer {
-
         cleanup(): void;
-
         $tokenizeRow(row: any): any;
         /**
-         * [Returns the state of tokenization at the end of a row.]{: #BackgroundTokenizer.getState}
-         *
+         * Returns the state of tokenization at the end of a row.
          * @param {Number} row The row to get state at
+         * @returns {string}
          **/
-
-        getState(row: Number): any;
+        getState(row: Number): string;
         /**
-         * Gives list of tokens of the row. (tokens are cached)
-         *
+         * Gives list of [[Token]]'s of the row. (tokens are cached)
          * @param {Number} row The row to get tokens at
-         *
-         *
-         *
+         * @returns {Token[]}
          **/
-
-        getTokens(row: Number): any;
+        getTokens(row: Number): Token[];
         /**
          * Stops tokenizing.
-         *
          **/
-
         stop(): void;
-
         $updateOnChange(delta: any): void;
-
+        /**
+         * Sets pretty long delay to prevent the tokenizer from interfering with the user
+         */
         scheduleStart(): void;
         /**
          * Starts tokenizing at the row indicated.
-         *
          * @param {Number} startRow The row to start at
-         *
          **/
-
         start(startRow: Number): void;
         /**
          * Fires whenever the background tokeniziers between a range of rows are going to be updated.
@@ -3183,29 +1360,22 @@ export namespace Ace {
          * @param {Object} e An object containing two properties, `first` and `last`, which indicate the rows of the region being updated.
          *
          **/
-
         on(name: 'update', callback: (e: Object) => void): void;
         /**
          * Emits the `'update'` event. `firstRow` and `lastRow` are used to define the boundaries of the region to be updated.
          * @param {Number} firstRow The starting row region
          * @param {Number} lastRow The final row region
-         *
          **/
-
         fireUpdateEvent(firstRow: Number, lastRow: Number): void;
         /**
          * Sets a new document to associate with this object.
          * @param {Document} doc The new document to associate with
          **/
-
         setDocument(doc: Document): void;
         /**
          * Sets a new tokenizer for this object.
-         *
          * @param {Tokenizer} tokenizer The new tokenizer to use
-         *
          **/
-
         setTokenizer(tokenizer: Tokenizer): void;
         /**
          * Creates a new `BackgroundTokenizer` object.
@@ -3214,60 +1384,48 @@ export namespace Ace {
          *
          * @constructor
          **/
-
         constructor(tokenizer: Tokenizer, editor: Editor);
     }
 
-
     export class FilteredList {
-
         filterCompletions(items: any, needle: any): {};
-
         setFilter(str: any): void;
     }
 
-
     export class Autocomplete {
-
         for(editor: any): any;
-
         destroy(): void;
-
         onTooltipClick(e: any): void;
-
         hideDocTooltip(): void;
-
         showDocTooltip(item: any): void;
-
         updateDocTooltip(): any;
-
         cancelContextMenu(): void;
-
         updateCompletions(keepPopupPosition: any, options: any): any;
-
         showPopup(editor: any, options: any): void;
-
         gatherCompletions(editor: any, callback: any): boolean;
-
         insertMatch(data: any, options: any): boolean;
-
         goTo(where: any): void;
-
         mousewheelListener(e: any): void;
-
         mousedownListener(e: any): void;
-
         blurListener(e: any): void;
-
         changeListener(e: any): void;
-
         detach(): void;
-
         openPopup(editor: any, prefix: any, keepPopupPosition: any): void;
-
         getPopup(): any;
-
         $init(): any;
+    }
+
+    /**
+     * This object is used in some places where needed to show popups - like prompt; autocomplete etc.
+     * @class
+     */
+    export class AcePopup {
+        /**
+         * Creates and renders single line editor in popup window. If `parentNode` param is isset, then attaching it to this element.
+         * @param {Element} parentNode
+         * @constructor
+         */
+        constructor(parentNode: Element);
     }
 
     export type NewLineMode = 'auto' | 'unix' | 'windows';
@@ -3281,16 +1439,13 @@ export namespace Ace {
 
     export class Anchor implements EventEmitter {
         /**
-         * Creates a new `Anchor` and associates it with a document.
+         * Clips the anchor position to the specified row and column.
+         * @param {Number} row The row index to clip the anchor to
+         * @param {Number} column The column index to clip the anchor to
+         * @returns {Ace.Point}
          *
-         * @param {Document} doc The document to associate with the anchor
-         * @param {Number} row The starting row position
-         * @param {Number} column The starting column position
-         *
-         * @constructor
          **/
-
-        constructor(doc: Document, row: number, column: number);
+        $clipPositionToDocument(row: Number, column: Number): Ace.Point;
         /**
          * Fires whenever the anchor position changes.
          *
@@ -3307,14 +1462,28 @@ export namespace Ace {
          - `value`: An object describing the new Anchor position
          *
          **/
-
-        on(name: 'change', callback: (delta: Delta) => void): void;
+        on(name: 'change', callback: (e: Object) => void): void;
+        /**
+         * Internal function called when `"change"` event fired.
+         * @param {Ace.Delta} delta
+         */
+        onChange(delta: Ace.Delta): void;
+        /**
+         * Creates a new `Anchor` and associates it with a document.
+         *
+         * @param {Document} doc The document to associate with the anchor
+         * @param {Number} row The starting row position
+         * @param {Number} column The starting column position
+         *
+         * @constructor
+         **/
+        constructor(doc: Document, row: Number, column: Number);
         /**
          * Returns an object identifying the `row` and `column` position of the current anchor.
-         * @returns {Object}
+         * @returns {Ace.Point}
          **/
 
-        getPosition(): Point;
+        getPosition(): Position;
         /**
          *
          * Returns the current document.
@@ -3337,52 +1506,35 @@ export namespace Ace {
          **/
 
         detach(): void;
-
-        attach(doc: Document): void;
         /**
-         * Clips the anchor position to the specified row and column.
-         * @param {Number} row The row index to clip the anchor to
-         * @param {Number} column The column index to clip the anchor to
+         * When called, the `"change"` event listener is appended.
+         * @param {Document} doc The document to associate with
          *
          **/
 
-        $clipPositionToDocument(row: number, column: number): Point;
+        attach(doc: Document): void;
 
-        onChange(delta: Delta): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
+        off(name: string, callback: Function): void;
 
         on(name: string, callback: Function, capturing?: boolean): void;
-        off(name: string, callback: Function): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
     /**
      * Contains the text of the document. Document can be attached to several [[EditSession `EditSession`]]s.
@@ -3393,34 +1545,8 @@ export namespace Ace {
 
 
     export class Document implements EventEmitter {
-        /**
-         * @see nu.validator.saxtree.Node#revisit(nu.validator.saxtree.TreeParser)
-         */
-
-        revisit(treeParser: any): void;
-        /**
-         *
-         * @see nu.validator.saxtree.Node#visit(nu.validator.saxtree.TreeParser)
-         */
-
-        visit(treeParser: any): void;
-
+        $splitAndapplyLargeDelta(delta: any, MAX: any): void;
         $safeApplyDelta(delta: any): void;
-
-        insertNewLine(position: any): any;
-
-        removeLines(firstRow: any, lastRow: any): any;
-        /** Deprecated methods retained for backwards compatibility.**/
-
-        insertLines(row: any, lines: any): any;
-        /**
-         *
-         * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
-         * @param {String | Array} text The starting text
-         * @constructor
-         **/
-
-        constructor(textOrLines: string | string[]);
         /**
          * Fires whenever the document changes.
          *
@@ -3443,8 +1569,20 @@ export namespace Ace {
          * @param {Object} e Contains at least one property called `"action"`. `"action"` indicates the action that triggered the change. Each action also has a set of additional properties.
          *
          **/
-
-        on(name: 'change', callback: (delta: Delta) => void): void;
+        on(name: 'change', callback: (e: Object) => void): void;
+        $clipPosition(position: any): any;
+        removeLines(firstRow: any, lastRow: any): any;
+        /** Deprecated methods retained for backwards compatibility.**/
+        insertLines(row: any, lines: any): any;
+        $detectNewLine(text: any): void;
+        $split(text: any): any;
+        /**
+         *
+         * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
+         * @param {String | String[]} textOrLines text The starting text
+         * @constructor
+         **/
+        constructor(textOrLines: String | String[]);
         /**
          * Replaces all the lines in the current `Document` with the value of `text`.
          *
@@ -3517,6 +1655,11 @@ export namespace Ace {
 
         getAllLines(): string[];
         /**
+         * Returns the number of rows in the document.
+         **/
+
+        getLength(): number;
+        /**
          * Returns all the text within `range` as a single string.
          * @param {Range} range The range to work with.
          *
@@ -3540,7 +1683,16 @@ export namespace Ace {
          *
          **/
 
-        insert(position: Point, text: string): Point;
+        insert(position: Position, text: string): Position;
+        /**
+         * Inserts a block of `text` at the indicated `position`.
+         * @param {Object} position The position to start inserting at; it's an object that looks like `{ row: row, column: column}`
+         * @param {String} text A chunk of text to insert
+         * @returns {Object} The position ({row, column}) of the last line of `text`. If the length of `text` is 0, this function simply returns `position`.
+         *
+         **/
+
+        insert(position: { row: number, column: number }, text: string): Position;
         /**
          * Inserts `text` into the `position` at the current row. This method also triggers the `"change"` event.
          *
@@ -3561,7 +1713,9 @@ export namespace Ace {
          ```
          **/
 
-        insertInLine(position: Point, text: string): Point;
+        insertInLine(position: Position, text: string): Position;
+
+        insertNewLine(position: Point): Point;
 
         clippedPos(row: number, column: number): Point;
 
@@ -3613,7 +1767,7 @@ export namespace Ace {
          *
          **/
 
-        insertMergedLines(position: Point, lines: string[]): Point;
+        insertMergedLines(position: Position, lines: string[]): Point;
         /**
          * Removes the `range` from the document.
          * @param {Range} range A specified Range to remove
@@ -3621,7 +1775,7 @@ export namespace Ace {
          *
          **/
 
-        remove(range: Range): Point;
+        remove(range: Range): Position;
         /**
          * Removes the specified columns from the `row`. This method also triggers a `"change"` event.
          * @param {Number} row The row to remove from
@@ -3631,7 +1785,7 @@ export namespace Ace {
          *
          **/
 
-        removeInLine(row: number, startColumn: number, endColumn: number): Point;
+        removeInLine(row: number, startColumn: number, endColumn: number): Position;
         /**
          * Removes a range of full lines. This method also triggers the `"change"` event.
          * @param {Number} firstRow The first row to be removed
@@ -3660,7 +1814,7 @@ export namespace Ace {
          *
          **/
 
-        replace(range: Range, text: string): Point;
+        replace(range: Range, text: string): Position;
         /**
          * Applies all changes in `deltas` to the document.
          * @param {Delta[]} deltas An array of delta objects (can include "insert" and "remove" actions)
@@ -3702,7 +1856,7 @@ export namespace Ace {
          * @returns {Object} A `{row, column}` object of the `index` position
          */
 
-        indexToPosition(index: number, startRow: number): Point;
+        indexToPosition(index: number, startRow: number): Position;
         /**
          * Converts the `{row, column}` position in a document to the character's index.
          *
@@ -3720,54 +1874,29 @@ export namespace Ace {
          * @returns {Number} The index position in the document
          */
 
-        positionToIndex(pos: Point, startRow?: number): number;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
+        positionToIndex(pos: Position, startRow?: number): number;
 
-        on(name: string, callback: Function, capturing?: boolean): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
         off(name: string, callback: Function): void;
 
-        $split(text: string): string;
+        on(name: string, callback: Function, capturing?: boolean): void;
 
-        $detectNewLine(text: string): void;
-        /**
-         * Returns the number of rows in the document.
-         **/
+        once(name: string, callback: Function): void;
 
-        getLength(): number;
+        removeDefaultHandler(name: string, callback: Function): void;
 
-        $clipPosition(position: Point): Point;
+        removeEventListener(name: string, callback: Function): void;
 
-        $splitAndapplyLargeDelta(delta: Delta, MAX: number): void;
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
     /**
      * If an array is passed in, the folds are expected to be sorted already.
@@ -3775,7 +1904,6 @@ export namespace Ace {
 
 
     export class FoldLine {
-
         toString(): any;
         folds: Fold[];
         range: Range;
@@ -3810,7 +1938,6 @@ export namespace Ace {
 
 
     export class Fold {
-
         toString(): string;
         range: Range;
         start: Point;
@@ -3831,10 +1958,16 @@ export namespace Ace {
 
 
     interface Folding {
-
+        tokenizerUpdateFoldWidgets(e: any): void;
+        $toggleFoldWidget(row: any, options: any): any;
+        onFoldWidgetClick(row: any, e: any): void;
+        $setFolding(foldMode: any): void;
         foldAllComments(): void;
-
         foldToLevel(level: any): void;
+        $cloneFoldData(): {};
+        getRowFoldStart(docRow: any, startFoldRow: any): any;
+        getRowFoldEnd(docRow: any, startFoldRow: any): any;
+        $addFoldLine(foldLine: any): any;
         /**
          * Looks up a fold at a given row/column. Possible values for side:
          *
@@ -3849,37 +1982,14 @@ export namespace Ace {
          *
          **/
 
-        getFoldsInRange(range: Range): Array<Fold>;
+        getFoldsInRange(range: Range): Fold[];
 
-        getFoldsInRangeList(ranges: Array<Range>): Array<Fold>;
+        getFoldsInRangeList(ranges: Range[]): Fold[];
         /**
          * Returns all folds in the document
          **/
 
-        getAllFolds(): Array<Fold>;
-        /**
-         * Adds a new fold.
-         *
-         * @returns
-         *
-         The new created Fold object or an existing fold object in case the
-         *
-         passed in range fits an existing fold exactly.
-         */
-
-        addFold(placeholder: string, range: Range): Fold;
-
-        addFolds(folds: Array<Fold>);
-
-        removeFold(fold: Fold);
-
-        removeFolds(folds: Array<Fold>);
-
-        expandFold(fold: Fold);
-
-        expandFolds(folds: Array<Fold>);
-
-        foldAll(startRow: number, endRow: number, depth: number);
+        getAllFolds(): Fold[];
         /**
          * Returns the string between folds at the given position.
          * E.g.
@@ -3904,54 +2014,79 @@ export namespace Ace {
          fo|o<fold>bar<fold>wolrd -trim=00> "foo"
          **/
 
-        getFoldStringAt(row: number, column: number, trim, foldLine?: FoldLine): string | null;
+        getFoldStringAt(row: number,
+            column: number,
+            trim?: number,
+            foldLine?: FoldLine): string | null;
 
-        getFoldLine(docRow: number, startFoldLine?: string): string | null;
+        getFoldLine(docRow: number, startFoldLine?: FoldLine): FoldLine | null;
         /** returns the fold which starts after or contains docRow**/
 
-        getNextFoldLine(docRow: number, startFoldLine?: string): string | null;
+        getNextFoldLine(docRow: number, startFoldLine?: FoldLine): FoldLine | null;
 
         getFoldedRowCount(first: number, last: number): number;
+        /**
+         * Adds a new fold.
+         *
+         * @returns
+         *
+         The new created Fold object or an existing fold object in case the
+         *
+         passed in range fits an existing fold exactly.
+         */
 
-        $addFoldLine(foldLine: FoldLine): string;
+        addFold(placeholder: string | Fold, range?: Range): Fold;
 
-        unfold(location: number | Point | Range, expandInner?: boolean): Fold[];
+        addFolds(folds: Fold[]): void;
+
+        removeFold(fold: Fold): void;
+
+        removeFolds(folds: Fold[]): void;
+
+        expandFold(fold: Fold): void;
+
+        expandFolds(folds: Fold[]): void;
+
+        unfold(location: null | number | Point | Range,
+            expandInner?: boolean): Fold[] | undefined;
         /**
          * Checks if a given documentRow is folded. This is true if there are some
          * folded parts such that some parts of the line is still visible.
          ***/
 
-        isRowFolded(docRow: number, startFoldRow: string): boolean;
+        isRowFolded(docRow: number, startFoldRow?: FoldLine): boolean;
+        getFoldRowEnd(docRow: number, startFoldRow?: FoldLine): number;
+        getFoldRowStart(docRow: number, startFoldRow?: FoldLine): number;
 
-        getRowFoldEnd(docRow: number, startFoldRow: string): number;
+        getFoldDisplayLine(foldLine: FoldLine,
+            endRow: number | null,
+            endColumn: number | null,
+            startRow: number | null,
+            startColumn: number | null): string;
 
-        getRowFoldStart(docRow: number, startFoldRow: string): number;
+        getDisplayLine(row: number,
+            endColumn: number | null,
+            startRow: number | null,
+            startColumn: number | null): string;
 
-        getFoldDisplayLine(foldLine: FoldLine, endRow: number, endColumn: number, startRow: number, startColumn: number): string;
+        toggleFold(tryToUnfold?: boolean): void;
 
-        getDisplayLine(row: number, endColumn: number, startRow: number, startColumn: number): string;
+        getCommentFoldRange(row: number,
+            column: number,
+            dir: number): Range | undefined;
 
-        $cloneFoldData(): FoldLine;
-
-        toggleFold(tryToUnfold?: any): void;
-
-        getCommentFoldRange(row: number, column: number, dir: number): Range;
+        foldAll(startRow?: number, endRow?: number, depth?: number): void;
 
         setFoldStyle(style: string): void;
 
-        $setFolding(foldMode?: any): void;
+        getParentFoldRangeData(row: number, ignoreCurrent?: boolean): {
+            range?: Range,
+            firstRange: Range
+        };
 
-        getParentFoldRangeData(row: number, ignoreCurrent?: any): { range: Range; firstRange: Range };
-
-        onFoldWidgetClick(row: number, e: Event): void;
-
-        $toggleFoldWidget(row: number, options: any): Fold | Range;
-
-        toggleFoldWidget(toggleParent?: any): void;
+        toggleFoldWidget(toggleParent?: boolean): void;
 
         updateFoldWidgets(delta: Delta): void;
-
-        tokenizerUpdateFoldWidgets(e: Event): void;
     }
     /**
      * This object is used in various places to indicate a region within the editor. To better visualize how this works, imagine a rectangle. Each quadrant of the rectangle is analogous to a range, as ranges contain a starting row and starting column, and an ending row, and ending column.
@@ -3961,40 +2096,39 @@ export namespace Ace {
 
     export class Range {
         /**
-         * Creates a new `Range` object with the given starting and ending row and column points.
+         * Compares `p1` and `p2` [[Point]]'s, useful for sorting
+         * @param {Ace.Point} p1
+         * @param {Ace.Point} p2
+         * @returns {Number}
+         */
+        comparePoints(p1: Ace.Point, p2: Ace.Point): number;
+        /**
+         * Creates and returns a new `Range` based on the `start` [[Point]] and `end` [[Point]] of the given parameters.
+         * @param {Point} start A starting point to use
+         * @param {Point} end An ending point to use
+         * @returns {Range}
+         **/
+        fromPoints(start: Point, end: Point): Range;
+        /**
+         * Creates a new `Range` object with the given starting and ending rows and columns.
          * @param {Number} startRow The starting row
          * @param {Number} startColumn The starting column
          * @param {Number} endRow The ending row
          * @param {Number} endColumn The ending column
-         *
          * @constructor
          **/
-
-        constructor(startRow: number, startColumn: number, endRow: number, endColumn: number);
-        /**
-         * Creates and returns a new `Range` based on the row and column of the given parameters.
-         * @param {Range} start A starting point to use
-         * @param {Range} end An ending point to use
-         *
-         * @returns {Range}
-         **/
-
-        fromPoints(start: Point, end: Point): Range;
-
-        comparePoints(p1: Point, p2: Point): number;
+        constructor(startRow: Number, startColumn: Number, endRow: Number, endColumn: Number);
         start: Point;
         end: Point;
         /**
          * Returns `true` if and only if the starting row and column, and ending row and column, are equivalent to those given by `range`.
          * @param {Range} range A range to check against
-         *
          * @return {Boolean}
          **/
 
 
         isEqual(range: Range): boolean;
         /**
-         *
          * Returns a string containing the range's row and column information, given like this:
          * ```
          *
@@ -4005,7 +2139,6 @@ export namespace Ace {
 
         toString(): string;
         /**
-         *
          * Returns `true` if the `row` and `column` provided are within the given range. This can better be expressed as returning `true` if:
          * ```javascript
          *
@@ -4016,207 +2149,154 @@ export namespace Ace {
          * @param {Number} row A row to check for
          * @param {Number} column A column to check for
          * @returns {Boolean}
-         * @related Range.compare
+         * @related [[Range.compare]]
          **/
 
         contains(row: number, column: number): boolean;
         /**
          * Compares `this` range (A) with another range (B).
          * @param {Range} range A range to compare with
-         *
-         * @related Range.compare
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * <br/>
-         * * `-2`: (B) is in front of (A), and doesn't intersect with (A)<br/>
-         * * `-1`: (B) begins before (A) but ends inside of (A)<br/>
-         * * `0`: (B) is completely inside of (A) OR (A) is completely inside of (B)<br/>
-         * * `+1`: (B) begins inside of (A) but ends outside of (A)<br/>
-         * * `+2`: (B) is after (A) and doesn't intersect with (A)<br/>
+         * @related [[Range.compare]]
+         * @returns {Number} This method returns one of the following numbers:
+         * * `-2`: (B) is in front of (A), and doesn't intersect with (A)
+         * * `-1`: (B) begins before (A) but ends inside of (A)
+         * * `0`: (B) is completely inside of (A) OR (A) is completely inside of (B)
+         * * `+1`: (B) begins inside of (A) but ends outside of (A)
+         * * `+2`: (B) is after (A) and doesn't intersect with (A)
          * * `42`: FTW state: (B) ends in (A) but starts outside of (A)
          **/
 
         compareRange(range: Range): number;
         /**
-         * Checks the row and column points of `p` with the row and column points of the calling range.
-         *
-         * @param {Range} p A point to compare with
-         *
-         * @related Range.compare
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * * `0` if the two points are exactly equal<br/>
-         * * `-1` if `p.row` is less then the calling range<br/>
-         * * `1` if `p.row` is greater than the calling range<br/>
-         * <br/>
-         * If the starting row of the calling range is equal to `p.row`, and:<br/>
-         * * `p.column` is greater than or equal to the calling range's starting column, this returns `0`<br/>
-         * * Otherwise, it returns -1<br/>
-         *<br/>
-         * If the ending row of the calling range is equal to `p.row`, and:<br/>
-         * * `p.column` is less than or equal to the calling range's ending column, this returns `0`<br/>
-         * * Otherwise, it returns 1<br/>
+         * Compares the row and column of `p` with the starting and ending [[Point]]'s of the calling range (by calling [[Range.compare]]).
+         * @param {Ace.Point} p A point to compare with
+         * @related [[Range.compare]]
+         * @returns {Number}
          **/
 
         comparePoint(p: Point): number;
         /**
-         * Checks the start and end points of `range` and compares them to the calling range. Returns `true` if the `range` is contained within the caller's range.
+         * Checks the start and end [[Point]]'s of `range` and compares them to the calling range. Returns `true` if the `range` is contained within the caller's range.
          * @param {Range} range A range to compare with
-         *
          * @returns {Boolean}
-         * @related Range.comparePoint
+         * @related [[Range.comparePoint]]
          **/
 
         containsRange(range: Range): boolean;
         /**
          * Returns `true` if passed in `range` intersects with the one calling this method.
          * @param {Range} range A range to compare with
-         *
          * @returns {Boolean}
          **/
 
         intersects(range: Range): boolean;
         /**
-         * Returns `true` if the caller's ending row point is the same as `row`, and if the caller's ending column is the same as `column`.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
+         * Returns `true` if the caller's ending row is the same as `row`, and if the caller's ending column is the same as `column`.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
          * @returns {Boolean}
          **/
 
         isEnd(row: number, column: number): boolean;
         /**
-         * Returns `true` if the caller's starting row point is the same as `row`, and if the caller's starting column is the same as `column`.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
+         * Returns `true` if the caller's starting row is the same as `row`, and if the caller's starting column is the same as `column`.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
          * @returns {Boolean}
          **/
 
         isStart(row: number, column: number): boolean;
         /**
          * Sets the starting row and column for the range.
-         * @param {Number} row A row point to set
-         * @param {Number} column A column point to set
+         * @param {Number|Ace.Point} row A row to set
+         * @param {Number} column A column to set
          *
          **/
 
         setStart(row: number, column: number): void;
         /**
          * Sets the starting row and column for the range.
-         * @param {Number} row A row point to set
-         * @param {Number} column A column point to set
+         * @param {Number|Ace.Point} row A row to set
+         * @param {Number} column A column to set
          *
          **/
 
         setEnd(row: number, column: number): void;
         /**
          * Returns `true` if the `row` and `column` are within the given range.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
-         *
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
          * @returns {Boolean}
-         * @related Range.compare
+         * @related [[Range.compare]]
          **/
 
         inside(row: number, column: number): boolean;
         /**
-         * Returns `true` if the `row` and `column` are within the given range's starting points.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
+         * Returns `true` if the `row` and `column` are within the given range's starting [[Point]].
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
          * @returns {Boolean}
-         * @related Range.compare
+         * @related [[Range.compare]]
          **/
 
         insideStart(row: number, column: number): boolean;
         /**
-         * Returns `true` if the `row` and `column` are within the given range's ending points.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
+         * Returns `true` if the `row` and `column` are within the given range's ending [[Point]].
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
          * @returns {Boolean}
-         * @related Range.compare
+         * @related [[Range.compare]]
          *
          **/
 
         insideEnd(row: number, column: number): boolean;
         /**
-         * Checks the row and column points with the row and column points of the calling range.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
+         * Compares the `row` and `column` with the starting and ending [[Point]]'s of the calling range.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
+         * @returns {Number} This method returns one of the following numbers:
+         * * `1` if `row` is greater than the calling range
+         * * `-1` if `row` is less then the calling range
+         * * `0` otherwise
          *
+         * If the starting row of the calling range is equal to `row`, and:
+         * * `column` is greater than or equal to the calling range's starting column, this returns `0`
+         * * Otherwise, it returns -1
          *
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * `0` if the two points are exactly equal <br/>
-         * `-1` if `p.row` is less then the calling range <br/>
-         * `1` if `p.row` is greater than the calling range <br/>
-         *
-         <br/>
-         * If the starting row of the calling range is equal to `p.row`, and: <br/>
-         * `p.column` is greater than or equal to the calling range's starting column, this returns `0`<br/>
-         * Otherwise, it returns -1<br/>
-         * <br/>
-         * If the ending row of the calling range is equal to `p.row`, and: <br/>
-         * `p.column` is less than or equal to the calling range's ending column, this returns `0` <br/>
-         * Otherwise, it returns 1
+         * If the ending row of the calling range is equal to `row`, and:
+         * * `column` is less than or equal to the calling range's ending column, this returns `0`
+         * * Otherwise, it returns 1
          **/
 
         compare(row: number, column: number): number;
         /**
-         * Checks the row and column points with the row and column points of the calling range.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * <br/>
-         * `0` if the two points are exactly equal<br/>
-         * `-1` if `p.row` is less then the calling range<br/>
-         * `1` if `p.row` is greater than the calling range, or if `isStart` is `true`.<br/>
-         * <br/>
-         * If the starting row of the calling range is equal to `p.row`, and:<br/>
-         * `p.column` is greater than or equal to the calling range's starting column, this returns `0`<br/>
-         * Otherwise, it returns -1<br/>
-         * <br/>
-         * If the ending row of the calling range is equal to `p.row`, and:<br/>
-         * `p.column` is less than or equal to the calling range's ending column, this returns `0`<br/>
-         * Otherwise, it returns 1
-         *
+         * Compares the `row` and `column` with the starting and ending [[Point]]'s of the calling range.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
+         * @returns {Number} This method returns one of the following numbers:
+         * * `-1` if calling range's starting column and calling range's starting row are equal `row` and `column`
+         * * Otherwise, it returns the value after calling [[Range.compare `compare()`]].
          **/
 
         compareStart(row: number, column: number): number;
         /**
-         * Checks the row and column points with the row and column points of the calling range.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
-         *
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * `0` if the two points are exactly equal<br/>
-         * `-1` if `p.row` is less then the calling range<br/>
-         * `1` if `p.row` is greater than the calling range, or if `isEnd` is `true.<br/>
-         * <br/>
-         * If the starting row of the calling range is equal to `p.row`, and:<br/>
-         * `p.column` is greater than or equal to the calling range's starting column, this returns `0`<br/>
-         * Otherwise, it returns -1<br/>
-         *<br/>
-         * If the ending row of the calling range is equal to `p.row`, and:<br/>
-         * `p.column` is less than or equal to the calling range's ending column, this returns `0`<br/>
-         * Otherwise, it returns 1
+         * Compares the `row` and `column` with the starting and ending [[Point]]'s of the calling range.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
+         * @returns {Number} This method returns one of the following numbers:
+         * * `1` if calling range's ending column and calling range's ending row are equal `row` and `column`.
+         * * Otherwise, it returns the value after calling [[Range.compare `compare()`]].
          */
 
         compareEnd(row: number, column: number): number;
         /**
-         * Checks the row and column points with the row and column points of the calling range.
-         * @param {Number} row A row point to compare with
-         * @param {Number} column A column point to compare with
-         *
-         *
-         * @returns {Number} This method returns one of the following numbers:<br/>
-         * * `1` if the ending row of the calling range is equal to `row`, and the ending column of the calling range is equal to `column`<br/>
-         * * `-1` if the starting row of the calling range is equal to `row`, and the starting column of the calling range is equal to `column`<br/>
-         * <br/>
-         * Otherwise, it returns the value after calling [[Range.compare `compare()`]].
-         *
+         * Compares the `row` and `column` with the start and end [[Point]]'s of the calling range.
+         * @param {Number} row A row to compare with
+         * @param {Number} column A column to compare with
+         * @returns {Number} This method returns one of the following numbers:
+         * * `1` if the ending row of the calling range is equal to `row`, and the ending column of the calling range is equal to `column`
+         * * `-1` if the starting row of the calling range is equal to `row`, and the starting column of the calling range is equal to `column`
+         * * Otherwise, it returns the value after calling [[Range.compare `compare()`]].
          **/
 
         compareInside(row: number, column: number): number;
@@ -4224,55 +2304,55 @@ export namespace Ace {
          * Returns the part of the current `Range` that occurs within the boundaries of `firstRow` and `lastRow` as a new `Range` object.
          * @param {Number} firstRow The starting row
          * @param {Number} lastRow The ending row
-         *
-         *
          * @returns {Range}
          **/
 
         clipRows(firstRow: number, lastRow: number): Range;
         /**
-         * Changes the row and column points for the calling range for both the starting and ending points.
+         * Changes the `row` and `column` for the calling range for both the starting and ending [[Point]]'s.
          * @param {Number} row A new row to extend to
          * @param {Number} column A new column to extend to
-         *
-         *
          * @returns {Range} The original range with the new row
          **/
 
         extend(row: number, column: number): Range;
+        /**
+         * Returns `true` if the calling range is empty (starting [[Point]] == ending [[Point]]).
+         * @returns {Boolean}
+         **/
 
         isEmpty(): boolean;
         /**
-         *
          * Returns `true` if the range spans across multiple lines.
          * @returns {Boolean}
          **/
 
         isMultiLine(): boolean;
         /**
-         *
          * Returns a duplicate of the calling range.
          * @returns {Range}
          **/
 
         clone(): Range;
         /**
-         *
          * Returns a range containing the starting and ending rows of the original range, but with a column value of `0`.
          * @returns {Range}
          **/
 
         collapseRows(): Range;
         /**
-         * Given the current `Range`, this function converts those starting and ending points into screen positions, and then returns a new `Range` object.
+         * Given the current `Range`, this function converts those starting and ending [[Point]]'s into screen positions, and then returns a new `Range` object.
          * @param {EditSession} session The `EditSession` to retrieve coordinates from
-         *
-         *
          * @returns {Range}
          **/
 
         toScreenRange(session: EditSession): Range;
-        /** experimental **/
+        /**
+         * Shift the calling range by `row` and `column` values.
+         * @param {Number} row
+         * @param {Number} column
+         * @experimental
+         */
 
         moveBy(row: number, column: number): void;
     }
@@ -4280,7 +2360,7 @@ export namespace Ace {
 
     export interface EditSessionOptions {
 
-        wrap: string | number;
+        wrap: "off" | "free" | "printmargin" | boolean | number;
 
         wrapMethod: 'code' | 'text' | 'auto';
 
@@ -4307,6 +2387,7 @@ export namespace Ace {
 
 
     export interface VirtualRendererOptions {
+        useTextareaForIME: boolean;
 
         animatedScroll: boolean;
 
@@ -4329,9 +2410,9 @@ export namespace Ace {
 
         highlightGutterLine: boolean;
 
-        vScrollBarAlwaysVisible: boolean;
-
         hScrollBarAlwaysVisible: boolean;
+
+        vScrollBarAlwaysVisible: boolean;
 
         fontSize: number;
 
@@ -4350,8 +2431,6 @@ export namespace Ace {
         hasCssTransforms: boolean;
 
         maxPixelHeight: number;
-
-        useTextareaForIME: boolean;
     }
 
 
@@ -4372,16 +2451,26 @@ export namespace Ace {
     export interface EditorOptions extends EditSessionOptions,
         MouseHandlerOptions,
         VirtualRendererOptions {
-
+        enableBlockSelect: any;
+        enableMultiselect: any;
+        useIncrementalSearch: any;
+        spellcheck: any;
         rtl: any;
-
+        rtlText: any;
+        enableLinking: any;
+        enableSnippets: any;
+        /**
+         * Enable live autocomplete. If the value is an array, it is assumed to be an array of completers
+         * and will use them instead of the default completers.
+         */
+        enableLiveAutocompletion: any;
+        enableBasicAutocompletion: any;
         hardWrap: any;
-
+        enableEmmet: any;
+        useElasticTabstops: any;
         enableCodeLens: any;
-
-        placeholder: any;
-
-        enableAutoIndent: boolean;
+        relativeLineNumbers: any;
+        showLineNumbers: boolean;
 
         selectionStyle: string;
 
@@ -4401,43 +2490,17 @@ export namespace Ace {
 
         wrapBehavioursEnabled: boolean;
 
+        enableAutoIndent: boolean;
+
         autoScrollEditorIntoView: boolean;
 
         keyboardHandler: string;
 
+        placeholder: string;
+
         value: string;
 
         session: EditSession;
-
-        showLineNumbers: boolean;
-
-        relativeLineNumbers: any;
-
-        useElasticTabstops: any;
-
-        enableEmmet: boolean;
-
-        enableBasicAutocompletion: boolean;
-        /**
-         * Enable live autocomplete. If the value is an array, it is assumed to be an array of completers
-         * and will use them instead of the default completers.
-         */
-
-        enableLiveAutocompletion: boolean;
-
-        enableSnippets: boolean;
-
-        enableLinking: boolean;
-
-        rtlText: any;
-
-        spellcheck: boolean;
-
-        useIncrementalSearch: any;
-
-        enableMultiselect: boolean;
-
-        enableBlockSelect: boolean
     }
 
     export interface SearchOptions {
@@ -4449,43 +2512,13 @@ export namespace Ace {
         range: Range;
         preserveCase: boolean;
         regExp: RegExp;
-        wholeWord: string;
+        wholeWord: boolean;
         caseSensitive: boolean;
         wrap: boolean;
     }
 
 
     export interface EventEmitter {
-
-        eventNames(): any;
-
-        rawListeners(type: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-        /** Emits a 'removeListener' event if and only if the listener was removed.**/
-
-        removeListener(type: any, listener: any): any;
-
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-        /** Obviously not all Emitters should be limited to 10. This function allows**/
-
-        setMaxListeners(n: any): any;
-
-        removeAllListeners(type: any): any;
-
-        _signal(eventName: any, e: any): void;
-
-        _emit(eventName: any, e: any): any;
 
         once(name: string, callback: Function): void;
 
@@ -4494,7 +2527,16 @@ export namespace Ace {
         removeDefaultHandler(name: string, callback: Function): void;
 
         on(name: string, callback: Function, capturing?: boolean): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
         off(name: string, callback: Function): void;
+        removeListener(name: string, callback: Function): void;
+        removeEventListener(name: string, callback: Function): void;
+
+        _emit(eventName: any, e: any): any;
+
+        _signal(eventName: any, e: any): void;
+
+        removeAllListeners(eventName: any): void;
     }
 
     export interface Point {
@@ -4548,8 +2590,6 @@ export namespace Ace {
         left: number,
         top: number,
         config: any) => void;
-    /** Some of these token types are from JavaScript Parser API**/
-
 
     export interface Token {
         type: string;
@@ -4564,9 +2604,6 @@ export namespace Ace {
         meta?: string;
         name?: string;
         caption?: string;
-        docHTML?: string;
-        docText?: string;
-        snippet?: string;
     }
     /**
      * This class takes a set of highlighting rules, and creates a tokenizer out of them. For more information, see [the wiki on extending highlighters](https://github.com/ajaxorg/ace/wiki/Creating-or-Extending-an-Edit-Mode#wiki-extendingTheHighlighter).
@@ -4575,13 +2612,15 @@ export namespace Ace {
 
 
     export class Tokenizer {
+        $arrayTokens(str: any): {};
+        $applyToken(str: any): {};
+        $setMaxTokenCount(m: any): void;
         /**
          * Constructs a new tokenizer based on the given rules and flags.
          * @param {Object} rules The highlighting rules
          *
          * @constructor
          **/
-
         constructor(rules: Object);
 
         removeCapturingGroups(src: string): string;
@@ -4593,12 +2632,6 @@ export namespace Ace {
          **/
 
         getLineTokens(line: string, startState: string | string[]): Token[];
-
-        $setMaxTokenCount(m?: number): void;
-
-        $applyToken(str: string): Token[];
-
-        $arrayTokens(str: string): Token[];
     }
     /**
      *
@@ -4617,8 +2650,7 @@ export namespace Ace {
          *
          * @constructor
          **/
-
-        constructor(session: EditSession, initialRow: number, initialColumn: number);
+        constructor(session: EditSession, initialRow: Number, initialColumn: Number);
         /**
          *
          * Returns the current tokenized string.
@@ -4665,42 +2697,9 @@ export namespace Ace {
 
         stepForward(): Token;
     }
-    /** Make life easier, don't do these right now
-     var SweaveBackgroundHighlighter = require("mode/sweave_background_highlighter").SweaveBackgroundHighlighter;
-     var RCodeModel = require("mode/r_code_model").RCodeModel;
-     **/
 
-
-    export class Mode {
-
-        allowAutoInsert(): boolean;
-
-        getLanguageMode(position: any): "R" | "HTML";
-
-        getMatching(session: any, row: any, column: any, tokenRange: any): any;
-
-        addMarkers(annos: any, mySession: any): void;
-
-        removeMarkers(session: any): void;
-
-        $calculateIndent(line: any, tab: any): any;
-
-        $toIndent(str: any): any;
-
-        supportsFile(filename: any): any;
-        $id: string;
-        tokenRe: RegExp;
-        nonTokenRe: RegExp;
-        $defaultBehaviour: CstyleBehaviour;
-        lineCommentStart: string;
-        blockComment: string;
-        $getIndent(line: string): string;
-
-        $delegator(method: string, args: any[], defaultHandler: any): any;
-
-        $createKeywordList(): any;
+    export class SyntaxMode {
         getTokenizer(): Tokenizer;
-
         toggleCommentLines(state: any,
             session: EditSession,
             startRow: number,
@@ -4709,25 +2708,18 @@ export namespace Ace {
             session: EditSession,
             range: Range,
             cursor: Point): void;
-
         getNextLineIndent(state: any, line: string, tab: string): string;
-
         checkOutdent(state: any, line: string, input: string): boolean;
-
         autoOutdent(state: any, doc: Document, row: number): void;
-
         // TODO implement WorkerClient types
         createWorker(session: EditSession): any;
         createModeDelegates(mapping: { [key: string]: string }): void;
-
         transformAction(state: string,
             action: string,
             editor: Editor,
             session: EditSession,
             text: string): any;
-
         getKeywords(append?: boolean): Array<string | RegExp>;
-
         getCompletions(state: string,
             session: EditSession,
             pos: Point,
@@ -4741,7 +2733,7 @@ export namespace Ace {
         moduleUrl(name: string, component?: string): string;
         setModuleUrl(name: string, subst: string): string;
         loadModule(moduleName: string | [string, string],
-            onLoad: (module: any) => void): void;
+            onLoad?: (module: any) => void): void;
         init(packaged: any): any;
         defineOptions(obj: any, path: string, options: { [key: string]: any }): Config;
         resetOptions(obj: any): void;
@@ -4762,12 +2754,17 @@ export namespace Ace {
 
 
     export class UndoManager {
+        $prettyPrint(delta: any): any;
+        fromJSON(): void;
+        toJSON(): void;
+        $syncRev(): void;
+        getChangedLines(from: any, to: any): void;
+        getChangedRanges(from: any, to: any): void;
         /**
          * Resets the current undo state and creates a new `UndoManager`.
          *
          * @constructor
          **/
-
         constructor();
 
         addSession(session: EditSession): void;
@@ -4837,38 +2834,11 @@ export namespace Ace {
          **/
 
         isAtBookmark(): boolean;
-
-        getChangedRanges(from: number, to?: number): void;
-
-        getChangedLines(from: number, to?: number): void;
-
-        $syncRev(): void;
-
-        toJSON(): void;
-
-        fromJSON(): void;
-
-        $prettyPrint(delta: Delta): string;
     }
 
-
-    export interface CstyleBehaviour {
-
-        isMaybeInsertedClosing(cursor: any, line: any): boolean;
-
-        isSaneInsertion(editor: Editor, session: EditSession): boolean;
-
-        $matchTokenType(token: Token, types: string[]): boolean;
-
-        recordAutoInsert(editor: Editor, session: EditSession, bracket: string): void;
-
-        recordMaybeInsert(editor: Editor, session: EditSession, bracket: string): void;
-
-        isAutoInsertedClosing(cursor: Point, line: string, bracket: string): boolean;
-
-        popAutoInsertedClosing(): void;
-
-        clearMaybeInsertedClosing(): void;
+    export interface Position {
+        row: number,
+        column: number
     }
     /**
      * Stores all the data about [[Editor `Editor`]] state providing easy way to change editors state.
@@ -4878,13 +2848,71 @@ export namespace Ace {
      **/
 
 
-    export class EditSession implements EventEmitter, OptionsProvider, Folding {
+    export class EditSession implements EventEmitter, OptionsProvider {
+        getSelectionMarkers(): any;
         /**
          * @private
          *
          */
-
         $setFontMetrics(fm: any): void;
+        /**
+         * For the given document row and column, this returns the document position of the last row.
+         * @param {Number} docRow
+         * @param {Number} docColumn
+         *
+         **/
+        getDocumentLastRowColumnPosition(docRow: Number, docColumn: Number): any;
+        /**
+         * Returns number of screenrows in a wrapped line.
+         * @param {Number} row The row number to check
+         *
+         * @returns {Number}
+         **/
+        getRowLength(row: Number): Number;
+        /**
+         * Calculates the width of the string `str` on the screen while assuming that the string starts at the first column on the screen.
+         * @param {String} str The string to calculate the screen width of
+         * @param {Number} maxScreenColumn
+         * @param {Number} screenColumn
+         * @returns {[Number]} Returns an `int[]` array with two elements:<br/>
+         * The first position indicates the number of columns for `str` on screen.<br/>
+         * The second value contains the position of the document column that this function read until.
+         *
+         **/
+        $getStringScreenWidth(str: String, maxScreenColumn: Number, screenColumn: Number): [Number];
+        /**
+         * Given a string, returns an array of the display characters, including tabs and spaces.
+         * @param {String} str The string to check
+         * @param {Number} offset The value to start at
+         *
+         **/
+        $getDisplayTokens(str: String, offset: Number): {};
+        $computeWrapSplits(tokens: any, wrapLimit: any, tabSize: any): {};
+        $updateWrapData(firstRow: any, lastRow: any): void;
+        $updateRowLengthCache(firstRow: any, lastRow: any, b: any): void;
+        $updateInternalDataOnChange(delta: any): any;
+        $constrainWrapLimit(wrapLimit: any, min: any, max: any): any;
+        $clipRangeToDocument(range: any): any;
+        $clipPositionToDocument(row: any, column: any): { row: any; column: any; };
+        $clipColumnToRow(row: any, column: any): any;
+        $clipRowToDocument(row: any): any;
+        $moveLines(firstRow: any, lastRow: any, dir: any): number;
+        $getUndoSelection(deltas: any, isUndo: any): any;
+        $computeWidth(force: any): any;
+        $startWorker(): void;
+        $stopWorker(): void;
+        $onChangeMode(mode: any, $isPlaceholder: any): void;
+        /**
+         * Reloads all the tokens on the current session. This function calls [[BackgroundTokenizer.start `BackgroundTokenizer.start ()`]] to all the rows; it also emits the `'tokenizerUpdate'` event.
+         **/
+        onReloadTokenizer(e: any): void;
+        /**
+         * If `text` contains either the newline (`\n`) or carriage-return ('\r') characters, `$autoNewLine` stores that value.
+         * @param {String} text A block of text
+         *
+         **/
+        $detectNewLine(text: String): void;
+        $syncInformUndoManager(): void;
         /**
          * Returns the current [[Document `Document`]] as a string.
          * @method toString
@@ -4898,149 +2926,81 @@ export namespace Ace {
         * @returns {String}
         * @alias EditSession.toString
         **/
-
-        toString(): string;
+        toString(): String;
+        onChange(delta: any): void;
+        onChangeFold(e: any): void;
+        $getRowCacheIndex(cacheArray: any, val: any): number;
         /**
-         * Sets up a new `EditSession` and associates it with the given `Document` and `TextMode`.
-         * @param {Document | String} text [If `text` is a `Document`, it associates the `EditSession` with it. Otherwise, a new `Document` is created, with the initial text]{: #textParam}
-         * @param {TextMode} mode [The initial language mode to use for the document]{: #modeParam}
-         *
-         * @constructor
-         **/
-
-        constructor(text: string | Document, mode?: Mode);
-
-        foldAllComments(): void;
-        foldToLevel(level: any): void;
-
-        eventNames();
-        rawListeners(type: any);
-        prependOnceListener(type: any, listener: any);
-        prependListener(type: any, listener: any);
-        getMaxListeners();
-        listenerCount(emitter: any, type: any);
-        listeners(type: any);
-        removeListener(type: any, listener: any);
-        addListener(type: any, listener: any);
-        emit(type: any): boolean;
-        setMaxListeners(n: any);
-        removeAllListeners(type: any);
-        _signal(eventName: any, e: any): void;
-        _emit(eventName: any, e: any);
-
-
-        eventNames();
-
-        rawListeners(type: any);
-
-        prependOnceListener(type: any, listener: any);
-
-        prependListener(type: any, listener: any);
-
-        getMaxListeners();
-
-        listenerCount(emitter: any, type: any);
-
-        listeners(type: any);
-
-        removeListener(type: any, listener: any);
-
-        addListener(type: any, listener: any);
-
-        emit(type: any): boolean;
-
-        setMaxListeners(n: any);
-
-        removeAllListeners(type: any);
-
-        _signal(eventName: any, e: any): void;
-
-        _emit(eventName: any, e: any);
-        selection: Selection;
-        /**
-         *
-         * Emitted when the document changes.
-         * @event change
-         * @param {Object} e An object containing a `delta` of information about the change.
-         **/
-
-
-        on(name: 'change', callback: (delta: Delta) => void): void;
-        /**
-         * Emitted when the tab size changes, via [[EditSession.setTabSize]].
-         *
-         * @event changeTabSize
-         **/
-
-
-        on(name: 'changeTabSize'): void;
-        /**
-         * Emitted when the ability to overwrite text changes, via [[EditSession.setOverwrite]].
-         *
-         * @event changeOverwrite
-         **/
-
-
-        on(name: 'changeOverwrite'): void;
-        /**
-         * Emitted when the gutter changes, either by setting or removing breakpoints, or when the gutter decorations change.
-         *
-         * @event changeBreakpoint
-         **/
-
-
-        on(name: 'changeBreakpoint', callback: (rows: number[]) => void): void;
-        /**
-         * Emitted when an annotation changes, like through [[EditSession.setAnnotations]].
-         *
-         * @event changeAnnotation
-         **/
-
-
-        on(name: 'changeAnnotation', callback: (annotations: Annotation[]) => void): void;
-        /**
-         * Emitted when the current mode changes.
-         *
-         * @event changeMode
+         * @param {Number} row The row to work with
          *
          **/
-
-
-        on(name: 'changeMode'): void;
-        /**
-         * Emitted when the wrap mode changes.
-         *
-         * @event changeWrapMode
-         *
-         **/
-
-
-        on(name: 'changeWrapMode'): void;
+        $resetRowCache(docRow: any): void;
         /**
          * Emitted when the wrapping limit changes.
          *
          * @event changeWrapLimit
          *
          **/
-
-
         on(name: 'changeWrapLimit'): void;
         /**
-         * Emitted when a front marker changes.
+         * Emitted when the wrap mode changes.
          *
-         * @event changeFrontMarker
+         * @event changeWrapMode
+         *
          **/
-
-
-        on(name: 'changeFrontMarker'): void;
+        on(name: 'changeWrapMode'): void;
+        /**
+         * Emitted when the current mode changes.
+         *
+         * @event changeMode
+         *
+         **/
+        on(name: 'changeMode'): void;
+        /**
+         * Emitted when an annotation changes, like through [[EditSession.setAnnotations]].
+         *
+         * @event changeAnnotation
+         **/
+        on(name: 'changeAnnotation'): void;
         /**
          * Emitted when a back marker changes.
          *
          * @event changeBackMarker
          **/
-
-
         on(name: 'changeBackMarker'): void;
+        /**
+         * Emitted when a front marker changes.
+         *
+         * @event changeFrontMarker
+         **/
+        on(name: 'changeFrontMarker'): void;
+        /**
+         * Emitted when the gutter changes, either by setting or removing breakpoints, or when the gutter decorations change.
+         *
+         * @event changeBreakpoint
+         **/
+        on(name: 'changeBreakpoint'): void;
+        /**
+         * Emitted when the ability to overwrite text changes, via [[EditSession.setOverwrite]].
+         *
+         * @event changeOverwrite
+         **/
+        on(name: 'changeOverwrite'): void;
+        /**
+         * Emitted when the tab size changes, via [[EditSession.setTabSize]].
+         *
+         * @event changeTabSize
+         **/
+        on(name: 'changeTabSize'): void;
+        /**
+         * Sets up a new `EditSession` and associates it with the given `Document` and `Mode`.
+         * @param {Document | String} text [If `text` is a `Document`, it associates the `EditSession` with it. Otherwise, a new `Document` is created, with the initial text]{: #textParam}
+         * @param {Mode} mode [The initial language mode to use for the document]{: #modeParam}
+         *
+         * @constructor
+         **/
+        constructor(text: Document | String, mode: Mode);
+        selection: Selection;
         /**
          * Emitted when a code fold is added or removed.
          *
@@ -5049,9 +3009,10 @@ export namespace Ace {
          **/
 
 
+        // TODO: define BackgroundTokenizer
 
         on(name: 'changeFold',
-            callback: (obj: { data: Fold, action: string }) => void): void;
+            callback: (obj: { data: Fold, action: string }) => void): Function;
         /**
          * Emitted when the scroll left changes.
          * @event changeScrollLeft
@@ -5060,7 +3021,7 @@ export namespace Ace {
          **/
 
 
-        on(name: 'changeScrollLeft', callback: (scrollLeft: number) => void): void;
+        on(name: 'changeScrollLeft', callback: (scrollLeft: number) => void): Function;
         /**
          * Emitted when the scroll top changes.
          * @event changeScrollTop
@@ -5069,7 +3030,7 @@ export namespace Ace {
          **/
 
 
-        on(name: 'changeScrollTop', callback: (scrollTop: number) => void): void;
+        on(name: 'changeScrollTop', callback: (scrollTop: number) => void): Function;
         /**
          * Emitted when a background tokenizer asynchronously processes new rows.
          * @event tokenizerUpdate
@@ -5080,11 +3041,22 @@ export namespace Ace {
 
 
         on(name: 'tokenizerUpdate',
-            callback: (obj: { data: { first: number, last: number } }) => void): void;
+            callback: (obj: { data: { first: number, last: number } }) => void): Function;
+        /**
+         *
+         * Emitted when the document changes.
+         * @event change
+         * @param {Object} e An object containing a `delta` of information about the change.
+         **/
+
+
+        on(name: 'change', callback: () => void): Function;
 
 
         setOption<T extends keyof EditSessionOptions>(name: T, value: EditSessionOptions[T]): void;
         getOption<T extends keyof EditSessionOptions>(name: T): EditSessionOptions[T];
+
+        readonly doc: Document;
         /**
          * Sets the `EditSession` to point to a new `Document`. If a `BackgroundTokenizer` exists, it also points to `doc`.
          *
@@ -5207,7 +3179,7 @@ export namespace Ace {
          *
          **/
 
-        isTabStop(position: Point): boolean;
+        isTabStop(position: Position): boolean;
         /**
          * Set whether keyboard navigation of soft tabs moves the cursor within the soft tab, rather than over
          * @param {Boolean} navigateWithinSoftTabs Value indicating whether or not to navigate within soft tabs
@@ -5301,9 +3273,9 @@ export namespace Ace {
          **/
 
         addMarker(range: Range,
-            clazz: string,
-            type: MarkerRenderer,
-            inFront: boolean): number;
+            className: string,
+            type: "fullLine" | "screenLine" | "text" | MarkerRenderer,
+            inFront?: boolean): number;
         /**
          * Adds a dynamic marker to the session.
          * @param {Object} marker object with update method
@@ -5334,7 +3306,7 @@ export namespace Ace {
 
         highlightLines(startRow: number,
             endRow: number,
-            clazz: string,
+            className: string,
             inFront?: boolean): Range;
         /**
          * Sets annotations for the `EditSession`. This functions emits the `'changeAnnotation'` event.
@@ -5417,13 +3389,13 @@ export namespace Ace {
 
         getUseWorker(): boolean;
 
-        setMode(mode: string | Mode, callback?: () => void): void;
+        setMode(mode: string | SyntaxMode, callback?: () => void): void;
         /**
          * Returns the current text mode.
          * @returns {TextMode} The current text mode
          **/
 
-        getMode(): Mode;
+        getMode(): SyntaxMode;
         /**
          * This function sets the scroll top value. It also emits the `'changeScrollTop'` event.
          * @param {Number} scrollTop The new scroll top value
@@ -5497,7 +3469,7 @@ export namespace Ace {
          *
          **/
 
-        insert(position: Point, text: string): void;
+        insert(position: Position, text: string): void;
         /**
          * Removes the `range` from the document.
          * @param {Range} range A specified Range to remove
@@ -5573,7 +3545,7 @@ export namespace Ace {
          * @returns {Range} The new range where the text was moved to.
          **/
 
-        moveText(fromRange: Range, toPosition: Point, copy?: boolean): void;
+        moveText(fromRange: Range, toPosition: Position, copy?: boolean): void;
         /**
          * Indents all the rows, from `startRow` to `endRow` (inclusive), by prefixing each row with the token in `indentString`.
          *
@@ -5698,7 +3670,7 @@ export namespace Ace {
          **/
 
         getDocumentLastRowColumn(docRow: number, docColumn: number): number;
-        getdocumentLastRowColumnPosition(docRow: number, docColumn: number): Point;
+        getdocumentLastRowColumnPosition(docRow: number, docColumn: number): Position;
         /**
          * For the given row, this returns the split data.
          * @returns {String}
@@ -5730,7 +3702,7 @@ export namespace Ace {
 
         screenToDocumentPosition(screenRow: number,
             screenColumn: number,
-            offsetX?: number): Point;
+            offsetX?: number): Position;
         /**
          * Converts document coordinates to screen coordinates. {:conversionConsiderations}
          * @param {Number} docRow The document row to check
@@ -5740,7 +3712,7 @@ export namespace Ace {
          * @related EditSession.screenToDocumentPosition
          **/
 
-        documentToScreenPosition(docRow: number, docColumn: number): Point;
+        documentToScreenPosition(docRow: number, docColumn: number): Position;
         /**
          * Converts document coordinates to screen coordinates. {:conversionConsiderations}
          * @param {Number} docRow The document row to check
@@ -5750,7 +3722,7 @@ export namespace Ace {
          * @related EditSession.screenToDocumentPosition
          **/
 
-        documentToScreenPosition(position: Point): Point;
+        documentToScreenPosition(position: Position): Position;
         /**
          * For the given document row and column, returns the screen column.
          * @param {Number} row
@@ -5776,156 +3748,41 @@ export namespace Ace {
         getScreenLength(): number;
 
         destroy(): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
+        getOptions(optionNames?: string[] | { [p: string]: any }): { [p: string]: any };
+
         off(name: string, callback: Function): void;
-        getFoldAt(row: number, column: number, side: number): Fold;
-        getFoldsInRange(range: Range): Array<Fold>;
-        getFoldsInRangeList(ranges: Array<Range>): Array<Fold>;
-        getAllFolds(): Array<Fold>;
-        addFold(placeholder: string, range: Range): Fold;
-        addFolds(folds: Array<Fold>);
-        removeFold(fold: Fold);
-        removeFolds(folds: Array<Fold>);
-        expandFold(fold: Fold);
-        expandFolds(folds: Array<Fold>);
-        foldAll(startRow: number, endRow: number, depth: number);
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
 
-        setOption(name: string, value: any): void;
+        once(name: string, callback: Function): void;
 
-        getOption(name: string): any;
-        /**
-         * @param {Number} row The row to work with
-         *
-         **/
+        removeDefaultHandler(name: string, callback: Function): void;
 
-        $resetRowCache(docRow: number): void;
+        removeEventListener(name: string, callback: Function): void;
 
-        $getRowCacheIndex(cacheArray: number[], val: number): number;
+        removeListener(name: string, callback: Function): void;
 
-        onChangeFold(e: { data: Fold, action: string }): void;
+        setDefaultHandler(name: string, callback: Function): void;
 
-        onChange(delta: Delta): void;
+        setOptions(optList: { [p: string]: any }): void;
 
-        $syncInformUndoManager(): void;
-        /**
-         * If `text` contains either the newline (`\n`) or carriage-return ('\r') characters, `$autoNewLine` stores that value.
-         * @param {String} text A block of text
-         *
-         **/
+        _emit(eventName: any, e: any): any;
 
-        $detectNewLine(text: string): void;
-        /**
-         * Reloads all the tokens on the current session. This function calls [[BackgroundTokenizer.start `BackgroundTokenizer.start ()`]] to all the rows; it also emits the `'tokenizerUpdate'` event.
-         **/
+        _signal(eventName: any, e: any): void;
 
-        onReloadTokenizer(e: { data: { first: number, last: number } }): void;
-
-        $onChangeMode(mode: Mode, $isPlaceholder?: boolean): void;
-
-        $stopWorker(): void;
-
-        $startWorker(): void;
-
-        $computeWidth(force: boolean): number;
-
-        $getUndoSelection(deltas: Delta[], isUndo?: boolean): Range;
-
-        $moveLines(firstRow: number, lastRow: number, dir: number): number;
-
-        $clipRowToDocument(row: number): number;
-
-        $clipColumnToRow(row: number, column: number): number;
-
-        $clipPositionToDocument(row: number, column: number): Point;
-
-        $clipRangeToDocument(range: Range): Range;
-
-        $constrainWrapLimit(wrapLimit: number, min: number, max: number): number;
-
-        $updateInternalDataOnChange(delta: Delta): Array<Fold>;
-
-        $updateRowLengthCache(firstRow: number, lastRow: number, b?: any): void;
-
-        $updateWrapData(firstRow: number, lastRow: number): void;
-
-        $computeWrapSplits(tokens: Token[], wrapLimit: number, tabSize: number): number[];
-        /**
-         * Given a string, returns an array of the display characters, including tabs and spaces.
-         * @param {String} str The string to check
-         * @param {Number} offset The value to start at
-         *
-         **/
-
-        $getDisplayTokens(str: string, offset: number): string[];
-        /**
-         * Calculates the width of the string `str` on the screen while assuming that the string starts at the first column on the screen.
-         * @param {String} str The string to calculate the screen width of
-         * @param {Number} maxScreenColumn
-         * @param {Number} screenColumn
-         * @returns {[Number]} Returns an `int[]` array with two elements:<br/>
-         * The first position indicates the number of columns for `str` on screen.<br/>
-         * The second value contains the position of the document column that this function read until.
-         *
-         **/
-
-        $getStringScreenWidth(str: string, maxScreenColumn: number, screenColumn: number): number[];
-        /**
-         * Returns number of screenrows in a wrapped line.
-         * @param {Number} row The row number to check
-         *
-         * @returns {Number}
-         **/
-
-        getRowLength(row: number): number;
-        /**
-         * For the given document row and column, this returns the document position of the last row.
-         * @param {Number} docRow
-         * @param {Number} docColumn
-         *
-         **/
-
-        getDocumentLastRowColumnPosition(docRow: number, docColumn: number): number;
-        private setFontMetrics(fm: any): any;
-
-        getSelectionMarkers(): any;
-
-        foldAll(startRow: number, endRow: number, depth: number);
-        getFoldStringAt(row: number, column: number, trim, foldLine?: FoldLine): string | null;
-        getFoldLine(docRow: number, startFoldLine?: string): string | null;
-        getNextFoldLine(docRow: number, startFoldLine?: string): string | null;
-        getFoldedRowCount(first: number, last: number): number;
-        $addFoldLine(foldLine: FoldLine): string;
-        unfold(location: number | Point | Range, expandInner?: boolean): Fold[];
-        isRowFolded(docRow: number, startFoldRow: string): boolean;
-        getRowFoldEnd(docRow: number, startFoldRow: string): number;
-        getRowFoldStart(docRow: number, startFoldRow: string): number;
-        getFoldDisplayLine(foldLine: FoldLine, endRow: number, endColumn: number, startRow: number, startColumn: number): string;
-        getDisplayLine(row: number, endColumn: number, startRow: number, startColumn: number): string;
-        $cloneFoldData(): FoldLine;
-        toggleFold(tryToUnfold?: any): void;
-        getCommentFoldRange(row: number, column: number, dir: number): Range;
-        setFoldStyle(style: string): void;
-        $setFolding(foldMode?: any): void;
-        getParentFoldRangeData(row: number, ignoreCurrent?: any): { range: Range; firstRange: Range };
-        onFoldWidgetClick(row: number, e: Event): void;
-        $toggleFoldWidget(row: number, options: any): Fold | Range;
-        toggleFoldWidget(toggleParent?: any): void;
-        updateFoldWidgets(delta: Delta): void;
-        tokenizerUpdateFoldWidgets(e: Event): void;
+        removeAllListeners(eventName: any): void;
     }
 
 
     export class KeyBinding {
+        $callKeyboardHandlers(hashId: any, keyString: any, keyCode: any, e: any): boolean;
 
         setDefaultHandler(handler: KeyboardHandler): void;
 
         setKeyboardHandler(handler: KeyboardHandler): void;
 
-        addKeyboardHandler(handler: KeyboardHandler, pos: number): void;
+        addKeyboardHandler(handler: KeyboardHandler, pos?: number): void;
 
         removeKeyboardHandler(handler: KeyboardHandler): boolean;
 
@@ -5933,12 +3790,20 @@ export namespace Ace {
 
         getStatusText(): string;
 
-        $callKeyboardHandlers(hashId: number, keyString: string, keyCode: number, e: Event): any;
+        onCommandKey(e: any, hashId: number, keyCode: number): boolean;
 
-        onCommandKey(e: Event, hashId: number, keyCode: number): void;
-
-        onTextInput(text: string): void;
+        onTextInput(text: string): boolean;
     }
+
+    interface CommandMap {
+        [name: string]: Command;
+    }
+
+    type execEventHandler = (obj: {
+        editor: Editor,
+        command: Command,
+        args: any[]
+    }) => void;
     /**
      * @class CommandManager
      *
@@ -5951,14 +3816,14 @@ export namespace Ace {
     **/
 
 
-    export class CommandManager implements EventEmitter {
-
+    export interface CommandManager extends EventEmitter {
         setupIncrementalSearch(editor: any, val: any): void;
-        on(name: 'exec', callback: (obj: {
-            editor: Editor,
-            command: Command,
-            args: any[]
-        }) => void): void;
+        trimMacro(m: any): any;
+        byName: CommandMap,
+        commands: CommandMap,
+        on(name: 'exec', callback: execEventHandler): Function;
+
+        on(name: 'afterExec', callback: execEventHandler): Function;
         once(name: string, callback: Function): void;
         setDefaultHandler(name: string, callback: Function): void;
         removeDefaultHandler(name: string, callback: Function): void;
@@ -5976,38 +3841,17 @@ export namespace Ace {
 
         replay(editor: Editor): void;
         addCommand(command: Command): void;
-        removeCommand(command: Command, keepCommand?: boolean): void;
+        addCommands(command: Command[]): void;
+        removeCommand(command: Command | string, keepCommand?: boolean): void;
+        removeCommands(command: Command[]): void;
         bindKey(key: string | { mac?: string, win?: string },
             command: CommandLike,
             position?: number): void;
-
-        trimMacro(m: any): string;
-
-        _emit(eventName: any, e: any): any;
-
-        _signal(eventName: any, e: any): void;
-
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        setMaxListeners(n: any): any;
+        bindKeys(keys: { [s: string]: Function }): void;
+        parseKeys(keyPart: string): { key: string, hashId: number };
+        findKeyCommand(hashId: number, keyString: string): string | undefined;
+        handleKeyboard(data: {}, hashId: number, keyString: string, keyCode: string | number): void | { command: string };
+        getStatusText(editor: Editor, data: {}): string;
     }
     /**
      * The class that is responsible for drawing everything you see on the screen!
@@ -6017,33 +3861,64 @@ export namespace Ace {
 
 
     export class VirtualRenderer implements OptionsProvider, EventEmitter {
-
         removeExtraToken(row: any, column: any): void;
+        addToken(text: any, type: any, row: any, column: any): void;
+        screenToTextCoordinates(x: any, y: any): any;
+        $calcSteps(fromValue: any, toValue: any): {};
         /**
          * Deprecated; (moved to [[EditSession]])
          * @deprecated
          **/
-
         removeGutterDecoration(row: any, className: any): void;
         /**
          *
          * Deprecated; (moved to [[EditSession]])
          * @deprecated
          **/
-
         addGutterDecoration(row: any, className: any): void;
-
+        $getLongestLine(): any;
+        $updateLines(): boolean;
+        $computeLayerConfig(): number;
+        $autosize(): void;
+        $renderChanges(changes: any, force: any): any;
+        $updateScrollBarH(): void;
+        $updateScrollBarV(): void;
+        setMargin(top: any, bottom: any, left: any, right: any): void;
+        /** move text input over the cursor**/
+        $moveTextAreaToCursor(): void;
+        $updatePrintMargin(): void;
+        onGutterResize(width: any): void;
+        $updateCachedSize(force: any, gutterWidth: any, width: any, height: any): number;
+        /**
+         * [Triggers a resize of the editor.]{: #VirtualRenderer.onResize}
+         * @param {Boolean} force If `true`, recomputes the size, even if the height and width haven't changed
+         * @param {Number} gutterWidth The width of the gutter in pixels
+         * @param {Number} width The width of the editor in pixels
+         * @param {Number} height The hiehgt of the editor, in pixels
+         *
+         **/
+        onResize(force: Boolean, gutterWidth: Number, width: Number, height: Number): number;
+        $updateSizeAsync(): void;
+        onChangeTabSize(): void;
+        onChangeNewLineMode(): void;
+        updateCharacterSize(): void;
         mock(): any;
         /**
          * Constructs a new `VirtualRenderer` within the `container` specified, applying the given `theme`.
-         * @param {DOMElement} container The root element of the editor
+         * @param {Element} container The root element of the editor
          * @param {String} theme The starting theme
          *
          * @constructor
          **/
-
-        constructor(container: HTMLElement, theme?: string);
-        container: HTMLElement;
+        constructor(container: Element, theme: String);
+        readonly container: HTMLElement;
+        readonly scroller: HTMLElement;
+        readonly content: HTMLElement;
+        readonly characterWidth: number;
+        readonly lineHeight: number;
+        readonly scrollLeft: number;
+        readonly scrollTop: number;
+        readonly $padding: number;
 
         setOption<T extends keyof VirtualRendererOptions>(name: T, value: VirtualRendererOptions[T]): void;
         getOption<T extends keyof VirtualRendererOptions>(name: T): VirtualRendererOptions[T];
@@ -6164,21 +4039,21 @@ export namespace Ace {
         /**
          *
          * Returns the root element containing this renderer.
-         * @returns {DOMElement}
+         * @returns {Element}
          **/
 
         getContainerElement(): HTMLElement;
         /**
          *
          * Returns the element that the mouse events are attached to
-         * @returns {DOMElement}
+         * @returns {Element}
          **/
 
         getMouseEventTarget(): HTMLElement;
         /**
          *
          * Returns the element to which the hidden text area is added.
-         * @returns {DOMElement}
+         * @returns {Element}
          **/
 
         getTextAreaContainer(): HTMLElement;
@@ -6292,15 +4167,15 @@ export namespace Ace {
 
         showCursor(): void;
 
-        scrollSelectionIntoView(anchor: Point,
-            lead: Point,
+        scrollSelectionIntoView(anchor: Position,
+            lead: Position,
             offset?: number): void;
         /**
          *
          * Scrolls the cursor into the first visibile area of the editor
          **/
 
-        scrollCursorIntoView(cursor: Point, offset?: number): void;
+        scrollCursorIntoView(cursor: Position, offset?: number): void;
         /**
          * {:EditSession.getScrollTop}
          * @related EditSession.getScrollTop
@@ -6336,7 +4211,7 @@ export namespace Ace {
 
         scrollToRow(row: number): void;
 
-        alignCursor(cursor: Point | number, alignment: number): number;
+        alignCursor(cursor: Position | number, alignment: number): number;
         /**
          * Gracefully scrolls the editor to the row indicated.
          * @param {Number} line A line number
@@ -6400,6 +4275,8 @@ export namespace Ace {
          **/
 
         textToScreenCoordinates(row: number, column: number): { pageX: number, pageY: number };
+
+        pixelToScreenCoordinates(x: number, y: number): { row: number, column: number, side: 1 | -1, offsetX: number };
         /**
          *
          * Focuses the current container.
@@ -6476,96 +4353,32 @@ export namespace Ace {
          **/
 
         destroy(): void;
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
 
-        setOption(name: string, value: any): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
 
-        getOption(name: string): any;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
+        getOptions(optionNames?: string[] | { [p: string]: any }): { [p: string]: any };
+
         off(name: string, callback: Function): void;
 
-        updateCharacterSize(): void;
+        on(name: string, callback: Function, capturing?: boolean): void;
 
-        onChangeNewLineMode(): void;
+        once(name: string, callback: Function): void;
 
-        onChangeTabSize(): void;
+        removeDefaultHandler(name: string, callback: Function): void;
 
-        $updateSizeAsync(): void;
-        /**
-         * [Triggers a resize of the editor.]{: #VirtualRenderer.onResize}
-         * @param {Boolean} force If `true`, recomputes the size, even if the height and width haven't changed
-         * @param {Number} gutterWidth The width of the gutter in pixels
-         * @param {Number} width The width of the editor in pixels
-         * @param {Number} height The hiehgt of the editor, in pixels
-         *
-         **/
+        removeEventListener(name: string, callback: Function): void;
 
-        onResize(force: boolean, gutterWidth: number, width?: number, height?: number): void;
+        removeListener(name: string, callback: Function): void;
 
-        $updateCachedSize(force: boolean, gutterWidth: number, width?: number, height?: number): number;
+        setDefaultHandler(name: string, callback: Function): void;
 
-        onGutterResize(width: number): void;
-
-        $updatePrintMargin(): void;
-        /** move text input over the cursor**/
-
-        $moveTextAreaToCursor(): void;
-
-        setMargin(top: number, bottom: number, left: number, right: number);
-
-        $updateScrollBarV(): void;
-
-        $updateScrollBarH(): void;
-
-        $renderChanges(changes: any, force: boolean): any;
-
-        $autosize(): void;
-
-        $computeLayerConfig(): void;
-
-        $updateLines(): any;
-
-        $getLongestLine(): number;
-
-        $calcSteps(fromValue: number, toValue: number): number[];
-
-        pixelToScreenCoordinates(x: number, y: number): { row: number, column: number, side: number, offsetX: number };
-
-        screenToTextCoordinates(x: number, y: number): Point;
-
-        addToken(text: string, type: string, row: number, column: number): void;
+        setOptions(optList: { [p: string]: any }): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
     /**
      * Contains the cursor position and the text selection of an edit session.
@@ -6577,32 +4390,124 @@ export namespace Ace {
 
 
     export class Selection implements EventEmitter {
-
-        joinSelections(): void;
+        isEqual(data: any): any;
         /**
-         * Creates a new `Selection` object.
-         * @param {EditSession} session The session to use
-         *
-         * @constructor
-         **/
-
-        constructor(session: EditSession);
-        /**
-         * Emitted when the cursor position changes.
-         * @event changeCursor
+         * Saves the current cursor position and calls `func` that can change the cursor
+         * postion. The result is the range of the starting and eventual cursor position.
+         * Will reset the cursor position.
+         * @param {Function} The callback that should change the cursor position
+         * @returns {Range}
          *
          **/
-
-        on(name: 'changeCursor'): void;
+        getRangeOfMovements(func: any): Range;
+        toOrientedRange(range: any): any;
+        /** remove listeners from document**/
+        detach(): void;
+        moveCursorShortWordLeft(): any;
+        moveCursorShortWordRight(): any;
+        $shortWordEndIndex(rightOfCursor: any): number;
+        /**
+         *
+         * Returns `true` if moving the character next to the cursor in the specified direction is a soft tab.
+         * @param {Object} cursor the current cursor position
+         * @param {Number} tabSize the tab size
+         * @param {Number} direction 1 for right, -1 for left
+         */
+        wouldMoveIntoSoftTab(cursor: Object, tabSize: Number, direction: Number): boolean;
+        getLineRange(row: any, excludeLastChar: any): any;
+        /**
+         * Moves the selection cursor to the row and column indicated by `pos`.
+         * @param {Object} pos An object containing the row and column
+         **/
+        moveToPosition(pos: Object): void;
+        /**
+         * Moves the selection cursor to the indicated row and column.
+         * @param {Number} row The row to select to
+         * @param {Number} column The column to select to
+         *
+         **/
+        moveTo(row: Number, column: Number): void;
+        $moveSelection(mover: any): void;
+        $setSelection(anchorRow: any, anchorColumn: any, cursorRow: any, cursorColumn: any): void;
+        /**
+         * Returns an object containing the `row` and `column` of the calling selection lead.
+         * @returns {Object}
+         **/
+        getSelectionLead(): Object;
+        /**
+         * Returns an object containing the `row` and `column` of the calling selection anchor.
+         *
+         * @returns {Object}
+         * @related Anchor.getPosition
+         **/
+        getSelectionAnchor(): Object;
+        /**
+         * Sets the row and column position of the anchor. This function also emits the `'changeSelection'` event.
+         * @param {Number} row The new row
+         * @param {Number} column The new column
+         *
+         **/
+        setSelectionAnchor(row: Number, column: Number): void;
         /**
          * Emitted when the cursor selection changes.
          *
          *
          @event changeSelection
          **/
-
-
         on(name: 'changeSelection'): void;
+        /**
+         * Emitted when the cursor position changes.
+         * @event changeCursor
+         *
+         **/
+        on(name: 'changeCursor'): void;
+        /**
+         * Creates a new `Selection` object.
+         * @param {EditSession} session The session to use
+         *
+         * @constructor
+         **/
+        constructor(session: EditSession);
+        /**
+         *
+         * Gets list of ranges composing rectangular block on the screen
+         *
+         * @param {Cursor} screenCursor The cursor to use
+         * @param {Anchor} screenAnchor The anchor to use
+         * @param {Boolean} includeEmptyLines If true, this includes ranges inside the block which are empty due to clipping
+         * @returns {Range}
+         * @method Selection.rectangularRangeBlock
+         **/
+        rectangularRangeBlock(screenCursor: Cursor, screenAnchor: Anchor, includeEmptyLines: Boolean): Range;
+        /**
+         * @method Selection.toggleBlockSelection
+         **/
+        toggleBlockSelection(): void;
+        joinSelections(): void;
+        /**
+         * Splits all the ranges into lines.
+         * @method Selection.splitIntoLines
+         **/
+        splitIntoLines(): void;
+        /** adds multicursor support to selection**/
+        $initRangeList(): void;
+        $onRemoveRange(removed: any): void;
+        $onAddRange(range: any): void;
+        /**
+         * Merges overlapping ranges ensuring consistency after changes
+         * @method Selection.mergeOverlappingRanges
+         **/
+        mergeOverlappingRanges(): void;
+        /**
+         * Removes a Range containing pos (if it exists).
+         * @param {Range} pos The position to remove, as a `{row, column}` object
+         * @method Selection.substractPoint
+         **/
+        substractPoint(pos: Range): any;
+        /**
+         * @method Selection.toSingleRange
+         **/
+        toSingleRange(range: any): void;
 
         moveCursorWordLeft(): void;
 
@@ -6655,13 +4560,13 @@ export namespace Ace {
          * @related Anchor.getPosition
          **/
 
-        getAnchor(): Point;
+        getAnchor(): Position;
         /**
          * Returns an object containing the `row` and `column` current position of the cursor.
          * @returns {Object}
          **/
 
-        getCursor(): Point;
+        getCursor(): Position;
         /**
          * Returns `true` if the selection is going backwards in the document.
          * @returns {Boolean}
@@ -6863,166 +4768,43 @@ export namespace Ace {
          **/
 
         moveCursorToScreen(row: number, column: number, keepDesiredColumn: boolean): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
+
+
+        toJSON(): SavedSelection | SavedSelection[];
+
+        fromJSON(selection: SavedSelection | SavedSelection[]): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
+        off(name: string, callback: Function): void;
 
         on(name: string, callback: Function, capturing?: boolean): void;
-        off(name: string, callback: Function): void;
-        /**
-         * @method Selection.toSingleRange
-         **/
 
-        toSingleRange(range: Range): void;
-        /**
-         * Removes a Range containing pos (if it exists).
-         * @param {Range} pos The position to remove, as a `{row, column}` object
-         * @method Selection.substractPoint
-         **/
+        once(name: string, callback: Function): void;
 
-        substractPoint(pos: Range): any;
-        /**
-         * Merges overlapping ranges ensuring consistency after changes
-         * @method Selection.mergeOverlappingRanges
-         **/
+        removeDefaultHandler(name: string, callback: Function): void;
 
-        mergeOverlappingRanges(): void;
+        removeEventListener(name: string, callback: Function): void;
 
-        $onAddRange(range: Range): void;
+        removeListener(name: string, callback: Function): void;
 
-        $onRemoveRange(removed: Range[]): void;
-        /** adds multicursor support to selection**/
-
-        $initRangeList(): void;
-        /**
-         * Splits all the ranges into lines.
-         * @method Selection.splitIntoLines
-         **/
-
-        splitIntoLines(): void;
-        /**
-         * @method Selection.toggleBlockSelection
-         **/
-
-        toggleBlockSelection(): void;
-        /**
-         *
-         * Gets list of ranges composing rectangular block on the screen
-         *
-         * @param {Cursor} screenCursor The cursor to use
-         * @param {Anchor} screenAnchor The anchor to use
-         * @param {Boolean} includeEmptyLines If true, this includes ranges inside the block which are empty due to clipping
-         * @returns {Range}
-         * @method Selection.rectangularRangeBlock
-         **/
-
-        rectangularRangeBlock(screenCursor: Point, screenAnchor: Anchor, includeEmptyLines: boolean): Range;
-        /**
-         * Sets the row and column position of the anchor. This function also emits the `'changeSelection'` event.
-         * @param {Number} row The new row
-         * @param {Number} column The new column
-         *
-         **/
-
-        setSelectionAnchor(row: number, column: number): void;
-        /**
-         * Returns an object containing the `row` and `column` of the calling selection anchor.
-         *
-         * @returns {Object}
-         * @related Anchor.getPosition
-         **/
-
-        getSelectionAnchor(): Point;
-        /**
-         * Returns an object containing the `row` and `column` of the calling selection lead.
-         * @returns {Object}
-         **/
-
-        getSelectionLead(): Point;
-
-        $setSelection(anchorRow: number, anchorColumn: number, cursorRow: number, cursorColumn: number): void;
-
-        $moveSelection(mover: any): void;
-        /**
-         * Moves the selection cursor to the indicated row and column.
-         * @param {Number} row The row to select to
-         * @param {Number} column The column to select to
-         *
-         **/
-
-        moveTo(row: number, column: number): void;
-        /**
-         * Moves the selection cursor to the row and column indicated by `pos`.
-         * @param {Object} pos An object containing the row and column
-         **/
-
-        moveToPosition(pos: Point): void;
-
-        getLineRange(row: number, excludeLastChar: boolean): Range;
-        /**
-         *
-         * Returns `true` if moving the character next to the cursor in the specified direction is a soft tab.
-         * @param {Object} cursor the current cursor position
-         * @param {Number} tabSize the tab size
-         * @param {Number} direction 1 for right, -1 for left
-         */
-
-        wouldMoveIntoSoftTab(cursor: Point, tabSize: number, direction: number): boolean;
-
-        $shortWordEndIndex(rightOfCursor: string): number;
-
-        moveCursorShortWordRight(): Function;
-
-        moveCursorShortWordLeft(): Function;
-        /** remove listeners from document**/
-
-        detach(): void;
-
-        toOrientedRange(range: Range): Range;
-        /**
-         * Saves the current cursor position and calls `func` that can change the cursor
-         * postion. The result is the range of the starting and eventual cursor position.
-         * Will reset the cursor position.
-         * @param {Function} The callback that should change the cursor position
-         * @returns {Range}
-         *
-         **/
-
-        getRangeOfMovements(func: Function): Range;
-
-        toJSON(): Range;
-
-        fromJSON(data: Range): void;
-
-        isEqual(data: Range): boolean;
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
+        removeAllListeners(eventName: any): void;
+    }
+    interface SavedSelection {
+        start: Point;
+        end: Point;
+        isBackwards: boolean;
+    }
 
-        emit(type: any): boolean;
 
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+    export interface TextInput {
+        resetSelection(): void;
     }
     /**
      * The main entry point into the Ace functionality.
@@ -7034,18 +4816,167 @@ export namespace Ace {
      **/
 
 
-    export class Editor implements OptionsProvider, EventEmitter {
-
+    export interface Editor extends OptionsProvider, EventEmitter {
+        expandSnippet(options: any): any;
+        insertSnippet(content: any, options: any): any;
+        $reAlignText(lines: any, forceLeft: any): any;
+        /**
+         * Aligns the cursors or selected text.
+         * @method Editor.alignCursors
+         **/
+        alignCursors(): void;
+        /**
+         * Finds the next occurrence of text in an active selection and adds it to the selections.
+         * @param {Number} dir The direction of lines to select: -1 for up, 1 for down
+         * @param {Boolean} skip If `true`, removes the active selection range
+         * @method Editor.selectMore
+         **/
+        selectMore(dir: Number, skip: Boolean, stopAtFirst: any): void;
+        /**
+         * Transposes the selected ranges.
+         * @param {Number} dir The direction to rotate selections
+         * @method Editor.transposeSelections
+         **/
+        transposeSelections(dir: Number): void;
+        /**
+         * Adds a cursor above or below the active cursor.
+         *
+         * @param {Number} dir The direction of lines to select: -1 for up, 1 for down
+         * @param {Boolean} skip If `true`, removes the active selection range
+         *
+         * @method Editor.selectMoreLines
+         */
+        selectMoreLines(dir: Number, skip: Boolean): void;
+        $checkMultiselectChange(e: any, anchor: any): void;
+        /**
+         * Removes all the selections except the last added one.
+         * @method Editor.exitMultiSelectMode
+         **/
+        exitMultiSelectMode(): void;
+        /**
+         * Executes a command for each selection range.
+         * @param {Object} cmd The command to execute
+         * @param {String} args Any arguments for the command
+         * @method Editor.forEachSelection
+         **/
+        forEachSelection(cmd: Object, args: String, options: any): any;
+        $onMultiSelectExec(e: any): any;
+        $onSingleSelect(e: any): void;
+        $onMultiSelect(e: any): void;
+        $onRemoveRange(e: any): void;
+        $onAddRange(e: any): void;
+        removeSelectionMarkers(ranges: any): void;
+        /**
+         * Removes the selection marker.
+         * @param {Range} range The selection range added with [[Editor.addSelectionMarker `addSelectionMarker()`]].
+         * @method Editor.removeSelectionMarker
+         **/
+        removeSelectionMarker(range: Range): void;
+        /**
+         * Adds the selection and cursor.
+         * @param {Range} orientedRange A range containing a cursor
+         * @returns {Range}
+         * @method Editor.addSelectionMarker
+         **/
+        addSelectionMarker(orientedRange: Range): Range;
+        /**
+         *
+         * Updates the cursor and marker layers.
+         * @method Editor.updateSelectionMarkers
+         *
+         **/
+        updateSelectionMarkers(): void;
         showSettingsMenu(): void;
-
         showKeyboardShortcuts(): void;
         /**
          * opens a prompt displaying message
          **/
-
         prompt(message: any, options: any, callback: any): void;
-
+        $resetCursorStyle(): void;
+        revealRange(range: any, animate: any): void;
+        $tryReplace(range: any, replacement: any): any;
+        $moveByPage(dir: any, select: any): void;
+        /**
+         * Returns the number of currently visible rows.
+         * @returns {Number}
+         **/
+        $getVisibleRowCount(): number;
+        onCompositionEnd(): void;
+        onCompositionUpdate(text: any): void;
+        onCompositionStart(compositionState: any): void;
+        /**
+         * Returns an object indicating the currently selected rows. The object looks like this:
+         *
+         * ```json
+         * { first: range.start.row, last: range.end.row }
+         * ```
+         *
+         * @returns {Object}
+         **/
+        $getSelectedRows(range: any): { first: any; last: any; };
+        /**
+         * for internal use
+         * @ignore
+         *
+         **/
+        $moveLines(dir: any, copy: any): void;
+        toggleWord(): void;
+        /**
+         * Works like [[EditSession.getTokenAt]], except it returns a number.
+         * @returns {Number}
+         **/
+        getNumberAt(row: any, column: any): { value: any; start: any; end: any; };
+        /**
+         * Removes all the words to the right of the current selection, until the end of the line.
+         **/
+        removeToLineEnd(): void;
+        /**
+         * Removes all the words to the left of the current selection, until the start of the line.
+         **/
+        removeToLineStart(): void;
+        onCommandKey(e: any, hashId: any, keyCode: any): any;
+        applyComposition(text: any, composition: any): void;
+        onTextInput(text: any, composition: any): any;
         autoIndent(): void;
+        $handlePaste(e: any): any;
+        /**
+         * Called whenever a text "cut" happens.
+         **/
+        onCut(): void;
+        /**
+         * Called whenever a text "copy" happens.
+         **/
+        onCopy(): void;
+        onChangeFold(): void;
+        onChangeWrapMode(): void;
+        onChangeWrapLimit(): void;
+        onChangeMode(e: any): void;
+        onChangeAnnotation(): void;
+        onChangeBreakpoint(): void;
+        onChangeBackMarker(): void;
+        onChangeFrontMarker(): void;
+        $getSelectionHighLightRegexp(): any;
+        onSelectionChange(e: any): void;
+        $updateHighlightActiveLine(): void;
+        /**
+         * Emitted when the selection changes.
+         *
+         **/
+        onCursorChange(): void;
+        onScrollLeftChange(): void;
+        onScrollTopChange(): void;
+        onTokenizerUpdate(e: any): void;
+        onDocumentChange(delta: any): void;
+        $cursorChange(): void;
+        onBlur(e: any): void;
+        onFocus(e: any): void;
+        /** todo: move to mode.getMatching**/
+        $highlightTags(): void;
+        $highlightBrackets(): void;
+        $historyTracker(e: any): void;
+        endOperation(e: any): any;
+        startOperation(commandEvent: any): void;
+        $initOperationListeners(): void;
         /**
          * Creates a new `Editor` object.
          *
@@ -7055,8 +4986,7 @@ export namespace Ace {
          *
          * @constructor
          **/
-
-        constructor(renderer: VirtualRenderer, session: EditSession, options?: EditorOptions);
+        constructor(renderer: VirtualRenderer, session: EditSession);
         container: HTMLElement;
         renderer: VirtualRenderer;
         id: string;
@@ -7064,6 +4994,7 @@ export namespace Ace {
         keyBinding: KeyBinding;
         session: EditSession;
         selection: Selection;
+        textInput: TextInput;
         /**
          * Emitted once the editor has been blurred.
          * @event blur
@@ -7073,6 +5004,8 @@ export namespace Ace {
 
 
         on(name: 'blur', callback: (e: Event) => void): void;
+
+        on(name: 'input', callback: () => void): void;
         /**
          * Emitted whenever the document is changed.
          * @event change
@@ -7131,6 +5064,23 @@ export namespace Ace {
 
         on(name: 'paste', callback: (obj: { text: string }) => void): void;
 
+        on(name: 'mousemove', callback: (e: any) => void): void;
+
+        on(name: 'mouseup', callback: (e: any) => void): void;
+
+        on(name: 'mousewheel', callback: (e: any) => void): void;
+
+        on(name: 'click', callback: (e: any) => void): void;
+        /**
+         * Called whenever a text "paste" happens.
+         * @param {String} text The pasted text
+         *
+         *
+         **/
+
+
+        onPaste(text: string, event: any): void;
+
         setOption<T extends keyof EditorOptions>(name: T, value: EditorOptions[T]): void;
         getOption<T extends keyof EditorOptions>(name: T): EditorOptions[T];
         /**
@@ -7141,6 +5091,13 @@ export namespace Ace {
 
 
         setKeyboardHandler(keyboardHandler: string, callback?: () => void): void;
+        /**
+         * Sets a new key handler, such as "vim" or "windows".
+         * @param {String} keyboardHandler The new key handler
+         *
+         **/
+
+        setKeyboardHandler(keyboardHandler: KeyboardHandler | null): void;
         /**
          * Returns the keyboard handler, such as "vim" or "windows".
          *
@@ -7238,7 +5195,7 @@ export namespace Ace {
          *
          **/
 
-        setFontSize(size: string): void;
+        setFontSize(size: number): void;
         /**
          *
          * Brings the current `textInput` into focus.
@@ -7251,7 +5208,12 @@ export namespace Ace {
          **/
 
         isFocused(): boolean;
-        flur(): void;
+        /**
+         *
+         * Blurs the current `textInput`.
+         **/
+
+        blur(): void;
 
         getSelectedText(): string;
         /**
@@ -7261,7 +5223,7 @@ export namespace Ace {
 
         getCopyText(): string;
 
-        execCommand(command: string | string[], args: any): boolean;
+        execCommand(command: string | string[], args?: any): boolean;
         /**
          * Inserts `text` into wherever the cursor is pointing.
          * @param {String} text The new text to add
@@ -7857,7 +5819,7 @@ export namespace Ace {
          * @related Search.find
          **/
 
-        find(needle: string, options?: Partial<SearchOptions>, animate?: boolean): void;
+        find(needle: string | RegExp, options?: Partial<SearchOptions>, animate?: boolean): Ace.Range | undefined;
         /**
          * Performs another search for `needle` in the document. For more information on `options`, see [[Search `Search`]].
          * @param {Object} options search options
@@ -7878,6 +5840,17 @@ export namespace Ace {
          **/
 
         findPrevious(options?: Partial<SearchOptions>, animate?: boolean): void;
+        /**
+         * Finds and selects all the occurrences of `needle`.
+         * @param {String} The text to find
+         * @param {Object} The search options
+         * @param {Boolean} keeps
+         *
+         * @returns {Number} The cumulative count of all found matches
+         * @method Editor.findAll
+         **/
+
+        findAll(needle: string | RegExp, options?: Partial<SearchOptions>, additive?: boolean): number;
         /**
          * {:UndoManager.undo}
          * @related UndoManager.undo
@@ -7902,578 +5875,24 @@ export namespace Ace {
          **/
 
         setAutoScrollEditorIntoView(enable: boolean): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-
-        on(name: string, callback: Function, capturing?: boolean): void;
-        off(name: string, callback: Function): void;
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
-
-        setOption(name: string, value: any): void;
-
-        getOption(name: string): any;
-
-        $initOperationListeners(): void;
-
-        startOperation(commandEvent: { command: string, args: any }): void;
-
-        endOperation(e: { returnValue: boolean }): void;
-
-        $historyTracker(e: { command: Command; args: any }): void;
-
-        $highlightBrackets(): void;
-        /** todo: move to mode.getMatching**/
-
-        $highlightTags(): void;
-        /**
-         *
-         * Blurs the current `textInput`.
-         **/
-
-        blur(): void;
-
-        onFocus(e: Event): void;
-
-        onBlur(e: Event): void;
-
-        $cursorChange(): void;
-
-        onDocumentChange(delta: Delta): void;
-
-        onTokenizerUpdate(e: Event): void;
-
-        onScrollTopChange(): void;
-
-        onScrollLeftChange(): void;
-        /**
-         * Emitted when the selection changes.
-         *
-         **/
-
-        onCursorChange(): void;
-
-        $updateHighlightActiveLine(): void;
-
-        onSelectionChange(e: Event): void;
-
-        $getSelectionHighLightRegexp(): void;
-
-        onChangeFrontMarker(): void;
-
-        onChangeBackMarker(): void;
-
-        onChangeBreakpoint(): void;
-
-        onChangeAnnotation(): void;
-
-        onChangeMode(e: Event): void;
-
-        onChangeWrapLimit(): void;
-
-        onChangeWrapMode(): void;
-
-        onChangeFold(): void;
-        /**
-         * Called whenever a text "copy" happens.
-         **/
-
-        onCopy(): void;
-        /**
-         * Called whenever a text "cut" happens.
-         **/
-
-        onCut(): void;
-        /**
-         * Called whenever a text "paste" happens.
-         * @param {String} text The pasted text
-         *
-         *
-         **/
-
-        onPaste(text: string, event: Event): void;
-
-        $handlePaste(e: string | { text: string }): void;
-
-        onTextInput(text: string, composition?: any): void;
-
-        applyComposition(text: string, composition: any): void;
-
-        onCommandKey(e: Event, hashId: any, keyCode: any): void;
-        /**
-         * Removes all the words to the left of the current selection, until the start of the line.
-         **/
-
-        removeToLineStart(): void;
-        /**
-         * Removes all the words to the right of the current selection, until the end of the line.
-         **/
-
-        removeToLineEnd(): void;
-        /**
-         * Works like [[EditSession.getTokenAt]], except it returns a number.
-         * @returns {Number}
-         **/
-
-        getNumberAt(row: number, column: number): number;
-
-        toggleWord(): void;
-        /**
-         * for internal use
-         * @ignore
-         *
-         **/
-
-        private $moveLines(dir: any, copy?: any): void;
-        /**
-         * Returns an object indicating the currently selected rows. The object looks like this:
-         *
-         * ```json
-         * { first: range.start.row, last: range.end.row }
-         * ```
-         *
-         * @returns {Object}
-         **/
-
-        $getSelectedRows(range: Range): { first: number, last: number };
-
-        onCompositionStart(compositionState: any): void;
-
-        onCompositionUpdate(text: string): void;
-
-        onCompositionEnd(): void;
-        /**
-         * Returns the number of currently visible rows.
-         * @returns {Number}
-         **/
-
-        $getVisibleRowCount(): number;
-
-        $moveByPage(dir: number, select: boolean): void;
-
-        $tryReplace(range: Range, replacement: any): Range | null;
-
-        revealRange(range: Range, animate: boolean): void;
-
-        $resetCursorStyle(): void;
-        /**
-         *
-         * Updates the cursor and marker layers.
-         * @method Editor.updateSelectionMarkers
-         *
-         **/
-
-        updateSelectionMarkers(): void;
-        /**
-         * Adds the selection and cursor.
-         * @param {Range} orientedRange A range containing a cursor
-         * @returns {Range}
-         * @method Editor.addSelectionMarker
-         **/
-
-        addSelectionMarker(orientedRange: Range): Range;
-        /**
-         * Removes the selection marker.
-         * @param {Range} range The selection range added with [[Editor.addSelectionMarker `addSelectionMarker()`]].
-         * @method Editor.removeSelectionMarker
-         **/
-
-        removeSelectionMarker(range: Range): void;
-
-        removeSelectionMarkers(range: Range): void;
-
-        $onAddRange(e: Event): void;
-
-        $onRemoveRange(e: Event): void;
-
-        $onMultiSelect(e: Event): void;
-
-        $onSingleSelect(e: Event): void;
-
-        $onMultiSelectExec(e: Event): void;
-        /**
-         * Executes a command for each selection range.
-         * @param {Object} cmd The command to execute
-         * @param {String} args Any arguments for the command
-         * @method Editor.forEachSelection
-         **/
-
-        forEachSelection(cmd: Command, args: string, options?: any): void;
-        /**
-         * Removes all the selections except the last added one.
-         * @method Editor.exitMultiSelectMode
-         **/
-
-        exitMultiSelectMode(): void;
-
-        $checkMultiselectChange(e: Event, anchor: Anchor): void;
-        /**
-         * Finds and selects all the occurrences of `needle`.
-         * @param {String} The text to find
-         * @param {Object} The search options
-         * @param {Boolean} keeps
-         *
-         * @returns {Number} The cumulative count of all found matches
-         * @method Editor.findAll
-         **/
-
-        findAll(needle: string, options?: any, additive?: boolean): number;
-        /**
-         * Adds a cursor above or below the active cursor.
-         *
-         * @param {Number} dir The direction of lines to select: -1 for up, 1 for down
-         * @param {Boolean} skip If `true`, removes the active selection range
-         *
-         * @method Editor.selectMoreLines
-         */
-
-        selectMoreLines(dir: number, skip: boolean): void;
-        /**
-         * Transposes the selected ranges.
-         * @param {Number} dir The direction to rotate selections
-         * @method Editor.transposeSelections
-         **/
-
-        transposeSelections(dir: number): void;
-        /**
-         * Finds the next occurrence of text in an active selection and adds it to the selections.
-         * @param {Number} dir The direction of lines to select: -1 for up, 1 for down
-         * @param {Boolean} skip If `true`, removes the active selection range
-         * @method Editor.selectMore
-         **/
-
-        selectMore(dir: number, skip: boolean, stopAtFirst?: any): void;
-        /**
-         * Aligns the cursors or selected text.
-         * @method Editor.alignCursors
-         **/
-
-        alignCursors(): void;
-
-        $reAlignText(lines: string[], forceLeft?: any): string[];
-
-        insertSnippet(content: any, options: any): any;
-
-        expandSnippet(options: any): any;
-
-        _emit(eventName: any, e: any): any;
-
-        _signal(eventName: any, e: any): void;
-
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        completers: Completer[];
     }
 
-    export class Reader { }
-}
+    type CompleterCallback = (error: any, completions: Completion[]) => void;
 
-export namespace parserlib {
-
-    export class Reporter {
-    }
-
-    export namespace util {
-
-        export class SyntaxUnit {
-            /**
-             * Create a new syntax unit based solely on the given token.
-             * Convenience method for creating a new syntax unit when
-             * it represents a single token instead of multiple.
-             * @param {Object} token The token object to represent.
-             * @return {parserlib.util.SyntaxUnit} The object representing the token.
-             * @static
-             * @method fromToken
-             */
-            fromToken(token: Object): parserlib.util.SyntaxUnit;
-            /**
-             * Base type to represent a single syntactic unit.
-             * @class SyntaxUnit
-             * @namespace parserlib.util
-             * @constructor
-             * @param {String} text The text of the unit.
-             * @param {Number} line The line of text on which the unit resides.
-             * @param {Number} col The column of text on which the unit resides.
-             */
-            constructor(text: String, line: Number, col: Number);
-        }
-
-        export class EventTarget {
-        }
-
-        export class StringReader {
-        }
-
-        export class SyntaxError {
-        }
-
-        export class TokenStreamBase {
-            /**
-             * Accepts an array of token information and outputs
-             * an array of token data containing key-value mappings
-             * and matching functions that the TokenStream needs.
-             * @param {any[]} tokens An array of token descriptors.
-             * @return {any[]} An array of processed token data.
-             * @method createTokenData
-             * @static
-             */
-            createTokenData(tokens: any[]): any[];
-            /**
-             * Generic TokenStream providing base functionality.
-             * @class TokenStreamBase
-             * @namespace parserlib.util
-             * @constructor
-             * @param {String|StringReader} input The text to tokenize or a reader from
-             *
-             which to read the input.
-             */
-            constructor(input: String | StringReader);
-        }
-
-        export class Combinator extends SyntaxUnit {
-        }
-
-        export class MediaFeature extends SyntaxUnit {
-            /**
-             * Represents a media feature, such as max-width:500.
-             * @namespace parserlib.css
-             * @class MediaFeature
-             * @extends parserlib.util.SyntaxUnit
-             * @constructor
-             * @param {SyntaxUnit} name The name of the feature.
-             * @param {SyntaxUnit} value The value of the feature or null if none.
-             */
-            constructor(name: SyntaxUnit, value: SyntaxUnit);
-        }
-
-        export class ValidationError {
-        }
-    }
-
-    export namespace css {
-
-        export class Specificity {
-            /**
-             * Calculates the specificity of the given selector.
-             * @param {parserlib.css.Selector} The selector to calculate specificity for.
-             * @return {parserlib.css.Specificity} The specificity of the selector.
-             * @static
-             * @method calculate
-             */
-            calculate(selector: any): parserlib.css.Specificity;
-            /**
-             * Represents a selector's specificity.
-             * @namespace parserlib.css
-             * @class Specificity
-             * @constructor
-             * @param {Number} a Should be 1 for inline styles, zero for stylesheet styles
-             * @param {Number} b Number of ID selectors
-             * @param {Number} c Number of classes and pseudo classes
-             * @param {Number} d Number of element names and pseudo elements
-             */
-            constructor(a: Number, b: Number, c: Number, d: Number);
-        }
-
-        export class PropertyValuePart extends util.SyntaxUnit {
-            /**
-             * Create a new syntax unit based solely on the given token.
-             * Convenience method for creating a new syntax unit when
-             * it represents a single token instead of multiple.
-             * @param {Object} token The token object to represent.
-             * @return {parserlib.css.PropertyValuePart} The object representing the token.
-             * @static
-             * @method fromToken
-             */
-            fromToken(token: Object): parserlib.css.PropertyValuePart;
-            /**
-             * Helper method to serialize a CSS string.
-             */
-            serializeString(value: any): string;
-            /**
-             * Helper method to parse a CSS string.
-             */
-            parseString(str: any): any;
-            /**
-             * Represents a single part of a CSS property value, meaning that it represents
-             * just one part of the data between ":" and ";".
-             * @param {String} text The text representation of the unit.
-             * @param {Number} line The line of text on which the unit resides.
-             * @param {Number} col The column of text on which the unit resides.
-             * @namespace parserlib.css
-             * @class PropertyValuePart
-             * @extends parserlib.util.SyntaxUnit
-             * @constructor
-             */
-            constructor(text: String, line: Number, col: Number);
-        }
-
-        export class PropertyValue extends util.SyntaxUnit {
-        }
-
-        export class PropertyValueIterator {
-            /**
-             * Drops the last saved bookmark.
-             * @return {void}
-             * @method drop
-             */
-            drop(): void;
-            /**
-             * Restores the last saved bookmark.
-             * @return {void}
-             * @method restore
-             */
-            restore(): void;
-            /**
-             * Returns the previous part of the property value or null if there is no
-             * previous part.
-             * @return {parserlib.css.PropertyValuePart} The previous part of the
-             * property value or null if there is no previous part.
-             * @method previous
-             */
-            previous(): parserlib.css.PropertyValuePart;
-            /**
-             * Returns the next part of the property value or null if there is no next
-             * part.
-             * @return {parserlib.css.PropertyValuePart} The next part of the property value or null if there is no next
-             * part.
-             * @method next
-             */
-            next(): parserlib.css.PropertyValuePart;
-            /**
-             * Returns the next part of the property value or null if there is no next
-             * part. Does not move the internal counter forward.
-             * @return {parserlib.css.PropertyValuePart} The next part of the property value or null if there is no next
-             * part.
-             * @method peek
-             */
-            peek(count: any): parserlib.css.PropertyValuePart;
-            /**
-             * Marks the current spot in the iteration so it can be restored to
-             * later on.
-             * @return {void}
-             * @method mark
-             */
-            mark(): void;
-            /**
-             * Indicates if there are more parts of the property value.
-             * @return {Boolean} True if there are more parts, false if not.
-             * @method hasNext
-             */
-            hasNext(): boolean;
-            /**
-             * Indicates if the iterator is positioned at the first item.
-             * @return {Boolean} True if positioned at first item, false if not.
-             * @method isFirst
-             */
-            isFirst(): boolean;
-            /**
-             * Returns the total number of parts in the value.
-             * @return {Number} The total number of parts in the value.
-             * @method count
-             */
-            count(): Number;
-            /**
-             * A utility class that allows for easy iteration over the various parts of a
-             * property value.
-             * @param {parserlib.css.PropertyValue} value The property value to iterate over.
-             * @namespace parserlib.css
-             * @class PropertyValueIterator
-             * @constructor
-             */
-            constructor(value: parserlib.css.PropertyValue);
-        }
-
-        export class Parser {
-        }
-
-        export class PropertyName extends util.SyntaxUnit {
-        }
-
-        export class Selector extends util.SyntaxUnit {
-            /**
-             * Represents an entire single selector, including all parts but not
-             * including multiple selectors (those separated by commas).
-             * @namespace parserlib.css
-             * @class Selector
-             * @extends parserlib.util.SyntaxUnit
-             * @constructor
-             * @param {any[]} parts Array of selectors parts making up this selector.
-             * @param {Number} line The line of text on which the unit resides.
-             * @param {Number} col The column of text on which the unit resides.
-             */
-            constructor(parts: any[], line: Number, col: Number);
-        }
-
-        export class SelectorPart extends util.SyntaxUnit {
-            /**
-             * Represents a single part of a selector string, meaning a single set of
-             * element name and modifiers. This does not include combinators such as
-             * spaces, +, >, etc.
-             * @namespace parserlib.css
-             * @class SelectorPart
-             * @extends parserlib.util.SyntaxUnit
-             * @constructor
-             * @param {String} elementName The element name in the selector or null
-             *
-             if there is no element name.
-             * @param {any[]} modifiers Array of individual modifiers for the element.
-             *
-             May be empty if there are none.
-             * @param {String} text The text representation of the unit.
-             * @param {Number} line The line of text on which the unit resides.
-             * @param {Number} col The column of text on which the unit resides.
-             */
-            constructor(elementName: String, modifiers: any[], text: String, line: Number, col: Number);
-        }
-
-        export class SelectorSubPart extends util.SyntaxUnit {
-        }
-        /**-----------------------------------------------------------------------------**/
-
-        export class TokenStream {
-        }
-
-        export class MediaQuery extends util.SyntaxUnit {
-            /**
-             * Represents an individual media query.
-             * @namespace parserlib.css
-             * @class MediaQuery
-             * @extends parserlib.util.SyntaxUnit
-             * @constructor
-             * @param {String} modifier The modifier "not" or "only" (or null).
-             * @param {String} mediaType The type of media (i.e., "print").
-             * @param {any[]} parts Array of selectors parts making up this selector.
-             * @param {Number} line The line of text on which the unit resides.
-             * @param {Number} col The column of text on which the unit resides.
-             */
-            constructor(modifier: String, mediaType: String, parts: any[], line: Number, col: Number);
-        }
+    interface Completer {
+        identifierRegexps?: Array<RegExp>,
+        getCompletions(editor: Editor,
+            session: EditSession,
+            position: Point,
+            prefix: string,
+            callback: CompleterCallback): void;
     }
 }
+
 
 export const version: string;
 export const config: Ace.Config;
 export function require(name: string): any;
 export function edit(el: Element | string, options?: Partial<Ace.EditorOptions>): Ace.Editor;
-export function createEditSession(text: Ace.Document | string, mode: Ace.Mode): Ace.EditSession;
+export function createEditSession(text: Ace.Document | string, mode: Ace.SyntaxMode): Ace.EditSession;

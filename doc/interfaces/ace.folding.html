@@ -76,12 +76,6 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -106,6 +100,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldAt" class="tsd-kind-icon">get<wbr>Fold<wbr>At</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldDisplayLine" class="tsd-kind-icon">get<wbr>Fold<wbr>Display<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldLine" class="tsd-kind-icon">get<wbr>Fold<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldRowEnd" class="tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldRowStart" class="tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>Start</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldStringAt" class="tsd-kind-icon">get<wbr>Fold<wbr>String<wbr>At</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldedRowCount" class="tsd-kind-icon">get<wbr>Folded<wbr>Row<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="Ace.Folding.html#getFoldsInRange" class="tsd-kind-icon">get<wbr>Folds<wbr>InRange</a></li>
@@ -135,22 +131,22 @@
 					<a name="_addFoldLine" class="tsd-anchor"></a>
 					<h3>$add<wbr>Fold<wbr>Line</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$add<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>foldLine<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">$add<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>foldLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L249">lib/ace/edit_session/folding.js:249</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L218">ace_new/ace/src/edit_session/folding.js:218</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>foldLine: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
+									<h5>foldLine: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -158,16 +154,18 @@
 					<a name="_cloneFoldData" class="tsd-anchor"></a>
 					<h3>$clone<wbr>Fold<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$clone<wbr>Fold<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></li>
+						<li class="tsd-signature tsd-kind-icon">$clone<wbr>Fold<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L542">lib/ace/edit_session/folding.js:542</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L511">ace_new/ace/src/edit_session/folding.js:511</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -175,19 +173,19 @@
 					<a name="_setFolding" class="tsd-anchor"></a>
 					<h3>$set<wbr>Folding</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$set<wbr>Folding<span class="tsd-signature-symbol">(</span>foldMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$set<wbr>Folding<span class="tsd-signature-symbol">(</span>foldMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L733">lib/ace/edit_session/folding.js:733</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L702">ace_new/ace/src/edit_session/folding.js:702</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> foldMode: <span class="tsd-signature-type">any</span></h5>
+									<h5>foldMode: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -198,25 +196,25 @@
 					<a name="_toggleFoldWidget" class="tsd-anchor"></a>
 					<h3>$toggle<wbr>Fold<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$toggle<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></li>
+						<li class="tsd-signature tsd-kind-icon">$toggle<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L801">lib/ace/edit_session/folding.js:801</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L770">ace_new/ace/src/edit_session/folding.js:770</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
 									<h5>options: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -224,13 +222,13 @@
 					<a name="addFold" class="tsd-anchor"></a>
 					<h3>add<wbr>Fold</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Fold<span class="tsd-signature-symbol">(</span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, range<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Fold<span class="tsd-signature-symbol">(</span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a>, range<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L264">lib/ace/edit_session/folding.js:264</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L233">ace_new/ace/src/edit_session/folding.js:233</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -241,10 +239,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>placeholder: <span class="tsd-signature-type">string</span></h5>
+									<h5>placeholder: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h5>
 								</li>
 								<li>
-									<h5>range: <a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> range: <a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h4>
@@ -257,13 +255,13 @@
 					<a name="addFolds" class="tsd-anchor"></a>
 					<h3>add<wbr>Folds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L345">lib/ace/edit_session/folding.js:345</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L314">ace_new/ace/src/edit_session/folding.js:314</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -272,7 +270,7 @@
 									<h5>folds: <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -280,13 +278,13 @@
 					<a name="expandFold" class="tsd-anchor"></a>
 					<h3>expand<wbr>Fold</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">expand<wbr>Fold<span class="tsd-signature-symbol">(</span>fold<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Fold<span class="tsd-signature-symbol">(</span>fold<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L419">lib/ace/edit_session/folding.js:419</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L388">ace_new/ace/src/edit_session/folding.js:388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +293,7 @@
 									<h5>fold: <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -303,13 +301,13 @@
 					<a name="expandFolds" class="tsd-anchor"></a>
 					<h3>expand<wbr>Folds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">expand<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L431">lib/ace/edit_session/folding.js:431</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L400">ace_new/ace/src/edit_session/folding.js:400</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -318,7 +316,7 @@
 									<h5>folds: <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,28 +324,28 @@
 					<a name="foldAll" class="tsd-anchor"></a>
 					<h3>fold<wbr>All</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">fold<wbr>All<span class="tsd-signature-symbol">(</span>startRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">fold<wbr>All<span class="tsd-signature-symbol">(</span>startRow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, endRow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L658">lib/ace/edit_session/folding.js:658</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L627">ace_new/ace/src/edit_session/folding.js:627</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>startRow: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>endRow: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> endRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>depth: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> depth: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -361,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L693">lib/ace/edit_session/folding.js:693</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L662">ace_new/ace/src/edit_session/folding.js:662</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -378,7 +376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L687">lib/ace/edit_session/folding.js:687</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L656">ace_new/ace/src/edit_session/folding.js:656</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -401,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L127">lib/ace/edit_session/folding.js:127</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L96">ace_new/ace/src/edit_session/folding.js:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L614">lib/ace/edit_session/folding.js:614</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L583">ace_new/ace/src/edit_session/folding.js:583</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -452,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L529">lib/ace/edit_session/folding.js:529</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L498">ace_new/ace/src/edit_session/folding.js:498</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -484,7 +482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L45">lib/ace/edit_session/folding.js:45</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L14">ace_new/ace/src/edit_session/folding.js:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -520,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L496">lib/ace/edit_session/folding.js:496</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L465">ace_new/ace/src/edit_session/folding.js:465</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -549,13 +547,13 @@
 					<a name="getFoldLine" class="tsd-anchor"></a>
 					<h3>get<wbr>Fold<wbr>Line</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldLine<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L190">lib/ace/edit_session/folding.js:190</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L159">ace_new/ace/src/edit_session/folding.js:159</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -564,10 +562,62 @@
 									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldLine: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldLine: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getFoldRowEnd" class="tsd-anchor"></a>
+					<h3>get<wbr>Fold<wbr>Row<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>End<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L144">ace.d.ts:144</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldRow: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getFoldRowStart" class="tsd-anchor"></a>
+					<h3>get<wbr>Fold<wbr>Row<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>Start<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L145">ace.d.ts:145</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldRow: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -575,13 +625,13 @@
 					<a name="getFoldStringAt" class="tsd-anchor"></a>
 					<h3>get<wbr>Fold<wbr>String<wbr>At</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>String<wbr>At<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, trim<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, foldLine<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>String<wbr>At<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, trim<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, foldLine<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L155">lib/ace/edit_session/folding.js:155</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L124">ace_new/ace/src/edit_session/folding.js:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -609,7 +659,7 @@
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>trim: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> trim: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> foldLine: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
@@ -629,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L225">lib/ace/edit_session/folding.js:225</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L194">ace_new/ace/src/edit_session/folding.js:194</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -655,7 +705,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L68">lib/ace/edit_session/folding.js:68</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L37">ace_new/ace/src/edit_session/folding.js:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,7 +733,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L112">lib/ace/edit_session/folding.js:112</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L81">ace_new/ace/src/edit_session/folding.js:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -700,13 +750,13 @@
 					<a name="getNextFoldLine" class="tsd-anchor"></a>
 					<h3>get<wbr>Next<wbr>Fold<wbr>Line</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldLine<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L209">lib/ace/edit_session/folding.js:209</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L178">ace_new/ace/src/edit_session/folding.js:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -720,10 +770,10 @@
 									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldLine: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldLine: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -731,13 +781,13 @@
 					<a name="getParentFoldRangeData" class="tsd-anchor"></a>
 					<h3>get<wbr>Parent<wbr>Fold<wbr>Range<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<wbr>Fold<wbr>Range<wbr>Data<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, ignoreCurrent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>firstRange<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<wbr>Fold<wbr>Range<wbr>Data<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, ignoreCurrent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>firstRange<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L758">lib/ace/edit_session/folding.js:758</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L727">ace_new/ace/src/edit_session/folding.js:727</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -746,16 +796,16 @@
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ignoreCurrent: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ignoreCurrent: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>firstRange<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>firstRange<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>range<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>first<wbr>Range<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5>range<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> range<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 							</ul>
 						</li>
@@ -765,25 +815,25 @@
 					<a name="getRowFoldEnd" class="tsd-anchor"></a>
 					<h3>get<wbr>Row<wbr>Fold<wbr>End</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Fold<wbr>End<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Fold<wbr>End<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, startFoldRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L486">lib/ace/edit_session/folding.js:486</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L455">ace_new/ace/src/edit_session/folding.js:455</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
+									<h5>docRow: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>startFoldRow: <span class="tsd-signature-type">string</span></h5>
+									<h5>startFoldRow: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -791,25 +841,25 @@
 					<a name="getRowFoldStart" class="tsd-anchor"></a>
 					<h3>get<wbr>Row<wbr>Fold<wbr>Start</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Fold<wbr>Start<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Fold<wbr>Start<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, startFoldRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L491">lib/ace/edit_session/folding.js:491</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L460">ace_new/ace/src/edit_session/folding.js:460</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
+									<h5>docRow: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>startFoldRow: <span class="tsd-signature-type">string</span></h5>
+									<h5>startFoldRow: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -817,13 +867,13 @@
 					<a name="isRowFolded" class="tsd-anchor"></a>
 					<h3>is<wbr>Row<wbr>Folded</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Row<wbr>Folded<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Row<wbr>Folded<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startFoldRow<span class="tsd-signature-symbol">?: </span><a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L482">lib/ace/edit_session/folding.js:482</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L451">ace_new/ace/src/edit_session/folding.js:451</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -838,7 +888,7 @@
 									<h5>docRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>startFoldRow: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startFoldRow: <a href="../classes/Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -849,22 +899,22 @@
 					<a name="onFoldWidgetClick" class="tsd-anchor"></a>
 					<h3>on<wbr>Fold<wbr>Widget<wbr>Click</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Fold<wbr>Widget<wbr>Click<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, e<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Fold<wbr>Widget<wbr>Click<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L785">lib/ace/edit_session/folding.js:785</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L754">ace_new/ace/src/edit_session/folding.js:754</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>e: <a href="../classes/Ace.Event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a></h5>
+									<h5>e: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -875,13 +925,13 @@
 					<a name="removeFold" class="tsd-anchor"></a>
 					<h3>remove<wbr>Fold</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Fold<span class="tsd-signature-symbol">(</span>fold<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Fold<span class="tsd-signature-symbol">(</span>fold<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L351">lib/ace/edit_session/folding.js:351</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L320">ace_new/ace/src/edit_session/folding.js:320</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -890,7 +940,7 @@
 									<h5>fold: <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -898,13 +948,13 @@
 					<a name="removeFolds" class="tsd-anchor"></a>
 					<h3>remove<wbr>Folds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Folds<span class="tsd-signature-symbol">(</span>folds<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L404">lib/ace/edit_session/folding.js:404</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L373">ace_new/ace/src/edit_session/folding.js:373</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -913,7 +963,7 @@
 									<h5>folds: <a href="../classes/Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -927,7 +977,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L715">lib/ace/edit_session/folding.js:715</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L684">ace_new/ace/src/edit_session/folding.js:684</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -944,19 +994,19 @@
 					<a name="toggleFold" class="tsd-anchor"></a>
 					<h3>toggle<wbr>Fold</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Fold<span class="tsd-signature-symbol">(</span>tryToUnfold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Fold<span class="tsd-signature-symbol">(</span>tryToUnfold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L554">lib/ace/edit_session/folding.js:554</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L523">ace_new/ace/src/edit_session/folding.js:523</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tryToUnfold: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tryToUnfold: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -967,19 +1017,19 @@
 					<a name="toggleFoldWidget" class="tsd-anchor"></a>
 					<h3>toggle<wbr>Fold<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>toggleParent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>toggleParent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L849">lib/ace/edit_session/folding.js:849</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L818">ace_new/ace/src/edit_session/folding.js:818</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> toggleParent: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> toggleParent: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -990,19 +1040,19 @@
 					<a name="tokenizerUpdateFoldWidgets" class="tsd-anchor"></a>
 					<h3>tokenizer<wbr>Update<wbr>Fold<wbr>Widgets</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">tokenizer<wbr>Update<wbr>Fold<wbr>Widgets<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../classes/Ace.Event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">tokenizer<wbr>Update<wbr>Fold<wbr>Widgets<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L886">lib/ace/edit_session/folding.js:886</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L855">ace_new/ace/src/edit_session/folding.js:855</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>e: <a href="../classes/Ace.Event.html" class="tsd-signature-type" data-tsd-kind="Class">Event</a></h5>
+									<h5>e: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1019,7 +1069,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L437">lib/ace/edit_session/folding.js:437</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L406">ace_new/ace/src/edit_session/folding.js:406</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1045,7 +1095,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/lib/ace/edit_session/folding.js#L872">lib/ace/edit_session/folding.js:872</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/folding.js#L841">ace_new/ace/src/edit_session/folding.js:841</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1068,15 +1118,6 @@
 					</li>
 					<li class="current tsd-kind-namespace">
 						<a href="../modules/Ace.html">Ace</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="../modules/parserlib.html">parserlib</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.css.html">parserlib.css</a>
-					</li>
-					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-						<a href="../modules/parserlib.util.html">parserlib.util</a>
 					</li>
 				</ul>
 			</nav>
@@ -1137,6 +1178,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="Ace.Folding.html#getFoldLine" class="tsd-kind-icon">get<wbr>Fold<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="Ace.Folding.html#getFoldRowEnd" class="tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="Ace.Folding.html#getFoldRowStart" class="tsd-kind-icon">get<wbr>Fold<wbr>Row<wbr>Start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="Ace.Folding.html#getFoldStringAt" class="tsd-kind-icon">get<wbr>Fold<wbr>String<wbr>At</a>

@@ -1,289 +1,4 @@
 export namespace Ace {
-    export class Map {
-    }
-
-    export class NodeBuffer {
-    }
-
-    export class XQLint {
-    }
-
-    export class SetCache {
-    }
-
-    export class LodashWrapper {
-    }
-
-    export class ArrayBuffer {
-    }
-
-    export class XQDoc {
-    }
-
-    export class StyleChecker {
-    }
-
-    export class Translator {
-    }
-
-    export class JSONParseTreeHandler {
-    }
-
-    export class XQueryParser {
-    }
-
-    export class JSONiqParser {
-    }
-
-    export class XQueryTokenizer {
-    }
-
-    export class Handlers {
-    }
-
-    export class StaticContext {
-    }
-
-    export class SchemaBuiltinTypes {
-    }
-
-    export class EQNameHandler {
-    }
-
-    export class SchemaPrefixHandler {
-    }
-
-    export class Errors {
-    }
-
-    export class TreeOps {
-    }
-
-    export class StaticWarning {
-    }
-
-    export class StaticError {
-    }
-
-    export class TokenHandler {
-    }
-
-    export class JSONiqTokenizer {
-    }
-
-    export class ElementAttributes {
-    }
-
-    export class XMLReader {
-    }
-
-    export class EntityReference {
-    }
-
-    export class Notation {
-    }
-
-    export class DocumentType {
-    }
-
-    export class CDATASection {
-    }
-
-    export class CharacterData {
-    }
-
-    export class Attr {
-    }
-
-    export class DOMImplementation {
-    }
-
-    export class NamedNodeMap {
-    }
-
-    export class NodeList {
-    }
-
-    export class DOMException {
-    }
-
-    export class ExceptionMessage {
-    }
-
-    export class ExceptionCode {
-    }
-
-    export class VisualforceMode {
-    }
-
-    export class SnippetGroupHighlightRules {
-    }
-
-    export class SnippetHighlightRules {
-    }
-
-    export class NameStack {
-    }
-
-    export class Context {
-    }
-
-    export class CompArray {
-    }
-
-    export class FutureReservedWord {
-    }
-
-    export class Lexer {
-    }
-
-    export class SymbolProto {
-    }
-
-    export class ArrayProto {
-    }
-
-    export class Ctor {
-    }
-
-    export class Stack {
-        constructor(entries: any[]);
-    }
-
-    export class MapCache {
-    }
-
-    export class ListCache {
-        constructor(entries: any[]);
-    }
-
-    export class Hash {
-        constructor(entries: any[]);
-    }
-
-    export class DataView {
-    }
-
-    export class Buffer {
-    }
-
-    export class TempCtor {
-    }
-
-    export class StackItem {
-    }
-
-    export class SpecialElements {
-    }
-
-    export class EntityParser {
-    }
-
-    export class InputStream {
-    }
-
-    export class ElementStack {
-    }
-
-    export class Tag {
-    }
-
-    export class EjsHighlightRules {
-    }
-
-    export class DjangoHtmlHighlightRules {
-    }
-
-    export class DjangoHighlightRules {
-    }
-
-    export class Properties {
-    }
-
-    export class XQueryBehaviour {
-    }
-
-    export class XmlBehaviour {
-    }
-
-    export class LiquidBehaviour {
-    }
-
-    export class HtmlBehaviour {
-    }
-
-    export class CssBehaviour {
-    }
-
-    export class ApexMode {
-    }
-
-    export class Keys {
-    }
-
-    export class UnicodeTBL20 {
-    }
-
-    export class UnicodeTBL00 {
-    }
-
-    export class ArabicAlefBetIntervalsEnd {
-    }
-
-    export class ArabicAlefBetIntervalsBegine {
-    }
-
-    export class TextInput {
-    }
-
-    export class MultiHashHandler {
-    }
-
-    export class ISearchKbd {
-    }
-
-    export class SimpleTextLayer {
-    }
-
-    export class AceEmmetEditor {
-    }
-
-    export class AcePopup {
-    }
-
-    export class UIWorkerClient {
-    }
-
-    export class WorkerClient {
-        $createWorkerFromOldConfig(topLevelNamespaces: any, mod: any, classname: any, workerUrl: any, importScripts: any): any;
-        $sendDeltaQueue(): void;
-        changeListener(delta: any): void;
-        attachToDocument(doc: any): void;
-        emit(event: any, data: any): void;
-        call(cmd: any, args: any, callback: any): void;
-        send(cmd: any, args: any): void;
-        terminate(): void;
-        $normalizePath(path: any): any;
-        reportError(err: any): void;
-        onMessage(e: any): void;
-    }
-
-    export class BlobBuilder {
-    }
-
-    export class Sender {
-        emit(name: any, data: any): void;
-        callback(data: any, callbackId: any): void;
-    }
-
-    export class Mirror {
-        isPending(): any;
-        onUpdate(): void;
-        getValue(callbackId: any): void;
-        setValue(value: any): void;
-        setTimeout(timeout: any): void;
-    }
-
     export class Tooltip {
         destroy(): void;
         getWidth(): Number;
@@ -350,6 +65,41 @@ export namespace Ace {
         stopPropagation(): void;
         preventDefault(): void;
         initMouseEvent(type: any, _1: any, _2: any, window: any, detail: any, x: any, y: any, _x: any, _y: any, ctrl: any, alt: any, shift: any, meta: any, button: any, relatedTarget: any): void;
+    }
+
+    export class Node {
+        blur(): void;
+        focus(): void;
+        contains(node: any): boolean;
+        dispatchEvent(e: any): void;
+        createEvent(v: any): any;
+        removeEventListener(name: any, listener: any): void;
+        addEventListener(name: any, listener: any, capturing: any): void;
+        getBoundingClientRect(v: any): { top: number; left: number; width: number; height: number; right: number; bottom: number; };
+        insertAdjacentElement(position: any, element: any): void;
+        insertAdjacentHTML(position: any, markup: any): void;
+        ___format(indent: any): string;
+        getAttribute(a: any, v: any): any;
+        setAttribute(a: any, v: any): void;
+        removeAttribute(a: any): void;
+        closest(s: any): any;
+        matches(selector: any): boolean;
+        getElementById(s: any): any;
+        getElementsByTagName(s: any): {};
+        querySelector(s: any): any;
+        querySelectorAll(selector: any): {};
+        hasAttributes(): boolean;
+        hasChildNodes(): boolean;
+        before(node: any): void;
+        insertBefore(node: any, before: any): any;
+        replaceChild(node: any, oldNode: any): any;
+        remove(): void;
+        removeChild(node: any): void;
+        appendChild(node: any): any;
+        cloneNode(recursive: any): any;
+    }
+
+    export class Attr {
     }
 
     export class ClassList {
@@ -605,70 +355,19 @@ export namespace Ace {
     export class GutterHandler {
     }
 
-    export class YamlWorker {
-        onUpdate(): void;
-        changeOptions(newOptions: any): void;
-        setOptions(): void;
+    export class VisualforceMode {
     }
 
-    export class Schema {
-        create(): any;
+    export class SnippetGroupHighlightRules {
     }
 
-    export class Mark {
-        toString(compact: any): string;
-        getSnippet(indent: any, maxLength: any): string;
-    }
-
-    export class YAMLException {
-        toString(compact: any): string;
-    }
-
-    export class State {
-    }
-
-    export class XQueryWorker {
-        onUpdate(): void;
-    }
-
-    export class LazyWrapper {
-        toArray(): any;
-        takeRightWhile(predicate: any, thisArg: any): any;
-        slice(start: any, end: any): any;
-        reject(predicate: any, thisArg: any): any;
-        compact(): any;
-        LazyWrapper(): any;
-    }
-
-    export class Rules {
-        exports(): any;
-    }
-
-    export class XMLSerializer {
-        serializeToString(node: any): any;
-    }
-
-    export class LiveNodeList {
-        item(i: any): any;
-    }
-
-    export class DOMHandler {
-        DOMHandler(): any;
-    }
-
-    export class DOMParser {
-        parseFromString(source: any, mimeType: any): any;
+    export class SnippetHighlightRules {
     }
 
     export class RazorCompletions {
         getKeywordCompletions(state: any, session: any, pos: any, prefix: any): any;
         getShortStartCompletions(state: any, session: any, pos: any, prefix: any): any;
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
-    }
-
-    export class PhpWorker {
-        onUpdate(): void;
-        setOptions(opts: any): void;
     }
 
     export class PhpCompletions {
@@ -698,39 +397,6 @@ export namespace Ace {
         checkOutdent(line: any, input: any): any;
     }
 
-    export class LoopFlowContext {
-        addLocal(): void;
-        addGoto(): never;
-        popScope(): void;
-        pushScope(isLoop: any): void;
-        isInLoop(): boolean;
-    }
-
-    export class FullFlowContext {
-        raiseDeferredErrors(): void;
-        currentScope(): any;
-        addLocal(name: any, token: any): void;
-        addLabel(name: any, token: any): void;
-        addGoto(target: any, token: any): void;
-        popScope(): void;
-        pushScope(isLoop: any): void;
-        isInLoop(): boolean;
-    }
-
-    export class JsonWorker {
-        onUpdate(): void;
-    }
-
-    export class JavaScriptWorker {
-        onUpdate(): any;
-        changeOptions(newOptions: any): void;
-        setOptions(options: any): void;
-    }
-
-    export class Item {
-        run(): void;
-    }
-
     export class HtmlCompletions {
         getHTMLEntityCompletions(state: any, session: any, pos: any, prefix: any): any;
         getAttributeValueCompletions(state: any, session: any, pos: any, prefix: any): any;
@@ -739,145 +405,7 @@ export namespace Ace {
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
     }
 
-    export class NullLexicalHandler {
-        startEntity(): void;
-        startDTD(): void;
-        startCDATA(): void;
-        endEntity(): void;
-        endDTD(): void;
-        endCDATA(): void;
-        comment(): void;
-    }
-
-    export class ProcessingInstruction {
-        getNodeType(): number;
-        visit(treeParser: any): void;
-    }
-
-    export class SkippedEntity {
-        visit(treeParser: any): void;
-    }
-
-    export class Entity {
-        revisit(treeParser: any): void;
-        visit(treeParser: any): void;
-    }
-
-    export class Comment {
-        visit(treeParser: any): void;
-    }
-
-    export class IgnorableWhitespace {
-        visit(treeParser: any): void;
-    }
-
-    export class Characters {
-        visit(treeParser: any): void;
-    }
-
-    export class DocumentFragment {
-        visit(treeParser: any): void;
-    }
-
-    export class ParentNode {
-        removeChild(node: any): any;
-        appendChildren(parent: any): void;
-        appendChild(child: any): any;
-        insertBetween(child: any, prev: any, next: any): any;
-        insertBefore(child: any, sibling: any): any;
-    }
-
-    export class Node {
-        ___format(indent: any): string;
-        blur(): void;
-        focus(): void;
-        contains(node: any): boolean;
-        dispatchEvent(e: any): void;
-        createEvent(v: any): any;
-        removeEventListener(name: any, listener: any): void;
-        addEventListener(name: any, listener: any, capturing: any): void;
-        getBoundingClientRect(v: any): { top: number; left: number; width: number; height: number; right: number; bottom: number; };
-        insertAdjacentElement(position: any, element: any): void;
-        insertAdjacentHTML(position: any, markup: any): void;
-        ___format(indent: any): string;
-        getAttribute(a: any, v: any): any;
-        setAttribute(a: any, v: any): void;
-        removeAttribute(a: any): void;
-        closest(s: any): any;
-        matches(selector: any): boolean;
-        getElementById(s: any): any;
-        getElementsByTagName(s: any): {};
-        querySelector(s: any): any;
-        querySelectorAll(selector: any): {};
-        hasAttributes(): boolean;
-        hasChildNodes(): boolean;
-        before(node: any): void;
-        insertBefore(node: any, before: any): any;
-        replaceChild(node: any, oldNode: any): any;
-        remove(): void;
-        removeChild(node: any): void;
-        appendChild(node: any): any;
-        cloneNode(recursive: any): any;
-        toString(): any;
-        detach(): void;
-        revisit(treeParser: any): void;
-        visit(treeParser: any): never;
-    }
-
-    export class NodeType {
-    }
-
-    export class SAXParser {
-        parseFragment(source: any, context: any): void;
-        parse(source: any, context: any): void;
-    }
-
-    export class TreeParser {
-        startEntity(name: any, locator: any): void;
-        startDTD(name: any, publicId: any, systemId: any, locator: any): void;
-        startCDATA(locator: any): void;
-        endEntity(name: any, locator: any): void;
-        endDTD(locator: any): void;
-        endCDATA(locator: any): void;
-        comment(ch: any, start: any, length: any, locator: any): void;
-        startPrefixMapping(prefix: any, uri: any, locator: any): void;
-        startElement(uri: any, localName: any, qName: any, atts: any, locator: any): void;
-        startDocument(locator: any): void;
-        skippedEntity(name: any, locator: any): void;
-        processingInstruction(target: any, data: any, locator: any): void;
-        ignorableWhitespace(ch: any, start: any, length: any, locator: any): void;
-        endPrefixMapping(prefix: any, locator: any): void;
-        endElement(uri: any, localName: any, qName: any, locator: any): void;
-        endDocument(locator: any): void;
-        characters(ch: any, start: any, length: any, locator: any): void;
-        parse(node: any): void;
-    }
-
-    export class SAXTreeBuilder {
-        addAttributesToElement(element: any, attributes: any): void;
-        getFragment(): any;
-        reparentChildren(oldParent: any, newParent: any): void;
-        detachFromParent(element: any): void;
-        attachNodeToFosterParent(child: any, table: any, stackParent: any): void;
-        attachNode(node: any, parent: any): void;
-        insertText(data: any): any;
-        appendCharacters(parent: any, data: any): void;
-        insertComment(data: any, parent: any): void;
-        createElement(namespaceURI: any, localName: any, attributes: any): any;
-        insertDoctype(name: any, publicId: any, systemId: any): void;
-        end(): void;
-        start(tokenizer: any): void;
-    }
-
-    export class TreeBuilder {
-    }
-
-    export class CharacterBuffer {
-        takeLeadingWhitespace(): any;
-        takeRemaining(): any;
-        skipLeadingNonWhitespace(): void;
-        skipLeadingWhitespace(): void;
-        skipAtMostOneLeadingNewline(): void;
+    export class Tag {
     }
 
     export class FoldMode {
@@ -907,96 +435,20 @@ export namespace Ace {
         getFoldWidget(session: any, foldStyle: any, row: any): any;
     }
 
+    export class EjsHighlightRules {
+    }
+
+    export class DjangoHtmlHighlightRules {
+    }
+
+    export class DjangoHighlightRules {
+    }
+
     export class CssCompletions {
         getPropertyValueCompletions(state: any, session: any, pos: any, prefix: any): any;
         getPropertyCompletions(state: any, session: any, pos: any, prefix: any): any;
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
         defineCompletions(): void;
-    }
-
-    export class Reporter {
-        constructor(lines: String[], ruleset: Object, explicitly: Object, ignore: [][]);
-    }
-
-    export class CSSLint {
-    }
-
-    export class SyntaxError {
-        constructor(message: String, line: Number, col: Number);
-    }
-
-    export class StringReader {
-        constructor(text: String);
-    }
-
-    export class EventTarget {
-        constructor();
-    }
-
-    export class ValidationTypes {
-    }
-
-    export class ValidationError {
-        constructor(message: String, line: Number, col: Number);
-    }
-
-    export class Validation {
-    }
-
-    export class Tokens {
-        type(c: any): any;
-        name(tt: any): any;
-    }
-
-    export class TokenStream {
-        constructor(input: String | Reader);
-    }
-
-    export class SelectorSubPart {
-        constructor(text: String, type: String, line: Number, col: Number);
-    }
-
-    export class Pseudos {
-        isElement(pseudo: any): boolean;
-    }
-
-    export class PropertyValue {
-        constructor(parts: String[], line: Number, col: Number);
-    }
-
-    export class PropertyName {
-        toString(): any;
-        constructor(text: String, hack: String, line: Number, col: Number);
-    }
-
-    export class Parser {
-        constructor(options: Object);
-    }
-
-    export class Matcher {
-        oror(): any;
-        andand(): any;
-        many(required: any): any;
-        alt(): any;
-        seq(): any;
-        fromType(type: any): any;
-        cast(m: any): any;
-        parse(str: any): any;
-        match(expression: any): any;
-    }
-
-    export class Combinator {
-        constructor(text: String, line: Number, col: Number);
-    }
-
-    export class Colors {
-    }
-
-    export class Worker {
-        setOptions(options: any): void;
-        setDisabledRules(ruleNames: any): void;
-        setInfoRules(ruleNames: any): void;
-        onUpdate(): void;
     }
 
     export class Behaviour {
@@ -1005,6 +457,35 @@ export namespace Ace {
         remove(name: any): void;
         addBehaviours(behaviours: any): void;
         add(name: any, action: any, callback: any): void;
+    }
+
+    export class XQueryBehaviour {
+    }
+
+    export class XmlBehaviour {
+    }
+
+    export class LiquidBehaviour {
+    }
+
+    export class HtmlBehaviour {
+    }
+
+    export class CstyleBehaviour {
+        clearMaybeInsertedClosing(): void;
+        popAutoInsertedClosing(): void;
+        isMaybeInsertedClosing(cursor: any, line: any): boolean;
+        isAutoInsertedClosing(cursor: any, line: any, bracket: any): boolean;
+        recordMaybeInsert(editor: any, session: any, bracket: any): void;
+        recordAutoInsert(editor: any, session: any, bracket: any): void;
+        $matchTokenType(token: any, types: any): boolean;
+        isSaneInsertion(editor: any, session: any): any;
+    }
+
+    export class CssBehaviour {
+    }
+
+    export class ApexMode {
     }
 
     export class LineWidgets {
@@ -1025,6 +506,9 @@ export namespace Ace {
         getRowLength(row: any): any;
     }
 
+    export class Keys {
+    }
+
     export class EventListener {
         destroy(): void;
     }
@@ -1032,6 +516,18 @@ export namespace Ace {
     export class Object {
         values(o: any): any;
         assign(target: any): any;
+    }
+
+    export class UnicodeTBL20 {
+    }
+
+    export class UnicodeTBL00 {
+    }
+
+    export class ArabicAlefBetIntervalsEnd {
+    }
+
+    export class ArabicAlefBetIntervalsBegine {
     }
 
     export class AppConfig {
@@ -1071,8 +567,6 @@ export namespace Ace {
     }
 
     export class Marker {
-        bless(node: any): void;
-        complete(): void;
         drawScreenLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         drawFullLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         drawBidiSingleLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraLength: any, extraStyle: any): void;
@@ -1161,6 +655,9 @@ export namespace Ace {
         $updateOpacity(val: any): void;
     }
 
+    export class MultiHashHandler {
+    }
+
     export class HashHandler {
         getStatusText(editor: any, data: any): any;
         handleKeyboard(data: any, hashId: any, keyString: any, keyCode: any): { command: any; };
@@ -1195,8 +692,14 @@ export namespace Ace {
         constructor();
     }
 
+    export class ISearchKbd {
+    }
+
     export class StatusBar {
         updateStatus(editor: any): void;
+    }
+
+    export class SimpleTextLayer {
     }
 
     export class SearchBox {
@@ -1228,6 +731,28 @@ export namespace Ace {
         renderOptionGroup(group: any): any;
         render(): void;
         add(config: any): void;
+    }
+
+    export class Mode {
+        $createKeywordList(): any;
+        getKeywords(append: any): any;
+        transformAction(state: any, action: any, editor: any, session: any, param: any): any;
+        $delegator(method: any, args: any, defaultHandler: any): any;
+        allowAutoInsert(): boolean;
+        getLanguageMode(position: any): "R" | "HTML";
+        toggleCommentLines(state: any, doc: any, startRow: any, endRow: any): void;
+        getMatching(session: any, row: any, column: any, tokenRange: any): any;
+        getCompletions(state: any, session: any, pos: any, prefix: any): any;
+        createWorker(session: any): any;
+        $calculateIndent(line: any, tab: any): any;
+        $toIndent(str: any): any;
+        autoOutdent(state: any, doc: any, row: any): void;
+        checkOutdent(state: any, line: any, input: any): any;
+        getNextLineIndent(state: any, line: any, tab: any): any;
+        supportsFile(filename: any): any;
+    }
+
+    export class AceEmmetEditor {
     }
 
     export class ElasticTabstopsLite {
@@ -1265,9 +790,9 @@ export namespace Ace {
     }
 
     export class BidiHandler {
-        offsetToCol(posX: any): Number;
-        getSelections(startCol: any, endCol: any): Object[];
-        getPosLeft(col: any): number;
+        offsetToCol(posX: Number): Number;
+        getSelections(startCol: Number, endCol: Number): Object[];
+        getPosLeft(col: Number): number;
         setRtlDirection(editor: any, isRtlDir: any): void;
         isRtlLine(row: any): any;
         setContentWidth(width: any): void;
@@ -1287,8 +812,8 @@ export namespace Ace {
     export class BackgroundTokenizer {
         cleanup(): void;
         $tokenizeRow(row: any): any;
-        getState(row: Number): any;
-        getTokens(row: Number): any;
+        getState(row: Number): string;
+        getTokens(row: Number): Token[];
         stop(): void;
         $updateOnChange(delta: any): void;
         scheduleStart(): void;
@@ -1328,62 +853,56 @@ export namespace Ace {
         $init(): any;
     }
 
+    export class AcePopup {
+        constructor(parentNode: Element);
+    }
+
     export type NewLineMode = 'auto' | 'unix' | 'windows';
 
     export class Anchor implements EventEmitter {
-        constructor(doc: Document, row: number, column: number);
-        on(name: 'change', callback: (delta: Delta) => void): void;
-        getPosition(): Point;
+        $clipPositionToDocument(row: Number, column: Number): Ace.Point;
+        on(name: 'change', callback: (e: Object) => void): void;
+        onChange(delta: Ace.Delta): void;
+        constructor(doc: Document, row: Number, column: Number);
+        getPosition(): Position;
         getDocument(): Document;
         setPosition(row: number, column: number, noClip?: boolean): void;
         detach(): void;
         attach(doc: Document): void;
-        $clipPositionToDocument(row: number, column: number): Point;
-        onChange(delta: Delta): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
         off(name: string, callback: Function): void;
+
+        on(name: string, callback: Function, capturing?: boolean): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
 
     export class Document implements EventEmitter {
-        revisit(treeParser: any): void;
-        visit(treeParser: any): void;
+        $splitAndapplyLargeDelta(delta: any, MAX: any): void;
         $safeApplyDelta(delta: any): void;
-        insertNewLine(position: any): any;
+        on(name: 'change', callback: (e: Object) => void): void;
+        $clipPosition(position: any): any;
         removeLines(firstRow: any, lastRow: any): any;
         insertLines(row: any, lines: any): any;
-        constructor(textOrLines: string | string[]);
-        on(name: 'change', callback: (delta: Delta) => void): void;
+        $detectNewLine(text: any): void;
+        $split(text: any): any;
+        constructor(textOrLines: String | String[]);
         setValue(text: string): void;
         getValue(): string;
         createAnchor(row: number, column: number): Anchor;
@@ -1394,64 +913,51 @@ export namespace Ace {
         getLine(row: number): string;
         getLines(firstRow: number, lastRow: number): string[];
         getAllLines(): string[];
+        getLength(): number;
         getTextRange(range: Range): string;
         getLinesForRange(range: Range): string[];
-        insert(position: Point, text: string): Point;
-        insertInLine(position: Point, text: string): Point;
+        insert(position: Position, text: string): Position;
+        insert(position: { row: number, column: number }, text: string): Position;
+        insertInLine(position: Position, text: string): Position;
+        insertNewLine(position: Point): Point;
         clippedPos(row: number, column: number): Point;
         clonePos(pos: Point): Point;
         pos(row: number, column: number): Point;
         insertFullLines(row: number, lines: string[]): void;
-        insertMergedLines(position: Point, lines: string[]): Point;
-        remove(range: Range): Point;
-        removeInLine(row: number, startColumn: number, endColumn: number): Point;
+        insertMergedLines(position: Position, lines: string[]): Point;
+        remove(range: Range): Position;
+        removeInLine(row: number, startColumn: number, endColumn: number): Position;
         removeFullLines(firstRow: number, lastRow: number): string[];
         removeNewLine(row: number): void;
-        replace(range: Range, text: string): Point;
+        replace(range: Range, text: string): Position;
         applyDeltas(deltas: Delta[]): void;
         revertDeltas(deltas: Delta[]): void;
         applyDelta(delta: Delta, doNotValidate?: boolean): void;
         revertDelta(delta: Delta): void;
-        indexToPosition(index: number, startRow: number): Point;
-        positionToIndex(pos: Point, startRow?: number): number;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
+        indexToPosition(index: number, startRow: number): Position;
+        positionToIndex(pos: Position, startRow?: number): number;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
         off(name: string, callback: Function): void;
-        $split(text: string): string;
-        $detectNewLine(text: string): void;
-        getLength(): number;
-        $clipPosition(position: Point): Point;
-        $splitAndapplyLargeDelta(delta: Delta, MAX: number): void;
+
+        on(name: string, callback: Function, capturing?: boolean): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
 
     export class FoldLine {
@@ -1488,47 +994,65 @@ export namespace Ace {
     }
 
     interface Folding {
+        tokenizerUpdateFoldWidgets(e: any): void;
+        $toggleFoldWidget(row: any, options: any): any;
+        onFoldWidgetClick(row: any, e: any): void;
+        $setFolding(foldMode: any): void;
         foldAllComments(): void;
         foldToLevel(level: any): void;
+        $cloneFoldData(): {};
+        getRowFoldStart(docRow: any, startFoldRow: any): any;
+        getRowFoldEnd(docRow: any, startFoldRow: any): any;
+        $addFoldLine(foldLine: any): any;
         getFoldAt(row: number, column: number, side: number): Fold;
-        getFoldsInRange(range: Range): Array<Fold>;
-        getFoldsInRangeList(ranges: Array<Range>): Array<Fold>;
-        getAllFolds(): Array<Fold>;
-        addFold(placeholder: string, range: Range): Fold;
-        addFolds(folds: Array<Fold>);
-        removeFold(fold: Fold);
-        removeFolds(folds: Array<Fold>);
-        expandFold(fold: Fold);
-        expandFolds(folds: Array<Fold>);
-        foldAll(startRow: number, endRow: number, depth: number);
-        getFoldStringAt(row: number, column: number, trim, foldLine?: FoldLine): string | null;
-        getFoldLine(docRow: number, startFoldLine?: string): string | null;
-        getNextFoldLine(docRow: number, startFoldLine?: string): string | null;
+        getFoldsInRange(range: Range): Fold[];
+        getFoldsInRangeList(ranges: Range[]): Fold[];
+        getAllFolds(): Fold[];
+        getFoldStringAt(row: number,
+            column: number,
+            trim?: number,
+            foldLine?: FoldLine): string | null;
+        getFoldLine(docRow: number, startFoldLine?: FoldLine): FoldLine | null;
+        getNextFoldLine(docRow: number, startFoldLine?: FoldLine): FoldLine | null;
         getFoldedRowCount(first: number, last: number): number;
-        $addFoldLine(foldLine: FoldLine): string;
-        unfold(location: number | Point | Range, expandInner?: boolean): Fold[];
-        isRowFolded(docRow: number, startFoldRow: string): boolean;
-        getRowFoldEnd(docRow: number, startFoldRow: string): number;
-        getRowFoldStart(docRow: number, startFoldRow: string): number;
-        getFoldDisplayLine(foldLine: FoldLine, endRow: number, endColumn: number, startRow: number, startColumn: number): string;
-        getDisplayLine(row: number, endColumn: number, startRow: number, startColumn: number): string;
-        $cloneFoldData(): FoldLine;
-        toggleFold(tryToUnfold?: any): void;
-        getCommentFoldRange(row: number, column: number, dir: number): Range;
+        addFold(placeholder: string | Fold, range?: Range): Fold;
+        addFolds(folds: Fold[]): void;
+        removeFold(fold: Fold): void;
+        removeFolds(folds: Fold[]): void;
+        expandFold(fold: Fold): void;
+        expandFolds(folds: Fold[]): void;
+        unfold(location: null | number | Point | Range,
+            expandInner?: boolean): Fold[] | undefined;
+        isRowFolded(docRow: number, startFoldRow?: FoldLine): boolean;
+        getFoldRowEnd(docRow: number, startFoldRow?: FoldLine): number;
+        getFoldRowStart(docRow: number, startFoldRow?: FoldLine): number;
+        getFoldDisplayLine(foldLine: FoldLine,
+            endRow: number | null,
+            endColumn: number | null,
+            startRow: number | null,
+            startColumn: number | null): string;
+        getDisplayLine(row: number,
+            endColumn: number | null,
+            startRow: number | null,
+            startColumn: number | null): string;
+        toggleFold(tryToUnfold?: boolean): void;
+        getCommentFoldRange(row: number,
+            column: number,
+            dir: number): Range | undefined;
+        foldAll(startRow?: number, endRow?: number, depth?: number): void;
         setFoldStyle(style: string): void;
-        $setFolding(foldMode?: any): void;
-        getParentFoldRangeData(row: number, ignoreCurrent?: any): { range: Range; firstRange: Range };
-        onFoldWidgetClick(row: number, e: Event): void;
-        $toggleFoldWidget(row: number, options: any): Fold | Range;
-        toggleFoldWidget(toggleParent?: any): void;
+        getParentFoldRangeData(row: number, ignoreCurrent?: boolean): {
+            range?: Range,
+            firstRange: Range
+        };
+        toggleFoldWidget(toggleParent?: boolean): void;
         updateFoldWidgets(delta: Delta): void;
-        tokenizerUpdateFoldWidgets(e: Event): void;
     }
 
     export class Range {
-        constructor(startRow: number, startColumn: number, endRow: number, endColumn: number);
+        comparePoints(p1: Ace.Point, p2: Ace.Point): number;
         fromPoints(start: Point, end: Point): Range;
-        comparePoints(p1: Point, p2: Point): number;
+        constructor(startRow: Number, startColumn: Number, endRow: Number, endColumn: Number);
         start: Point;
         end: Point;
 
@@ -1561,7 +1085,7 @@ export namespace Ace {
     }
 
     export interface EditSessionOptions {
-        wrap: string | number;
+        wrap: "off" | "free" | "printmargin" | boolean | number;
         wrapMethod: 'code' | 'text' | 'auto';
         indentedSoftWrap: boolean;
         firstLineNumber: number;
@@ -1576,6 +1100,7 @@ export namespace Ace {
     }
 
     export interface VirtualRendererOptions {
+        useTextareaForIME: boolean;
         animatedScroll: boolean;
         showInvisibles: boolean;
         showPrintMargin: boolean;
@@ -1587,8 +1112,8 @@ export namespace Ace {
         showLineNumbers: boolean;
         displayIndentGuides: boolean;
         highlightGutterLine: boolean;
-        vScrollBarAlwaysVisible: boolean;
         hScrollBarAlwaysVisible: boolean;
+        vScrollBarAlwaysVisible: boolean;
         fontSize: number;
         fontFamily: string;
         maxLines: number;
@@ -1598,7 +1123,6 @@ export namespace Ace {
         theme: string;
         hasCssTransforms: boolean;
         maxPixelHeight: number;
-        useTextareaForIME: boolean;
     }
 
     export interface MouseHandlerOptions {
@@ -1612,11 +1136,22 @@ export namespace Ace {
     export interface EditorOptions extends EditSessionOptions,
         MouseHandlerOptions,
         VirtualRendererOptions {
+        enableBlockSelect: any;
+        enableMultiselect: any;
+        useIncrementalSearch: any;
+        spellcheck: any;
         rtl: any;
+        rtlText: any;
+        enableLinking: any;
+        enableSnippets: any;
+        enableLiveAutocompletion: any;
+        enableBasicAutocompletion: any;
         hardWrap: any;
+        enableEmmet: any;
+        useElasticTabstops: any;
         enableCodeLens: any;
-        placeholder: any;
-        enableAutoIndent: boolean;
+        relativeLineNumbers: any;
+        showLineNumbers: boolean;
         selectionStyle: string;
         highlightActiveLine: boolean;
         highlightSelectedWord: boolean;
@@ -1626,23 +1161,12 @@ export namespace Ace {
         mergeUndoDeltas: true | false | 'always';
         behavioursEnabled: boolean;
         wrapBehavioursEnabled: boolean;
+        enableAutoIndent: boolean;
         autoScrollEditorIntoView: boolean;
         keyboardHandler: string;
+        placeholder: string;
         value: string;
         session: EditSession;
-        showLineNumbers: boolean;
-        relativeLineNumbers: any;
-        useElasticTabstops: any;
-        enableEmmet: boolean;
-        enableBasicAutocompletion: boolean;
-        enableLiveAutocompletion: boolean;
-        enableSnippets: boolean;
-        enableLinking: boolean;
-        rtlText: any;
-        spellcheck: boolean;
-        useIncrementalSearch: any;
-        enableMultiselect: boolean;
-        enableBlockSelect: boolean
     }
 
     export interface SearchOptions {
@@ -1654,31 +1178,23 @@ export namespace Ace {
         range: Range;
         preserveCase: boolean;
         regExp: RegExp;
-        wholeWord: string;
+        wholeWord: boolean;
         caseSensitive: boolean;
         wrap: boolean;
     }
 
     export interface EventEmitter {
-        eventNames(): any;
-        rawListeners(type: any): any;
-        prependOnceListener(type: any, listener: any): any;
-        prependListener(type: any, listener: any): any;
-        getMaxListeners(): any;
-        listenerCount(emitter: any, type: any): any;
-        listeners(type: any): any;
-        removeListener(type: any, listener: any): any;
-        addListener(type: any, listener: any): any;
-        emit(type: any): boolean;
-        setMaxListeners(n: any): any;
-        removeAllListeners(type: any): any;
-        _signal(eventName: any, e: any): void;
-        _emit(eventName: any, e: any): any;
         once(name: string, callback: Function): void;
         setDefaultHandler(name: string, callback: Function): void;
         removeDefaultHandler(name: string, callback: Function): void;
         on(name: string, callback: Function, capturing?: boolean): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
         off(name: string, callback: Function): void;
+        removeListener(name: string, callback: Function): void;
+        removeEventListener(name: string, callback: Function): void;
+        _emit(eventName: any, e: any): any;
+        _signal(eventName: any, e: any): void;
+        removeAllListeners(eventName: any): void;
     }
 
     export interface Point {
@@ -1746,23 +1262,20 @@ export namespace Ace {
         meta?: string;
         name?: string;
         caption?: string;
-        docHTML?: string;
-        docText?: string;
-        snippet?: string;
     }
 
     export class Tokenizer {
+        $arrayTokens(str: any): {};
+        $applyToken(str: any): {};
+        $setMaxTokenCount(m: any): void;
         constructor(rules: Object);
         removeCapturingGroups(src: string): string;
         createSplitterRegexp(src: string, flag?: string): RegExp;
         getLineTokens(line: string, startState: string | string[]): Token[];
-        $setMaxTokenCount(m?: number): void;
-        $applyToken(str: string): Token[];
-        $arrayTokens(str: string): Token[];
     }
 
     class TokenIterator {
-        constructor(session: EditSession, initialRow: number, initialColumn: number);
+        constructor(session: EditSession, initialRow: Number, initialColumn: Number);
         getCurrentToken(): Token;
         getCurrentTokenColumn(): number;
         getCurrentTokenRow(): number;
@@ -1772,24 +1285,7 @@ export namespace Ace {
         stepForward(): Token;
     }
 
-    export class Mode {
-        allowAutoInsert(): boolean;
-        getLanguageMode(position: any): "R" | "HTML";
-        getMatching(session: any, row: any, column: any, tokenRange: any): any;
-        addMarkers(annos: any, mySession: any): void;
-        removeMarkers(session: any): void;
-        $calculateIndent(line: any, tab: any): any;
-        $toIndent(str: any): any;
-        supportsFile(filename: any): any;
-        $id: string;
-        tokenRe: RegExp;
-        nonTokenRe: RegExp;
-        $defaultBehaviour: CstyleBehaviour;
-        lineCommentStart: string;
-        blockComment: string;
-        $getIndent(line: string): string;
-        $delegator(method: string, args: any[], defaultHandler: any): any;
-        $createKeywordList(): any;
+    export class SyntaxMode {
         getTokenizer(): Tokenizer;
         toggleCommentLines(state: any,
             session: EditSession,
@@ -1824,7 +1320,7 @@ export namespace Ace {
         moduleUrl(name: string, component?: string): string;
         setModuleUrl(name: string, subst: string): string;
         loadModule(moduleName: string | [string, string],
-            onLoad: (module: any) => void): void;
+            onLoad?: (module: any) => void): void;
         init(packaged: any): any;
         defineOptions(obj: any, path: string, options: { [key: string]: any }): Config;
         resetOptions(obj: any): void;
@@ -1840,6 +1336,12 @@ export namespace Ace {
     }
 
     export class UndoManager {
+        $prettyPrint(delta: any): any;
+        fromJSON(): void;
+        toJSON(): void;
+        $syncRev(): void;
+        getChangedLines(from: any, to: any): void;
+        getChangedRanges(from: any, to: any): void;
         constructor();
         addSession(session: EditSession): void;
         add(delta: Delta, allowMerge: boolean, session: EditSession): void;
@@ -1856,85 +1358,70 @@ export namespace Ace {
         canRedo(): boolean;
         bookmark(rev?: number): void;
         isAtBookmark(): boolean;
-        getChangedRanges(from: number, to?: number): void;
-        getChangedLines(from: number, to?: number): void;
-        $syncRev(): void;
-        toJSON(): void;
-        fromJSON(): void;
-        $prettyPrint(delta: Delta): string;
     }
 
-    export interface CstyleBehaviour {
-        isMaybeInsertedClosing(cursor: any, line: any): boolean;
-        isSaneInsertion(editor: Editor, session: EditSession): boolean;
-        $matchTokenType(token: Token, types: string[]): boolean;
-        recordAutoInsert(editor: Editor, session: EditSession, bracket: string): void;
-        recordMaybeInsert(editor: Editor, session: EditSession, bracket: string): void;
-        isAutoInsertedClosing(cursor: Point, line: string, bracket: string): boolean;
-        popAutoInsertedClosing(): void;
-        clearMaybeInsertedClosing(): void;
+    export interface Position {
+        row: number,
+        column: number
     }
 
-    export class EditSession implements EventEmitter, OptionsProvider, Folding {
+    export class EditSession implements EventEmitter, OptionsProvider {
+        getSelectionMarkers(): any;
         $setFontMetrics(fm: any): void;
-        toString(): string;
-        constructor(text: string | Document, mode?: Mode);
-
-        foldAllComments(): void;
-        foldToLevel(level: any): void;
-
-        eventNames();
-        rawListeners(type: any);
-        prependOnceListener(type: any, listener: any);
-        prependListener(type: any, listener: any);
-        getMaxListeners();
-        listenerCount(emitter: any, type: any);
-        listeners(type: any);
-        removeListener(type: any, listener: any);
-        addListener(type: any, listener: any);
-        emit(type: any): boolean;
-        setMaxListeners(n: any);
-        removeAllListeners(type: any);
-        _signal(eventName: any, e: any): void;
-        _emit(eventName: any, e: any);
-
-        eventNames();
-        rawListeners(type: any);
-        prependOnceListener(type: any, listener: any);
-        prependListener(type: any, listener: any);
-        getMaxListeners();
-        listenerCount(emitter: any, type: any);
-        listeners(type: any);
-        removeListener(type: any, listener: any);
-        addListener(type: any, listener: any);
-        emit(type: any): boolean;
-        setMaxListeners(n: any);
-        removeAllListeners(type: any);
-        _signal(eventName: any, e: any): void;
-        _emit(eventName: any, e: any);
+        getDocumentLastRowColumnPosition(docRow: Number, docColumn: Number): any;
+        getRowLength(row: Number): Number;
+        $getStringScreenWidth(str: String, maxScreenColumn: Number, screenColumn: Number): [Number];
+        $getDisplayTokens(str: String, offset: Number): {};
+        $computeWrapSplits(tokens: any, wrapLimit: any, tabSize: any): {};
+        $updateWrapData(firstRow: any, lastRow: any): void;
+        $updateRowLengthCache(firstRow: any, lastRow: any, b: any): void;
+        $updateInternalDataOnChange(delta: any): any;
+        $constrainWrapLimit(wrapLimit: any, min: any, max: any): any;
+        $clipRangeToDocument(range: any): any;
+        $clipPositionToDocument(row: any, column: any): { row: any; column: any; };
+        $clipColumnToRow(row: any, column: any): any;
+        $clipRowToDocument(row: any): any;
+        $moveLines(firstRow: any, lastRow: any, dir: any): number;
+        $getUndoSelection(deltas: any, isUndo: any): any;
+        $computeWidth(force: any): any;
+        $startWorker(): void;
+        $stopWorker(): void;
+        $onChangeMode(mode: any, $isPlaceholder: any): void;
+        onReloadTokenizer(e: any): void;
+        $detectNewLine(text: String): void;
+        $syncInformUndoManager(): void;
+        toString(): String;
+        onChange(delta: any): void;
+        onChangeFold(e: any): void;
+        $getRowCacheIndex(cacheArray: any, val: any): number;
+        $resetRowCache(docRow: any): void;
+        on(name: 'changeWrapLimit'): void;
+        on(name: 'changeWrapMode'): void;
+        on(name: 'changeMode'): void;
+        on(name: 'changeAnnotation'): void;
+        on(name: 'changeBackMarker'): void;
+        on(name: 'changeFrontMarker'): void;
+        on(name: 'changeBreakpoint'): void;
+        on(name: 'changeOverwrite'): void;
+        on(name: 'changeTabSize'): void;
+        constructor(text: Document | String, mode: Mode);
         selection: Selection;
 
-        on(name: 'change', callback: (delta: Delta) => void): void;
-        on(name: 'changeTabSize'): void;
-        on(name: 'changeOverwrite'): void;
-        on(name: 'changeBreakpoint', callback: (rows: number[]) => void): void;
-        on(name: 'changeAnnotation', callback: (annotations: Annotation[]) => void): void;
-        on(name: 'changeMode'): void;
-        on(name: 'changeWrapMode'): void;
-        on(name: 'changeWrapLimit'): void;
-        on(name: 'changeFrontMarker'): void;
-        on(name: 'changeBackMarker'): void;
+        // TODO: define BackgroundTokenizer
 
         on(name: 'changeFold',
-            callback: (obj: { data: Fold, action: string }) => void): void;
-        on(name: 'changeScrollLeft', callback: (scrollLeft: number) => void): void;
-        on(name: 'changeScrollTop', callback: (scrollTop: number) => void): void;
+            callback: (obj: { data: Fold, action: string }) => void): Function;
+        on(name: 'changeScrollLeft', callback: (scrollLeft: number) => void): Function;
+        on(name: 'changeScrollTop', callback: (scrollTop: number) => void): Function;
         on(name: 'tokenizerUpdate',
-            callback: (obj: { data: { first: number, last: number } }) => void): void;
+            callback: (obj: { data: { first: number, last: number } }) => void): Function;
+        on(name: 'change', callback: () => void): Function;
 
 
         setOption<T extends keyof EditSessionOptions>(name: T, value: EditSessionOptions[T]): void;
         getOption<T extends keyof EditSessionOptions>(name: T): EditSessionOptions[T];
+
+        readonly doc: Document;
 
         setDocument(doc: Document): void;
         getDocument(): Document;
@@ -1953,7 +1440,7 @@ export namespace Ace {
         getUseSoftTabs(): boolean;
         setTabSize(tabSize: number): void;
         getTabSize(): number;
-        isTabStop(position: Point): boolean;
+        isTabStop(position: Position): boolean;
         setNavigateWithinSoftTabs(navigateWithinSoftTabs: boolean): void;
         getNavigateWithinSoftTabs(): boolean;
         setOverwrite(overwrite: boolean): void;
@@ -1967,16 +1454,16 @@ export namespace Ace {
         setBreakpoint(row: number, className: string): void;
         clearBreakpoint(row: number): void;
         addMarker(range: Range,
-            clazz: string,
-            type: MarkerRenderer,
-            inFront: boolean): number;
+            className: string,
+            type: "fullLine" | "screenLine" | "text" | MarkerRenderer,
+            inFront?: boolean): number;
         addDynamicMarker(marker: MarkerLike, inFront: boolean): MarkerLike;
         removeMarker(markerId: number): void;
         getMarkers(inFront?: boolean): MarkerLike[];
         highlight(re: RegExp): void;
         highlightLines(startRow: number,
             endRow: number,
-            clazz: string,
+            className: string,
             inFront?: boolean): Range;
         setAnnotations(annotations: Annotation[]): void;
         getAnnotations(): Annotation[];
@@ -1987,8 +1474,8 @@ export namespace Ace {
         getNewLineMode(): NewLineMode;
         setUseWorker(useWorker: boolean): void;
         getUseWorker(): boolean;
-        setMode(mode: string | Mode, callback?: () => void): void;
-        getMode(): Mode;
+        setMode(mode: string | SyntaxMode, callback?: () => void): void;
+        getMode(): SyntaxMode;
         setScrollTop(scrollTop: number): void;
         getScrollTop(): number;
         setScrollLeft(scrollLeft: number): void;
@@ -1999,14 +1486,14 @@ export namespace Ace {
         getLines(firstRow: number, lastRow: number): string[];
         getLength(): number;
         getTextRange(range: Range): string;
-        insert(position: Point, text: string): void;
+        insert(position: Position, text: string): void;
         remove(range: Range): void;
         removeFullLines(firstRow: number, lastRow: number): void;
         undoChanges(deltas: Delta[], dontSelect?: boolean): void;
         redoChanges(deltas: Delta[], dontSelect?: boolean): void;
         setUndoSelect(enable: boolean): void;
         replace(range: Range, text: string): void;
-        moveText(fromRange: Range, toPosition: Point, copy?: boolean): void;
+        moveText(fromRange: Range, toPosition: Position, copy?: boolean): void;
         indentRows(startRow: number, endRow: number, indentString: string): void;
         outdentRows(range: Range): void;
         moveLinesUp(firstRow: number, lastRow: number): void;
@@ -2023,111 +1510,75 @@ export namespace Ace {
         getRowWrapIndent(screenRow: number): number;
         getScreenLastRowColumn(screenRow: number): number;
         getDocumentLastRowColumn(docRow: number, docColumn: number): number;
-        getdocumentLastRowColumnPosition(docRow: number, docColumn: number): Point;
+        getdocumentLastRowColumnPosition(docRow: number, docColumn: number): Position;
         getRowSplitData(row: number): string | undefined;
         getScreenTabSize(screenColumn: number): number;
         screenToDocumentRow(screenRow: number, screenColumn: number): number;
         screenToDocumentColumn(screenRow: number, screenColumn: number): number;
         screenToDocumentPosition(screenRow: number,
             screenColumn: number,
-            offsetX?: number): Point;
-        documentToScreenPosition(docRow: number, docColumn: number): Point;
-        documentToScreenPosition(position: Point): Point;
+            offsetX?: number): Position;
+        documentToScreenPosition(docRow: number, docColumn: number): Position;
+        documentToScreenPosition(position: Position): Position;
         documentToScreenColumn(row: number, docColumn: number): number;
         documentToScreenRow(docRow: number, docColumn: number): number;
         getScreenLength(): number;
         destroy(): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
+        getOptions(optionNames?: string[] | { [p: string]: any }): { [p: string]: any };
+
         off(name: string, callback: Function): void;
-        getFoldAt(row: number, column: number, side: number): Fold;
-        getFoldsInRange(range: Range): Array<Fold>;
-        getFoldsInRangeList(ranges: Array<Range>): Array<Fold>;
-        getAllFolds(): Array<Fold>;
-        addFold(placeholder: string, range: Range): Fold;
-        addFolds(folds: Array<Fold>);
-        removeFold(fold: Fold);
-        removeFolds(folds: Array<Fold>);
-        expandFold(fold: Fold);
-        expandFolds(folds: Array<Fold>);
-        foldAll(startRow: number, endRow: number, depth: number);
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
-        setOption(name: string, value: any): void;
-        getOption(name: string): any;
-        $resetRowCache(docRow: number): void;
-        $getRowCacheIndex(cacheArray: number[], val: number): number;
-        onChangeFold(e: { data: Fold, action: string }): void;
-        onChange(delta: Delta): void;
-        $syncInformUndoManager(): void;
-        $detectNewLine(text: string): void;
-        onReloadTokenizer(e: { data: { first: number, last: number } }): void;
-        $onChangeMode(mode: Mode, $isPlaceholder?: boolean): void;
-        $stopWorker(): void;
-        $startWorker(): void;
-        $computeWidth(force: boolean): number;
-        $getUndoSelection(deltas: Delta[], isUndo?: boolean): Range;
-        $moveLines(firstRow: number, lastRow: number, dir: number): number;
-        $clipRowToDocument(row: number): number;
-        $clipColumnToRow(row: number, column: number): number;
-        $clipPositionToDocument(row: number, column: number): Point;
-        $clipRangeToDocument(range: Range): Range;
-        $constrainWrapLimit(wrapLimit: number, min: number, max: number): number;
-        $updateInternalDataOnChange(delta: Delta): Array<Fold>;
-        $updateRowLengthCache(firstRow: number, lastRow: number, b?: any): void;
-        $updateWrapData(firstRow: number, lastRow: number): void;
-        $computeWrapSplits(tokens: Token[], wrapLimit: number, tabSize: number): number[];
-        $getDisplayTokens(str: string, offset: number): string[];
-        $getStringScreenWidth(str: string, maxScreenColumn: number, screenColumn: number): number[];
-        getRowLength(row: number): number;
-        getDocumentLastRowColumnPosition(docRow: number, docColumn: number): number;
-        private setFontMetrics(fm: any): any;
-        getSelectionMarkers(): any;
-        foldAll(startRow: number, endRow: number, depth: number);
-        getFoldStringAt(row: number, column: number, trim, foldLine?: FoldLine): string | null;
-        getFoldLine(docRow: number, startFoldLine?: string): string | null;
-        getNextFoldLine(docRow: number, startFoldLine?: string): string | null;
-        getFoldedRowCount(first: number, last: number): number;
-        $addFoldLine(foldLine: FoldLine): string;
-        unfold(location: number | Point | Range, expandInner?: boolean): Fold[];
-        isRowFolded(docRow: number, startFoldRow: string): boolean;
-        getRowFoldEnd(docRow: number, startFoldRow: string): number;
-        getRowFoldStart(docRow: number, startFoldRow: string): number;
-        getFoldDisplayLine(foldLine: FoldLine, endRow: number, endColumn: number, startRow: number, startColumn: number): string;
-        getDisplayLine(row: number, endColumn: number, startRow: number, startColumn: number): string;
-        $cloneFoldData(): FoldLine;
-        toggleFold(tryToUnfold?: any): void;
-        getCommentFoldRange(row: number, column: number, dir: number): Range;
-        setFoldStyle(style: string): void;
-        $setFolding(foldMode?: any): void;
-        getParentFoldRangeData(row: number, ignoreCurrent?: any): { range: Range; firstRange: Range };
-        onFoldWidgetClick(row: number, e: Event): void;
-        $toggleFoldWidget(row: number, options: any): Fold | Range;
-        toggleFoldWidget(toggleParent?: any): void;
-        updateFoldWidgets(delta: Delta): void;
-        tokenizerUpdateFoldWidgets(e: Event): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
+
+        setOptions(optList: { [p: string]: any }): void;
+
+        _emit(eventName: any, e: any): any;
+
+        _signal(eventName: any, e: any): void;
+
+        removeAllListeners(eventName: any): void;
     }
 
     export class KeyBinding {
+        $callKeyboardHandlers(hashId: any, keyString: any, keyCode: any, e: any): boolean;
         setDefaultHandler(handler: KeyboardHandler): void;
         setKeyboardHandler(handler: KeyboardHandler): void;
-        addKeyboardHandler(handler: KeyboardHandler, pos: number): void;
+        addKeyboardHandler(handler: KeyboardHandler, pos?: number): void;
         removeKeyboardHandler(handler: KeyboardHandler): boolean;
         getKeyboardHandler(): KeyboardHandler;
         getStatusText(): string;
-        $callKeyboardHandlers(hashId: number, keyString: string, keyCode: number, e: Event): any;
-        onCommandKey(e: Event, hashId: number, keyCode: number): void;
-        onTextInput(text: string): void;
+        onCommandKey(e: any, hashId: number, keyCode: number): boolean;
+        onTextInput(text: string): boolean;
     }
 
-    export class CommandManager implements EventEmitter {
+    interface CommandMap {
+        [name: string]: Command;
+    }
+
+    type execEventHandler = (obj: {
+        editor: Editor,
+        command: Command,
+        args: any[]
+    }) => void;
+
+    export interface CommandManager extends EventEmitter {
         setupIncrementalSearch(editor: any, val: any): void;
-        on(name: 'exec', callback: (obj: {
-            editor: Editor,
-            command: Command,
-            args: any[]
-        }) => void): void;
+        trimMacro(m: any): any;
+        byName: CommandMap,
+        commands: CommandMap,
+        on(name: 'exec', callback: execEventHandler): Function;
+        on(name: 'afterExec', callback: execEventHandler): Function;
         once(name: string, callback: Function): void;
         setDefaultHandler(name: string, callback: Function): void;
         removeDefaultHandler(name: string, callback: Function): void;
@@ -2141,46 +1592,53 @@ export namespace Ace {
         toggleRecording(editor: Editor): void;
         replay(editor: Editor): void;
         addCommand(command: Command): void;
-        removeCommand(command: Command, keepCommand?: boolean): void;
+        addCommands(command: Command[]): void;
+        removeCommand(command: Command | string, keepCommand?: boolean): void;
+        removeCommands(command: Command[]): void;
         bindKey(key: string | { mac?: string, win?: string },
             command: CommandLike,
             position?: number): void;
-        trimMacro(m: any): string;
-
-        _emit(eventName: any, e: any): any;
-
-        _signal(eventName: any, e: any): void;
-
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        setMaxListeners(n: any): any;
+        bindKeys(keys: { [s: string]: Function }): void;
+        parseKeys(keyPart: string): { key: string, hashId: number };
+        findKeyCommand(hashId: number, keyString: string): string | undefined;
+        handleKeyboard(data: {}, hashId: number, keyString: string, keyCode: string | number): void | { command: string };
+        getStatusText(editor: Editor, data: {}): string;
     }
 
     export class VirtualRenderer implements OptionsProvider, EventEmitter {
         removeExtraToken(row: any, column: any): void;
+        addToken(text: any, type: any, row: any, column: any): void;
+        screenToTextCoordinates(x: any, y: any): any;
+        $calcSteps(fromValue: any, toValue: any): {};
         removeGutterDecoration(row: any, className: any): void;
         addGutterDecoration(row: any, className: any): void;
+        $getLongestLine(): any;
+        $updateLines(): boolean;
+        $computeLayerConfig(): number;
+        $autosize(): void;
+        $renderChanges(changes: any, force: any): any;
+        $updateScrollBarH(): void;
+        $updateScrollBarV(): void;
+        setMargin(top: any, bottom: any, left: any, right: any): void;
+        $moveTextAreaToCursor(): void;
+        $updatePrintMargin(): void;
+        onGutterResize(width: any): void;
+        $updateCachedSize(force: any, gutterWidth: any, width: any, height: any): number;
+        onResize(force: Boolean, gutterWidth: Number, width: Number, height: Number): number;
+        $updateSizeAsync(): void;
+        onChangeTabSize(): void;
+        onChangeNewLineMode(): void;
+        updateCharacterSize(): void;
         mock(): any;
-        constructor(container: HTMLElement, theme?: string);
-        container: HTMLElement;
+        constructor(container: Element, theme: String);
+        readonly container: HTMLElement;
+        readonly scroller: HTMLElement;
+        readonly content: HTMLElement;
+        readonly characterWidth: number;
+        readonly lineHeight: number;
+        readonly scrollLeft: number;
+        readonly scrollTop: number;
+        readonly $padding: number;
 
         setOption<T extends keyof VirtualRendererOptions>(name: T, value: VirtualRendererOptions[T]): void;
         getOption<T extends keyof VirtualRendererOptions>(name: T): VirtualRendererOptions[T];
@@ -2232,16 +1690,16 @@ export namespace Ace {
         updateCursor(): void;
         hideCursor(): void;
         showCursor(): void;
-        scrollSelectionIntoView(anchor: Point,
-            lead: Point,
+        scrollSelectionIntoView(anchor: Position,
+            lead: Position,
             offset?: number): void;
-        scrollCursorIntoView(cursor: Point, offset?: number): void;
+        scrollCursorIntoView(cursor: Position, offset?: number): void;
         getScrollTop(): number;
         getScrollLeft(): number;
         getScrollTopRow(): number;
         getScrollBottomRow(): number;
         scrollToRow(row: number): void;
-        alignCursor(cursor: Point | number, alignment: number): number;
+        alignCursor(cursor: Position | number, alignment: number): number;
         scrollToLine(line: number,
             center: boolean,
             animate: boolean,
@@ -2253,6 +1711,7 @@ export namespace Ace {
         scrollBy(deltaX: number, deltaY: number): void;
         isScrollableBy(deltaX: number, deltaY: number): boolean;
         textToScreenCoordinates(row: number, column: number): { pageX: number, pageY: number };
+        pixelToScreenCoordinates(x: number, y: number): { row: number, column: number, side: 1 | -1, offsetX: number };
         visualizeFocus(): void;
         visualizeBlur(): void;
         showComposition(position: number): void;
@@ -2266,72 +1725,65 @@ export namespace Ace {
         setMouseCursor(cursorStyle: string): void;
         attachToShadowRoot(): void;
         destroy(): void;
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
-        setOption(name: string, value: any): void;
-        getOption(name: string): any;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
+        getOptions(optionNames?: string[] | { [p: string]: any }): { [p: string]: any };
+
         off(name: string, callback: Function): void;
-        updateCharacterSize(): void;
-        onChangeNewLineMode(): void;
-        onChangeTabSize(): void;
-        $updateSizeAsync(): void;
-        onResize(force: boolean, gutterWidth: number, width?: number, height?: number): void;
-        $updateCachedSize(force: boolean, gutterWidth: number, width?: number, height?: number): number;
-        onGutterResize(width: number): void;
-        $updatePrintMargin(): void;
-        $moveTextAreaToCursor(): void;
-        setMargin(top: number, bottom: number, left: number, right: number);
-        $updateScrollBarV(): void;
-        $updateScrollBarH(): void;
-        $renderChanges(changes: any, force: boolean): any;
-        $autosize(): void;
-        $computeLayerConfig(): void;
-        $updateLines(): any;
-        $getLongestLine(): number;
-        $calcSteps(fromValue: number, toValue: number): number[];
-        pixelToScreenCoordinates(x: number, y: number): { row: number, column: number, side: number, offsetX: number };
-        screenToTextCoordinates(x: number, y: number): Point;
-        addToken(text: string, type: string, row: number, column: number): void;
+
+        on(name: string, callback: Function, capturing?: boolean): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
+
+        setOptions(optList: { [p: string]: any }): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
     }
 
 
     export class Selection implements EventEmitter {
-        joinSelections(): void;
-        constructor(session: EditSession);
-        on(name: 'changeCursor'): void;
+        isEqual(data: any): any;
+        getRangeOfMovements(func: any): Range;
+        toOrientedRange(range: any): any;
+        detach(): void;
+        moveCursorShortWordLeft(): any;
+        moveCursorShortWordRight(): any;
+        $shortWordEndIndex(rightOfCursor: any): number;
+        wouldMoveIntoSoftTab(cursor: Object, tabSize: Number, direction: Number): boolean;
+        getLineRange(row: any, excludeLastChar: any): any;
+        moveToPosition(pos: Object): void;
+        moveTo(row: Number, column: Number): void;
+        $moveSelection(mover: any): void;
+        $setSelection(anchorRow: any, anchorColumn: any, cursorRow: any, cursorColumn: any): void;
+        getSelectionLead(): Object;
+        getSelectionAnchor(): Object;
+        setSelectionAnchor(row: Number, column: Number): void;
         on(name: 'changeSelection'): void;
+        on(name: 'changeCursor'): void;
+        constructor(session: EditSession);
+        rectangularRangeBlock(screenCursor: Cursor, screenAnchor: Anchor, includeEmptyLines: Boolean): Range;
+        toggleBlockSelection(): void;
+        joinSelections(): void;
+        splitIntoLines(): void;
+        $initRangeList(): void;
+        $onRemoveRange(removed: any): void;
+        $onAddRange(range: any): void;
+        mergeOverlappingRanges(): void;
+        substractPoint(pos: Range): any;
+        toSingleRange(range: any): void;
         moveCursorWordLeft(): void;
         moveCursorWordRight(): void;
         fromOrientedRange(range: Range): void;
@@ -2342,8 +1794,8 @@ export namespace Ace {
         isMultiLine(): boolean;
         setCursor(row: number, column: number): void;
         setAnchor(row: number, column: number): void;
-        getAnchor(): Point;
-        getCursor(): Point;
+        getAnchor(): Position;
+        getCursor(): Position;
         isBackwards(): boolean;
         getRange(): Range;
         clearSelection(): void;
@@ -2379,74 +1831,112 @@ export namespace Ace {
         moveCursorToPosition(position: any): void;
         moveCursorTo(row: number, column: number, keepDesiredColumn?: boolean): void;
         moveCursorToScreen(row: number, column: number, keepDesiredColumn: boolean): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
+
+        toJSON(): SavedSelection | SavedSelection[];
+        fromJSON(selection: SavedSelection | SavedSelection[]): void;
+
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+
         off(name: string, callback: Function): void;
-        toSingleRange(range: Range): void;
-        substractPoint(pos: Range): any;
-        mergeOverlappingRanges(): void;
-        $onAddRange(range: Range): void;
-        $onRemoveRange(removed: Range[]): void;
-        $initRangeList(): void;
-        splitIntoLines(): void;
-        toggleBlockSelection(): void;
-        rectangularRangeBlock(screenCursor: Point, screenAnchor: Anchor, includeEmptyLines: boolean): Range;
-        setSelectionAnchor(row: number, column: number): void;
-        getSelectionAnchor(): Point;
-        getSelectionLead(): Point;
-        $setSelection(anchorRow: number, anchorColumn: number, cursorRow: number, cursorColumn: number): void;
-        $moveSelection(mover: any): void;
-        moveTo(row: number, column: number): void;
-        moveToPosition(pos: Point): void;
-        getLineRange(row: number, excludeLastChar: boolean): Range;
-        wouldMoveIntoSoftTab(cursor: Point, tabSize: number, direction: number): boolean;
-        $shortWordEndIndex(rightOfCursor: string): number;
-        moveCursorShortWordRight(): Function;
-        moveCursorShortWordLeft(): Function;
-        detach(): void;
-        toOrientedRange(range: Range): Range;
-        getRangeOfMovements(func: Function): Range;
-        toJSON(): Range;
-        fromJSON(data: Range): void;
-        isEqual(data: Range): boolean;
+
+        on(name: string, callback: Function, capturing?: boolean): void;
+
+        once(name: string, callback: Function): void;
+
+        removeDefaultHandler(name: string, callback: Function): void;
+
+        removeEventListener(name: string, callback: Function): void;
+
+        removeListener(name: string, callback: Function): void;
+
+        setDefaultHandler(name: string, callback: Function): void;
 
         _emit(eventName: any, e: any): any;
 
         _signal(eventName: any, e: any): void;
 
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        removeAllListeners(eventName: any): void;
+    }
+    interface SavedSelection {
+        start: Point;
+        end: Point;
+        isBackwards: boolean;
     }
 
-    export class Editor implements OptionsProvider, EventEmitter {
+    export interface TextInput {
+        resetSelection(): void;
+    }
+
+    export interface Editor extends OptionsProvider, EventEmitter {
+        expandSnippet(options: any): any;
+        insertSnippet(content: any, options: any): any;
+        $reAlignText(lines: any, forceLeft: any): any;
+        alignCursors(): void;
+        selectMore(dir: Number, skip: Boolean, stopAtFirst: any): void;
+        transposeSelections(dir: Number): void;
+        selectMoreLines(dir: Number, skip: Boolean): void;
+        $checkMultiselectChange(e: any, anchor: any): void;
+        exitMultiSelectMode(): void;
+        forEachSelection(cmd: Object, args: String, options: any): any;
+        $onMultiSelectExec(e: any): any;
+        $onSingleSelect(e: any): void;
+        $onMultiSelect(e: any): void;
+        $onRemoveRange(e: any): void;
+        $onAddRange(e: any): void;
+        removeSelectionMarkers(ranges: any): void;
+        removeSelectionMarker(range: Range): void;
+        addSelectionMarker(orientedRange: Range): Range;
+        updateSelectionMarkers(): void;
         showSettingsMenu(): void;
         showKeyboardShortcuts(): void;
         prompt(message: any, options: any, callback: any): void;
+        $resetCursorStyle(): void;
+        revealRange(range: any, animate: any): void;
+        $tryReplace(range: any, replacement: any): any;
+        $moveByPage(dir: any, select: any): void;
+        $getVisibleRowCount(): number;
+        onCompositionEnd(): void;
+        onCompositionUpdate(text: any): void;
+        onCompositionStart(compositionState: any): void;
+        $getSelectedRows(range: any): { first: any; last: any; };
+        $moveLines(dir: any, copy: any): void;
+        toggleWord(): void;
+        getNumberAt(row: any, column: any): { value: any; start: any; end: any; };
+        removeToLineEnd(): void;
+        removeToLineStart(): void;
+        onCommandKey(e: any, hashId: any, keyCode: any): any;
+        applyComposition(text: any, composition: any): void;
+        onTextInput(text: any, composition: any): any;
         autoIndent(): void;
-        constructor(renderer: VirtualRenderer, session: EditSession, options?: EditorOptions);
+        $handlePaste(e: any): any;
+        onCut(): void;
+        onCopy(): void;
+        onChangeFold(): void;
+        onChangeWrapMode(): void;
+        onChangeWrapLimit(): void;
+        onChangeMode(e: any): void;
+        onChangeAnnotation(): void;
+        onChangeBreakpoint(): void;
+        onChangeBackMarker(): void;
+        onChangeFrontMarker(): void;
+        $getSelectionHighLightRegexp(): any;
+        onSelectionChange(e: any): void;
+        $updateHighlightActiveLine(): void;
+        onCursorChange(): void;
+        onScrollLeftChange(): void;
+        onScrollTopChange(): void;
+        onTokenizerUpdate(e: any): void;
+        onDocumentChange(delta: any): void;
+        $cursorChange(): void;
+        onBlur(e: any): void;
+        onFocus(e: any): void;
+        $highlightTags(): void;
+        $highlightBrackets(): void;
+        $historyTracker(e: any): void;
+        endOperation(e: any): any;
+        startOperation(commandEvent: any): void;
+        $initOperationListeners(): void;
+        constructor(renderer: VirtualRenderer, session: EditSession);
         container: HTMLElement;
         renderer: VirtualRenderer;
         id: string;
@@ -2454,8 +1944,10 @@ export namespace Ace {
         keyBinding: KeyBinding;
         session: EditSession;
         selection: Selection;
+        textInput: TextInput;
 
         on(name: 'blur', callback: (e: Event) => void): void;
+        on(name: 'input', callback: () => void): void;
         on(name: 'change', callback: (delta: Delta) => void): void;
         on(name: 'changeSelectionStyle', callback: (obj: { data: string }) => void): void;
         on(name: 'changeSession',
@@ -2463,11 +1955,18 @@ export namespace Ace {
         on(name: 'copy', callback: (obj: { text: string }) => void): void;
         on(name: 'focus', callback: (e: Event) => void): void;
         on(name: 'paste', callback: (obj: { text: string }) => void): void;
+        on(name: 'mousemove', callback: (e: any) => void): void;
+        on(name: 'mouseup', callback: (e: any) => void): void;
+        on(name: 'mousewheel', callback: (e: any) => void): void;
+        on(name: 'click', callback: (e: any) => void): void;
+
+        onPaste(text: string, event: any): void;
 
         setOption<T extends keyof EditorOptions>(name: T, value: EditorOptions[T]): void;
         getOption<T extends keyof EditorOptions>(name: T): EditorOptions[T];
 
         setKeyboardHandler(keyboardHandler: string, callback?: () => void): void;
+        setKeyboardHandler(keyboardHandler: KeyboardHandler | null): void;
         getKeyboardHandler(): string;
         setSession(session: EditSession): void;
         getSession(): EditSession;
@@ -2480,13 +1979,13 @@ export namespace Ace {
         setStyle(style: string): void;
         unsetStyle(style: string): void;
         getFontSize(): string;
-        setFontSize(size: string): void;
+        setFontSize(size: number): void;
         focus(): void;
         isFocused(): boolean;
-        flur(): void;
+        blur(): void;
         getSelectedText(): string;
         getCopyText(): string;
-        execCommand(command: string | string[], args: any): boolean;
+        execCommand(command: string | string[], args?: any): boolean;
         insert(text: string, pasted?: boolean): void;
         setOverwrite(overwrite: boolean): void;
         getOverwrite(): boolean;
@@ -2581,197 +2080,32 @@ export namespace Ace {
         replace(replacement: string, options?: Partial<SearchOptions>): number;
         replaceAll(replacement: string, options?: Partial<SearchOptions>): number;
         getLastSearchOptions(): Partial<SearchOptions>;
-        find(needle: string, options?: Partial<SearchOptions>, animate?: boolean): void;
+        find(needle: string | RegExp, options?: Partial<SearchOptions>, animate?: boolean): Ace.Range | undefined;
         findNext(options?: Partial<SearchOptions>, animate?: boolean): void;
         findPrevious(options?: Partial<SearchOptions>, animate?: boolean): void;
+        findAll(needle: string | RegExp, options?: Partial<SearchOptions>, additive?: boolean): number;
         undo(): void;
         redo(): void;
         destroy(): void;
         setAutoScrollEditorIntoView(enable: boolean): void;
-        once(name: string, callback: Function): void;
-        setDefaultHandler(name: string, callback: Function): void;
-        removeDefaultHandler(name: string, callback: Function): void;
-        on(name: string, callback: Function, capturing?: boolean): void;
-        off(name: string, callback: Function): void;
-        setOptions(optList: { [key: string]: any }): void;
-        getOptions(optionNames?: string[] | { [key: string]: any }): { [key: string]: any };
-        setOption(name: string, value: any): void;
-        getOption(name: string): any;
-        $initOperationListeners(): void;
-        startOperation(commandEvent: { command: string, args: any }): void;
-        endOperation(e: { returnValue: boolean }): void;
-        $historyTracker(e: { command: Command; args: any }): void;
-        $highlightBrackets(): void;
-        $highlightTags(): void;
-        blur(): void;
-        onFocus(e: Event): void;
-        onBlur(e: Event): void;
-        $cursorChange(): void;
-        onDocumentChange(delta: Delta): void;
-        onTokenizerUpdate(e: Event): void;
-        onScrollTopChange(): void;
-        onScrollLeftChange(): void;
-        onCursorChange(): void;
-        $updateHighlightActiveLine(): void;
-        onSelectionChange(e: Event): void;
-        $getSelectionHighLightRegexp(): void;
-        onChangeFrontMarker(): void;
-        onChangeBackMarker(): void;
-        onChangeBreakpoint(): void;
-        onChangeAnnotation(): void;
-        onChangeMode(e: Event): void;
-        onChangeWrapLimit(): void;
-        onChangeWrapMode(): void;
-        onChangeFold(): void;
-        onCopy(): void;
-        onCut(): void;
-        onPaste(text: string, event: Event): void;
-        $handlePaste(e: string | { text: string }): void;
-        onTextInput(text: string, composition?: any): void;
-        applyComposition(text: string, composition: any): void;
-        onCommandKey(e: Event, hashId: any, keyCode: any): void;
-        removeToLineStart(): void;
-        removeToLineEnd(): void;
-        getNumberAt(row: number, column: number): number;
-        toggleWord(): void;
-        private $moveLines(dir: any, copy?: any): void;
-        $getSelectedRows(range: Range): { first: number, last: number };
-        onCompositionStart(compositionState: any): void;
-        onCompositionUpdate(text: string): void;
-        onCompositionEnd(): void;
-        $getVisibleRowCount(): number;
-        $moveByPage(dir: number, select: boolean): void;
-        $tryReplace(range: Range, replacement: any): Range | null;
-        revealRange(range: Range, animate: boolean): void;
-        $resetCursorStyle(): void;
-        updateSelectionMarkers(): void;
-        addSelectionMarker(orientedRange: Range): Range;
-        removeSelectionMarker(range: Range): void;
-        removeSelectionMarkers(range: Range): void;
-        $onAddRange(e: Event): void;
-        $onRemoveRange(e: Event): void;
-        $onMultiSelect(e: Event): void;
-        $onSingleSelect(e: Event): void;
-        $onMultiSelectExec(e: Event): void;
-        forEachSelection(cmd: Command, args: string, options?: any): void;
-        exitMultiSelectMode(): void;
-        $checkMultiselectChange(e: Event, anchor: Anchor): void;
-        findAll(needle: string, options?: any, additive?: boolean): number;
-        selectMoreLines(dir: number, skip: boolean): void;
-        transposeSelections(dir: number): void;
-        selectMore(dir: number, skip: boolean, stopAtFirst?: any): void;
-        alignCursors(): void;
-        $reAlignText(lines: string[], forceLeft?: any): string[];
-        insertSnippet(content: any, options: any): any;
-        expandSnippet(options: any): any;
-
-        _emit(eventName: any, e: any): any;
-
-        _signal(eventName: any, e: any): void;
-
-        addListener(type: any, listener: any): any;
-
-        emit(type: any): boolean;
-
-        eventNames(): any;
-
-        getMaxListeners(): any;
-
-        listenerCount(emitter: any, type: any): any;
-
-        listeners(type: any): any;
-
-        prependListener(type: any, listener: any): any;
-
-        prependOnceListener(type: any, listener: any): any;
-
-        rawListeners(type: any): any;
-
-        removeAllListeners(type: any): any;
-
-        removeListener(type: any, listener: any): any;
-
-        setMaxListeners(n: any): any;
+        completers: Completer[];
     }
 
-    export class Reader { }
-}
+    type CompleterCallback = (error: any, completions: Completion[]) => void;
 
-export namespace parserlib {
-    export class Reporter {
-    }
-
-    export namespace util {
-        export class SyntaxUnit {
-            fromToken(token: Object): parserlib.util.SyntaxUnit;
-            constructor(text: String, line: Number, col: Number);
-        }
-        export class EventTarget {
-        }
-        export class StringReader {
-        }
-        export class SyntaxError {
-        }
-        export class TokenStreamBase {
-            createTokenData(tokens: any[]): any[];
-            constructor(input: String | StringReader);
-        }
-        export class Combinator extends SyntaxUnit {
-        }
-        export class MediaFeature extends SyntaxUnit {
-            constructor(name: SyntaxUnit, value: SyntaxUnit);
-        }
-        export class ValidationError {
-        }
-    }
-
-    export namespace css {
-        export class Specificity {
-            calculate(selector: any): parserlib.css.Specificity;
-            constructor(a: Number, b: Number, c: Number, d: Number);
-        }
-        export class PropertyValuePart extends util.SyntaxUnit {
-            fromToken(token: Object): parserlib.css.PropertyValuePart;
-            serializeString(value: any): string;
-            parseString(str: any): any;
-            constructor(text: String, line: Number, col: Number);
-        }
-        export class PropertyValue extends util.SyntaxUnit {
-        }
-        export class PropertyValueIterator {
-            drop(): void;
-            restore(): void;
-            previous(): parserlib.css.PropertyValuePart;
-            next(): parserlib.css.PropertyValuePart;
-            peek(count: any): parserlib.css.PropertyValuePart;
-            mark(): void;
-            hasNext(): boolean;
-            isFirst(): boolean;
-            count(): Number;
-            constructor(value: parserlib.css.PropertyValue);
-        }
-        export class Parser {
-        }
-        export class PropertyName extends util.SyntaxUnit {
-        }
-        export class Selector extends util.SyntaxUnit {
-            constructor(parts: any[], line: Number, col: Number);
-        }
-        export class SelectorPart extends util.SyntaxUnit {
-            constructor(elementName: String, modifiers: any[], text: String, line: Number, col: Number);
-        }
-        export class SelectorSubPart extends util.SyntaxUnit {
-        }
-        export class TokenStream {
-        }
-        export class MediaQuery extends util.SyntaxUnit {
-            constructor(modifier: String, mediaType: String, parts: any[], line: Number, col: Number);
-        }
+    interface Completer {
+        identifierRegexps?: Array<RegExp>,
+        getCompletions(editor: Editor,
+            session: EditSession,
+            position: Point,
+            prefix: string,
+            callback: CompleterCallback): void;
     }
 }
+
 
 export const version: string;
 export const config: Ace.Config;
 export function require(name: string): any;
 export function edit(el: Element | string, options?: Partial<Ace.EditorOptions>): Ace.Editor;
-export function createEditSession(text: Ace.Document | string, mode: Ace.Mode): Ace.EditSession;
+export function createEditSession(text: Ace.Document | string, mode: Ace.SyntaxMode): Ace.EditSession;

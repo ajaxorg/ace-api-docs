@@ -3,7 +3,7 @@
 requires node >= 8
 
 ```
-node generateAnnotations.js AceDirName/lib/ace
+node generateAnnotations.js AceDirName/lib/ace/src
 ```
 
 Creates `classes.json` file in directory `generated`.
