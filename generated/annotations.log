@@ -1,0 +1,13 @@
+Duplicate function '$split' determinator. Class: Document. Filename: ace_new/ace/src/document.js:84. First implementation: ace_new/ace/src/document.js:80
+Duplicate function '$syncInformUndoManager' determinator. Class: EditSession. Filename: ace_new/ace/src/edit_session.js:369. First implementation: ace_new/ace/src/edit_session.js:363
+Duplicate function '$getStringScreenWidth' determinator. Class: EditSession. Filename: ace_new/ace/src/edit_session.js:2345. First implementation: ace_new/ace/src/edit_session.js:1947
+Duplicate function 'setAutoScrollEditorIntoView' determinator. Class: Editor. Filename: ace_new/ace/src/editor.js:2785. First implementation: ace_new/ace/src/editor.js:2741
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:31. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:55. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:80. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:104. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:144. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:163. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:196. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:315. First implementation: ace_new/ace/src/test/asyncjs/async.js:20
+Duplicate function 'next' determinator. Class: Generator. Filename: ace_new/ace/src/test/asyncjs/async.js:342. First implementation: ace_new/ace/src/test/asyncjs/async.js:20

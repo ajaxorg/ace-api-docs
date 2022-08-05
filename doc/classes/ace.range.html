@@ -4,16 +4,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Range | Ace Documentation</title>
-	<meta name="description" content="">
+	<meta name="description" content="Documentation for Ace Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -38,8 +39,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,13 +52,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Ace Documentation</a>
 				</li>
 				<li>
-					<a href="../modules/ace.html">Ace</a>
+					<a href="../modules/Ace.html">Ace</a>
 				</li>
 				<li>
-					<a href="ace.range.html">Range</a>
+					<a href="Ace.Range.html">Range</a>
 				</li>
 			</ul>
 			<h1>Class Range</h1>
@@ -67,6 +68,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This object is used in various places to indicate a region within the editor. To better visualize how this works, imagine a rectangle. Each quadrant of the rectangle is analogous to a range, as ranges contain a starting row and starting column, and an ending row, and ending column.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -82,14 +90,47 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ace.range.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.Range.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ace.range.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="ace.range.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Range.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Range.html#start" class="tsd-kind-icon">start</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#clipRows" class="tsd-kind-icon">clip<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#collapseRows" class="tsd-kind-icon">collapse<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#compare" class="tsd-kind-icon">compare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#compareEnd" class="tsd-kind-icon">compare<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#compareInside" class="tsd-kind-icon">compare<wbr>Inside</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#comparePoint" class="tsd-kind-icon">compare<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#comparePoints" class="tsd-kind-icon">compare<wbr>Points</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#compareRange" class="tsd-kind-icon">compare<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#compareStart" class="tsd-kind-icon">compare<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#contains" class="tsd-kind-icon">contains</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#containsRange" class="tsd-kind-icon">contains<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#extend" class="tsd-kind-icon">extend</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#fromPoints" class="tsd-kind-icon">from<wbr>Points</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#inside" class="tsd-kind-icon">inside</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#insideEnd" class="tsd-kind-icon">inside<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#insideStart" class="tsd-kind-icon">inside<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#intersects" class="tsd-kind-icon">intersects</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#isEmpty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#isEnd" class="tsd-kind-icon">is<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#isMultiLine" class="tsd-kind-icon">is<wbr>Multi<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#isStart" class="tsd-kind-icon">is<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#moveBy" class="tsd-kind-icon">move<wbr>By</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#setEnd" class="tsd-kind-icon">set<wbr>End</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#setStart" class="tsd-kind-icon">set<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#toScreenRange" class="tsd-kind-icon">to<wbr>Screen<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Range.html#toString" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,31 +142,56 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>startRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ace.range.html" class="tsd-signature-type">Range</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>startRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, startColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, endRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, endColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.4.2/ace.d.ts#L134">ace.d.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L18">ace_new/ace/src/range.js:18</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new <code>Range</code> object with the given starting and ending rows and columns.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>startRow: <span class="tsd-signature-type">number</span></h5>
+									<h5>startRow: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting row</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>startColumn: <span class="tsd-signature-type">number</span></h5>
+									<h5>startColumn: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting column</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>endRow: <span class="tsd-signature-type">number</span></h5>
+									<h5>endRow: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ending row</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>endColumn: <span class="tsd-signature-type">number</span></h5>
+									<h5>endColumn: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The ending column</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="ace.range.html" class="tsd-signature-type">Range</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,161 +201,1144 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="end" class="tsd-anchor"></a>
 					<h3>end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="../interfaces/ace.point.html" class="tsd-signature-type">Point</a></div>
+					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.4.2/ace.d.ts#L138">ace.d.ts:138</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L171">ace.d.ts:171</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="start" class="tsd-anchor"></a>
 					<h3>start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="../interfaces/ace.point.html" class="tsd-signature-type">Point</a></div>
+					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.4.2/ace.d.ts#L137">ace.d.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L170">ace.d.ts:170</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clipRows" class="tsd-anchor"></a>
+					<h3>clip<wbr>Rows</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clip<wbr>Rows<span class="tsd-signature-symbol">(</span>firstRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lastRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L345">ace_new/ace/src/range.js:345</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the part of the current <code>Range</code> that occurs within the boundaries of <code>firstRow</code> and <code>lastRow</code> as a new <code>Range</code> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>firstRow: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting row</p>
+									</div>
+								</li>
+								<li>
+									<h5>lastRow: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ending row</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L398">ace_new/ace/src/range.js:398</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a duplicate of the calling range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="collapseRows" class="tsd-anchor"></a>
+					<h3>collapse<wbr>Rows</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">collapse<wbr>Rows<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L406">ace_new/ace/src/range.js:406</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a range containing the starting and ending rows of the original range, but with a column value of <code>0</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compare" class="tsd-anchor"></a>
+					<h3>compare</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L266">ace_new/ace/src/range.js:266</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>This method returns one of the following numbers:</p>
+							<ul>
+								<li><code>1</code> if <code>row</code> is greater than the calling range</li>
+								<li><code>-1</code> if <code>row</code> is less then the calling range</li>
+								<li><code>0</code> otherwise</li>
+							</ul>
+							<p>If the starting row of the calling range is equal to <code>row</code>, and:</p>
+							<ul>
+								<li><code>column</code> is greater than or equal to the calling range&#39;s starting column, this returns <code>0</code></li>
+								<li>Otherwise, it returns -1</li>
+							</ul>
+							<p>If the ending row of the calling range is equal to <code>row</code>, and:</p>
+							<ul>
+								<li><code>column</code> is less than or equal to the calling range&#39;s ending column, this returns <code>0</code></li>
+								<li>Otherwise, it returns 1</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compareEnd" class="tsd-anchor"></a>
+					<h3>compare<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>End<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L312">ace_new/ace/src/range.js:312</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>This method returns one of the following numbers:</p>
+							<ul>
+								<li><code>1</code> if calling range&#39;s ending column and calling range&#39;s ending row are equal <code>row</code> and <code>column</code>.</li>
+								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compareInside" class="tsd-anchor"></a>
+					<h3>compare<wbr>Inside</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Inside<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L329">ace_new/ace/src/range.js:329</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the <code>row</code> and <code>column</code> with the start and end <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>This method returns one of the following numbers:</p>
+							<ul>
+								<li><code>1</code> if the ending row of the calling range is equal to <code>row</code>, and the ending column of the calling range is equal to <code>column</code></li>
+								<li><code>-1</code> if the starting row of the calling range is equal to <code>row</code>, and the starting column of the calling range is equal to <code>column</code></li>
+								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="comparePoint" class="tsd-anchor"></a>
+					<h3>compare<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Point<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L118">ace_new/ace/src/range.js:118</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the row and column of <code>p</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range (by calling <a href="Ace.Range.html#compare">Range.compare</a>).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A point to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="comparePoints" class="tsd-anchor"></a>
+					<h3>compare<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Points<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a>, p2<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L460">ace_new/ace/src/range.js:460</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares <code>p1</code> and <code>p2</code> <a href="../interfaces/Ace.Point.html">Point</a>&#39;s, useful for sorting</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+								</li>
+								<li>
+									<h5>p2: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compareRange" class="tsd-anchor"></a>
+					<h3>compare<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Range<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L83">ace_new/ace/src/range.js:83</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares <code>this</code> range (A) with another range (B).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A range to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>This method returns one of the following numbers:</p>
+							<ul>
+								<li><code>-2</code>: (B) is in front of (A), and doesn&#39;t intersect with (A)</li>
+								<li><code>-1</code>: (B) begins before (A) but ends inside of (A)</li>
+								<li><code>0</code>: (B) is completely inside of (A) OR (A) is completely inside of (B)</li>
+								<li><code>+1</code>: (B) begins inside of (A) but ends outside of (A)</li>
+								<li><code>+2</code>: (B) is after (A) and doesn&#39;t intersect with (A)</li>
+								<li><code>42</code>: FTW state: (B) ends in (A) but starts outside of (A)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compareStart" class="tsd-anchor"></a>
+					<h3>compare<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Start<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L296">ace_new/ace/src/range.js:296</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>This method returns one of the following numbers:</p>
+							<ul>
+								<li><code>-1</code> if calling range&#39;s starting column and calling range&#39;s starting row are equal <code>row</code> and <code>column</code></li>
+								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="contains" class="tsd-anchor"></a>
+					<h3>contains</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L67">ace_new/ace/src/range.js:67</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> provided are within the given range. This can better be expressed as returning <code>true</code> if:
+									```javascript</p>
+								</div>
+								<p>this.start.row &lt;= row &lt;= this.end.row &amp;&amp;</p>
+								<p>this.start.column &lt;= column &lt;= this.end.column
+								```</p>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to check for</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to check for</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="containsRange" class="tsd-anchor"></a>
+					<h3>contains<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">contains<wbr>Range<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L128">ace_new/ace/src/range.js:128</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks the start and end <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of <code>range</code> and compares them to the calling range. Returns <code>true</code> if the <code>range</code> is contained within the caller&#39;s range.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#comparePoint">Range.comparePoint</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A range to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="extend" class="tsd-anchor"></a>
+					<h3>extend</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">extend<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L365">ace_new/ace/src/range.js:365</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Changes the <code>row</code> and <code>column</code> for the calling range for both the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A new row to extend to</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A new column to extend to</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+							<p>The original range with the new row</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fromPoints" class="tsd-anchor"></a>
+					<h3>from<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Points<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a>, end<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L449">ace_new/ace/src/range.js:449</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates and returns a new <code>Range</code> based on the <code>start</code> <a href="../interfaces/Ace.Point.html">Point</a> and <code>end</code> <a href="../interfaces/Ace.Point.html">Point</a> of the given parameters.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A starting point to use</p>
+									</div>
+								</li>
+								<li>
+									<h5>end: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An ending point to use</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="inside" class="tsd-anchor"></a>
+					<h3>inside</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">inside<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L201">ace_new/ace/src/range.js:201</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="insideEnd" class="tsd-anchor"></a>
+					<h3>inside<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">inside<wbr>End<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L238">ace_new/ace/src/range.js:238</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range&#39;s ending <a href="../interfaces/Ace.Point.html">Point</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="insideStart" class="tsd-anchor"></a>
+					<h3>inside<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">inside<wbr>Start<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L219">ace_new/ace/src/range.js:219</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range&#39;s starting <a href="../interfaces/Ace.Point.html">Point</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersects" class="tsd-anchor"></a>
+					<h3>intersects</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersects<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L137">ace_new/ace/src/range.js:137</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if passed in <code>range</code> intersects with the one calling this method.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A range to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isEmpty" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L382">ace_new/ace/src/range.js:382</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the calling range is empty (starting <a href="../interfaces/Ace.Point.html">Point</a> == ending <a href="../interfaces/Ace.Point.html">Point</a>).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isEnd" class="tsd-anchor"></a>
+					<h3>is<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>End<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L148">ace_new/ace/src/range.js:148</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the caller&#39;s ending row is the same as <code>row</code>, and if the caller&#39;s ending column is the same as <code>column</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isEqual" class="tsd-anchor"></a>
+					<h3>is<wbr>Equal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L36">ace_new/ace/src/range.js:36</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if and only if the starting row and column, and ending row and column, are equivalent to those given by <code>range</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A range to check against</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isMultiLine" class="tsd-anchor"></a>
+					<h3>is<wbr>Multi<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Multi<wbr>Line<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L390">ace_new/ace/src/range.js:390</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the range spans across multiple lines.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isStart" class="tsd-anchor"></a>
+					<h3>is<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Start<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L158">ace_new/ace/src/range.js:158</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the caller&#39;s starting row is the same as <code>row</code>, and if the caller&#39;s starting column is the same as <code>column</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to compare with</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to compare with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="moveBy" class="tsd-anchor"></a>
+					<h3>move<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">move<wbr>By<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L434">ace_new/ace/src/range.js:434</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Shift the calling range by <code>row</code> and <code>column</code> values.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>experimental</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setEnd" class="tsd-anchor"></a>
+					<h3>set<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>End<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L184">ace_new/ace/src/range.js:184</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the starting row and column for the range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to set</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to set</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setStart" class="tsd-anchor"></a>
+					<h3>set<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Start<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L168">ace_new/ace/src/range.js:168</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the starting row and column for the range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row to set</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A column to set</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toScreenRange" class="tsd-anchor"></a>
+					<h3>to<wbr>Screen<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Screen<wbr>Range<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L418">ace_new/ace/src/range.js:418</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given the current <code>Range</code>, this function converts those starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s into screen positions, and then returns a new <code>Range</code> object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The <code>EditSession</code> to retrieve coordinates from</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toString" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/range.js#L50">ace_new/ace/src/range.js:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a string containing the range&#39;s row and column information, given like this:
+									```</p>
+								</div>
+								<p>[start.row/start.column] -&gt; [end.row/end.column]
+								```</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/ace.html">Ace</a>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/Ace.html">Ace</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.anchor.html" class="tsd-kind-icon">Anchor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.commandmanager.html" class="tsd-kind-icon">Command<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.config.html" class="tsd-kind-icon">Config</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.document.html" class="tsd-kind-icon">Document</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.editsession.html" class="tsd-kind-icon">Edit<wbr>Session</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.editor.html" class="tsd-kind-icon">Editor</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.fold.html" class="tsd-kind-icon">Fold</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.foldline.html" class="tsd-kind-icon">Fold<wbr>Line</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.keybinding.html" class="tsd-kind-icon">Key<wbr>Binding</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.keyboardhandler.html" class="tsd-kind-icon">Keyboard<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.markerlike.html" class="tsd-kind-icon">Marker<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.mode.html" class="tsd-kind-icon">Mode</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.range.html" class="tsd-kind-icon">Range</a>
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="Ace.Range.html" class="tsd-kind-icon">Range</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="ace.range.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="Ace.Range.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="ace.range.html#end" class="tsd-kind-icon">end</a>
+								<a href="Ace.Range.html#end" class="tsd-kind-icon">end</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="ace.range.html#start" class="tsd-kind-icon">start</a>
+								<a href="Ace.Range.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#clipRows" class="tsd-kind-icon">clip<wbr>Rows</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#collapseRows" class="tsd-kind-icon">collapse<wbr>Rows</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#compare" class="tsd-kind-icon">compare</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#compareEnd" class="tsd-kind-icon">compare<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#compareInside" class="tsd-kind-icon">compare<wbr>Inside</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#comparePoint" class="tsd-kind-icon">compare<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#comparePoints" class="tsd-kind-icon">compare<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#compareRange" class="tsd-kind-icon">compare<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#compareStart" class="tsd-kind-icon">compare<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#contains" class="tsd-kind-icon">contains</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#containsRange" class="tsd-kind-icon">contains<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#extend" class="tsd-kind-icon">extend</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#fromPoints" class="tsd-kind-icon">from<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#inside" class="tsd-kind-icon">inside</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#insideEnd" class="tsd-kind-icon">inside<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#insideStart" class="tsd-kind-icon">inside<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#intersects" class="tsd-kind-icon">intersects</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#isEmpty" class="tsd-kind-icon">is<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#isEnd" class="tsd-kind-icon">is<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#isMultiLine" class="tsd-kind-icon">is<wbr>Multi<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#isStart" class="tsd-kind-icon">is<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#moveBy" class="tsd-kind-icon">move<wbr>By</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#setEnd" class="tsd-kind-icon">set<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#setStart" class="tsd-kind-icon">set<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#toScreenRange" class="tsd-kind-icon">to<wbr>Screen<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Range.html#toString" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.selection.html" class="tsd-kind-icon">Selection</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="ace.tokeniterator.html" class="tsd-kind-icon">Token<wbr>Iterator</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.tokenizer.html" class="tsd-kind-icon">Tokenizer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.undomanager.html" class="tsd-kind-icon">Undo<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="ace.virtualrenderer.html" class="tsd-kind-icon">Virtual<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.annotation.html" class="tsd-kind-icon">Annotation</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.command.html" class="tsd-kind-icon">Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.completion.html" class="tsd-kind-icon">Completion</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.cstylebehaviour.html" class="tsd-kind-icon">Cstyle<wbr>Behaviour</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.delta.html" class="tsd-kind-icon">Delta</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.editsessionoptions.html" class="tsd-kind-icon">Edit<wbr>Session<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.editoroptions.html" class="tsd-kind-icon">Editor<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../interfaces/ace.folding.html" class="tsd-kind-icon">Folding</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.mousehandleroptions.html" class="tsd-kind-icon">Mouse<wbr>Handler<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.optionsprovider.html" class="tsd-kind-icon">Options<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.point.html" class="tsd-kind-icon">Point</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.searchoptions.html" class="tsd-kind-icon">Search<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.token.html" class="tsd-kind-icon">Token</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/ace.virtualrendereroptions.html" class="tsd-kind-icon">Virtual<wbr>Renderer<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/ace.html#commandlike" class="tsd-kind-icon">Command<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/ace.html#markerrenderer" class="tsd-kind-icon">Marker<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/ace.html#newlinemode" class="tsd-kind-icon">New<wbr>Line<wbr>Mode</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -300,65 +1349,17 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>
