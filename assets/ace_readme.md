@@ -4,6 +4,11 @@ Ace (Ajax.org Cloud9 Editor)
 [![Build Status](https://github.com/ajaxorg/ace/workflows/CI/badge.svg)](https://github.com/ajaxorg/ace/actions) 
 [![npm](https://img.shields.io/npm/v/ace-builds.svg)](https://www.npmjs.com/package/ace-builds)
 
+ERD diagram
+-----------------------------
+Below is an ERD diagram describing some fundamentals about how the internals of Ace works:
+![ERD diagram](https://ace.c9.io/doc/template/resources/images/Ace_ERD.png)
+
 _Note_: The new site at http://ace.c9.io contains all the info below along with an embedding guide and all the other resources you need to get started with Ace.
 
 Ace is a standalone code editor written in JavaScript. Our goal is to create a browser based editor that matches and extends the features, usability and performance of existing native editors such as TextMate, Vim or Eclipse. It can be easily embedded in any web page or JavaScript application. Ace is developed as the primary editor for [Cloud9 IDE](https://c9.io/) and the successor of the Mozilla Skywriter (Bespin) Project.
@@ -162,8 +167,3 @@ Contributing
 Ace is a community project and wouldn't be what it is without contributions! We actively encourage and support contributions. The Ace source code is released under the BSD License. This license is very simple, and is friendly to all kinds of projects, whether open source or not. Take charge of your editor and add your favorite language highlighting and keybindings!
 
 Feel free to fork and improve/enhance Ace any way you want. If you feel that the editor or the Ace community will benefit from your changes, please open a pull request. For more information on our contributing guidelines, see [CONTRIBUTING.md](https://github.com/ajaxorg/ace/blob/master/CONTRIBUTING.md).
-
-ERD diagram
------------------------------
-Below is an ERD diagram describing some fundamentals about how the internals of Ace works:
-![ERD diagram](https://ace.c9.io/doc/template/resources/images/Ace_ERD.png)
