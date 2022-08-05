@@ -861,7 +861,19 @@ export namespace Ace {
         resetSelection(): void;
     }
 
-    export interface Editor extends OptionsProvider, EventEmitter {
+    export class Editor implements OptionsProvider, EventEmitter {
+        once(name: string, callback: Function): void;
+        setDefaultHandler(name: string, callback: Function): void;
+        removeDefaultHandler(name: string, callback: Function): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+        off(name: string, callback: Function): void;
+        removeListener(name: string, callback: Function): void;
+        removeEventListener(name: string, callback: Function): void;
+        _emit(eventName: any, e: any);
+        _signal(eventName: any, e: any): void;
+        removeAllListeners(name?: string): void;
+        setOptions(optList: { [key: string]: any; }): void;
+        getOptions(optionNames?: string[] | { [key: string]: any; }): { [key: string]: any; };
         container: HTMLElement;
         renderer: VirtualRenderer;
         id: string;

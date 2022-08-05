@@ -62,7 +62,7 @@ function createDefaultFormatCodeSettings() {
         insertSpaceBeforeFunctionParenthesis: false,
         placeOpenBraceOnNewLineForFunctions: false,
         placeOpenBraceOnNewLineForControlBlocks: false,
-        insertSpaceBeforeTypeAnnotation: false,
+        insertSpaceBeforeTypeAnnotation: false
     };
 }
 
@@ -85,12 +85,17 @@ function formatDts(filename, text, options) {
 function generateDocumentation(fileNames, options) {
 
     function print(node) {
-        if (node.parent && (ts.isInterfaceDeclaration(node.parent) || ts.isClassDeclaration(node.parent)) && ts.isIdentifier(node) && !node.parent.jsDoc) {
+        if (node.parent && (ts.isInterfaceDeclaration(node.parent) || ts.isClassDeclaration(node.parent))
+            && ts.isIdentifier(node) && !node.parent.jsDoc) {
             let foundClass = findClassName(node.escapedText);
             foundClassName = node.escapedText;
             if (foundClass) {
-                edits.push({pos: node.parent.pos, text: "\r\n" + jsDocPrettify(foundClass)});
-            } else {
+                edits.push({
+                    pos: node.parent.pos,
+                    text: "\r\n" + jsDocPrettify(foundClass)
+                });
+            }
+            else {
                 let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.getStart()).line + 1;
                 classes[foundClassName] = {
                     line: currentLine,
@@ -99,12 +104,17 @@ function generateDocumentation(fileNames, options) {
                     described: true
                 }
             }
-        } else {
+        }
+        else {
             if (ts.isConstructorDeclaration(node)) {
                 let foundConstructor = findConstructorName();
                 if (foundConstructor) {
-                    edits.push({pos: node.pos, text: "\r\n" + jsDocPrettify(foundConstructor)});
-                } else {
+                    edits.push({
+                        pos: node.pos,
+                        text: "\r\n" + jsDocPrettify(foundConstructor)
+                    });
+                }
+                else {
                     let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.getStart()).line + 1;
                     classes[foundClassName]["construct"] = {
                         line: currentLine,
@@ -113,12 +123,18 @@ function generateDocumentation(fileNames, options) {
                         described: true
                     }
                 }
-            } else {
-                if (node.parent && (ts.isMethodSignature(node.parent) || ts.isMethodDeclaration(node.parent)) && ts.isParameter(node) && node.type && node.type.literal) {
+            }
+            else {
+                if (node.parent && (ts.isMethodSignature(node.parent) || ts.isMethodDeclaration(node.parent))
+                    && ts.isParameter(node) && node.type && node.type.literal) {
                     let foundEvent = eventResolver(node.type.literal.text);
                     if (foundEvent) {
-                        edits.push({pos: node.parent.pos, text: "\r\n" + jsDocPrettify(foundEvent)});
-                    } else {
+                        edits.push({
+                            pos: node.parent.pos,
+                            text: "\r\n" + jsDocPrettify(foundEvent)
+                        });
+                    }
+                    else {
                         let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.getStart()).line + 1;
                         classes[foundClassName][node.type.literal.text + "_event"] = {
                             line: currentLine,
@@ -127,13 +143,20 @@ function generateDocumentation(fileNames, options) {
                             described: true
                         }
                     }
-                } else {
-                    if (node.parent && (ts.isMethodSignature(node.parent) || ts.isMethodDeclaration(node.parent)) && ts.isIdentifier(node)) {
+                }
+                else {
+                    if (node.parent && (ts.isMethodSignature(node.parent) || ts.isMethodDeclaration(node.parent))
+                        && ts.isIdentifier(node)) {
                         let foundMethod = methodResolver(node.escapedText);
                         if (foundMethod) {
-                            edits.push({pos: node.parent.pos, text: "\r\n" + jsDocPrettify(foundMethod)});
-                        } else {
-                            let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.getStart()).line + 1;
+                            edits.push({
+                                pos: node.parent.pos,
+                                text: "\r\n" + jsDocPrettify(foundMethod)
+                            });
+                        }
+                        else {
+                            let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.getStart()).line
+                                + 1;
                             classes[foundClassName][node.escapedText] = {
                                 line: currentLine,
                                 jsDoc: [],
@@ -141,14 +164,22 @@ function generateDocumentation(fileNames, options) {
                                 described: true
                             }
                         }
-                    } else {
-                        if (node.parent && node.parent.parent && (ts.isInterfaceDeclaration(node.parent.parent) || ts.isClassDeclaration(node.parent.parent)) && (ts.isPropertySignature(node.parent) || ts.isPropertyDeclaration(node.parent)) && ts.isIdentifier(node)) {
+                    }
+                    else {
+                        if (node.parent && node.parent.parent && (ts.isInterfaceDeclaration(node.parent.parent)
+                            || ts.isClassDeclaration(node.parent.parent)) && (ts.isPropertySignature(node.parent)
+                            || ts.isPropertyDeclaration(node.parent)) && ts.isIdentifier(node)) {
                             let foundProperty = propertyResolver(node.escapedText);
                             if (foundProperty) {
-                                edits.push({pos: node.parent.pos, text: "\r\n" + jsDocPrettify(foundProperty)});
-                            } else {
+                                edits.push({
+                                    pos: node.parent.pos,
+                                    text: "\r\n" + jsDocPrettify(foundProperty)
+                                });
+                            }
+                            else {
                                 if (foundClassName) {
-                                    let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.getStart()).line + 1;
+                                    let currentLine = ts.getLineAndCharacterOfPosition(
+                                        sourceFile, node.parent.getStart()).line + 1;
                                     classes[foundClassName][node.escapedText + "_prop"] = {
                                         line: currentLine,
                                         jsDoc: [],
@@ -218,7 +249,7 @@ function jsDocPrettify(aceObject) {
             jsDoc = jsDoc + aceObject.jsDoc[k] + "\r\n";
         }
     }
-    jsDoc = jsDoc.replace(/\s{2,}/g,'\r\n ');
+    jsDoc = jsDoc.replace(/\s{2,}/g, '\r\n ');
     return jsDoc;
 }
 
@@ -247,7 +278,9 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
     for (var className in classes) {
         for (var method in classes[className]) {
             let regExp, match;
-            if (method !== 'jsDoc' && classes[className][method] === Object(classes[className][method])) {
+            //this would ignore all internal methods started with $
+            if (method !== 'jsDoc' && !/^\$/.test(method) && classes[className][method] === Object(
+                classes[className][method])) {
                 if (!classes[className][method].described) {
                     switch (true) {
                         case /_prop/.test(method):
@@ -258,7 +291,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 let type;
                                 if (classes[className][method].params) {
                                     type = classes[className][method].params["return"];
-                                } else {
+                                }
+                                else {
                                     type = "any";
                                 }
                                 let jsDoc = '';
@@ -270,7 +304,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     text: jsDoc + "" + propName + ": " + type + ";\r\n"
                                 });
                             }
-                            logs = logs + "No such property name '" + propName + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
+                            logs = logs + "No such property name '" + propName + "' in declaration file. Class: "
+                                + className + ". Implicitly created.\r\n";
                             break;
                         case /_event/.test(method):
                             let eventName = method.match(/([\w$]*)_event/)[1];
@@ -286,7 +321,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 let callbackExpr;
                                 if (allParams.length > 0) {
                                     callbackExpr = ", callback: (" + allParams.join(', ') + ") => void";
-                                } else {
+                                }
+                                else {
                                     callbackExpr = "";
                                 }
                                 let jsDoc = '';
@@ -298,7 +334,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     text: jsDoc + "on(name: '" + eventName + "'" + callbackExpr + "): void" + ";\r\n"
                                 });
                             }
-                            logs = logs + "No such event name '" + eventName + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
+                            logs = logs + "No such event name '" + eventName + "' in declaration file. Class: "
+                                + className + ". Implicitly created.\r\n";
                             break;
                         case (method === "construct"):
                             regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
@@ -310,16 +347,20 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     for (let prop in classes[className][method].params) {
                                         let paramType;
                                         let questionMark;
-                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length - 1] == "?") {
-                                            paramType = classes[className][method].params[prop].substring(0, classes[className][method].params[prop].length - 1);
+                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length
+                                        - 1] == "?") {
+                                            paramType = classes[className][method].params[prop].substring(
+                                                0, classes[className][method].params[prop].length - 1);
                                             questionMark = '?';
-                                        } else {
+                                        }
+                                        else {
                                             paramType = classes[className][method].params[prop];
                                             questionMark = '';
                                         }
                                         if (prop == 'return') {
                                             returnType = questionMark + ": " + paramType;
-                                        } else {
+                                        }
+                                        else {
                                             allParams.push(prop + questionMark + ": " + paramType);
                                         }
                                     }
@@ -333,7 +374,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     text: jsDoc + "constructor(" + allParams.join(', ') + ")" + returnType + ";\r\n"
                                 });
                             }
-                            logs = logs + "No constructor in declaration file. Class: " + className + ". Implicitly created.\r\n";
+                            logs = logs + "No constructor in declaration file. Class: " + className
+                                + ". Implicitly created.\r\n";
                             break;
                         default:
                             regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
@@ -345,16 +387,20 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     for (let prop in classes[className][method].params) {
                                         let paramType;
                                         let questionMark;
-                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length - 1] == "?") {
-                                            paramType = classes[className][method].params[prop].substring(0, classes[className][method].params[prop].length - 1);
+                                        if (classes[className][method].params[prop][classes[className][method].params[prop].length
+                                        - 1] == "?") {
+                                            paramType = classes[className][method].params[prop].substring(
+                                                0, classes[className][method].params[prop].length - 1);
                                             questionMark = '?';
-                                        } else {
+                                        }
+                                        else {
                                             paramType = classes[className][method].params[prop];
                                             questionMark = '';
                                         }
                                         if (prop == 'return') {
                                             returnType = questionMark + ": " + paramType;
-                                        } else {
+                                        }
+                                        else {
                                             allParams.push(prop + questionMark + ": " + paramType);
                                         }
                                     }
@@ -369,7 +415,8 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 });
                             }
 
-                            logs = logs + "No such method name '" + method + "' in declaration file. Class: " + className + ". Implicitly created.\r\n";
+                            logs = logs + "No such method name '" + method + "' in declaration file. Class: "
+                                + className + ". Implicitly created.\r\n";
                             break;
                     }
                 }
