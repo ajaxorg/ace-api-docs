@@ -1,0 +1,48 @@
+{
+  "title": "Ace Documentation",
+  "readme": "assets/ace_readme.md",
+  "entryPoints": [
+    "generated/ace.d.ts"
+  ],
+  "gitLink": "https://github.com/ajaxorg/ace/tree/v1.8.1/",
+  "exclude": {
+    "classes": [
+      "Array",
+      "Element",
+      "Type",
+      "AceEmmetEditor",
+      "ApexMode",
+      "PhpMode",
+      "VisualforceMode",
+      "PhpCompletions",
+      "UnicodeTBL00",
+      "UnicodeTBL20",
+      "HtmlBehaviour",
+      "HtmlCompletions",
+      "ArabicAlefBetIntervalsBegine",
+      "ArabicAlefBetIntervalsEnd",
+      "DjangoHighlightRules",
+      "DjangoHtmlHighlightRules",
+      "EjsHighlightRules",
+      "CssBehaviour",
+      "CssCompletions",
+      "CstyleBehaviour",
+      "RazorCompletions",
+      "LiquidBehaviour",
+      "XmlBehaviour",
+      "XQueryBehaviour",
+      "Attr",
+      "ClassList",
+      "Node",
+      "Object",
+      "SnippetGroupHighlightRules",
+      "SnippetHighlightRules",
+      "Split",
+      "Style",
+      "Tag",
+      "TestGenerator",
+      "TextNode"
+    ],
+    "methods": []
+  }
+}

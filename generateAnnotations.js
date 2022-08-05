@@ -2,8 +2,10 @@
 var ts = require("typescript");
 var fs = require("fs");
 var propObjects = {};
-var excludeIdentifiers = ["Array", "Element", "Type"];
+var options = JSON.parse(fs.readFileSync("generator-options.json", "utf8").toString());
 
+var excludeClasses = options["exclude"]["classes"];
+var excludeMethods = options["exclude"]["methods"];
 
 function createCompilerHost(options) {
     return {
@@ -46,20 +48,15 @@ function createCompilerHost(options) {
 
     function getSourceFile(fileName, languageVersion, onError) {
         var sourceText = ts.sys.readFile(fileName);
-        return sourceText !== undefined
-            ? ts.createSourceFile(fileName, sourceText, languageVersion, false, ts.ScriptKind.TS)
-            : undefined;
+        return sourceText !== undefined ? ts.createSourceFile(
+            fileName, sourceText, languageVersion, false, ts.ScriptKind.TS) : undefined;
     }
 }
 
 function checkValidName(name) {
     let firstLetter = name[0].toLocaleUpperCase();
-    if (name.toLocaleUpperCase() != name && firstLetter == name[0] && firstLetter != '_' && firstLetter != '$' && !excludeIdentifiers.includes(
-        name)) {
-        return true;
-    } else {
-        return false;
-    }
+    return name.toLocaleUpperCase() != name && firstLetter == name[0] && firstLetter != '_' && firstLetter != '$'
+        && !excludeClasses.includes(name);
 }
 
 var logs = '';
@@ -77,8 +74,7 @@ function generateAnnotations(path, options, output = {}) {
         if (stat.isFile() && /\.js$/.test(path)) {
             var fileArr = [];
             fileArr.push(path);
-            if (/_test/.test(path) || /vim/.test(path) || /highlight_rules/.test(path))
-                return;
+            if (/_test/.test(path) || /vim/.test(path) || /highlight_rules/.test(path)) return;
             var docs = generateDocumentation(fileArr, options);
             //prefer Classes with jsDoc
             for (var a in docs) {
@@ -92,7 +88,8 @@ function generateAnnotations(path, options, output = {}) {
             output = mergeGeneratedObjects(output, docs);
 
             console.log(path + " finished\r\n");
-        } else if (stat.isDirectory()) {
+        }
+        else if (stat.isDirectory()) {
             var files = fs.readdirSync(path).sort();
             files.forEach(function (name) {
                 add(path + "/" + name)
@@ -110,15 +107,14 @@ function generateAnnotations(path, options, output = {}) {
 }
 
 function mergeGeneratedObjects() {
-    for (var i = 1; i < arguments.length; i++)
-        for (var a in arguments[i]) {
-            if (!arguments[0][a]) {
-                arguments[0][a] = {};
-            }
-            for (var b in arguments[i][a]) {
-                arguments[0][a][b] = arguments[i][a][b];
-            }
+    for (var i = 1; i < arguments.length; i++) for (var a in arguments[i]) {
+        if (!arguments[0][a]) {
+            arguments[0][a] = {};
         }
+        for (var b in arguments[i][a]) {
+            arguments[0][a][b] = arguments[i][a][b];
+        }
+    }
 
     return arguments[0];
 }
@@ -146,7 +142,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     /** visit nodes finding classes with methods/events/constructors*/
     function visit(node) {
         var docs = [];
-        if (ts.isPropertyAssignment(node) && node.parent && ts.isObjectLiteralExpression(node.parent) && node.parent.parent && ts.isCallExpression(node.parent.parent)) {
+        if (ts.isPropertyAssignment(node) && node.parent && ts.isObjectLiteralExpression(node.parent)
+            && node.parent.parent && ts.isCallExpression(node.parent.parent)) {
             findNames(node.parent.parent);
             if (identifiers.indexOf('defineOptions') !== -1) {
                 var symbol = checker.getSymbolAtLocation(node.name);
@@ -186,14 +183,19 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                                 sourceName: fileNames[0],
                                 params: params
                             }
-                        } else {
-                            logs = logs + "Duplicate property '" + propertyName + "' determinator. Class: " + className + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: " + output[className][propertyName].sourceName + ":" + output[className][propertyName].line + "\r\n";
+                        }
+                        else {
+                            logs = logs + "Duplicate property '" + propertyName + "' determinator. Class: " + className
+                                + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
+                                + output[className][propertyName].sourceName + ":"
+                                + output[className][propertyName].line + "\r\n";
                         }
                     }
                 }
                 identifiers.length = 0;
             }
-        } else if (ts.isVariableStatement(node) || ts.isFunctionDeclaration(node)) {
+        }
+        else if (ts.isVariableStatement(node) || ts.isFunctionDeclaration(node)) {
             let className = findName(node).escapedText;
             if (checkValidName(className) === true) {
                 findNames(node);
@@ -213,9 +215,11 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                                     sourceName: fileNames[0],
                                     params: params
                                 }
-                            } else if (/@event/.test(jsDocText)) {
+                            }
+                            else if (/@event/.test(jsDocText)) {
                                 let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                                let eventLine = ts.getLineAndCharacterOfPosition(sourceFile, node.jsDoc[k].getStart()).line + 1;
+                                let eventLine = ts.getLineAndCharacterOfPosition(
+                                    sourceFile, node.jsDoc[k].getStart()).line + 1;
                                 let params = getParametersFromJsDoc(node.jsDoc[k]);
                                 events[eventName] = {
                                     line: eventLine,
@@ -223,7 +227,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                                     sourceName: fileNames[0],
                                     params: params
                                 }
-                            } else {
+                            }
+                            else {
                                 jsDoc.push(jsDocText);
                             }
                         }
@@ -252,7 +257,10 @@ function generateDocumentation(fileNames, options, identifiers = []) {
 
                 }
             }
-        } else if (ts.isFunctionExpression(node) && node.parent && node.parent.parent && ts.isBinaryExpression(node.parent) && (ts.isExpressionStatement(node.parent.parent) || ts.isBinaryExpression(node.parent.parent))) {
+        }
+        else if (ts.isFunctionExpression(node) && node.parent && node.parent.parent && ts.isBinaryExpression(
+            node.parent) && (ts.isExpressionStatement(node.parent.parent) || ts.isBinaryExpression(
+            node.parent.parent))) {
             let functionName = findName(node.parent).escapedText;
             let secondFunctionName;
             let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.parent.getStart()).line + 1;
@@ -260,7 +268,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
             if (ts.isBinaryExpression(node.parent.parent)) {
                 expStatNode = node.parent.parent.parent;
                 secondFunctionName = findName(expStatNode).escapedText;
-            } else {
+            }
+            else {
                 expStatNode = node.parent.parent;
             }
 
@@ -268,7 +277,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
             let findNode = expStatNode;
             do {
                 findNode = findNode.parent;
-            } while (findNode && !ts.isSourceFile(findNode) && !ts.isCallExpression(findNode) && !ts.isFunctionDeclaration(findNode));
+            } while (findNode && !ts.isSourceFile(findNode) && !ts.isCallExpression(findNode)
+            && !ts.isFunctionDeclaration(findNode));
 
             if (findNode && !ts.isSourceFile(findNode) && findName(findNode).escapedText !== "define") {
                 findNames(findNode);
@@ -285,7 +295,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         let jsDocText = expStatNode.jsDoc[k].getFullText();
                         if (/@event/.test(jsDocText)) {
                             let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                            let eventLine = ts.getLineAndCharacterOfPosition(sourceFile, expStatNode.jsDoc[k].getStart()).line + 1;
+                            let eventLine = ts.getLineAndCharacterOfPosition(
+                                sourceFile, expStatNode.jsDoc[k].getStart()).line + 1;
                             let params = getParametersFromJsDoc(expStatNode.jsDoc[k]);
                             events[eventName] = {
                                 line: eventLine,
@@ -293,7 +304,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                                 sourceName: fileNames[0],
                                 params: params
                             }
-                        } else {
+                        }
+                        else {
                             jsDoc.push(jsDocText);
                             if (Object.keys(params).length > 0) {
                                 for (let prop in params) {
@@ -319,7 +331,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 var className;
                 if (ts.isFunctionDeclaration(findNode)) {
                     className = identifiers[0];
-                } else {
+                }
+                else {
                     className = identifiers[identifiers.length - 1];
                 }
 
@@ -334,19 +347,28 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                             sourceName: fileNames[0],
                             params: params
                         }
-                    } else {
-                        logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: " + output[className][functionName].sourceName + ":" + output[className][functionName].line + "\r\n";
+                    }
+                    else {
+                        logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className
+                            + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
+                            + output[className][functionName].sourceName + ":" + output[className][functionName].line
+                            + "\r\n";
                     }
                     if (secondFunctionName) {
-                        if (!output[className].hasOwnProperty(secondFunctionName) || output[className][secondFunctionName] == undefined) {
+                        if (!output[className].hasOwnProperty(secondFunctionName)
+                            || output[className][secondFunctionName] == undefined) {
                             output[className][secondFunctionName] = {
                                 line: currentLine,
                                 jsDoc: docs,
                                 sourceName: fileNames[0],
                                 params: params
                             }
-                        } else {
-                            logs = logs + "Duplicate function '" + secondFunctionName + "' determinator. Class: " + className + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: " + output[className][secondFunctionName].sourceName + ":" + output[className][secondFunctionName].line + "\r\n";
+                        }
+                        else {
+                            logs = logs + "Duplicate function '" + secondFunctionName + "' determinator. Class: "
+                                + className + ". Filename: " + fileNames[0] + ":" + currentLine
+                                + ". First implementation: " + output[className][secondFunctionName].sourceName + ":"
+                                + output[className][secondFunctionName].line + "\r\n";
                         }
                     }
 
@@ -356,21 +378,25 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 }
                 identifiers.length = 0;
             }
-        } else if (ts.isPropertyAccessExpression(node) && node.parent && node.parent.parent && ts.isBinaryExpression(node.parent) && ts.isExpressionStatement(node.parent.parent)) {
+        }
+        else if (ts.isPropertyAccessExpression(node) && node.parent && node.parent.parent && ts.isBinaryExpression(
+            node.parent) && ts.isExpressionStatement(node.parent.parent)) {
             let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.parent.getStart()).line + 1;
 
             ts.forEachChild(node, findNames);
             if (identifiers.length == 2 || identifiers.length == 3) {
-                if (identifiers.indexOf('prototype') !== -1)
-                    identifiers.splice(identifiers.indexOf('prototype'), 1);
+                if (identifiers.indexOf('prototype') !== -1) identifiers.splice(identifiers.indexOf('prototype'), 1);
                 let className = identifiers[0];
                 let functionName = identifiers[identifiers.length - 1];
-                if (checkValidName(className) === true && functionName != 'prototype' && (ts.isFunctionExpression(node.parent.right) || (ts.isBinaryExpression(node.parent.right) && ts.isFunctionExpression(node.parent.right.right)))) {
+                if (checkValidName(className) === true && functionName != 'prototype' && (ts.isFunctionExpression(
+                    node.parent.right) || (ts.isBinaryExpression(node.parent.right) && ts.isFunctionExpression(
+                    node.parent.right.right)))) {
                     let events = {};
                     let functionNode;
                     if (ts.isFunctionExpression(node.parent.right)) {
                         functionNode = node.parent.right;
-                    } else {
+                    }
+                    else {
                         functionNode = node.parent.right.right;
                     }
 
@@ -381,7 +407,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                             let jsDocText = node.parent.parent.jsDoc[k].getFullText();
                             if (/@event/.test(jsDocText)) {
                                 let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                                let eventLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.parent.jsDoc[k].getStart()).line + 1;
+                                let eventLine = ts.getLineAndCharacterOfPosition(
+                                    sourceFile, node.parent.parent.jsDoc[k].getStart()).line + 1;
                                 let params = getParametersFromJsDoc(node.parent.parent.jsDoc[k]);
                                 events[eventName] = {
                                     line: eventLine,
@@ -389,12 +416,14 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                                     sourceName: fileNames[0],
                                     params: params
                                 }
-                            } else {
+                            }
+                            else {
                                 jsDoc.push(jsDocText);
                                 if (Object.keys(params).length > 0) {
                                     for (let prop in params) {
                                         if (params[prop] == 'any' || params[prop] == '{}') {
-                                            let paramTypeFromJsDoc = getParameterTypeFromJsDoc(node.parent.parent.jsDoc[k], prop);
+                                            let paramTypeFromJsDoc = getParameterTypeFromJsDoc(
+                                                node.parent.parent.jsDoc[k], prop);
                                             if (paramTypeFromJsDoc) {
                                                 params[prop] = paramTypeFromJsDoc;
                                             }
@@ -421,8 +450,12 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                             sourceName: fileNames[0],
                             params: params
                         }
-                    } else {
-                        logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: " + output[className][functionName].sourceName + ":" + output[className][functionName].line + "\r\n";
+                    }
+                    else {
+                        logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className
+                            + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
+                            + output[className][functionName].sourceName + ":" + output[className][functionName].line
+                            + "\r\n";
                     }
 
                     identifiers.length = 0;
@@ -439,10 +472,14 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     }
 
     function getPropertiesOfClass(node) {
-        if (ts.isIdentifier(node) && node.parent && node.parent.expression && node.parent.expression.kind === 100 && ts.isPropertyAccessExpression(node.parent) && node.parent.parent && ts.isBinaryExpression(node.parent.parent) && ts.isExpressionStatement(node.parent.parent.parent)) {
-            let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.parent.parent.getStart()).line + 1;
+        if (ts.isIdentifier(node) && node.parent && node.parent.expression && node.parent.expression.kind === 100
+            && ts.isPropertyAccessExpression(node.parent) && node.parent.parent && ts.isBinaryExpression(
+                node.parent.parent) && ts.isExpressionStatement(node.parent.parent.parent)) {
+            let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.parent.parent.parent.getStart()).line
+                + 1;
             let params = {"return": "any"};
-            let type = checker.typeToString(checker.getBaseTypeOfLiteralType(checker.getTypeAtLocation(node.parent.parent)));
+            let type = checker.typeToString(
+                checker.getBaseTypeOfLiteralType(checker.getTypeAtLocation(node.parent.parent)));
             let name = node.escapedText + "_prop";
             if (type) {
                 params["return"] = type;
@@ -462,7 +499,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 sourceName: fileNames[0],
                 params: params
             }
-        } else {
+        }
+        else {
             ts.forEachChild(node, getPropertiesOfClass);
         }
     }
@@ -477,7 +515,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 if (/^\/\*/g.test(al)) {
                     comment = al.replace(/^[/][*]/g, '/**');
                     comment = comment.replace(/[*][/]$/g, '**/');
-                } else if (/^[/][/]/g.test(al)) {
+                }
+                else if (/^[/][/]/g.test(al)) {
                     comment = al.replace(/^[/][/]/g, '/**');
                     comment = comment + '**/';
                 }
@@ -494,7 +533,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
         };
         if (node.parameters && node.parameters.length > 0) {
             for (let i = 0; i < node.parameters.length; i++) {
-                params[node.parameters[i].name.escapedText] = checker.typeToString(checker.getTypeAtLocation(node.parameters[i]));
+                params[node.parameters[i].name.escapedText] = checker.typeToString(
+                    checker.getTypeAtLocation(node.parameters[i]));
             }
         }
         return params;
@@ -503,7 +543,9 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     function getParameterTypeFromJsDoc(jsDocNode, paramName) {
         if (jsDocNode.tags && jsDocNode.tags.length > 0) {
             for (var i = 0; i < jsDocNode.tags.length; i++) {
-                if ((jsDocNode.tags[i].tagName.escapedText === 'param' && jsDocNode.tags[i].name.escapedText === paramName) || ((jsDocNode.tags[i].tagName.escapedText === 'return' || jsDocNode.tags[i].tagName.escapedText === 'returns') && paramName === 'return')) {
+                if ((jsDocNode.tags[i].tagName.escapedText === 'param' && jsDocNode.tags[i].name.escapedText
+                    === paramName) || ((jsDocNode.tags[i].tagName.escapedText === 'return'
+                    || jsDocNode.tags[i].tagName.escapedText === 'returns') && paramName === 'return')) {
                     if (jsDocNode.tags[i].typeExpression) {
                         let optional = "";
                         if (jsDocNode.tags[i].isBracketed === true) {
@@ -522,12 +564,14 @@ function generateDocumentation(fileNames, options, identifiers = []) {
         let params = {};
         if (jsDocNode.tags && jsDocNode.tags.length > 0) {
             for (var i = 0; i < jsDocNode.tags.length; i++) {
-                if ((jsDocNode.tags[i].tagName.escapedText === 'param') || (jsDocNode.tags[i].tagName.escapedText === 'return' || jsDocNode.tags[i].tagName.escapedText === 'returns')) {
+                if ((jsDocNode.tags[i].tagName.escapedText === 'param') || (jsDocNode.tags[i].tagName.escapedText
+                    === 'return' || jsDocNode.tags[i].tagName.escapedText === 'returns')) {
                     if (jsDocNode.tags[i].typeExpression) {
                         let name = '';
                         if (jsDocNode.tags[i].name) {
                             name = jsDocNode.tags[i].name.escapedText;
-                        } else {
+                        }
+                        else {
                             name = "return";
                         }
                         let optional = "";
@@ -546,10 +590,10 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     function findName(node) {
         if (ts.isIdentifier(node)) {
             return node;
-        } else {
+        }
+        else {
             var result = ts.forEachChild(node, findName);
-            if (result)
-                return result;
+            if (result) return result;
         }
 
     }
@@ -557,7 +601,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     function findNames(node) {
         if (ts.isIdentifier(node)) {
             identifiers.push(node.escapedText);
-        } else {
+        }
+        else {
             ts.forEachChild(node, findNames);
         }
     }
@@ -565,5 +610,9 @@ function generateDocumentation(fileNames, options, identifiers = []) {
 }
 
 generateAnnotations(process.argv.slice(2), {
-    target: ts.ScriptTarget.ES5, module: ts.ModuleKind.CommonJS, allowJs: true, lib: [], types: []
+    target: ts.ScriptTarget.ES5,
+    module: ts.ModuleKind.CommonJS,
+    allowJs: true,
+    lib: [],
+    types: []
 });
