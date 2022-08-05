@@ -890,7 +890,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
 
     export class Document implements EventEmitter {
@@ -957,7 +958,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
 
     export class FoldLine {
@@ -1163,7 +1165,7 @@ export namespace Ace {
         wrapBehavioursEnabled: boolean;
         enableAutoIndent: boolean;
         autoScrollEditorIntoView: boolean;
-        keyboardHandler: string;
+        keyboardHandler: string | null;
         placeholder: string;
         value: string;
         session: EditSession;
@@ -1194,7 +1196,7 @@ export namespace Ace {
         removeEventListener(name: string, callback: Function): void;
         _emit(eventName: any, e: any): any;
         _signal(eventName: any, e: any): void;
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
     }
 
     export interface Point {
@@ -1230,7 +1232,7 @@ export namespace Ace {
     }
 
     export class MarkerLike {
-        range: Range;
+        range?: Range;
         type: string;
         renderer?: MarkerRenderer;
         clazz: string;
@@ -1547,7 +1549,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
 
     export class KeyBinding {
@@ -1750,7 +1753,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
 
 
@@ -1855,7 +1859,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
     interface SavedSelection {
         start: Point;

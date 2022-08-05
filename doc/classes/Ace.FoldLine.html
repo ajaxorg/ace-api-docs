@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Fold | Ace Documentation</title>
+	<title>FoldLine | Ace Documentation</title>
 	<meta name="description" content="Documentation for Ace Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/Ace.html">Ace</a>
 				</li>
 				<li>
-					<a href="Ace.Fold.html">Fold</a>
+					<a href="Ace.FoldLine.html">FoldLine</a>
 				</li>
 			</ul>
-			<h1>Class Fold</h1>
+			<h1>Class FoldLine</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Simple fold-data struct.</p>
+						<p>If an array is passed in, the folds are expected to be sorted already.</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +79,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Fold</span>
+						<span class="target">FoldLine</span>
 					</li>
 				</ul>
 			</section>
@@ -90,18 +90,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.Fold.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.FoldLine.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#foldLine" class="tsd-kind-icon">fold<wbr>Line</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#range" class="tsd-kind-icon">range</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#sameRow" class="tsd-kind-icon">same<wbr>Row</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.Fold.html#subFolds" class="tsd-kind-icon">sub<wbr>Folds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.FoldLine.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.FoldLine.html#folds" class="tsd-kind-icon">folds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.FoldLine.html#range" class="tsd-kind-icon">range</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Ace.FoldLine.html#start" class="tsd-kind-icon">start</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldLine.html#shiftRow" class="tsd-kind-icon">shift<wbr>Row</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,13 +117,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Fold<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fold<wbr>Line<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -132,17 +136,17 @@
 					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L112">ace.d.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L98">ace.d.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="foldLine" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fold<wbr>Line</h3>
-					<div class="tsd-signature tsd-kind-icon">fold<wbr>Line<span class="tsd-signature-symbol">:</span> <a href="Ace.FoldLine.html" class="tsd-signature-type" data-tsd-kind="Class">FoldLine</a></div>
+					<a name="folds" class="tsd-anchor"></a>
+					<h3>folds</h3>
+					<div class="tsd-signature tsd-kind-icon">folds<span class="tsd-signature-symbol">:</span> <a href="Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L113">ace.d.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L95">ace.d.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,17 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L110">ace.d.ts:110</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="sameRow" class="tsd-anchor"></a>
-					<h3>same<wbr>Row</h3>
-					<div class="tsd-signature tsd-kind-icon">same<wbr>Row<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L114">ace.d.ts:114</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L96">ace.d.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -172,19 +166,40 @@
 					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L111">ace.d.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L97">ace.d.ts:97</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="subFolds" class="tsd-anchor"></a>
-					<h3>sub<wbr>Folds</h3>
-					<div class="tsd-signature tsd-kind-icon">sub<wbr>Folds<span class="tsd-signature-symbol">:</span> <a href="Ace.Fold.html" class="tsd-signature-type" data-tsd-kind="Class">Fold</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L115">ace.d.ts:115</a></li>
-						</ul>
-					</aside>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="shiftRow" class="tsd-anchor"></a>
+					<h3>shift<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">shift<wbr>Row<span class="tsd-signature-symbol">(</span>shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace_new/ace/src/edit_session/fold_line.js#L31">ace_new/ace/src/edit_session/fold_line.js:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Note: This doesn&#39;t update wrapData!</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>shift: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -204,28 +219,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-namespace">
-						<a href="Ace.Fold.html" class="tsd-kind-icon">Fold</a>
+						<a href="Ace.FoldLine.html" class="tsd-kind-icon">Fold<wbr>Line</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="Ace.Fold.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="Ace.FoldLine.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#end" class="tsd-kind-icon">end</a>
+								<a href="Ace.FoldLine.html#end" class="tsd-kind-icon">end</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#foldLine" class="tsd-kind-icon">fold<wbr>Line</a>
+								<a href="Ace.FoldLine.html#folds" class="tsd-kind-icon">folds</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#range" class="tsd-kind-icon">range</a>
+								<a href="Ace.FoldLine.html#range" class="tsd-kind-icon">range</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#sameRow" class="tsd-kind-icon">same<wbr>Row</a>
+								<a href="Ace.FoldLine.html#start" class="tsd-kind-icon">start</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#start" class="tsd-kind-icon">start</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Ace.Fold.html#subFolds" class="tsd-kind-icon">sub<wbr>Folds</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldLine.html#shiftRow" class="tsd-kind-icon">shift<wbr>Row</a>
 							</li>
 						</ul>
 					</li>
@@ -243,6 +255,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 		</div>
 	</div>

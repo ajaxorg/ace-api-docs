@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Delta | Ace Documentation</title>
+	<title>Completion | Ace Documentation</title>
 	<meta name="description" content="Documentation for Ace Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/Ace.html">Ace</a>
 				</li>
 				<li>
-					<a href="Ace.Delta.html">Delta</a>
+					<a href="Ace.Completion.html">Completion</a>
 				</li>
 			</ul>
-			<h1>Interface Delta</h1>
+			<h1>Interface Completion</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Delta</span>
+						<span class="target">Completion</span>
 					</li>
 				</ul>
 			</section>
@@ -83,10 +83,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Delta.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Delta.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Delta.html#lines" class="tsd-kind-icon">lines</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Delta.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Completion.html#caption" class="tsd-kind-icon">caption</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Completion.html#meta" class="tsd-kind-icon">meta</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Completion.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Completion.html#score" class="tsd-kind-icon">score</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="Ace.Completion.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,42 +96,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="action" class="tsd-anchor"></a>
-					<h3>action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;insert&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;remove&quot;</span></div>
+					<a name="caption" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> caption</h3>
+					<div class="tsd-signature tsd-kind-icon">caption<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L303">ace.d.ts:303</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L363">ace.d.ts:363</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="end" class="tsd-anchor"></a>
-					<h3>end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
+					<a name="meta" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> meta</h3>
+					<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L305">ace.d.ts:305</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L361">ace.d.ts:361</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lines" class="tsd-anchor"></a>
-					<h3>lines</h3>
-					<div class="tsd-signature tsd-kind-icon">lines<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L306">ace.d.ts:306</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L362">ace.d.ts:362</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="start" class="tsd-anchor"></a>
-					<h3>start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
+					<a name="score" class="tsd-anchor"></a>
+					<h3>score</h3>
+					<div class="tsd-signature tsd-kind-icon">score<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L304">ace.d.ts:304</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L360">ace.d.ts:360</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.8.1/ace.d.ts#L359">ace.d.ts:359</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,19 +163,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="Ace.Delta.html" class="tsd-kind-icon">Delta</a>
+						<a href="Ace.Completion.html" class="tsd-kind-icon">Completion</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="Ace.Delta.html#action" class="tsd-kind-icon">action</a>
+								<a href="Ace.Completion.html#caption" class="tsd-kind-icon">caption</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="Ace.Delta.html#end" class="tsd-kind-icon">end</a>
+								<a href="Ace.Completion.html#meta" class="tsd-kind-icon">meta</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="Ace.Delta.html#lines" class="tsd-kind-icon">lines</a>
+								<a href="Ace.Completion.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="Ace.Delta.html#start" class="tsd-kind-icon">start</a>
+								<a href="Ace.Completion.html#score" class="tsd-kind-icon">score</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="Ace.Completion.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>

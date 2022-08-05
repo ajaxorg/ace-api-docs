@@ -1534,7 +1534,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
     /**
      * Contains the text of the document. Document can be attached to several [[EditSession `EditSession`]]s.
@@ -1896,7 +1897,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
     /**
      * If an array is passed in, the folds are expected to be sorted already.
@@ -2494,7 +2496,7 @@ export namespace Ace {
 
         autoScrollEditorIntoView: boolean;
 
-        keyboardHandler: string;
+        keyboardHandler: string | null;
 
         placeholder: string;
 
@@ -2536,7 +2538,7 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
     }
 
     export interface Point {
@@ -2572,7 +2574,7 @@ export namespace Ace {
     }
 
     export class MarkerLike {
-        range: Range;
+        range?: Range;
         type: string;
         renderer?: MarkerRenderer;
         clazz: string;
@@ -3771,7 +3773,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
 
 
@@ -4378,7 +4381,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
     /**
      * Contains the cursor position and the text selection of an edit session.
@@ -4794,7 +4798,8 @@ export namespace Ace {
 
         _signal(eventName: any, e: any): void;
 
-        removeAllListeners(eventName: any): void;
+        removeAllListeners(name?: string): void;
+
     }
     interface SavedSelection {
         start: Point;
