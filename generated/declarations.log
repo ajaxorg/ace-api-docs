@@ -7,7 +7,6 @@ No such class name 'IncrementalSearchKeyboardHandler' in declaration file. Impli
 No such class name 'OccurKeyboardHandler' in declaration file. Implicitly created.
 No such class name 'BracketMatch' in declaration file. Implicitly created.
 No such class name 'ElasticTabstopsLite' in declaration file. Implicitly created.
-No such class name 'AceEmmetEditor' in declaration file. Implicitly created.
 No such class name 'Mode' in declaration file. Implicitly created.
 No such class name 'OptionPanel' in declaration file. Implicitly created.
 No such class name 'SearchBox' in declaration file. Implicitly created.
@@ -24,37 +23,13 @@ No such class name 'Lines' in declaration file. Implicitly created.
 No such class name 'Marker' in declaration file. Implicitly created.
 No such class name 'Text' in declaration file. Implicitly created.
 No such class name 'AppConfig' in declaration file. Implicitly created.
-No such class name 'ArabicAlefBetIntervalsBegine' in declaration file. Implicitly created.
-No such class name 'ArabicAlefBetIntervalsEnd' in declaration file. Implicitly created.
-No such class name 'UnicodeTBL00' in declaration file. Implicitly created.
-No such class name 'UnicodeTBL20' in declaration file. Implicitly created.
-No such class name 'Object' in declaration file. Implicitly created.
 No such class name 'EventListener' in declaration file. Implicitly created.
 No such class name 'Keys' in declaration file. Implicitly created.
 No such class name 'LineWidgets' in declaration file. Implicitly created.
-No such class name 'ApexMode' in declaration file. Implicitly created.
-No such class name 'CssBehaviour' in declaration file. Implicitly created.
-No such class name 'CstyleBehaviour' in declaration file. Implicitly created.
-No such class name 'HtmlBehaviour' in declaration file. Implicitly created.
-No such class name 'LiquidBehaviour' in declaration file. Implicitly created.
-No such class name 'XmlBehaviour' in declaration file. Implicitly created.
-No such class name 'XQueryBehaviour' in declaration file. Implicitly created.
 No such class name 'Behaviour' in declaration file. Implicitly created.
-No such class name 'CssCompletions' in declaration file. Implicitly created.
-No such class name 'DjangoHighlightRules' in declaration file. Implicitly created.
-No such class name 'DjangoHtmlHighlightRules' in declaration file. Implicitly created.
-No such class name 'EjsHighlightRules' in declaration file. Implicitly created.
 No such class name 'FoldMode' in declaration file. Implicitly created.
-No such class name 'Tag' in declaration file. Implicitly created.
-No such class name 'HtmlCompletions' in declaration file. Implicitly created.
 No such class name 'MatchingBraceOutdent' in declaration file. Implicitly created.
 No such class name 'MatchingParensOutdent' in declaration file. Implicitly created.
-No such class name 'PhpMode' in declaration file. Implicitly created.
-No such class name 'PhpCompletions' in declaration file. Implicitly created.
-No such class name 'RazorCompletions' in declaration file. Implicitly created.
-No such class name 'SnippetHighlightRules' in declaration file. Implicitly created.
-No such class name 'SnippetGroupHighlightRules' in declaration file. Implicitly created.
-No such class name 'VisualforceMode' in declaration file. Implicitly created.
 No such class name 'GutterHandler' in declaration file. Implicitly created.
 No such class name 'GutterTooltip' in declaration file. Implicitly created.
 No such class name 'DefaultHandlers' in declaration file. Implicitly created.
@@ -75,15 +50,8 @@ No such class name 'SearchHighlight' in declaration file. Implicitly created.
 No such class name 'SnippetManager' in declaration file. Implicitly created.
 No such class name 'TabstopToken' in declaration file. Implicitly created.
 No such class name 'TabstopManager' in declaration file. Implicitly created.
-No such class name 'Split' in declaration file. Implicitly created.
 No such class name 'Generator' in declaration file. Implicitly created.
-No such class name 'TestGenerator' in declaration file. Implicitly created.
-No such class name 'Style' in declaration file. Implicitly created.
-No such class name 'ClassList' in declaration file. Implicitly created.
-No such class name 'Attr' in declaration file. Implicitly created.
-No such class name 'Node' in declaration file. Implicitly created.
 No such class name 'Event' in declaration file. Implicitly created.
-No such class name 'TextNode' in declaration file. Implicitly created.
 No such class name 'MockRenderer' in declaration file. Implicitly created.
 No such class name 'Tooltip' in declaration file. Implicitly created.
 No constructor in declaration file. Class: Anchor. Implicitly created.
@@ -487,8 +455,6 @@ No such method name 'defineOptions' in declaration file. Class: AppConfig. Impli
 No such method name 'resetOptions' in declaration file. Class: AppConfig. Implicitly created.
 No such method name 'setDefaultValue' in declaration file. Class: AppConfig. Implicitly created.
 No such method name 'setDefaultValues' in declaration file. Class: AppConfig. Implicitly created.
-No such method name 'assign' in declaration file. Class: Object. Implicitly created.
-No such method name 'values' in declaration file. Class: Object. Implicitly created.
 No such method name 'destroy' in declaration file. Class: EventListener. Implicitly created.
 No such method name 'getRowLength' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name '$getWidgetScreenLength' in declaration file. Class: LineWidgets. Implicitly created.
@@ -505,23 +471,11 @@ No such method name 'getWidgetsAtRow' in declaration file. Class: LineWidgets. I
 No such method name 'onWidgetChanged' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name 'measureWidgets' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name 'renderWidgets' in declaration file. Class: LineWidgets. Implicitly created.
-No such method name 'isSaneInsertion' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name '$matchTokenType' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'recordAutoInsert' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'recordMaybeInsert' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'isAutoInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'isMaybeInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'popAutoInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'clearMaybeInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
 No such method name 'add' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'addBehaviours' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'remove' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'inherit' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'getBehaviours' in declaration file. Class: Behaviour. Implicitly created.
-No such method name 'defineCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getPropertyCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getPropertyValueCompletions' in declaration file. Class: CssCompletions. Implicitly created.
 No such method name 'getFoldWidget' in declaration file. Class: FoldMode. Implicitly created.
 No such method name 'getFoldWidgetRange' in declaration file. Class: FoldMode. Implicitly created.
 No such method name 'getUsingStatementBlock' in declaration file. Class: FoldMode. Implicitly created.
@@ -546,29 +500,12 @@ No such method name '_findEndTagInLine' in declaration file. Class: FoldMode. Im
 No such method name '_readTagForward' in declaration file. Class: FoldMode. Implicitly created.
 No such method name '_readTagBackward' in declaration file. Class: FoldMode. Implicitly created.
 No such method name '_pop' in declaration file. Class: FoldMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getTagCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getAttributeCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getAttributeValueCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getHTMLEntityCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
 No such method name 'checkOutdent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name 'autoOutdent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name '$getIndent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name 'checkOutdent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
 No such method name 'autoOutdent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
 No such method name '$getIndent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
-No such method name 'getNextLineIndent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'checkOutdent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'autoOutdent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getTagCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getFunctionCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getVariableCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getArrayKeyCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
-No such method name 'getShortStartCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
-No such method name 'getKeywordCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
 No such method name 'setPosition' in declaration file. Class: GutterTooltip. Implicitly created.
 No such method name 'onMouseDown' in declaration file. Class: DefaultHandlers. Implicitly created.
 No such method name 'startSelect' in declaration file. Class: DefaultHandlers. Implicitly created.
@@ -734,22 +671,6 @@ No such method name 'addTabstops' in declaration file. Class: TabstopManager. Im
 No such method name 'addTabstopMarkers' in declaration file. Class: TabstopManager. Implicitly created.
 No such method name 'removeTabstopMarkers' in declaration file. Class: TabstopManager. Implicitly created.
 No such method name 'removeRange' in declaration file. Class: TabstopManager. Implicitly created.
-No such method name '$createEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'setSplits' in declaration file. Class: Split. Implicitly created.
-No such method name 'getSplits' in declaration file. Class: Split. Implicitly created.
-No such method name 'getEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'getCurrentEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'focus' in declaration file. Class: Split. Implicitly created.
-No such method name 'blur' in declaration file. Class: Split. Implicitly created.
-No such method name 'setTheme' in declaration file. Class: Split. Implicitly created.
-No such method name 'setKeyboardHandler' in declaration file. Class: Split. Implicitly created.
-No such method name 'forEach' in declaration file. Class: Split. Implicitly created.
-No such method name 'setFontSize' in declaration file. Class: Split. Implicitly created.
-No such method name '$cloneSession' in declaration file. Class: Split. Implicitly created.
-No such method name 'setSession' in declaration file. Class: Split. Implicitly created.
-No such method name 'getOrientation' in declaration file. Class: Split. Implicitly created.
-No such method name 'setOrientation' in declaration file. Class: Split. Implicitly created.
-No such method name 'resize' in declaration file. Class: Split. Implicitly created.
 No constructor in declaration file. Class: VirtualRenderer. Implicitly created.
 No such method name 'mock' in declaration file. Class: VirtualRenderer. Implicitly created.
 No such method name 'updateCharacterSize' in declaration file. Class: VirtualRenderer. Implicitly created.
@@ -794,49 +715,9 @@ No such method name 'reverse' in declaration file. Class: Generator. Implicitly 
 No such method name '$arrayOp' in declaration file. Class: Generator. Implicitly created.
 No such method name 'end' in declaration file. Class: Generator. Implicitly created.
 No such method name 'toArray' in declaration file. Class: Generator. Implicitly created.
-No such method name 'exec' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'run' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'report' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'summary' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'setupTest' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'getPropertyValue' in declaration file. Class: Style. Implicitly created.
-No such method name 'add' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'remove' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'toggle' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'contains' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'cloneNode' in declaration file. Class: Node. Implicitly created.
-No such method name 'appendChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'remove' in declaration file. Class: Node. Implicitly created.
-No such method name 'replaceChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertBefore' in declaration file. Class: Node. Implicitly created.
-No such method name 'before' in declaration file. Class: Node. Implicitly created.
-No such method name 'hasChildNodes' in declaration file. Class: Node. Implicitly created.
-No such method name 'hasAttributes' in declaration file. Class: Node. Implicitly created.
-No such method name 'querySelectorAll' in declaration file. Class: Node. Implicitly created.
-No such method name 'querySelector' in declaration file. Class: Node. Implicitly created.
-No such method name 'getElementsByTagName' in declaration file. Class: Node. Implicitly created.
-No such method name 'getElementById' in declaration file. Class: Node. Implicitly created.
-No such method name 'matches' in declaration file. Class: Node. Implicitly created.
-No such method name 'closest' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name 'setAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name 'getAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name '___format' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertAdjacentHTML' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertAdjacentElement' in declaration file. Class: Node. Implicitly created.
-No such method name 'getBoundingClientRect' in declaration file. Class: Node. Implicitly created.
-No such method name 'addEventListener' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeEventListener' in declaration file. Class: Node. Implicitly created.
-No such method name 'createEvent' in declaration file. Class: Node. Implicitly created.
-No such method name 'dispatchEvent' in declaration file. Class: Node. Implicitly created.
-No such method name 'contains' in declaration file. Class: Node. Implicitly created.
-No such method name 'focus' in declaration file. Class: Node. Implicitly created.
-No such method name 'blur' in declaration file. Class: Node. Implicitly created.
 No such method name 'initMouseEvent' in declaration file. Class: Event. Implicitly created.
 No such method name 'preventDefault' in declaration file. Class: Event. Implicitly created.
 No such method name 'stopPropagation' in declaration file. Class: Event. Implicitly created.
-No such method name 'cloneNode' in declaration file. Class: TextNode. Implicitly created.
 No such method name 'getFirstVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.
 No such method name 'getLastVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.
 No such method name 'getFirstFullyVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.
@@ -911,7 +792,6 @@ No such class name 'IncrementalSearchKeyboardHandler' in declaration file. Impli
 No such class name 'OccurKeyboardHandler' in declaration file. Implicitly created.
 No such class name 'BracketMatch' in declaration file. Implicitly created.
 No such class name 'ElasticTabstopsLite' in declaration file. Implicitly created.
-No such class name 'AceEmmetEditor' in declaration file. Implicitly created.
 No such class name 'Mode' in declaration file. Implicitly created.
 No such class name 'OptionPanel' in declaration file. Implicitly created.
 No such class name 'SearchBox' in declaration file. Implicitly created.
@@ -928,37 +808,13 @@ No such class name 'Lines' in declaration file. Implicitly created.
 No such class name 'Marker' in declaration file. Implicitly created.
 No such class name 'Text' in declaration file. Implicitly created.
 No such class name 'AppConfig' in declaration file. Implicitly created.
-No such class name 'ArabicAlefBetIntervalsBegine' in declaration file. Implicitly created.
-No such class name 'ArabicAlefBetIntervalsEnd' in declaration file. Implicitly created.
-No such class name 'UnicodeTBL00' in declaration file. Implicitly created.
-No such class name 'UnicodeTBL20' in declaration file. Implicitly created.
-No such class name 'Object' in declaration file. Implicitly created.
 No such class name 'EventListener' in declaration file. Implicitly created.
 No such class name 'Keys' in declaration file. Implicitly created.
 No such class name 'LineWidgets' in declaration file. Implicitly created.
-No such class name 'ApexMode' in declaration file. Implicitly created.
-No such class name 'CssBehaviour' in declaration file. Implicitly created.
-No such class name 'CstyleBehaviour' in declaration file. Implicitly created.
-No such class name 'HtmlBehaviour' in declaration file. Implicitly created.
-No such class name 'LiquidBehaviour' in declaration file. Implicitly created.
-No such class name 'XmlBehaviour' in declaration file. Implicitly created.
-No such class name 'XQueryBehaviour' in declaration file. Implicitly created.
 No such class name 'Behaviour' in declaration file. Implicitly created.
-No such class name 'CssCompletions' in declaration file. Implicitly created.
-No such class name 'DjangoHighlightRules' in declaration file. Implicitly created.
-No such class name 'DjangoHtmlHighlightRules' in declaration file. Implicitly created.
-No such class name 'EjsHighlightRules' in declaration file. Implicitly created.
 No such class name 'FoldMode' in declaration file. Implicitly created.
-No such class name 'Tag' in declaration file. Implicitly created.
-No such class name 'HtmlCompletions' in declaration file. Implicitly created.
 No such class name 'MatchingBraceOutdent' in declaration file. Implicitly created.
 No such class name 'MatchingParensOutdent' in declaration file. Implicitly created.
-No such class name 'PhpMode' in declaration file. Implicitly created.
-No such class name 'PhpCompletions' in declaration file. Implicitly created.
-No such class name 'RazorCompletions' in declaration file. Implicitly created.
-No such class name 'SnippetHighlightRules' in declaration file. Implicitly created.
-No such class name 'SnippetGroupHighlightRules' in declaration file. Implicitly created.
-No such class name 'VisualforceMode' in declaration file. Implicitly created.
 No such class name 'GutterHandler' in declaration file. Implicitly created.
 No such class name 'GutterTooltip' in declaration file. Implicitly created.
 No such class name 'DefaultHandlers' in declaration file. Implicitly created.
@@ -979,15 +835,8 @@ No such class name 'SearchHighlight' in declaration file. Implicitly created.
 No such class name 'SnippetManager' in declaration file. Implicitly created.
 No such class name 'TabstopToken' in declaration file. Implicitly created.
 No such class name 'TabstopManager' in declaration file. Implicitly created.
-No such class name 'Split' in declaration file. Implicitly created.
 No such class name 'Generator' in declaration file. Implicitly created.
-No such class name 'TestGenerator' in declaration file. Implicitly created.
-No such class name 'Style' in declaration file. Implicitly created.
-No such class name 'ClassList' in declaration file. Implicitly created.
-No such class name 'Attr' in declaration file. Implicitly created.
-No such class name 'Node' in declaration file. Implicitly created.
 No such class name 'Event' in declaration file. Implicitly created.
-No such class name 'TextNode' in declaration file. Implicitly created.
 No such class name 'MockRenderer' in declaration file. Implicitly created.
 No such class name 'Tooltip' in declaration file. Implicitly created.
 No constructor in declaration file. Class: Anchor. Implicitly created.
@@ -1391,8 +1240,6 @@ No such method name 'defineOptions' in declaration file. Class: AppConfig. Impli
 No such method name 'resetOptions' in declaration file. Class: AppConfig. Implicitly created.
 No such method name 'setDefaultValue' in declaration file. Class: AppConfig. Implicitly created.
 No such method name 'setDefaultValues' in declaration file. Class: AppConfig. Implicitly created.
-No such method name 'assign' in declaration file. Class: Object. Implicitly created.
-No such method name 'values' in declaration file. Class: Object. Implicitly created.
 No such method name 'destroy' in declaration file. Class: EventListener. Implicitly created.
 No such method name 'getRowLength' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name '$getWidgetScreenLength' in declaration file. Class: LineWidgets. Implicitly created.
@@ -1409,23 +1256,11 @@ No such method name 'getWidgetsAtRow' in declaration file. Class: LineWidgets. I
 No such method name 'onWidgetChanged' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name 'measureWidgets' in declaration file. Class: LineWidgets. Implicitly created.
 No such method name 'renderWidgets' in declaration file. Class: LineWidgets. Implicitly created.
-No such method name 'isSaneInsertion' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name '$matchTokenType' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'recordAutoInsert' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'recordMaybeInsert' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'isAutoInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'isMaybeInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'popAutoInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
-No such method name 'clearMaybeInsertedClosing' in declaration file. Class: CstyleBehaviour. Implicitly created.
 No such method name 'add' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'addBehaviours' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'remove' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'inherit' in declaration file. Class: Behaviour. Implicitly created.
 No such method name 'getBehaviours' in declaration file. Class: Behaviour. Implicitly created.
-No such method name 'defineCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getPropertyCompletions' in declaration file. Class: CssCompletions. Implicitly created.
-No such method name 'getPropertyValueCompletions' in declaration file. Class: CssCompletions. Implicitly created.
 No such method name 'getFoldWidget' in declaration file. Class: FoldMode. Implicitly created.
 No such method name 'getFoldWidgetRange' in declaration file. Class: FoldMode. Implicitly created.
 No such method name 'getUsingStatementBlock' in declaration file. Class: FoldMode. Implicitly created.
@@ -1450,29 +1285,12 @@ No such method name '_findEndTagInLine' in declaration file. Class: FoldMode. Im
 No such method name '_readTagForward' in declaration file. Class: FoldMode. Implicitly created.
 No such method name '_readTagBackward' in declaration file. Class: FoldMode. Implicitly created.
 No such method name '_pop' in declaration file. Class: FoldMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getTagCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getAttributeCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getAttributeValueCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
-No such method name 'getHTMLEntityCompletions' in declaration file. Class: HtmlCompletions. Implicitly created.
 No such method name 'checkOutdent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name 'autoOutdent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name '$getIndent' in declaration file. Class: MatchingBraceOutdent. Implicitly created.
 No such method name 'checkOutdent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
 No such method name 'autoOutdent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
 No such method name '$getIndent' in declaration file. Class: MatchingParensOutdent. Implicitly created.
-No such method name 'getNextLineIndent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'checkOutdent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'autoOutdent' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: PhpMode. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getTagCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getFunctionCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getVariableCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getArrayKeyCompletions' in declaration file. Class: PhpCompletions. Implicitly created.
-No such method name 'getCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
-No such method name 'getShortStartCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
-No such method name 'getKeywordCompletions' in declaration file. Class: RazorCompletions. Implicitly created.
 No such method name 'setPosition' in declaration file. Class: GutterTooltip. Implicitly created.
 No such method name 'onMouseDown' in declaration file. Class: DefaultHandlers. Implicitly created.
 No such method name 'startSelect' in declaration file. Class: DefaultHandlers. Implicitly created.
@@ -1638,22 +1456,6 @@ No such method name 'addTabstops' in declaration file. Class: TabstopManager. Im
 No such method name 'addTabstopMarkers' in declaration file. Class: TabstopManager. Implicitly created.
 No such method name 'removeTabstopMarkers' in declaration file. Class: TabstopManager. Implicitly created.
 No such method name 'removeRange' in declaration file. Class: TabstopManager. Implicitly created.
-No such method name '$createEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'setSplits' in declaration file. Class: Split. Implicitly created.
-No such method name 'getSplits' in declaration file. Class: Split. Implicitly created.
-No such method name 'getEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'getCurrentEditor' in declaration file. Class: Split. Implicitly created.
-No such method name 'focus' in declaration file. Class: Split. Implicitly created.
-No such method name 'blur' in declaration file. Class: Split. Implicitly created.
-No such method name 'setTheme' in declaration file. Class: Split. Implicitly created.
-No such method name 'setKeyboardHandler' in declaration file. Class: Split. Implicitly created.
-No such method name 'forEach' in declaration file. Class: Split. Implicitly created.
-No such method name 'setFontSize' in declaration file. Class: Split. Implicitly created.
-No such method name '$cloneSession' in declaration file. Class: Split. Implicitly created.
-No such method name 'setSession' in declaration file. Class: Split. Implicitly created.
-No such method name 'getOrientation' in declaration file. Class: Split. Implicitly created.
-No such method name 'setOrientation' in declaration file. Class: Split. Implicitly created.
-No such method name 'resize' in declaration file. Class: Split. Implicitly created.
 No constructor in declaration file. Class: VirtualRenderer. Implicitly created.
 No such method name 'mock' in declaration file. Class: VirtualRenderer. Implicitly created.
 No such method name 'updateCharacterSize' in declaration file. Class: VirtualRenderer. Implicitly created.
@@ -1698,49 +1500,9 @@ No such method name 'reverse' in declaration file. Class: Generator. Implicitly 
 No such method name '$arrayOp' in declaration file. Class: Generator. Implicitly created.
 No such method name 'end' in declaration file. Class: Generator. Implicitly created.
 No such method name 'toArray' in declaration file. Class: Generator. Implicitly created.
-No such method name 'exec' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'run' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'report' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'summary' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'setupTest' in declaration file. Class: TestGenerator. Implicitly created.
-No such method name 'getPropertyValue' in declaration file. Class: Style. Implicitly created.
-No such method name 'add' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'remove' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'toggle' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'contains' in declaration file. Class: ClassList. Implicitly created.
-No such method name 'cloneNode' in declaration file. Class: Node. Implicitly created.
-No such method name 'appendChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'remove' in declaration file. Class: Node. Implicitly created.
-No such method name 'replaceChild' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertBefore' in declaration file. Class: Node. Implicitly created.
-No such method name 'before' in declaration file. Class: Node. Implicitly created.
-No such method name 'hasChildNodes' in declaration file. Class: Node. Implicitly created.
-No such method name 'hasAttributes' in declaration file. Class: Node. Implicitly created.
-No such method name 'querySelectorAll' in declaration file. Class: Node. Implicitly created.
-No such method name 'querySelector' in declaration file. Class: Node. Implicitly created.
-No such method name 'getElementsByTagName' in declaration file. Class: Node. Implicitly created.
-No such method name 'getElementById' in declaration file. Class: Node. Implicitly created.
-No such method name 'matches' in declaration file. Class: Node. Implicitly created.
-No such method name 'closest' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name 'setAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name 'getAttribute' in declaration file. Class: Node. Implicitly created.
-No such method name '___format' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertAdjacentHTML' in declaration file. Class: Node. Implicitly created.
-No such method name 'insertAdjacentElement' in declaration file. Class: Node. Implicitly created.
-No such method name 'getBoundingClientRect' in declaration file. Class: Node. Implicitly created.
-No such method name 'addEventListener' in declaration file. Class: Node. Implicitly created.
-No such method name 'removeEventListener' in declaration file. Class: Node. Implicitly created.
-No such method name 'createEvent' in declaration file. Class: Node. Implicitly created.
-No such method name 'dispatchEvent' in declaration file. Class: Node. Implicitly created.
-No such method name 'contains' in declaration file. Class: Node. Implicitly created.
-No such method name 'focus' in declaration file. Class: Node. Implicitly created.
-No such method name 'blur' in declaration file. Class: Node. Implicitly created.
 No such method name 'initMouseEvent' in declaration file. Class: Event. Implicitly created.
 No such method name 'preventDefault' in declaration file. Class: Event. Implicitly created.
 No such method name 'stopPropagation' in declaration file. Class: Event. Implicitly created.
-No such method name 'cloneNode' in declaration file. Class: TextNode. Implicitly created.
 No such method name 'getFirstVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.
 No such method name 'getLastVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.
 No such method name 'getFirstFullyVisibleRow' in declaration file. Class: MockRenderer. Implicitly created.

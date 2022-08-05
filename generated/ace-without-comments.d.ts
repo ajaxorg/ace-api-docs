@@ -57,68 +57,10 @@ export namespace Ace {
         getFirstVisibleRow(): any;
     }
 
-    export class TextNode {
-        cloneNode(): any;
-    }
-
     export class Event {
         stopPropagation(): void;
         preventDefault(): void;
         initMouseEvent(type: any, _1: any, _2: any, window: any, detail: any, x: any, y: any, _x: any, _y: any, ctrl: any, alt: any, shift: any, meta: any, button: any, relatedTarget: any): void;
-    }
-
-    export class Node {
-        blur(): void;
-        focus(): void;
-        contains(node: any): boolean;
-        dispatchEvent(e: any): void;
-        createEvent(v: any): any;
-        removeEventListener(name: any, listener: any): void;
-        addEventListener(name: any, listener: any, capturing: any): void;
-        getBoundingClientRect(v: any): { top: number; left: number; width: number; height: number; right: number; bottom: number; };
-        insertAdjacentElement(position: any, element: any): void;
-        insertAdjacentHTML(position: any, markup: any): void;
-        ___format(indent: any): string;
-        getAttribute(a: any, v: any): any;
-        setAttribute(a: any, v: any): void;
-        removeAttribute(a: any): void;
-        closest(s: any): any;
-        matches(selector: any): boolean;
-        getElementById(s: any): any;
-        getElementsByTagName(s: any): {};
-        querySelector(s: any): any;
-        querySelectorAll(selector: any): {};
-        hasAttributes(): boolean;
-        hasChildNodes(): boolean;
-        before(node: any): void;
-        insertBefore(node: any, before: any): any;
-        replaceChild(node: any, oldNode: any): any;
-        remove(): void;
-        removeChild(node: any): void;
-        appendChild(node: any): any;
-        cloneNode(recursive: any): any;
-    }
-
-    export class Attr {
-    }
-
-    export class ClassList {
-        contains(str: any): void;
-        toggle(str: any): void;
-        remove(str: any): void;
-        add(str: any): void;
-    }
-
-    export class Style {
-        getPropertyValue(): string;
-    }
-
-    export class TestGenerator {
-        setupTest(): any;
-        summary(callback: any): void;
-        report(): any;
-        run(): any;
-        exec(): void;
     }
 
     export class Generator {
@@ -141,25 +83,6 @@ export namespace Ace {
         filter(filter: any): any;
         map(mapper: any): any;
         next(callback: any): void;
-    }
-
-    export class Split {
-        resize(): void;
-        setOrientation(orientation: Number): void;
-        getOrientation(): Number;
-        setSession(session: EditSession, idx: Number): any;
-        $cloneSession(session: any): any;
-        setFontSize(size: Number): void;
-        forEach(callback: Function, scope: String): void;
-        setKeyboardHandler(keybinding: String): void;
-        setTheme(theme: String): void;
-        blur(): void;
-        focus(): void;
-        getCurrentEditor(): Editor;
-        getEditor(idx: Number): any;
-        getSplits(): Number;
-        setSplits(splits: any): void;
-        $createEditor(): any;
     }
 
     export class TabstopManager {
@@ -355,36 +278,6 @@ export namespace Ace {
     export class GutterHandler {
     }
 
-    export class VisualforceMode {
-    }
-
-    export class SnippetGroupHighlightRules {
-    }
-
-    export class SnippetHighlightRules {
-    }
-
-    export class RazorCompletions {
-        getKeywordCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getShortStartCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getCompletions(state: any, session: any, pos: any, prefix: any): any;
-    }
-
-    export class PhpCompletions {
-        getArrayKeyCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getVariableCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getFunctionCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getTagCompletions(state: any, session: any, pos: any, prefix: any): {};
-        getCompletions(state: any, session: any, pos: any, prefix: any): any;
-    }
-
-    export class PhpMode {
-        getCompletions(state: any, session: any, pos: any, prefix: any): any;
-        autoOutdent(state: any, doc: any, row: any): void;
-        checkOutdent(state: any, line: any, input: any): any;
-        getNextLineIndent(state: any, line: any, tab: any): any;
-    }
-
     export class MatchingParensOutdent {
         $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
@@ -395,17 +288,6 @@ export namespace Ace {
         $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
         checkOutdent(line: any, input: any): any;
-    }
-
-    export class HtmlCompletions {
-        getHTMLEntityCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getAttributeValueCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getAttributeCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getTagCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getCompletions(state: any, session: any, pos: any, prefix: any): any;
-    }
-
-    export class Tag {
     }
 
     export class FoldMode {
@@ -435,57 +317,12 @@ export namespace Ace {
         getFoldWidget(session: any, foldStyle: any, row: any): any;
     }
 
-    export class EjsHighlightRules {
-    }
-
-    export class DjangoHtmlHighlightRules {
-    }
-
-    export class DjangoHighlightRules {
-    }
-
-    export class CssCompletions {
-        getPropertyValueCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getPropertyCompletions(state: any, session: any, pos: any, prefix: any): any;
-        getCompletions(state: any, session: any, pos: any, prefix: any): any;
-        defineCompletions(): void;
-    }
-
     export class Behaviour {
         getBehaviours(filter: any): any;
         inherit(mode: any, filter: any): void;
         remove(name: any): void;
         addBehaviours(behaviours: any): void;
         add(name: any, action: any, callback: any): void;
-    }
-
-    export class XQueryBehaviour {
-    }
-
-    export class XmlBehaviour {
-    }
-
-    export class LiquidBehaviour {
-    }
-
-    export class HtmlBehaviour {
-    }
-
-    export class CstyleBehaviour {
-        clearMaybeInsertedClosing(): void;
-        popAutoInsertedClosing(): void;
-        isMaybeInsertedClosing(cursor: any, line: any): boolean;
-        isAutoInsertedClosing(cursor: any, line: any, bracket: any): boolean;
-        recordMaybeInsert(editor: any, session: any, bracket: any): void;
-        recordAutoInsert(editor: any, session: any, bracket: any): void;
-        $matchTokenType(token: any, types: any): boolean;
-        isSaneInsertion(editor: any, session: any): any;
-    }
-
-    export class CssBehaviour {
-    }
-
-    export class ApexMode {
     }
 
     export class LineWidgets {
@@ -511,23 +348,6 @@ export namespace Ace {
 
     export class EventListener {
         destroy(): void;
-    }
-
-    export class Object {
-        values(o: any): any;
-        assign(target: any): any;
-    }
-
-    export class UnicodeTBL20 {
-    }
-
-    export class UnicodeTBL00 {
-    }
-
-    export class ArabicAlefBetIntervalsEnd {
-    }
-
-    export class ArabicAlefBetIntervalsBegine {
     }
 
     export class AppConfig {
@@ -750,9 +570,6 @@ export namespace Ace {
         checkOutdent(state: any, line: any, input: any): any;
         getNextLineIndent(state: any, line: any, tab: any): any;
         supportsFile(filename: any): any;
-    }
-
-    export class AceEmmetEditor {
     }
 
     export class ElasticTabstopsLite {

@@ -41,49 +41,9 @@ Warning: ignoring method without comment: getLastFullyVisibleRow. Class: MockRen
 Warning: ignoring method without comment: getFirstFullyVisibleRow. Class: MockRenderer
 Warning: ignoring method without comment: getLastVisibleRow. Class: MockRenderer
 Warning: ignoring method without comment: getFirstVisibleRow. Class: MockRenderer
-Warning: ignoring method without comment: cloneNode. Class: TextNode
 Warning: ignoring method without comment: stopPropagation. Class: Event
 Warning: ignoring method without comment: preventDefault. Class: Event
 Warning: ignoring method without comment: initMouseEvent. Class: Event
-Warning: ignoring method without comment: blur. Class: Node
-Warning: ignoring method without comment: focus. Class: Node
-Warning: ignoring method without comment: contains. Class: Node
-Warning: ignoring method without comment: dispatchEvent. Class: Node
-Warning: ignoring method without comment: createEvent. Class: Node
-Warning: ignoring method without comment: removeEventListener. Class: Node
-Warning: ignoring method without comment: addEventListener. Class: Node
-Warning: ignoring method without comment: getBoundingClientRect. Class: Node
-Warning: ignoring method without comment: insertAdjacentElement. Class: Node
-Warning: ignoring method without comment: insertAdjacentHTML. Class: Node
-Warning: ignoring method without comment: ___format. Class: Node
-Warning: ignoring method without comment: getAttribute. Class: Node
-Warning: ignoring method without comment: setAttribute. Class: Node
-Warning: ignoring method without comment: removeAttribute. Class: Node
-Warning: ignoring method without comment: closest. Class: Node
-Warning: ignoring method without comment: matches. Class: Node
-Warning: ignoring method without comment: getElementById. Class: Node
-Warning: ignoring method without comment: getElementsByTagName. Class: Node
-Warning: ignoring method without comment: querySelector. Class: Node
-Warning: ignoring method without comment: querySelectorAll. Class: Node
-Warning: ignoring method without comment: hasAttributes. Class: Node
-Warning: ignoring method without comment: hasChildNodes. Class: Node
-Warning: ignoring method without comment: before. Class: Node
-Warning: ignoring method without comment: insertBefore. Class: Node
-Warning: ignoring method without comment: replaceChild. Class: Node
-Warning: ignoring method without comment: remove. Class: Node
-Warning: ignoring method without comment: removeChild. Class: Node
-Warning: ignoring method without comment: appendChild. Class: Node
-Warning: ignoring method without comment: cloneNode. Class: Node
-Warning: ignoring method without comment: contains. Class: ClassList
-Warning: ignoring method without comment: toggle. Class: ClassList
-Warning: ignoring method without comment: remove. Class: ClassList
-Warning: ignoring method without comment: add. Class: ClassList
-Warning: ignoring method without comment: getPropertyValue. Class: Style
-Warning: ignoring method without comment: setupTest. Class: TestGenerator
-Warning: ignoring method without comment: summary. Class: TestGenerator
-Warning: ignoring method without comment: report. Class: TestGenerator
-Warning: ignoring method without comment: run. Class: TestGenerator
-Warning: ignoring method without comment: exec. Class: TestGenerator
 Warning: ignoring method without comment: toArray. Class: Generator
 Warning: ignoring method without comment: end. Class: Generator
 Warning: ignoring method without comment: $arrayOp. Class: Generator
@@ -103,9 +63,6 @@ Warning: ignoring method without comment: slice. Class: Generator
 Warning: ignoring method without comment: filter. Class: Generator
 Warning: ignoring method without comment: map. Class: Generator
 Warning: ignoring method without comment: next. Class: Generator
-Warning: ignoring method without comment: $cloneSession. Class: Split
-Warning: ignoring method without comment: setSplits. Class: Split
-Warning: ignoring method without comment: $createEditor. Class: Split
 Warning: ignoring method without comment: removeRange. Class: TabstopManager
 Warning: ignoring method without comment: removeTabstopMarkers. Class: TabstopManager
 Warning: ignoring method without comment: addTabstopMarkers. Class: TabstopManager
@@ -198,29 +155,12 @@ Warning: ignoring method without comment: select. Class: DefaultHandlers
 Warning: ignoring method without comment: startSelect. Class: DefaultHandlers
 Warning: ignoring method without comment: onMouseDown. Class: DefaultHandlers
 Warning: ignoring method without comment: setPosition. Class: GutterTooltip
-Warning: ignoring method without comment: getKeywordCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getShortStartCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getArrayKeyCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getVariableCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getFunctionCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getTagCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getCompletions. Class: PhpMode
-Warning: ignoring method without comment: autoOutdent. Class: PhpMode
-Warning: ignoring method without comment: checkOutdent. Class: PhpMode
-Warning: ignoring method without comment: getNextLineIndent. Class: PhpMode
 Warning: ignoring method without comment: $getIndent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: $getIndent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingBraceOutdent
-Warning: ignoring method without comment: getHTMLEntityCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getAttributeValueCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getAttributeCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getTagCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getCompletions. Class: HtmlCompletions
 Warning: ignoring method without comment: _pop. Class: FoldMode
 Warning: ignoring method without comment: _readTagBackward. Class: FoldMode
 Warning: ignoring method without comment: _findEndTagInLine. Class: FoldMode
@@ -240,23 +180,11 @@ Warning: ignoring method without comment: getRegionBlock. Class: FoldMode
 Warning: ignoring method without comment: getUsingStatementBlock. Class: FoldMode
 Warning: ignoring method without comment: getFoldWidgetRange. Class: FoldMode
 Warning: ignoring method without comment: getFoldWidget. Class: FoldMode
-Warning: ignoring method without comment: getPropertyValueCompletions. Class: CssCompletions
-Warning: ignoring method without comment: getPropertyCompletions. Class: CssCompletions
-Warning: ignoring method without comment: getCompletions. Class: CssCompletions
-Warning: ignoring method without comment: defineCompletions. Class: CssCompletions
 Warning: ignoring method without comment: getBehaviours. Class: Behaviour
 Warning: ignoring method without comment: inherit. Class: Behaviour
 Warning: ignoring method without comment: remove. Class: Behaviour
 Warning: ignoring method without comment: addBehaviours. Class: Behaviour
 Warning: ignoring method without comment: add. Class: Behaviour
-Warning: ignoring method without comment: clearMaybeInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: popAutoInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: isMaybeInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: isAutoInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: recordMaybeInsert. Class: CstyleBehaviour
-Warning: ignoring method without comment: recordAutoInsert. Class: CstyleBehaviour
-Warning: ignoring method without comment: $matchTokenType. Class: CstyleBehaviour
-Warning: ignoring method without comment: isSaneInsertion. Class: CstyleBehaviour
 Warning: ignoring method without comment: renderWidgets. Class: LineWidgets
 Warning: ignoring method without comment: measureWidgets. Class: LineWidgets
 Warning: ignoring method without comment: onWidgetChanged. Class: LineWidgets
@@ -273,8 +201,6 @@ Warning: ignoring method without comment: $onChangeEditor. Class: LineWidgets
 Warning: ignoring method without comment: $getWidgetScreenLength. Class: LineWidgets
 Warning: ignoring method without comment: getRowLength. Class: LineWidgets
 Warning: ignoring method without comment: destroy. Class: EventListener
-Warning: ignoring method without comment: values. Class: Object
-Warning: ignoring method without comment: assign. Class: Object
 Warning: ignoring method without comment: setDefaultValues. Class: AppConfig
 Warning: ignoring method without comment: setDefaultValue. Class: AppConfig
 Warning: ignoring method without comment: resetOptions. Class: AppConfig
@@ -720,26 +646,7 @@ No described method in classes.json: setHtml. Class:Tooltip
 No described method in classes.json: setText. Class:Tooltip
 No described method in classes.json: getElement. Class:Tooltip
 No described class in classes.json: MockRenderer
-No described class in classes.json: TextNode
 No described class in classes.json: Event
-No described class in classes.json: Node
-No described class in classes.json: Attr
-No described class in classes.json: ClassList
-No described class in classes.json: Style
-No described class in classes.json: Split
-No described method in classes.json: resize. Class:Split
-No described method in classes.json: setOrientation. Class:Split
-No described method in classes.json: getOrientation. Class:Split
-No described method in classes.json: setSession. Class:Split
-No described method in classes.json: setFontSize. Class:Split
-No described method in classes.json: forEach. Class:Split
-No described method in classes.json: setKeyboardHandler. Class:Split
-No described method in classes.json: setTheme. Class:Split
-No described method in classes.json: blur. Class:Split
-No described method in classes.json: focus. Class:Split
-No described method in classes.json: getCurrentEditor. Class:Split
-No described method in classes.json: getEditor. Class:Split
-No described method in classes.json: getSplits. Class:Split
 No described class in classes.json: TabstopManager
 No described class in classes.json: TabstopToken
 No described class in classes.json: SnippetManager
@@ -801,41 +708,18 @@ No described class in classes.json: DragdropHandler
 No described class in classes.json: DefaultHandlers
 No described class in classes.json: GutterTooltip
 No described class in classes.json: GutterHandler
-No described class in classes.json: VisualforceMode
-No described class in classes.json: SnippetGroupHighlightRules
-No described class in classes.json: SnippetHighlightRules
-No described class in classes.json: RazorCompletions
-No described class in classes.json: PhpCompletions
-No described class in classes.json: PhpMode
 No described class in classes.json: MatchingParensOutdent
 No described class in classes.json: MatchingBraceOutdent
-No described class in classes.json: HtmlCompletions
-No described class in classes.json: Tag
 No described class in classes.json: FoldMode
 No described method in classes.json: _readTagForward. Class:FoldMode
 No described method in classes.json: _getFirstTagInLine. Class:FoldMode
 No described method in classes.json: getBeginEndBlock. Class:FoldMode
 No described method in classes.json: isHeading. Class:FoldMode
 No described method in classes.json: getCommentRegionBlock. Class:FoldMode
-No described class in classes.json: EjsHighlightRules
-No described class in classes.json: DjangoHtmlHighlightRules
-No described class in classes.json: DjangoHighlightRules
-No described class in classes.json: CssCompletions
 No described class in classes.json: Behaviour
-No described class in classes.json: XQueryBehaviour
-No described class in classes.json: XmlBehaviour
-No described class in classes.json: LiquidBehaviour
-No described class in classes.json: HtmlBehaviour
-No described class in classes.json: CstyleBehaviour
-No described class in classes.json: CssBehaviour
-No described class in classes.json: ApexMode
 No described class in classes.json: LineWidgets
 No described class in classes.json: Keys
 No described class in classes.json: EventListener
-No described class in classes.json: UnicodeTBL20
-No described class in classes.json: UnicodeTBL00
-No described class in classes.json: ArabicAlefBetIntervalsEnd
-No described class in classes.json: ArabicAlefBetIntervalsBegine
 No described class in classes.json: AppConfig
 No described method in classes.json: defineOptions. Class:AppConfig
 No described class in classes.json: Text
@@ -861,7 +745,6 @@ No described class in classes.json: SimpleTextLayer
 No described class in classes.json: SearchBox
 No described class in classes.json: OptionPanel
 No described class in classes.json: Mode
-No described class in classes.json: AceEmmetEditor
 No described class in classes.json: ElasticTabstopsLite
 No described method in classes.json: $izip. Class:ElasticTabstopsLite
 No described method in classes.json: $izip_longest. Class:ElasticTabstopsLite
@@ -1082,49 +965,9 @@ Warning: ignoring method without comment: getLastFullyVisibleRow. Class: MockRen
 Warning: ignoring method without comment: getFirstFullyVisibleRow. Class: MockRenderer
 Warning: ignoring method without comment: getLastVisibleRow. Class: MockRenderer
 Warning: ignoring method without comment: getFirstVisibleRow. Class: MockRenderer
-Warning: ignoring method without comment: cloneNode. Class: TextNode
 Warning: ignoring method without comment: stopPropagation. Class: Event
 Warning: ignoring method without comment: preventDefault. Class: Event
 Warning: ignoring method without comment: initMouseEvent. Class: Event
-Warning: ignoring method without comment: blur. Class: Node
-Warning: ignoring method without comment: focus. Class: Node
-Warning: ignoring method without comment: contains. Class: Node
-Warning: ignoring method without comment: dispatchEvent. Class: Node
-Warning: ignoring method without comment: createEvent. Class: Node
-Warning: ignoring method without comment: removeEventListener. Class: Node
-Warning: ignoring method without comment: addEventListener. Class: Node
-Warning: ignoring method without comment: getBoundingClientRect. Class: Node
-Warning: ignoring method without comment: insertAdjacentElement. Class: Node
-Warning: ignoring method without comment: insertAdjacentHTML. Class: Node
-Warning: ignoring method without comment: ___format. Class: Node
-Warning: ignoring method without comment: getAttribute. Class: Node
-Warning: ignoring method without comment: setAttribute. Class: Node
-Warning: ignoring method without comment: removeAttribute. Class: Node
-Warning: ignoring method without comment: closest. Class: Node
-Warning: ignoring method without comment: matches. Class: Node
-Warning: ignoring method without comment: getElementById. Class: Node
-Warning: ignoring method without comment: getElementsByTagName. Class: Node
-Warning: ignoring method without comment: querySelector. Class: Node
-Warning: ignoring method without comment: querySelectorAll. Class: Node
-Warning: ignoring method without comment: hasAttributes. Class: Node
-Warning: ignoring method without comment: hasChildNodes. Class: Node
-Warning: ignoring method without comment: before. Class: Node
-Warning: ignoring method without comment: insertBefore. Class: Node
-Warning: ignoring method without comment: replaceChild. Class: Node
-Warning: ignoring method without comment: remove. Class: Node
-Warning: ignoring method without comment: removeChild. Class: Node
-Warning: ignoring method without comment: appendChild. Class: Node
-Warning: ignoring method without comment: cloneNode. Class: Node
-Warning: ignoring method without comment: contains. Class: ClassList
-Warning: ignoring method without comment: toggle. Class: ClassList
-Warning: ignoring method without comment: remove. Class: ClassList
-Warning: ignoring method without comment: add. Class: ClassList
-Warning: ignoring method without comment: getPropertyValue. Class: Style
-Warning: ignoring method without comment: setupTest. Class: TestGenerator
-Warning: ignoring method without comment: summary. Class: TestGenerator
-Warning: ignoring method without comment: report. Class: TestGenerator
-Warning: ignoring method without comment: run. Class: TestGenerator
-Warning: ignoring method without comment: exec. Class: TestGenerator
 Warning: ignoring method without comment: toArray. Class: Generator
 Warning: ignoring method without comment: end. Class: Generator
 Warning: ignoring method without comment: $arrayOp. Class: Generator
@@ -1144,9 +987,6 @@ Warning: ignoring method without comment: slice. Class: Generator
 Warning: ignoring method without comment: filter. Class: Generator
 Warning: ignoring method without comment: map. Class: Generator
 Warning: ignoring method without comment: next. Class: Generator
-Warning: ignoring method without comment: $cloneSession. Class: Split
-Warning: ignoring method without comment: setSplits. Class: Split
-Warning: ignoring method without comment: $createEditor. Class: Split
 Warning: ignoring method without comment: removeRange. Class: TabstopManager
 Warning: ignoring method without comment: removeTabstopMarkers. Class: TabstopManager
 Warning: ignoring method without comment: addTabstopMarkers. Class: TabstopManager
@@ -1239,29 +1079,12 @@ Warning: ignoring method without comment: select. Class: DefaultHandlers
 Warning: ignoring method without comment: startSelect. Class: DefaultHandlers
 Warning: ignoring method without comment: onMouseDown. Class: DefaultHandlers
 Warning: ignoring method without comment: setPosition. Class: GutterTooltip
-Warning: ignoring method without comment: getKeywordCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getShortStartCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getCompletions. Class: RazorCompletions
-Warning: ignoring method without comment: getArrayKeyCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getVariableCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getFunctionCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getTagCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getCompletions. Class: PhpCompletions
-Warning: ignoring method without comment: getCompletions. Class: PhpMode
-Warning: ignoring method without comment: autoOutdent. Class: PhpMode
-Warning: ignoring method without comment: checkOutdent. Class: PhpMode
-Warning: ignoring method without comment: getNextLineIndent. Class: PhpMode
 Warning: ignoring method without comment: $getIndent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: $getIndent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingBraceOutdent
-Warning: ignoring method without comment: getHTMLEntityCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getAttributeValueCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getAttributeCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getTagCompletions. Class: HtmlCompletions
-Warning: ignoring method without comment: getCompletions. Class: HtmlCompletions
 Warning: ignoring method without comment: _pop. Class: FoldMode
 Warning: ignoring method without comment: _readTagBackward. Class: FoldMode
 Warning: ignoring method without comment: _findEndTagInLine. Class: FoldMode
@@ -1281,23 +1104,11 @@ Warning: ignoring method without comment: getRegionBlock. Class: FoldMode
 Warning: ignoring method without comment: getUsingStatementBlock. Class: FoldMode
 Warning: ignoring method without comment: getFoldWidgetRange. Class: FoldMode
 Warning: ignoring method without comment: getFoldWidget. Class: FoldMode
-Warning: ignoring method without comment: getPropertyValueCompletions. Class: CssCompletions
-Warning: ignoring method without comment: getPropertyCompletions. Class: CssCompletions
-Warning: ignoring method without comment: getCompletions. Class: CssCompletions
-Warning: ignoring method without comment: defineCompletions. Class: CssCompletions
 Warning: ignoring method without comment: getBehaviours. Class: Behaviour
 Warning: ignoring method without comment: inherit. Class: Behaviour
 Warning: ignoring method without comment: remove. Class: Behaviour
 Warning: ignoring method without comment: addBehaviours. Class: Behaviour
 Warning: ignoring method without comment: add. Class: Behaviour
-Warning: ignoring method without comment: clearMaybeInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: popAutoInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: isMaybeInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: isAutoInsertedClosing. Class: CstyleBehaviour
-Warning: ignoring method without comment: recordMaybeInsert. Class: CstyleBehaviour
-Warning: ignoring method without comment: recordAutoInsert. Class: CstyleBehaviour
-Warning: ignoring method without comment: $matchTokenType. Class: CstyleBehaviour
-Warning: ignoring method without comment: isSaneInsertion. Class: CstyleBehaviour
 Warning: ignoring method without comment: renderWidgets. Class: LineWidgets
 Warning: ignoring method without comment: measureWidgets. Class: LineWidgets
 Warning: ignoring method without comment: onWidgetChanged. Class: LineWidgets
@@ -1314,8 +1125,6 @@ Warning: ignoring method without comment: $onChangeEditor. Class: LineWidgets
 Warning: ignoring method without comment: $getWidgetScreenLength. Class: LineWidgets
 Warning: ignoring method without comment: getRowLength. Class: LineWidgets
 Warning: ignoring method without comment: destroy. Class: EventListener
-Warning: ignoring method without comment: values. Class: Object
-Warning: ignoring method without comment: assign. Class: Object
 Warning: ignoring method without comment: setDefaultValues. Class: AppConfig
 Warning: ignoring method without comment: setDefaultValue. Class: AppConfig
 Warning: ignoring method without comment: resetOptions. Class: AppConfig
@@ -1761,26 +1570,7 @@ No described method in classes.json: setHtml. Class:Tooltip
 No described method in classes.json: setText. Class:Tooltip
 No described method in classes.json: getElement. Class:Tooltip
 No described class in classes.json: MockRenderer
-No described class in classes.json: TextNode
 No described class in classes.json: Event
-No described class in classes.json: Node
-No described class in classes.json: Attr
-No described class in classes.json: ClassList
-No described class in classes.json: Style
-No described class in classes.json: Split
-No described method in classes.json: resize. Class:Split
-No described method in classes.json: setOrientation. Class:Split
-No described method in classes.json: getOrientation. Class:Split
-No described method in classes.json: setSession. Class:Split
-No described method in classes.json: setFontSize. Class:Split
-No described method in classes.json: forEach. Class:Split
-No described method in classes.json: setKeyboardHandler. Class:Split
-No described method in classes.json: setTheme. Class:Split
-No described method in classes.json: blur. Class:Split
-No described method in classes.json: focus. Class:Split
-No described method in classes.json: getCurrentEditor. Class:Split
-No described method in classes.json: getEditor. Class:Split
-No described method in classes.json: getSplits. Class:Split
 No described class in classes.json: TabstopManager
 No described class in classes.json: TabstopToken
 No described class in classes.json: SnippetManager
@@ -1842,41 +1632,18 @@ No described class in classes.json: DragdropHandler
 No described class in classes.json: DefaultHandlers
 No described class in classes.json: GutterTooltip
 No described class in classes.json: GutterHandler
-No described class in classes.json: VisualforceMode
-No described class in classes.json: SnippetGroupHighlightRules
-No described class in classes.json: SnippetHighlightRules
-No described class in classes.json: RazorCompletions
-No described class in classes.json: PhpCompletions
-No described class in classes.json: PhpMode
 No described class in classes.json: MatchingParensOutdent
 No described class in classes.json: MatchingBraceOutdent
-No described class in classes.json: HtmlCompletions
-No described class in classes.json: Tag
 No described class in classes.json: FoldMode
 No described method in classes.json: _readTagForward. Class:FoldMode
 No described method in classes.json: _getFirstTagInLine. Class:FoldMode
 No described method in classes.json: getBeginEndBlock. Class:FoldMode
 No described method in classes.json: isHeading. Class:FoldMode
 No described method in classes.json: getCommentRegionBlock. Class:FoldMode
-No described class in classes.json: EjsHighlightRules
-No described class in classes.json: DjangoHtmlHighlightRules
-No described class in classes.json: DjangoHighlightRules
-No described class in classes.json: CssCompletions
 No described class in classes.json: Behaviour
-No described class in classes.json: XQueryBehaviour
-No described class in classes.json: XmlBehaviour
-No described class in classes.json: LiquidBehaviour
-No described class in classes.json: HtmlBehaviour
-No described class in classes.json: CstyleBehaviour
-No described class in classes.json: CssBehaviour
-No described class in classes.json: ApexMode
 No described class in classes.json: LineWidgets
 No described class in classes.json: Keys
 No described class in classes.json: EventListener
-No described class in classes.json: UnicodeTBL20
-No described class in classes.json: UnicodeTBL00
-No described class in classes.json: ArabicAlefBetIntervalsEnd
-No described class in classes.json: ArabicAlefBetIntervalsBegine
 No described class in classes.json: AppConfig
 No described method in classes.json: defineOptions. Class:AppConfig
 No described class in classes.json: Text
@@ -1902,7 +1669,6 @@ No described class in classes.json: SimpleTextLayer
 No described class in classes.json: SearchBox
 No described class in classes.json: OptionPanel
 No described class in classes.json: Mode
-No described class in classes.json: AceEmmetEditor
 No described class in classes.json: ElasticTabstopsLite
 No described method in classes.json: $izip. Class:ElasticTabstopsLite
 No described method in classes.json: $izip_longest. Class:ElasticTabstopsLite
