@@ -1,6 +1,5 @@
 Warning: ignoring method without comment: destroy. Class: Tooltip
 Warning: ignoring method without comment: hide. Class: Tooltip
-Warning: ignoring method without comment: $init. Class: Tooltip
 Warning: ignoring method without comment: adjustWrapLimit. Class: MockRenderer
 Warning: ignoring method without comment: screenToTextCoordinates. Class: MockRenderer
 Warning: ignoring method without comment: textToScreenCoordinates. Class: MockRenderer
@@ -46,7 +45,6 @@ Warning: ignoring method without comment: preventDefault. Class: Event
 Warning: ignoring method without comment: initMouseEvent. Class: Event
 Warning: ignoring method without comment: toArray. Class: Generator
 Warning: ignoring method without comment: end. Class: Generator
-Warning: ignoring method without comment: $arrayOp. Class: Generator
 Warning: ignoring method without comment: reverse. Class: Generator
 Warning: ignoring method without comment: join. Class: Generator
 Warning: ignoring method without comment: sort. Class: Generator
@@ -84,7 +82,6 @@ Warning: ignoring method without comment: findMatchingSnippet. Class: SnippetMan
 Warning: ignoring method without comment: expandSnippetForSelection. Class: SnippetManager
 Warning: ignoring method without comment: expandWithTab. Class: SnippetManager
 Warning: ignoring method without comment: getActiveScopes. Class: SnippetManager
-Warning: ignoring method without comment: $getScope. Class: SnippetManager
 Warning: ignoring method without comment: insertSnippet. Class: SnippetManager
 Warning: ignoring method without comment: insertSnippetForSelection. Class: SnippetManager
 Warning: ignoring method without comment: resolveVariables. Class: SnippetManager
@@ -95,15 +92,11 @@ Warning: ignoring method without comment: createTokenizer. Class: SnippetManager
 Warning: ignoring method without comment: getTokenizer. Class: SnippetManager
 Warning: ignoring method without comment: update. Class: SearchHighlight
 Warning: ignoring method without comment: setRegexp. Class: SearchHighlight
-Warning: ignoring method without comment: $matchIterator. Class: Search
-Warning: ignoring method without comment: $assembleMultilineRegExp. Class: Search
-Warning: ignoring method without comment: $assembleRegExp. Class: Search
 Warning: ignoring method without comment: onScroll. Class: HScrollBar
 Warning: ignoring method without comment: onScroll. Class: VScrollBar
 Warning: ignoring method without comment: setVisible. Class: ScrollBar
 Warning: ignoring method without comment: clear. Class: RenderLoop
 Warning: ignoring method without comment: schedule. Class: RenderLoop
-Warning: ignoring method without comment: $onChange. Class: RangeList
 Warning: ignoring method without comment: detach. Class: RangeList
 Warning: ignoring method without comment: attach. Class: RangeList
 Warning: ignoring method without comment: removeAll. Class: RangeList
@@ -155,10 +148,8 @@ Warning: ignoring method without comment: select. Class: DefaultHandlers
 Warning: ignoring method without comment: startSelect. Class: DefaultHandlers
 Warning: ignoring method without comment: onMouseDown. Class: DefaultHandlers
 Warning: ignoring method without comment: setPosition. Class: GutterTooltip
-Warning: ignoring method without comment: $getIndent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingParensOutdent
-Warning: ignoring method without comment: $getIndent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: _pop. Class: FoldMode
@@ -167,8 +158,6 @@ Warning: ignoring method without comment: _findEndTagInLine. Class: FoldMode
 Warning: ignoring method without comment: getCommentFoldWidget. Class: FoldMode
 Warning: ignoring method without comment: vbsBlock. Class: FoldMode
 Warning: ignoring method without comment: rubyBlock. Class: FoldMode
-Warning: ignoring method without comment: $tryMode. Class: FoldMode
-Warning: ignoring method without comment: $getMode. Class: FoldMode
 Warning: ignoring method without comment: luaBlock. Class: FoldMode
 Warning: ignoring method without comment: latexSection. Class: FoldMode
 Warning: ignoring method without comment: latexBlock. Class: FoldMode
@@ -191,54 +180,36 @@ Warning: ignoring method without comment: onWidgetChanged. Class: LineWidgets
 Warning: ignoring method without comment: getWidgetsAtRow. Class: LineWidgets
 Warning: ignoring method without comment: removeLineWidget. Class: LineWidgets
 Warning: ignoring method without comment: addLineWidget. Class: LineWidgets
-Warning: ignoring method without comment: $registerLineWidget. Class: LineWidgets
-Warning: ignoring method without comment: $updateRows. Class: LineWidgets
 Warning: ignoring method without comment: updateOnChange. Class: LineWidgets
 Warning: ignoring method without comment: updateOnFold. Class: LineWidgets
 Warning: ignoring method without comment: detach. Class: LineWidgets
 Warning: ignoring method without comment: attach. Class: LineWidgets
-Warning: ignoring method without comment: $onChangeEditor. Class: LineWidgets
-Warning: ignoring method without comment: $getWidgetScreenLength. Class: LineWidgets
 Warning: ignoring method without comment: getRowLength. Class: LineWidgets
 Warning: ignoring method without comment: destroy. Class: EventListener
 Warning: ignoring method without comment: setDefaultValues. Class: AppConfig
 Warning: ignoring method without comment: setDefaultValue. Class: AppConfig
 Warning: ignoring method without comment: resetOptions. Class: AppConfig
 Warning: ignoring method without comment: destroy. Class: Text
-Warning: ignoring method without comment: $useLineGroups. Class: Text
-Warning: ignoring method without comment: $getFoldLineTokens. Class: Text
-Warning: ignoring method without comment: $renderOverflowMessage. Class: Text
-Warning: ignoring method without comment: $renderSimpleLine. Class: Text
-Warning: ignoring method without comment: $renderWrappedLine. Class: Text
-Warning: ignoring method without comment: $createLineElement. Class: Text
 Warning: ignoring method without comment: renderIndentGuide. Class: Text
-Warning: ignoring method without comment: $renderToken. Class: Text
 Warning: ignoring method without comment: update. Class: Text
-Warning: ignoring method without comment: $renderLinesFragment. Class: Text
 Warning: ignoring method without comment: scrollLines. Class: Text
 Warning: ignoring method without comment: updateLines. Class: Text
 Warning: ignoring method without comment: onChangeTabSize. Class: Text
-Warning: ignoring method without comment: $computeTabString. Class: Text
 Warning: ignoring method without comment: setDisplayIndentGuides. Class: Text
 Warning: ignoring method without comment: setShowInvisibles. Class: Text
 Warning: ignoring method without comment: setSession. Class: Text
-Warning: ignoring method without comment: $pollSizeChanges. Class: Text
 Warning: ignoring method without comment: checkForSizeChanges. Class: Text
-Warning: ignoring method without comment: $setFontMetrics. Class: Text
 Warning: ignoring method without comment: getCharacterWidth. Class: Text
 Warning: ignoring method without comment: getLineHeight. Class: Text
 Warning: ignoring method without comment: setPadding. Class: Text
-Warning: ignoring method without comment: $updateEolChar. Class: Text
 Warning: ignoring method without comment: drawScreenLineMarker. Class: Marker
 Warning: ignoring method without comment: drawFullLineMarker. Class: Marker
-Warning: ignoring method without comment: $getTop. Class: Marker
 Warning: ignoring method without comment: update. Class: Marker
 Warning: ignoring method without comment: elt. Class: Marker
 Warning: ignoring method without comment: setMarkers. Class: Marker
 Warning: ignoring method without comment: setSession. Class: Marker
 Warning: ignoring method without comment: setPadding. Class: Marker
 Warning: ignoring method without comment: createCell. Class: Lines
-Warning: ignoring method without comment: $cacheCell. Class: Lines
 Warning: ignoring method without comment: last. Class: Lines
 Warning: ignoring method without comment: unshift. Class: Lines
 Warning: ignoring method without comment: push. Class: Lines
@@ -251,37 +222,23 @@ Warning: ignoring method without comment: computeLineTop. Class: Lines
 Warning: ignoring method without comment: pageChanged. Class: Lines
 Warning: ignoring method without comment: moveContainer. Class: Lines
 Warning: ignoring method without comment: getRegion. Class: Gutter
-Warning: ignoring method without comment: $computePadding. Class: Gutter
 Warning: ignoring method without comment: getShowFoldWidgets. Class: Gutter
 Warning: ignoring method without comment: setShowFoldWidgets. Class: Gutter
 Warning: ignoring method without comment: getShowLineNumbers. Class: Gutter
 Warning: ignoring method without comment: setShowLineNumbers. Class: Gutter
 Warning: ignoring method without comment: setHighlightGutterLine. Class: Gutter
-Warning: ignoring method without comment: $renderCell. Class: Gutter
-Warning: ignoring method without comment: $renderLines. Class: Gutter
 Warning: ignoring method without comment: scrollLines. Class: Gutter
 Warning: ignoring method without comment: updateLineHighlight. Class: Gutter
-Warning: ignoring method without comment: $updateCursorRow. Class: Gutter
-Warning: ignoring method without comment: $updateGutterWidth. Class: Gutter
 Warning: ignoring method without comment: update. Class: Gutter
-Warning: ignoring method without comment: $updateAnnotations. Class: Gutter
 Warning: ignoring method without comment: setAnnotations. Class: Gutter
 Warning: ignoring method without comment: removeGutterDecoration. Class: Gutter
 Warning: ignoring method without comment: addGutterDecoration. Class: Gutter
 Warning: ignoring method without comment: setSession. Class: Gutter
-Warning: ignoring method without comment: $initTransformMeasureNodes. Class: FontMetrics
-Warning: ignoring method without comment: $getZoom. Class: FontMetrics
 Warning: ignoring method without comment: destroy. Class: FontMetrics
 Warning: ignoring method without comment: getCharacterWidth. Class: FontMetrics
-Warning: ignoring method without comment: $measureCharWidth. Class: FontMetrics
-Warning: ignoring method without comment: $measureSizes. Class: FontMetrics
 Warning: ignoring method without comment: setPolling. Class: FontMetrics
-Warning: ignoring method without comment: $pollSizeChanges. Class: FontMetrics
-Warning: ignoring method without comment: $addObserver. Class: FontMetrics
 Warning: ignoring method without comment: checkForSizeChanges. Class: FontMetrics
-Warning: ignoring method without comment: $setMeasureNodeStyles. Class: FontMetrics
 Warning: ignoring method without comment: destroy. Class: Cursor
-Warning: ignoring method without comment: $setOverwrite. Class: Cursor
 Warning: ignoring method without comment: update. Class: Cursor
 Warning: ignoring method without comment: isCursorInView. Class: Cursor
 Warning: ignoring method without comment: getPixelPosition. Class: Cursor
@@ -295,9 +252,6 @@ Warning: ignoring method without comment: setBlinkInterval. Class: Cursor
 Warning: ignoring method without comment: setBlinking. Class: Cursor
 Warning: ignoring method without comment: setSession. Class: Cursor
 Warning: ignoring method without comment: setPadding. Class: Cursor
-Warning: ignoring method without comment: $stopCssAnimation. Class: Cursor
-Warning: ignoring method without comment: $startCssAnimation. Class: Cursor
-Warning: ignoring method without comment: $updateOpacity. Class: Cursor
 Warning: ignoring method without comment: getStatusText. Class: HashHandler
 Warning: ignoring method without comment: handleKeyboard. Class: HashHandler
 Warning: ignoring method without comment: findKeyCommand. Class: HashHandler
@@ -337,10 +291,7 @@ Warning: ignoring method without comment: findNext. Class: SearchBox
 Warning: ignoring method without comment: updateCounter. Class: SearchBox
 Warning: ignoring method without comment: find. Class: SearchBox
 Warning: ignoring method without comment: highlight. Class: SearchBox
-Warning: ignoring method without comment: $syncOptions. Class: SearchBox
 Warning: ignoring method without comment: setSearchRange. Class: SearchBox
-Warning: ignoring method without comment: $init. Class: SearchBox
-Warning: ignoring method without comment: $initElements. Class: SearchBox
 Warning: ignoring method without comment: setSession. Class: SearchBox
 Warning: ignoring method without comment: setEditor. Class: SearchBox
 Warning: ignoring method without comment: getOption. Class: OptionPanel
@@ -350,32 +301,19 @@ Warning: ignoring method without comment: renderOptionControl. Class: OptionPane
 Warning: ignoring method without comment: renderOptionGroup. Class: OptionPanel
 Warning: ignoring method without comment: render. Class: OptionPanel
 Warning: ignoring method without comment: add. Class: OptionPanel
-Warning: ignoring method without comment: $createKeywordList. Class: Mode
 Warning: ignoring method without comment: getKeywords. Class: Mode
 Warning: ignoring method without comment: transformAction. Class: Mode
-Warning: ignoring method without comment: $delegator. Class: Mode
 Warning: ignoring method without comment: allowAutoInsert. Class: Mode
 Warning: ignoring method without comment: getLanguageMode. Class: Mode
 Warning: ignoring method without comment: toggleCommentLines. Class: Mode
 Warning: ignoring method without comment: getMatching. Class: Mode
 Warning: ignoring method without comment: getCompletions. Class: Mode
 Warning: ignoring method without comment: createWorker. Class: Mode
-Warning: ignoring method without comment: $calculateIndent. Class: Mode
-Warning: ignoring method without comment: $toIndent. Class: Mode
 Warning: ignoring method without comment: autoOutdent. Class: Mode
 Warning: ignoring method without comment: checkOutdent. Class: Mode
 Warning: ignoring method without comment: getNextLineIndent. Class: Mode
 Warning: ignoring method without comment: supportsFile. Class: Mode
-Warning: ignoring method without comment: $adjustRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $tabsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $rightmostSelectionInCell. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $setBlockCellWidthsToMax. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $selectionColumnsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $cellWidthsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $findCellWidthsForBlock. Class: ElasticTabstopsLite
 Warning: ignoring method without comment: processRows. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $findClosingBracket. Class: BracketMatch
-Warning: ignoring method without comment: $findOpeningBracket. Class: BracketMatch
 Warning: ignoring method without comment: getBracketRange. Class: BracketMatch
 Warning: ignoring method without comment: findMatchingBracket. Class: BracketMatch
 Warning: ignoring method without comment: uninstallFrom. Class: OccurKeyboardHandler
@@ -396,8 +334,6 @@ Warning: ignoring method without comment: getSplitIndex. Class: BidiHandler
 Warning: ignoring method without comment: getDocumentRow. Class: BidiHandler
 Warning: ignoring method without comment: onChange. Class: BidiHandler
 Warning: ignoring method without comment: cleanup. Class: BackgroundTokenizer
-Warning: ignoring method without comment: $tokenizeRow. Class: BackgroundTokenizer
-Warning: ignoring method without comment: $updateOnChange. Class: BackgroundTokenizer
 Warning: ignoring method without comment: filterCompletions. Class: FilteredList
 Warning: ignoring method without comment: setFilter. Class: FilteredList
 Warning: ignoring method without comment: for. Class: Autocomplete
@@ -419,7 +355,6 @@ Warning: ignoring method without comment: changeListener. Class: Autocomplete
 Warning: ignoring method without comment: detach. Class: Autocomplete
 Warning: ignoring method without comment: openPopup. Class: Autocomplete
 Warning: ignoring method without comment: getPopup. Class: Autocomplete
-Warning: ignoring method without comment: $init. Class: Autocomplete
 Warning: ignoring method without comment: addEventListener. Class: Anchor
 Warning: ignoring method without comment: off. Class: Anchor
 Warning: ignoring method without comment: once. Class: Anchor
@@ -430,12 +365,7 @@ Warning: ignoring method without comment: setDefaultHandler. Class: Anchor
 Warning: ignoring method without comment: _emit. Class: Anchor
 Warning: ignoring method without comment: _signal. Class: Anchor
 Warning: ignoring method without comment: removeAllListeners. Class: Anchor
-Warning: ignoring method without comment: $splitAndapplyLargeDelta. Class: Document
-Warning: ignoring method without comment: $safeApplyDelta. Class: Document
-Warning: ignoring method without comment: $clipPosition. Class: Document
 Warning: ignoring method without comment: removeLines. Class: Document
-Warning: ignoring method without comment: $detectNewLine. Class: Document
-Warning: ignoring method without comment: $split. Class: Document
 Warning: ignoring method without comment: insertNewLine. Class: Document
 Warning: ignoring method without comment: clippedPos. Class: Document
 Warning: ignoring method without comment: clonePos. Class: Document
@@ -464,9 +394,6 @@ Warning: ignoring method without comment: setFoldLine. Class: Fold
 Warning: ignoring method without comment: clone. Class: Fold
 Warning: ignoring method without comment: addSubFold. Class: Fold
 Warning: ignoring method without comment: restoreRange. Class: Fold
-Warning: ignoring method without comment: $arrayTokens. Class: Tokenizer
-Warning: ignoring method without comment: $applyToken. Class: Tokenizer
-Warning: ignoring method without comment: $setMaxTokenCount. Class: Tokenizer
 Warning: ignoring method without comment: removeCapturingGroups. Class: Tokenizer
 Warning: ignoring method without comment: createSplitterRegexp. Class: Tokenizer
 Warning: ignoring method without comment: getTokenizer. Class: SyntaxMode
@@ -491,10 +418,8 @@ Warning: ignoring method without comment: defineOptions. Class: Config
 Warning: ignoring method without comment: resetOptions. Class: Config
 Warning: ignoring method without comment: setDefaultValue. Class: Config
 Warning: ignoring method without comment: setDefaultValues. Class: Config
-Warning: ignoring method without comment: $prettyPrint. Class: UndoManager
 Warning: ignoring method without comment: fromJSON. Class: UndoManager
 Warning: ignoring method without comment: toJSON. Class: UndoManager
-Warning: ignoring method without comment: $syncRev. Class: UndoManager
 Warning: ignoring method without comment: getChangedLines. Class: UndoManager
 Warning: ignoring method without comment: getChangedRanges. Class: UndoManager
 Warning: ignoring method without comment: addSession. Class: UndoManager
@@ -505,25 +430,8 @@ Warning: ignoring method without comment: getSelection. Class: UndoManager
 Warning: ignoring method without comment: getRevision. Class: UndoManager
 Warning: ignoring method without comment: getDeltas. Class: UndoManager
 Warning: ignoring method without comment: getSelectionMarkers. Class: EditSession
-Warning: ignoring method without comment: $computeWrapSplits. Class: EditSession
-Warning: ignoring method without comment: $updateWrapData. Class: EditSession
-Warning: ignoring method without comment: $updateRowLengthCache. Class: EditSession
-Warning: ignoring method without comment: $updateInternalDataOnChange. Class: EditSession
-Warning: ignoring method without comment: $constrainWrapLimit. Class: EditSession
-Warning: ignoring method without comment: $clipRangeToDocument. Class: EditSession
-Warning: ignoring method without comment: $clipPositionToDocument. Class: EditSession
-Warning: ignoring method without comment: $clipColumnToRow. Class: EditSession
-Warning: ignoring method without comment: $clipRowToDocument. Class: EditSession
-Warning: ignoring method without comment: $moveLines. Class: EditSession
-Warning: ignoring method without comment: $getUndoSelection. Class: EditSession
-Warning: ignoring method without comment: $computeWidth. Class: EditSession
-Warning: ignoring method without comment: $startWorker. Class: EditSession
-Warning: ignoring method without comment: $stopWorker. Class: EditSession
-Warning: ignoring method without comment: $onChangeMode. Class: EditSession
-Warning: ignoring method without comment: $syncInformUndoManager. Class: EditSession
 Warning: ignoring method without comment: onChange. Class: EditSession
 Warning: ignoring method without comment: onChangeFold. Class: EditSession
-Warning: ignoring method without comment: $getRowCacheIndex. Class: EditSession
 Warning: ignoring method without comment: setOption. Class: EditSession
 Warning: ignoring method without comment: getOption. Class: EditSession
 Warning: ignoring method without comment: resetCaches. Class: EditSession
@@ -548,7 +456,6 @@ Warning: ignoring method without comment: setOptions. Class: EditSession
 Warning: ignoring method without comment: _emit. Class: EditSession
 Warning: ignoring method without comment: _signal. Class: EditSession
 Warning: ignoring method without comment: removeAllListeners. Class: EditSession
-Warning: ignoring method without comment: $callKeyboardHandlers. Class: KeyBinding
 Warning: ignoring method without comment: setDefaultHandler. Class: KeyBinding
 Warning: ignoring method without comment: setKeyboardHandler. Class: KeyBinding
 Warning: ignoring method without comment: addKeyboardHandler. Class: KeyBinding
@@ -560,19 +467,8 @@ Warning: ignoring method without comment: onTextInput. Class: KeyBinding
 Warning: ignoring method without comment: removeExtraToken. Class: VirtualRenderer
 Warning: ignoring method without comment: addToken. Class: VirtualRenderer
 Warning: ignoring method without comment: screenToTextCoordinates. Class: VirtualRenderer
-Warning: ignoring method without comment: $calcSteps. Class: VirtualRenderer
-Warning: ignoring method without comment: $getLongestLine. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateLines. Class: VirtualRenderer
-Warning: ignoring method without comment: $computeLayerConfig. Class: VirtualRenderer
-Warning: ignoring method without comment: $autosize. Class: VirtualRenderer
-Warning: ignoring method without comment: $renderChanges. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateScrollBarH. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateScrollBarV. Class: VirtualRenderer
 Warning: ignoring method without comment: setMargin. Class: VirtualRenderer
-Warning: ignoring method without comment: $updatePrintMargin. Class: VirtualRenderer
 Warning: ignoring method without comment: onGutterResize. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateCachedSize. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateSizeAsync. Class: VirtualRenderer
 Warning: ignoring method without comment: onChangeTabSize. Class: VirtualRenderer
 Warning: ignoring method without comment: onChangeNewLineMode. Class: VirtualRenderer
 Warning: ignoring method without comment: updateCharacterSize. Class: VirtualRenderer
@@ -611,13 +507,8 @@ Warning: ignoring method without comment: isEqual. Class: Selection
 Warning: ignoring method without comment: toOrientedRange. Class: Selection
 Warning: ignoring method without comment: moveCursorShortWordLeft. Class: Selection
 Warning: ignoring method without comment: moveCursorShortWordRight. Class: Selection
-Warning: ignoring method without comment: $shortWordEndIndex. Class: Selection
 Warning: ignoring method without comment: getLineRange. Class: Selection
-Warning: ignoring method without comment: $moveSelection. Class: Selection
-Warning: ignoring method without comment: $setSelection. Class: Selection
 Warning: ignoring method without comment: joinSelections. Class: Selection
-Warning: ignoring method without comment: $onRemoveRange. Class: Selection
-Warning: ignoring method without comment: $onAddRange. Class: Selection
 Warning: ignoring method without comment: moveCursorWordLeft. Class: Selection
 Warning: ignoring method without comment: moveCursorWordRight. Class: Selection
 Warning: ignoring method without comment: fromOrientedRange. Class: Selection
@@ -635,6 +526,64 @@ Warning: ignoring method without comment: setDefaultHandler. Class: Selection
 Warning: ignoring method without comment: _emit. Class: Selection
 Warning: ignoring method without comment: _signal. Class: Selection
 Warning: ignoring method without comment: removeAllListeners. Class: Selection
+Warning: ignoring method without comment: expandSnippet. Class: Editor
+Warning: ignoring method without comment: insertSnippet. Class: Editor
+Warning: ignoring method without comment: removeSelectionMarkers. Class: Editor
+Warning: ignoring method without comment: showSettingsMenu. Class: Editor
+Warning: ignoring method without comment: showKeyboardShortcuts. Class: Editor
+Warning: ignoring method without comment: revealRange. Class: Editor
+Warning: ignoring method without comment: onCompositionEnd. Class: Editor
+Warning: ignoring method without comment: onCompositionUpdate. Class: Editor
+Warning: ignoring method without comment: onCompositionStart. Class: Editor
+Warning: ignoring method without comment: toggleWord. Class: Editor
+Warning: ignoring method without comment: onCommandKey. Class: Editor
+Warning: ignoring method without comment: applyComposition. Class: Editor
+Warning: ignoring method without comment: onTextInput. Class: Editor
+Warning: ignoring method without comment: autoIndent. Class: Editor
+Warning: ignoring method without comment: onChangeFold. Class: Editor
+Warning: ignoring method without comment: onChangeWrapMode. Class: Editor
+Warning: ignoring method without comment: onChangeWrapLimit. Class: Editor
+Warning: ignoring method without comment: onChangeMode. Class: Editor
+Warning: ignoring method without comment: onChangeAnnotation. Class: Editor
+Warning: ignoring method without comment: onChangeBreakpoint. Class: Editor
+Warning: ignoring method without comment: onChangeBackMarker. Class: Editor
+Warning: ignoring method without comment: onChangeFrontMarker. Class: Editor
+Warning: ignoring method without comment: onSelectionChange. Class: Editor
+Warning: ignoring method without comment: onScrollLeftChange. Class: Editor
+Warning: ignoring method without comment: onScrollTopChange. Class: Editor
+Warning: ignoring method without comment: onTokenizerUpdate. Class: Editor
+Warning: ignoring method without comment: onDocumentChange. Class: Editor
+Warning: ignoring method without comment: onBlur. Class: Editor
+Warning: ignoring method without comment: onFocus. Class: Editor
+Warning: ignoring method without comment: endOperation. Class: Editor
+Warning: ignoring method without comment: startOperation. Class: Editor
+Warning: ignoring method without comment: once. Class: Editor
+Warning: ignoring method without comment: setDefaultHandler. Class: Editor
+Warning: ignoring method without comment: removeDefaultHandler. Class: Editor
+Warning: ignoring method without comment: addEventListener. Class: Editor
+Warning: ignoring method without comment: off. Class: Editor
+Warning: ignoring method without comment: removeListener. Class: Editor
+Warning: ignoring method without comment: removeEventListener. Class: Editor
+Warning: ignoring method without comment: _emit. Class: Editor
+Warning: ignoring method without comment: _signal. Class: Editor
+Warning: ignoring method without comment: removeAllListeners. Class: Editor
+Warning: ignoring method without comment: setOptions. Class: Editor
+Warning: ignoring method without comment: getOptions. Class: Editor
+Warning: ignoring method without comment: setOption. Class: Editor
+Warning: ignoring method without comment: getOption. Class: Editor
+Warning: ignoring method without comment: getSelectedText. Class: Editor
+Warning: ignoring method without comment: execCommand. Class: Editor
+Warning: ignoring method without comment: setHighlightGutterLine. Class: Editor
+Warning: ignoring method without comment: getHighlightGutterLine. Class: Editor
+Warning: ignoring method without comment: setAnimatedScroll. Class: Editor
+Warning: ignoring method without comment: getAnimatedScroll. Class: Editor
+Warning: ignoring method without comment: setDisplayIndentGuides. Class: Editor
+Warning: ignoring method without comment: getDisplayIndentGuides. Class: Editor
+Warning: ignoring method without comment: setFadeFoldWidgets. Class: Editor
+Warning: ignoring method without comment: getFadeFoldWidgets. Class: Editor
+Warning: ignoring method without comment: removeLineToEnd. Class: Editor
+Warning: ignoring method without comment: toggleBlockComment. Class: Editor
+Warning: ignoring method without comment: duplicateSelection. Class: Editor
 No described class in classes.json: Tooltip
 No constructor in classes.json: new Tooltip. Class:Tooltip
 No described method in classes.json: getWidth. Class:Tooltip
@@ -723,7 +672,6 @@ No described class in classes.json: EventListener
 No described class in classes.json: AppConfig
 No described method in classes.json: defineOptions. Class:AppConfig
 No described class in classes.json: Text
-No described method in classes.json: $renderLine. Class:Text
 No described class in classes.json: Marker
 No described method in classes.json: drawBidiSingleLineMarker. Class:Marker
 No described method in classes.json: drawSingleLineMarker. Class:Marker
@@ -746,8 +694,6 @@ No described class in classes.json: SearchBox
 No described class in classes.json: OptionPanel
 No described class in classes.json: Mode
 No described class in classes.json: ElasticTabstopsLite
-No described method in classes.json: $izip. Class:ElasticTabstopsLite
-No described method in classes.json: $izip_longest. Class:ElasticTabstopsLite
 No described class in classes.json: BracketMatch
 No described method in classes.json: getMatchingBracketRanges. Class:BracketMatch
 No described class in classes.json: OccurKeyboardHandler
@@ -776,20 +722,15 @@ No described class in classes.json: Autocomplete
 No described class in classes.json: AcePopup
 No constructor in classes.json: new AcePopup. Class:AcePopup
 No constructor in classes.json: new Anchor. Class:Anchor
-No described method in classes.json: $clipPositionToDocument. Class:Anchor
 No described method in classes.json: onChange. Class:Anchor
 No constructor in classes.json: new Document. Class:Document
 No described method in classes.json: insertLines. Class:Document
 No described method in classes.json: tokenizerUpdateFoldWidgets. Class:Folding
-No described method in classes.json: $toggleFoldWidget. Class:Folding
 No described method in classes.json: onFoldWidgetClick. Class:Folding
-No described method in classes.json: $setFolding. Class:Folding
 No described method in classes.json: foldAllComments. Class:Folding
 No described method in classes.json: foldToLevel. Class:Folding
-No described method in classes.json: $cloneFoldData. Class:Folding
 No described method in classes.json: getRowFoldStart. Class:Folding
 No described method in classes.json: getRowFoldEnd. Class:Folding
-No described method in classes.json: $addFoldLine. Class:Folding
 No constructor in classes.json: new Range. Class:Range
 No described method in classes.json: comparePoints. Class:Range
 No described method in classes.json: fromPoints. Class:Range
@@ -814,15 +755,10 @@ No constructor in classes.json: new Tokenizer. Class:Tokenizer
 No constructor in classes.json: new TokenIterator. Class:TokenIterator
 No constructor in classes.json: new UndoManager. Class:UndoManager
 No constructor in classes.json: new EditSession. Class:EditSession
-No described method in classes.json: $setFontMetrics. Class:EditSession
 No described method in classes.json: getDocumentLastRowColumnPosition. Class:EditSession
 No described method in classes.json: getRowLength. Class:EditSession
-No described method in classes.json: $getStringScreenWidth. Class:EditSession
-No described method in classes.json: $getDisplayTokens. Class:EditSession
 No described method in classes.json: onReloadTokenizer. Class:EditSession
-No described method in classes.json: $detectNewLine. Class:EditSession
 No described method in classes.json: toString. Class:EditSession
-No described method in classes.json: $resetRowCache. Class:EditSession
 No described event in classes.json: changeWrapMode_event. Class:EditSession
 No described event in classes.json: changeMode_event. Class:EditSession
 No described event in classes.json: changeAnnotation_event. Class:EditSession
@@ -836,7 +772,6 @@ No described method in classes.json: trimMacro. Class:CommandManager
 No constructor in classes.json: new VirtualRenderer. Class:VirtualRenderer
 No described method in classes.json: removeGutterDecoration. Class:VirtualRenderer
 No described method in classes.json: addGutterDecoration. Class:VirtualRenderer
-No described method in classes.json: $moveTextAreaToCursor. Class:VirtualRenderer
 No described method in classes.json: onResize. Class:VirtualRenderer
 No constructor in classes.json: new Selection. Class:Selection
 No described method in classes.json: getRangeOfMovements. Class:Selection
@@ -851,80 +786,28 @@ No described event in classes.json: changeCursor_event. Class:Selection
 No described method in classes.json: rectangularRangeBlock. Class:Selection
 No described method in classes.json: toggleBlockSelection. Class:Selection
 No described method in classes.json: splitIntoLines. Class:Selection
-No described method in classes.json: $initRangeList. Class:Selection
 No described method in classes.json: mergeOverlappingRanges. Class:Selection
 No described method in classes.json: substractPoint. Class:Selection
 No described method in classes.json: toSingleRange. Class:Selection
-No described method in classes.json: expandSnippet. Class:Editor
-No described method in classes.json: insertSnippet. Class:Editor
-No described method in classes.json: $reAlignText. Class:Editor
+No constructor in classes.json: new Editor. Class:Editor
 No described method in classes.json: alignCursors. Class:Editor
 No described method in classes.json: selectMore. Class:Editor
 No described method in classes.json: transposeSelections. Class:Editor
 No described method in classes.json: selectMoreLines. Class:Editor
-No described method in classes.json: $checkMultiselectChange. Class:Editor
 No described method in classes.json: exitMultiSelectMode. Class:Editor
 No described method in classes.json: forEachSelection. Class:Editor
-No described method in classes.json: $onMultiSelectExec. Class:Editor
-No described method in classes.json: $onSingleSelect. Class:Editor
-No described method in classes.json: $onMultiSelect. Class:Editor
-No described method in classes.json: $onRemoveRange. Class:Editor
-No described method in classes.json: $onAddRange. Class:Editor
-No described method in classes.json: removeSelectionMarkers. Class:Editor
 No described method in classes.json: removeSelectionMarker. Class:Editor
 No described method in classes.json: addSelectionMarker. Class:Editor
 No described method in classes.json: updateSelectionMarkers. Class:Editor
-No described method in classes.json: showSettingsMenu. Class:Editor
-No described method in classes.json: showKeyboardShortcuts. Class:Editor
 No described method in classes.json: prompt. Class:Editor
-No described method in classes.json: $resetCursorStyle. Class:Editor
-No described method in classes.json: revealRange. Class:Editor
-No described method in classes.json: $tryReplace. Class:Editor
-No described method in classes.json: $moveByPage. Class:Editor
-No described method in classes.json: $getVisibleRowCount. Class:Editor
-No described method in classes.json: onCompositionEnd. Class:Editor
-No described method in classes.json: onCompositionUpdate. Class:Editor
-No described method in classes.json: onCompositionStart. Class:Editor
-No described method in classes.json: $getSelectedRows. Class:Editor
-No described method in classes.json: toggleWord. Class:Editor
 No described method in classes.json: getNumberAt. Class:Editor
 No described method in classes.json: removeToLineEnd. Class:Editor
 No described method in classes.json: removeToLineStart. Class:Editor
-No described method in classes.json: onCommandKey. Class:Editor
-No described method in classes.json: applyComposition. Class:Editor
-No described method in classes.json: onTextInput. Class:Editor
-No described method in classes.json: autoIndent. Class:Editor
-No described method in classes.json: $handlePaste. Class:Editor
 No described method in classes.json: onCut. Class:Editor
 No described method in classes.json: onCopy. Class:Editor
-No described method in classes.json: onChangeFold. Class:Editor
-No described method in classes.json: onChangeWrapMode. Class:Editor
-No described method in classes.json: onChangeWrapLimit. Class:Editor
-No described method in classes.json: onChangeMode. Class:Editor
-No described method in classes.json: onChangeAnnotation. Class:Editor
-No described method in classes.json: onChangeBreakpoint. Class:Editor
-No described method in classes.json: onChangeBackMarker. Class:Editor
-No described method in classes.json: onChangeFrontMarker. Class:Editor
-No described method in classes.json: $getSelectionHighLightRegexp. Class:Editor
-No described method in classes.json: onSelectionChange. Class:Editor
-No described method in classes.json: $updateHighlightActiveLine. Class:Editor
 No described method in classes.json: onCursorChange. Class:Editor
-No described method in classes.json: onScrollLeftChange. Class:Editor
-No described method in classes.json: onScrollTopChange. Class:Editor
-No described method in classes.json: onTokenizerUpdate. Class:Editor
-No described method in classes.json: onDocumentChange. Class:Editor
-No described method in classes.json: $cursorChange. Class:Editor
-No described method in classes.json: onBlur. Class:Editor
-No described method in classes.json: onFocus. Class:Editor
-No described method in classes.json: $highlightTags. Class:Editor
-No described method in classes.json: $highlightBrackets. Class:Editor
-No described method in classes.json: $historyTracker. Class:Editor
-No described method in classes.json: endOperation. Class:Editor
-No described method in classes.json: startOperation. Class:Editor
-No described method in classes.json: $initOperationListeners. Class:Editor
 Warning: ignoring method without comment: destroy. Class: Tooltip
 Warning: ignoring method without comment: hide. Class: Tooltip
-Warning: ignoring method without comment: $init. Class: Tooltip
 Warning: ignoring method without comment: adjustWrapLimit. Class: MockRenderer
 Warning: ignoring method without comment: screenToTextCoordinates. Class: MockRenderer
 Warning: ignoring method without comment: textToScreenCoordinates. Class: MockRenderer
@@ -970,7 +853,6 @@ Warning: ignoring method without comment: preventDefault. Class: Event
 Warning: ignoring method without comment: initMouseEvent. Class: Event
 Warning: ignoring method without comment: toArray. Class: Generator
 Warning: ignoring method without comment: end. Class: Generator
-Warning: ignoring method without comment: $arrayOp. Class: Generator
 Warning: ignoring method without comment: reverse. Class: Generator
 Warning: ignoring method without comment: join. Class: Generator
 Warning: ignoring method without comment: sort. Class: Generator
@@ -1008,7 +890,6 @@ Warning: ignoring method without comment: findMatchingSnippet. Class: SnippetMan
 Warning: ignoring method without comment: expandSnippetForSelection. Class: SnippetManager
 Warning: ignoring method without comment: expandWithTab. Class: SnippetManager
 Warning: ignoring method without comment: getActiveScopes. Class: SnippetManager
-Warning: ignoring method without comment: $getScope. Class: SnippetManager
 Warning: ignoring method without comment: insertSnippet. Class: SnippetManager
 Warning: ignoring method without comment: insertSnippetForSelection. Class: SnippetManager
 Warning: ignoring method without comment: resolveVariables. Class: SnippetManager
@@ -1019,15 +900,11 @@ Warning: ignoring method without comment: createTokenizer. Class: SnippetManager
 Warning: ignoring method without comment: getTokenizer. Class: SnippetManager
 Warning: ignoring method without comment: update. Class: SearchHighlight
 Warning: ignoring method without comment: setRegexp. Class: SearchHighlight
-Warning: ignoring method without comment: $matchIterator. Class: Search
-Warning: ignoring method without comment: $assembleMultilineRegExp. Class: Search
-Warning: ignoring method without comment: $assembleRegExp. Class: Search
 Warning: ignoring method without comment: onScroll. Class: HScrollBar
 Warning: ignoring method without comment: onScroll. Class: VScrollBar
 Warning: ignoring method without comment: setVisible. Class: ScrollBar
 Warning: ignoring method without comment: clear. Class: RenderLoop
 Warning: ignoring method without comment: schedule. Class: RenderLoop
-Warning: ignoring method without comment: $onChange. Class: RangeList
 Warning: ignoring method without comment: detach. Class: RangeList
 Warning: ignoring method without comment: attach. Class: RangeList
 Warning: ignoring method without comment: removeAll. Class: RangeList
@@ -1079,10 +956,8 @@ Warning: ignoring method without comment: select. Class: DefaultHandlers
 Warning: ignoring method without comment: startSelect. Class: DefaultHandlers
 Warning: ignoring method without comment: onMouseDown. Class: DefaultHandlers
 Warning: ignoring method without comment: setPosition. Class: GutterTooltip
-Warning: ignoring method without comment: $getIndent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingParensOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingParensOutdent
-Warning: ignoring method without comment: $getIndent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: autoOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: checkOutdent. Class: MatchingBraceOutdent
 Warning: ignoring method without comment: _pop. Class: FoldMode
@@ -1091,8 +966,6 @@ Warning: ignoring method without comment: _findEndTagInLine. Class: FoldMode
 Warning: ignoring method without comment: getCommentFoldWidget. Class: FoldMode
 Warning: ignoring method without comment: vbsBlock. Class: FoldMode
 Warning: ignoring method without comment: rubyBlock. Class: FoldMode
-Warning: ignoring method without comment: $tryMode. Class: FoldMode
-Warning: ignoring method without comment: $getMode. Class: FoldMode
 Warning: ignoring method without comment: luaBlock. Class: FoldMode
 Warning: ignoring method without comment: latexSection. Class: FoldMode
 Warning: ignoring method without comment: latexBlock. Class: FoldMode
@@ -1115,54 +988,36 @@ Warning: ignoring method without comment: onWidgetChanged. Class: LineWidgets
 Warning: ignoring method without comment: getWidgetsAtRow. Class: LineWidgets
 Warning: ignoring method without comment: removeLineWidget. Class: LineWidgets
 Warning: ignoring method without comment: addLineWidget. Class: LineWidgets
-Warning: ignoring method without comment: $registerLineWidget. Class: LineWidgets
-Warning: ignoring method without comment: $updateRows. Class: LineWidgets
 Warning: ignoring method without comment: updateOnChange. Class: LineWidgets
 Warning: ignoring method without comment: updateOnFold. Class: LineWidgets
 Warning: ignoring method without comment: detach. Class: LineWidgets
 Warning: ignoring method without comment: attach. Class: LineWidgets
-Warning: ignoring method without comment: $onChangeEditor. Class: LineWidgets
-Warning: ignoring method without comment: $getWidgetScreenLength. Class: LineWidgets
 Warning: ignoring method without comment: getRowLength. Class: LineWidgets
 Warning: ignoring method without comment: destroy. Class: EventListener
 Warning: ignoring method without comment: setDefaultValues. Class: AppConfig
 Warning: ignoring method without comment: setDefaultValue. Class: AppConfig
 Warning: ignoring method without comment: resetOptions. Class: AppConfig
 Warning: ignoring method without comment: destroy. Class: Text
-Warning: ignoring method without comment: $useLineGroups. Class: Text
-Warning: ignoring method without comment: $getFoldLineTokens. Class: Text
-Warning: ignoring method without comment: $renderOverflowMessage. Class: Text
-Warning: ignoring method without comment: $renderSimpleLine. Class: Text
-Warning: ignoring method without comment: $renderWrappedLine. Class: Text
-Warning: ignoring method without comment: $createLineElement. Class: Text
 Warning: ignoring method without comment: renderIndentGuide. Class: Text
-Warning: ignoring method without comment: $renderToken. Class: Text
 Warning: ignoring method without comment: update. Class: Text
-Warning: ignoring method without comment: $renderLinesFragment. Class: Text
 Warning: ignoring method without comment: scrollLines. Class: Text
 Warning: ignoring method without comment: updateLines. Class: Text
 Warning: ignoring method without comment: onChangeTabSize. Class: Text
-Warning: ignoring method without comment: $computeTabString. Class: Text
 Warning: ignoring method without comment: setDisplayIndentGuides. Class: Text
 Warning: ignoring method without comment: setShowInvisibles. Class: Text
 Warning: ignoring method without comment: setSession. Class: Text
-Warning: ignoring method without comment: $pollSizeChanges. Class: Text
 Warning: ignoring method without comment: checkForSizeChanges. Class: Text
-Warning: ignoring method without comment: $setFontMetrics. Class: Text
 Warning: ignoring method without comment: getCharacterWidth. Class: Text
 Warning: ignoring method without comment: getLineHeight. Class: Text
 Warning: ignoring method without comment: setPadding. Class: Text
-Warning: ignoring method without comment: $updateEolChar. Class: Text
 Warning: ignoring method without comment: drawScreenLineMarker. Class: Marker
 Warning: ignoring method without comment: drawFullLineMarker. Class: Marker
-Warning: ignoring method without comment: $getTop. Class: Marker
 Warning: ignoring method without comment: update. Class: Marker
 Warning: ignoring method without comment: elt. Class: Marker
 Warning: ignoring method without comment: setMarkers. Class: Marker
 Warning: ignoring method without comment: setSession. Class: Marker
 Warning: ignoring method without comment: setPadding. Class: Marker
 Warning: ignoring method without comment: createCell. Class: Lines
-Warning: ignoring method without comment: $cacheCell. Class: Lines
 Warning: ignoring method without comment: last. Class: Lines
 Warning: ignoring method without comment: unshift. Class: Lines
 Warning: ignoring method without comment: push. Class: Lines
@@ -1175,37 +1030,23 @@ Warning: ignoring method without comment: computeLineTop. Class: Lines
 Warning: ignoring method without comment: pageChanged. Class: Lines
 Warning: ignoring method without comment: moveContainer. Class: Lines
 Warning: ignoring method without comment: getRegion. Class: Gutter
-Warning: ignoring method without comment: $computePadding. Class: Gutter
 Warning: ignoring method without comment: getShowFoldWidgets. Class: Gutter
 Warning: ignoring method without comment: setShowFoldWidgets. Class: Gutter
 Warning: ignoring method without comment: getShowLineNumbers. Class: Gutter
 Warning: ignoring method without comment: setShowLineNumbers. Class: Gutter
 Warning: ignoring method without comment: setHighlightGutterLine. Class: Gutter
-Warning: ignoring method without comment: $renderCell. Class: Gutter
-Warning: ignoring method without comment: $renderLines. Class: Gutter
 Warning: ignoring method without comment: scrollLines. Class: Gutter
 Warning: ignoring method without comment: updateLineHighlight. Class: Gutter
-Warning: ignoring method without comment: $updateCursorRow. Class: Gutter
-Warning: ignoring method without comment: $updateGutterWidth. Class: Gutter
 Warning: ignoring method without comment: update. Class: Gutter
-Warning: ignoring method without comment: $updateAnnotations. Class: Gutter
 Warning: ignoring method without comment: setAnnotations. Class: Gutter
 Warning: ignoring method without comment: removeGutterDecoration. Class: Gutter
 Warning: ignoring method without comment: addGutterDecoration. Class: Gutter
 Warning: ignoring method without comment: setSession. Class: Gutter
-Warning: ignoring method without comment: $initTransformMeasureNodes. Class: FontMetrics
-Warning: ignoring method without comment: $getZoom. Class: FontMetrics
 Warning: ignoring method without comment: destroy. Class: FontMetrics
 Warning: ignoring method without comment: getCharacterWidth. Class: FontMetrics
-Warning: ignoring method without comment: $measureCharWidth. Class: FontMetrics
-Warning: ignoring method without comment: $measureSizes. Class: FontMetrics
 Warning: ignoring method without comment: setPolling. Class: FontMetrics
-Warning: ignoring method without comment: $pollSizeChanges. Class: FontMetrics
-Warning: ignoring method without comment: $addObserver. Class: FontMetrics
 Warning: ignoring method without comment: checkForSizeChanges. Class: FontMetrics
-Warning: ignoring method without comment: $setMeasureNodeStyles. Class: FontMetrics
 Warning: ignoring method without comment: destroy. Class: Cursor
-Warning: ignoring method without comment: $setOverwrite. Class: Cursor
 Warning: ignoring method without comment: update. Class: Cursor
 Warning: ignoring method without comment: isCursorInView. Class: Cursor
 Warning: ignoring method without comment: getPixelPosition. Class: Cursor
@@ -1219,9 +1060,6 @@ Warning: ignoring method without comment: setBlinkInterval. Class: Cursor
 Warning: ignoring method without comment: setBlinking. Class: Cursor
 Warning: ignoring method without comment: setSession. Class: Cursor
 Warning: ignoring method without comment: setPadding. Class: Cursor
-Warning: ignoring method without comment: $stopCssAnimation. Class: Cursor
-Warning: ignoring method without comment: $startCssAnimation. Class: Cursor
-Warning: ignoring method without comment: $updateOpacity. Class: Cursor
 Warning: ignoring method without comment: getStatusText. Class: HashHandler
 Warning: ignoring method without comment: handleKeyboard. Class: HashHandler
 Warning: ignoring method without comment: findKeyCommand. Class: HashHandler
@@ -1261,10 +1099,7 @@ Warning: ignoring method without comment: findNext. Class: SearchBox
 Warning: ignoring method without comment: updateCounter. Class: SearchBox
 Warning: ignoring method without comment: find. Class: SearchBox
 Warning: ignoring method without comment: highlight. Class: SearchBox
-Warning: ignoring method without comment: $syncOptions. Class: SearchBox
 Warning: ignoring method without comment: setSearchRange. Class: SearchBox
-Warning: ignoring method without comment: $init. Class: SearchBox
-Warning: ignoring method without comment: $initElements. Class: SearchBox
 Warning: ignoring method without comment: setSession. Class: SearchBox
 Warning: ignoring method without comment: setEditor. Class: SearchBox
 Warning: ignoring method without comment: getOption. Class: OptionPanel
@@ -1274,32 +1109,19 @@ Warning: ignoring method without comment: renderOptionControl. Class: OptionPane
 Warning: ignoring method without comment: renderOptionGroup. Class: OptionPanel
 Warning: ignoring method without comment: render. Class: OptionPanel
 Warning: ignoring method without comment: add. Class: OptionPanel
-Warning: ignoring method without comment: $createKeywordList. Class: Mode
 Warning: ignoring method without comment: getKeywords. Class: Mode
 Warning: ignoring method without comment: transformAction. Class: Mode
-Warning: ignoring method without comment: $delegator. Class: Mode
 Warning: ignoring method without comment: allowAutoInsert. Class: Mode
 Warning: ignoring method without comment: getLanguageMode. Class: Mode
 Warning: ignoring method without comment: toggleCommentLines. Class: Mode
 Warning: ignoring method without comment: getMatching. Class: Mode
 Warning: ignoring method without comment: getCompletions. Class: Mode
 Warning: ignoring method without comment: createWorker. Class: Mode
-Warning: ignoring method without comment: $calculateIndent. Class: Mode
-Warning: ignoring method without comment: $toIndent. Class: Mode
 Warning: ignoring method without comment: autoOutdent. Class: Mode
 Warning: ignoring method without comment: checkOutdent. Class: Mode
 Warning: ignoring method without comment: getNextLineIndent. Class: Mode
 Warning: ignoring method without comment: supportsFile. Class: Mode
-Warning: ignoring method without comment: $adjustRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $tabsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $rightmostSelectionInCell. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $setBlockCellWidthsToMax. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $selectionColumnsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $cellWidthsForRow. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $findCellWidthsForBlock. Class: ElasticTabstopsLite
 Warning: ignoring method without comment: processRows. Class: ElasticTabstopsLite
-Warning: ignoring method without comment: $findClosingBracket. Class: BracketMatch
-Warning: ignoring method without comment: $findOpeningBracket. Class: BracketMatch
 Warning: ignoring method without comment: getBracketRange. Class: BracketMatch
 Warning: ignoring method without comment: findMatchingBracket. Class: BracketMatch
 Warning: ignoring method without comment: uninstallFrom. Class: OccurKeyboardHandler
@@ -1320,8 +1142,6 @@ Warning: ignoring method without comment: getSplitIndex. Class: BidiHandler
 Warning: ignoring method without comment: getDocumentRow. Class: BidiHandler
 Warning: ignoring method without comment: onChange. Class: BidiHandler
 Warning: ignoring method without comment: cleanup. Class: BackgroundTokenizer
-Warning: ignoring method without comment: $tokenizeRow. Class: BackgroundTokenizer
-Warning: ignoring method without comment: $updateOnChange. Class: BackgroundTokenizer
 Warning: ignoring method without comment: filterCompletions. Class: FilteredList
 Warning: ignoring method without comment: setFilter. Class: FilteredList
 Warning: ignoring method without comment: for. Class: Autocomplete
@@ -1343,7 +1163,6 @@ Warning: ignoring method without comment: changeListener. Class: Autocomplete
 Warning: ignoring method without comment: detach. Class: Autocomplete
 Warning: ignoring method without comment: openPopup. Class: Autocomplete
 Warning: ignoring method without comment: getPopup. Class: Autocomplete
-Warning: ignoring method without comment: $init. Class: Autocomplete
 Warning: ignoring method without comment: addEventListener. Class: Anchor
 Warning: ignoring method without comment: off. Class: Anchor
 Warning: ignoring method without comment: once. Class: Anchor
@@ -1354,12 +1173,7 @@ Warning: ignoring method without comment: setDefaultHandler. Class: Anchor
 Warning: ignoring method without comment: _emit. Class: Anchor
 Warning: ignoring method without comment: _signal. Class: Anchor
 Warning: ignoring method without comment: removeAllListeners. Class: Anchor
-Warning: ignoring method without comment: $splitAndapplyLargeDelta. Class: Document
-Warning: ignoring method without comment: $safeApplyDelta. Class: Document
-Warning: ignoring method without comment: $clipPosition. Class: Document
 Warning: ignoring method without comment: removeLines. Class: Document
-Warning: ignoring method without comment: $detectNewLine. Class: Document
-Warning: ignoring method without comment: $split. Class: Document
 Warning: ignoring method without comment: insertNewLine. Class: Document
 Warning: ignoring method without comment: clippedPos. Class: Document
 Warning: ignoring method without comment: clonePos. Class: Document
@@ -1388,9 +1202,6 @@ Warning: ignoring method without comment: setFoldLine. Class: Fold
 Warning: ignoring method without comment: clone. Class: Fold
 Warning: ignoring method without comment: addSubFold. Class: Fold
 Warning: ignoring method without comment: restoreRange. Class: Fold
-Warning: ignoring method without comment: $arrayTokens. Class: Tokenizer
-Warning: ignoring method without comment: $applyToken. Class: Tokenizer
-Warning: ignoring method without comment: $setMaxTokenCount. Class: Tokenizer
 Warning: ignoring method without comment: removeCapturingGroups. Class: Tokenizer
 Warning: ignoring method without comment: createSplitterRegexp. Class: Tokenizer
 Warning: ignoring method without comment: getTokenizer. Class: SyntaxMode
@@ -1415,10 +1226,8 @@ Warning: ignoring method without comment: defineOptions. Class: Config
 Warning: ignoring method without comment: resetOptions. Class: Config
 Warning: ignoring method without comment: setDefaultValue. Class: Config
 Warning: ignoring method without comment: setDefaultValues. Class: Config
-Warning: ignoring method without comment: $prettyPrint. Class: UndoManager
 Warning: ignoring method without comment: fromJSON. Class: UndoManager
 Warning: ignoring method without comment: toJSON. Class: UndoManager
-Warning: ignoring method without comment: $syncRev. Class: UndoManager
 Warning: ignoring method without comment: getChangedLines. Class: UndoManager
 Warning: ignoring method without comment: getChangedRanges. Class: UndoManager
 Warning: ignoring method without comment: addSession. Class: UndoManager
@@ -1429,25 +1238,8 @@ Warning: ignoring method without comment: getSelection. Class: UndoManager
 Warning: ignoring method without comment: getRevision. Class: UndoManager
 Warning: ignoring method without comment: getDeltas. Class: UndoManager
 Warning: ignoring method without comment: getSelectionMarkers. Class: EditSession
-Warning: ignoring method without comment: $computeWrapSplits. Class: EditSession
-Warning: ignoring method without comment: $updateWrapData. Class: EditSession
-Warning: ignoring method without comment: $updateRowLengthCache. Class: EditSession
-Warning: ignoring method without comment: $updateInternalDataOnChange. Class: EditSession
-Warning: ignoring method without comment: $constrainWrapLimit. Class: EditSession
-Warning: ignoring method without comment: $clipRangeToDocument. Class: EditSession
-Warning: ignoring method without comment: $clipPositionToDocument. Class: EditSession
-Warning: ignoring method without comment: $clipColumnToRow. Class: EditSession
-Warning: ignoring method without comment: $clipRowToDocument. Class: EditSession
-Warning: ignoring method without comment: $moveLines. Class: EditSession
-Warning: ignoring method without comment: $getUndoSelection. Class: EditSession
-Warning: ignoring method without comment: $computeWidth. Class: EditSession
-Warning: ignoring method without comment: $startWorker. Class: EditSession
-Warning: ignoring method without comment: $stopWorker. Class: EditSession
-Warning: ignoring method without comment: $onChangeMode. Class: EditSession
-Warning: ignoring method without comment: $syncInformUndoManager. Class: EditSession
 Warning: ignoring method without comment: onChange. Class: EditSession
 Warning: ignoring method without comment: onChangeFold. Class: EditSession
-Warning: ignoring method without comment: $getRowCacheIndex. Class: EditSession
 Warning: ignoring method without comment: setOption. Class: EditSession
 Warning: ignoring method without comment: getOption. Class: EditSession
 Warning: ignoring method without comment: resetCaches. Class: EditSession
@@ -1472,7 +1264,6 @@ Warning: ignoring method without comment: setOptions. Class: EditSession
 Warning: ignoring method without comment: _emit. Class: EditSession
 Warning: ignoring method without comment: _signal. Class: EditSession
 Warning: ignoring method without comment: removeAllListeners. Class: EditSession
-Warning: ignoring method without comment: $callKeyboardHandlers. Class: KeyBinding
 Warning: ignoring method without comment: setDefaultHandler. Class: KeyBinding
 Warning: ignoring method without comment: setKeyboardHandler. Class: KeyBinding
 Warning: ignoring method without comment: addKeyboardHandler. Class: KeyBinding
@@ -1484,19 +1275,8 @@ Warning: ignoring method without comment: onTextInput. Class: KeyBinding
 Warning: ignoring method without comment: removeExtraToken. Class: VirtualRenderer
 Warning: ignoring method without comment: addToken. Class: VirtualRenderer
 Warning: ignoring method without comment: screenToTextCoordinates. Class: VirtualRenderer
-Warning: ignoring method without comment: $calcSteps. Class: VirtualRenderer
-Warning: ignoring method without comment: $getLongestLine. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateLines. Class: VirtualRenderer
-Warning: ignoring method without comment: $computeLayerConfig. Class: VirtualRenderer
-Warning: ignoring method without comment: $autosize. Class: VirtualRenderer
-Warning: ignoring method without comment: $renderChanges. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateScrollBarH. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateScrollBarV. Class: VirtualRenderer
 Warning: ignoring method without comment: setMargin. Class: VirtualRenderer
-Warning: ignoring method without comment: $updatePrintMargin. Class: VirtualRenderer
 Warning: ignoring method without comment: onGutterResize. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateCachedSize. Class: VirtualRenderer
-Warning: ignoring method without comment: $updateSizeAsync. Class: VirtualRenderer
 Warning: ignoring method without comment: onChangeTabSize. Class: VirtualRenderer
 Warning: ignoring method without comment: onChangeNewLineMode. Class: VirtualRenderer
 Warning: ignoring method without comment: updateCharacterSize. Class: VirtualRenderer
@@ -1535,13 +1315,8 @@ Warning: ignoring method without comment: isEqual. Class: Selection
 Warning: ignoring method without comment: toOrientedRange. Class: Selection
 Warning: ignoring method without comment: moveCursorShortWordLeft. Class: Selection
 Warning: ignoring method without comment: moveCursorShortWordRight. Class: Selection
-Warning: ignoring method without comment: $shortWordEndIndex. Class: Selection
 Warning: ignoring method without comment: getLineRange. Class: Selection
-Warning: ignoring method without comment: $moveSelection. Class: Selection
-Warning: ignoring method without comment: $setSelection. Class: Selection
 Warning: ignoring method without comment: joinSelections. Class: Selection
-Warning: ignoring method without comment: $onRemoveRange. Class: Selection
-Warning: ignoring method without comment: $onAddRange. Class: Selection
 Warning: ignoring method without comment: moveCursorWordLeft. Class: Selection
 Warning: ignoring method without comment: moveCursorWordRight. Class: Selection
 Warning: ignoring method without comment: fromOrientedRange. Class: Selection
@@ -1559,6 +1334,64 @@ Warning: ignoring method without comment: setDefaultHandler. Class: Selection
 Warning: ignoring method without comment: _emit. Class: Selection
 Warning: ignoring method without comment: _signal. Class: Selection
 Warning: ignoring method without comment: removeAllListeners. Class: Selection
+Warning: ignoring method without comment: expandSnippet. Class: Editor
+Warning: ignoring method without comment: insertSnippet. Class: Editor
+Warning: ignoring method without comment: removeSelectionMarkers. Class: Editor
+Warning: ignoring method without comment: showSettingsMenu. Class: Editor
+Warning: ignoring method without comment: showKeyboardShortcuts. Class: Editor
+Warning: ignoring method without comment: revealRange. Class: Editor
+Warning: ignoring method without comment: onCompositionEnd. Class: Editor
+Warning: ignoring method without comment: onCompositionUpdate. Class: Editor
+Warning: ignoring method without comment: onCompositionStart. Class: Editor
+Warning: ignoring method without comment: toggleWord. Class: Editor
+Warning: ignoring method without comment: onCommandKey. Class: Editor
+Warning: ignoring method without comment: applyComposition. Class: Editor
+Warning: ignoring method without comment: onTextInput. Class: Editor
+Warning: ignoring method without comment: autoIndent. Class: Editor
+Warning: ignoring method without comment: onChangeFold. Class: Editor
+Warning: ignoring method without comment: onChangeWrapMode. Class: Editor
+Warning: ignoring method without comment: onChangeWrapLimit. Class: Editor
+Warning: ignoring method without comment: onChangeMode. Class: Editor
+Warning: ignoring method without comment: onChangeAnnotation. Class: Editor
+Warning: ignoring method without comment: onChangeBreakpoint. Class: Editor
+Warning: ignoring method without comment: onChangeBackMarker. Class: Editor
+Warning: ignoring method without comment: onChangeFrontMarker. Class: Editor
+Warning: ignoring method without comment: onSelectionChange. Class: Editor
+Warning: ignoring method without comment: onScrollLeftChange. Class: Editor
+Warning: ignoring method without comment: onScrollTopChange. Class: Editor
+Warning: ignoring method without comment: onTokenizerUpdate. Class: Editor
+Warning: ignoring method without comment: onDocumentChange. Class: Editor
+Warning: ignoring method without comment: onBlur. Class: Editor
+Warning: ignoring method without comment: onFocus. Class: Editor
+Warning: ignoring method without comment: endOperation. Class: Editor
+Warning: ignoring method without comment: startOperation. Class: Editor
+Warning: ignoring method without comment: once. Class: Editor
+Warning: ignoring method without comment: setDefaultHandler. Class: Editor
+Warning: ignoring method without comment: removeDefaultHandler. Class: Editor
+Warning: ignoring method without comment: addEventListener. Class: Editor
+Warning: ignoring method without comment: off. Class: Editor
+Warning: ignoring method without comment: removeListener. Class: Editor
+Warning: ignoring method without comment: removeEventListener. Class: Editor
+Warning: ignoring method without comment: _emit. Class: Editor
+Warning: ignoring method without comment: _signal. Class: Editor
+Warning: ignoring method without comment: removeAllListeners. Class: Editor
+Warning: ignoring method without comment: setOptions. Class: Editor
+Warning: ignoring method without comment: getOptions. Class: Editor
+Warning: ignoring method without comment: setOption. Class: Editor
+Warning: ignoring method without comment: getOption. Class: Editor
+Warning: ignoring method without comment: getSelectedText. Class: Editor
+Warning: ignoring method without comment: execCommand. Class: Editor
+Warning: ignoring method without comment: setHighlightGutterLine. Class: Editor
+Warning: ignoring method without comment: getHighlightGutterLine. Class: Editor
+Warning: ignoring method without comment: setAnimatedScroll. Class: Editor
+Warning: ignoring method without comment: getAnimatedScroll. Class: Editor
+Warning: ignoring method without comment: setDisplayIndentGuides. Class: Editor
+Warning: ignoring method without comment: getDisplayIndentGuides. Class: Editor
+Warning: ignoring method without comment: setFadeFoldWidgets. Class: Editor
+Warning: ignoring method without comment: getFadeFoldWidgets. Class: Editor
+Warning: ignoring method without comment: removeLineToEnd. Class: Editor
+Warning: ignoring method without comment: toggleBlockComment. Class: Editor
+Warning: ignoring method without comment: duplicateSelection. Class: Editor
 No described class in classes.json: Tooltip
 No constructor in classes.json: new Tooltip. Class:Tooltip
 No described method in classes.json: getWidth. Class:Tooltip
@@ -1647,7 +1480,6 @@ No described class in classes.json: EventListener
 No described class in classes.json: AppConfig
 No described method in classes.json: defineOptions. Class:AppConfig
 No described class in classes.json: Text
-No described method in classes.json: $renderLine. Class:Text
 No described class in classes.json: Marker
 No described method in classes.json: drawBidiSingleLineMarker. Class:Marker
 No described method in classes.json: drawSingleLineMarker. Class:Marker
@@ -1670,8 +1502,6 @@ No described class in classes.json: SearchBox
 No described class in classes.json: OptionPanel
 No described class in classes.json: Mode
 No described class in classes.json: ElasticTabstopsLite
-No described method in classes.json: $izip. Class:ElasticTabstopsLite
-No described method in classes.json: $izip_longest. Class:ElasticTabstopsLite
 No described class in classes.json: BracketMatch
 No described method in classes.json: getMatchingBracketRanges. Class:BracketMatch
 No described class in classes.json: OccurKeyboardHandler
@@ -1700,20 +1530,15 @@ No described class in classes.json: Autocomplete
 No described class in classes.json: AcePopup
 No constructor in classes.json: new AcePopup. Class:AcePopup
 No constructor in classes.json: new Anchor. Class:Anchor
-No described method in classes.json: $clipPositionToDocument. Class:Anchor
 No described method in classes.json: onChange. Class:Anchor
 No constructor in classes.json: new Document. Class:Document
 No described method in classes.json: insertLines. Class:Document
 No described method in classes.json: tokenizerUpdateFoldWidgets. Class:Folding
-No described method in classes.json: $toggleFoldWidget. Class:Folding
 No described method in classes.json: onFoldWidgetClick. Class:Folding
-No described method in classes.json: $setFolding. Class:Folding
 No described method in classes.json: foldAllComments. Class:Folding
 No described method in classes.json: foldToLevel. Class:Folding
-No described method in classes.json: $cloneFoldData. Class:Folding
 No described method in classes.json: getRowFoldStart. Class:Folding
 No described method in classes.json: getRowFoldEnd. Class:Folding
-No described method in classes.json: $addFoldLine. Class:Folding
 No constructor in classes.json: new Range. Class:Range
 No described method in classes.json: comparePoints. Class:Range
 No described method in classes.json: fromPoints. Class:Range
@@ -1738,15 +1563,10 @@ No constructor in classes.json: new Tokenizer. Class:Tokenizer
 No constructor in classes.json: new TokenIterator. Class:TokenIterator
 No constructor in classes.json: new UndoManager. Class:UndoManager
 No constructor in classes.json: new EditSession. Class:EditSession
-No described method in classes.json: $setFontMetrics. Class:EditSession
 No described method in classes.json: getDocumentLastRowColumnPosition. Class:EditSession
 No described method in classes.json: getRowLength. Class:EditSession
-No described method in classes.json: $getStringScreenWidth. Class:EditSession
-No described method in classes.json: $getDisplayTokens. Class:EditSession
 No described method in classes.json: onReloadTokenizer. Class:EditSession
-No described method in classes.json: $detectNewLine. Class:EditSession
 No described method in classes.json: toString. Class:EditSession
-No described method in classes.json: $resetRowCache. Class:EditSession
 No described event in classes.json: changeWrapMode_event. Class:EditSession
 No described event in classes.json: changeMode_event. Class:EditSession
 No described event in classes.json: changeAnnotation_event. Class:EditSession
@@ -1760,7 +1580,6 @@ No described method in classes.json: trimMacro. Class:CommandManager
 No constructor in classes.json: new VirtualRenderer. Class:VirtualRenderer
 No described method in classes.json: removeGutterDecoration. Class:VirtualRenderer
 No described method in classes.json: addGutterDecoration. Class:VirtualRenderer
-No described method in classes.json: $moveTextAreaToCursor. Class:VirtualRenderer
 No described method in classes.json: onResize. Class:VirtualRenderer
 No constructor in classes.json: new Selection. Class:Selection
 No described method in classes.json: getRangeOfMovements. Class:Selection
@@ -1775,74 +1594,23 @@ No described event in classes.json: changeCursor_event. Class:Selection
 No described method in classes.json: rectangularRangeBlock. Class:Selection
 No described method in classes.json: toggleBlockSelection. Class:Selection
 No described method in classes.json: splitIntoLines. Class:Selection
-No described method in classes.json: $initRangeList. Class:Selection
 No described method in classes.json: mergeOverlappingRanges. Class:Selection
 No described method in classes.json: substractPoint. Class:Selection
 No described method in classes.json: toSingleRange. Class:Selection
-No described method in classes.json: expandSnippet. Class:Editor
-No described method in classes.json: insertSnippet. Class:Editor
-No described method in classes.json: $reAlignText. Class:Editor
+No constructor in classes.json: new Editor. Class:Editor
 No described method in classes.json: alignCursors. Class:Editor
 No described method in classes.json: selectMore. Class:Editor
 No described method in classes.json: transposeSelections. Class:Editor
 No described method in classes.json: selectMoreLines. Class:Editor
-No described method in classes.json: $checkMultiselectChange. Class:Editor
 No described method in classes.json: exitMultiSelectMode. Class:Editor
 No described method in classes.json: forEachSelection. Class:Editor
-No described method in classes.json: $onMultiSelectExec. Class:Editor
-No described method in classes.json: $onSingleSelect. Class:Editor
-No described method in classes.json: $onMultiSelect. Class:Editor
-No described method in classes.json: $onRemoveRange. Class:Editor
-No described method in classes.json: $onAddRange. Class:Editor
-No described method in classes.json: removeSelectionMarkers. Class:Editor
 No described method in classes.json: removeSelectionMarker. Class:Editor
 No described method in classes.json: addSelectionMarker. Class:Editor
 No described method in classes.json: updateSelectionMarkers. Class:Editor
-No described method in classes.json: showSettingsMenu. Class:Editor
-No described method in classes.json: showKeyboardShortcuts. Class:Editor
 No described method in classes.json: prompt. Class:Editor
-No described method in classes.json: $resetCursorStyle. Class:Editor
-No described method in classes.json: revealRange. Class:Editor
-No described method in classes.json: $tryReplace. Class:Editor
-No described method in classes.json: $moveByPage. Class:Editor
-No described method in classes.json: $getVisibleRowCount. Class:Editor
-No described method in classes.json: onCompositionEnd. Class:Editor
-No described method in classes.json: onCompositionUpdate. Class:Editor
-No described method in classes.json: onCompositionStart. Class:Editor
-No described method in classes.json: $getSelectedRows. Class:Editor
-No described method in classes.json: toggleWord. Class:Editor
 No described method in classes.json: getNumberAt. Class:Editor
 No described method in classes.json: removeToLineEnd. Class:Editor
 No described method in classes.json: removeToLineStart. Class:Editor
-No described method in classes.json: onCommandKey. Class:Editor
-No described method in classes.json: applyComposition. Class:Editor
-No described method in classes.json: onTextInput. Class:Editor
-No described method in classes.json: autoIndent. Class:Editor
-No described method in classes.json: $handlePaste. Class:Editor
 No described method in classes.json: onCut. Class:Editor
 No described method in classes.json: onCopy. Class:Editor
-No described method in classes.json: onChangeFold. Class:Editor
-No described method in classes.json: onChangeWrapMode. Class:Editor
-No described method in classes.json: onChangeWrapLimit. Class:Editor
-No described method in classes.json: onChangeMode. Class:Editor
-No described method in classes.json: onChangeAnnotation. Class:Editor
-No described method in classes.json: onChangeBreakpoint. Class:Editor
-No described method in classes.json: onChangeBackMarker. Class:Editor
-No described method in classes.json: onChangeFrontMarker. Class:Editor
-No described method in classes.json: $getSelectionHighLightRegexp. Class:Editor
-No described method in classes.json: onSelectionChange. Class:Editor
-No described method in classes.json: $updateHighlightActiveLine. Class:Editor
 No described method in classes.json: onCursorChange. Class:Editor
-No described method in classes.json: onScrollLeftChange. Class:Editor
-No described method in classes.json: onScrollTopChange. Class:Editor
-No described method in classes.json: onTokenizerUpdate. Class:Editor
-No described method in classes.json: onDocumentChange. Class:Editor
-No described method in classes.json: $cursorChange. Class:Editor
-No described method in classes.json: onBlur. Class:Editor
-No described method in classes.json: onFocus. Class:Editor
-No described method in classes.json: $highlightTags. Class:Editor
-No described method in classes.json: $highlightBrackets. Class:Editor
-No described method in classes.json: $historyTracker. Class:Editor
-No described method in classes.json: endOperation. Class:Editor
-No described method in classes.json: startOperation. Class:Editor
-No described method in classes.json: $initOperationListeners. Class:Editor

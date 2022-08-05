@@ -6085,110 +6085,182 @@
             }
         },
         "described": true,
-        "container_prop": {
+        "once": {
             "line": 865,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "renderer_prop": {
+        "setDefaultHandler": {
             "line": 866,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "id_prop": {
+        "removeDefaultHandler": {
             "line": 867,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "commands_prop": {
+        "addEventListener": {
             "line": 868,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "keyBinding_prop": {
+        "off": {
             "line": 869,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "session_prop": {
+        "removeListener": {
             "line": 870,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "selection_prop": {
+        "removeEventListener": {
             "line": 871,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "textInput_prop": {
+        "_emit": {
             "line": 872,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "on": {
+        "_signal": {
+            "line": 873,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "removeAllListeners": {
             "line": 874,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "input_event": {
+        "setOptions": {
             "line": 875,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "mousemove_event": {
+        "getOptions": {
+            "line": 876,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "container_prop": {
+            "line": 877,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "renderer_prop": {
+            "line": 878,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "id_prop": {
+            "line": 879,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "commands_prop": {
+            "line": 880,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "keyBinding_prop": {
+            "line": 881,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "session_prop": {
+            "line": 882,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "selection_prop": {
             "line": 883,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "mouseup_event": {
+        "textInput_prop": {
             "line": 884,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
-        "mousewheel_event": {
-            "line": 885,
-            "jsDoc": [],
-            "sourceName": "ace.d.ts",
-            "described": true
-        },
-        "click_event": {
+        "on": {
             "line": 886,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
+        "input_event": {
+            "line": 887,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "mousemove_event": {
+            "line": 895,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "mouseup_event": {
+            "line": 896,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "mousewheel_event": {
+            "line": 897,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
+        "click_event": {
+            "line": 898,
+            "jsDoc": [],
+            "sourceName": "ace.d.ts",
+            "described": true
+        },
         "setOption": {
-            "line": 890,
+            "line": 902,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
         "getOption": {
-            "line": 891,
+            "line": 903,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
         "removeLineToEnd": {
-            "line": 953,
+            "line": 965,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
         "completers_prop": {
-            "line": 1016,
+            "line": 1028,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
@@ -14864,18 +14936,18 @@
         }
     },
     "Completer": {
-        "line": 1021,
+        "line": 1033,
         "jsDoc": [],
         "sourceName": "ace.d.ts",
         "described": true,
         "identifierRegexps_prop": {
-            "line": 1022,
+            "line": 1034,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true
         },
         "getCompletions": {
-            "line": 1023,
+            "line": 1035,
             "jsDoc": [],
             "sourceName": "ace.d.ts",
             "described": true

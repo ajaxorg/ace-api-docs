@@ -10,7 +10,6 @@ export namespace Ace {
         setHtml(html: String): void;
         setText(text: String): void;
         getElement(): Element;
-        $init(): any;
         constructor(parentNode: Element);
     }
 
@@ -66,7 +65,6 @@ export namespace Ace {
     export class Generator {
         toArray(breakOnError: any, callback: any): void;
         end(breakOnError: any, callback: any): void;
-        $arrayOp(arrayMethod: any, args: any): any;
         reverse(): any;
         join(separator: any): any;
         sort(compare: any): any;
@@ -113,7 +111,6 @@ export namespace Ace {
         expandSnippetForSelection(editor: any, options: any): boolean;
         expandWithTab(editor: any, options: any): any;
         getActiveScopes(editor: any): {};
-        $getScope(editor: any): any;
         insertSnippet(editor: any, snippetText: any): any;
         insertSnippetForSelection(editor: any, snippetText: any): void;
         resolveVariables(snippet: any, editor: any): {};
@@ -131,9 +128,6 @@ export namespace Ace {
     }
 
     export class Search {
-        $matchIterator(session: any, options: any): false | { forEach: (callback: any) => void; };
-        $assembleMultilineRegExp(needle: any, modifier: any): {};
-        $assembleRegExp(options: any, $disableFakeMultiline: any): any;
         replace(input: String, replacement: String): String;
         findAll(session: EditSession): [Range];
         find(session: EditSession): Range;
@@ -176,7 +170,6 @@ export namespace Ace {
     }
 
     export class RangeList {
-        $onChange(delta: any): void;
         detach(): void;
         attach(session: any): void;
         removeAll(): any;
@@ -279,13 +272,11 @@ export namespace Ace {
     }
 
     export class MatchingParensOutdent {
-        $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
         checkOutdent(line: any, input: any): any;
     }
 
     export class MatchingBraceOutdent {
-        $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
         checkOutdent(line: any, input: any): any;
     }
@@ -300,8 +291,6 @@ export namespace Ace {
         vbsBlock(session: any, row: any, column: any, tokenRange: any): any;
         getBeginEndBlock(session: any, row: any, column: any, matchSequence: string): Range;
         rubyBlock(session: any, row: any, column: any, tokenRange: any): any;
-        $tryMode(state: any, session: any, foldStyle: any, row: any): any;
-        $getMode(state: any): any;
         luaBlock(session: any, row: any, column: any, tokenRange: any): any;
         latexSection(session: any, row: any, column: any): any;
         latexBlock(session: any, row: any, column: any, returnRange: any): any;
@@ -332,14 +321,10 @@ export namespace Ace {
         getWidgetsAtRow(row: any): {};
         removeLineWidget(w: any): void;
         addLineWidget(w: any): any;
-        $registerLineWidget(w: any): any;
-        $updateRows(): void;
         updateOnChange(delta: any): void;
         updateOnFold(e: any, session: any): void;
         detach(e: any): void;
         attach(editor: any): void;
-        $onChangeEditor(e: any): void;
-        $getWidgetScreenLength(): number;
         getRowLength(row: any): any;
     }
 
@@ -359,31 +344,18 @@ export namespace Ace {
 
     export class Text {
         destroy(): void;
-        $useLineGroups(): any;
-        $getFoldLineTokens(row: any, foldLine: any): {};
-        $renderLine(parent: any, row: any, foldLine: any): void;
-        $renderOverflowMessage(parent: any, screenColumn: any, token: any, value: any, hide: any): void;
-        $renderSimpleLine(parent: any, tokens: any): any;
-        $renderWrappedLine(parent: any, tokens: any, splits: any): void;
-        $createLineElement(parent: any): any;
         renderIndentGuide(parent: any, value: any, max: any): any;
-        $renderToken(parent: any, screenColumn: any, token: any, value: any): any;
         update(config: any): void;
-        $renderLinesFragment(config: any, firstRow: any, lastRow: any): {};
         scrollLines(config: any): any;
         updateLines(config: any, firstRow: any, lastRow: any): any;
         onChangeTabSize(): void;
-        $computeTabString(): void;
         setDisplayIndentGuides(display: any): boolean;
         setShowInvisibles(showInvisibles: any): boolean;
         setSession(session: any): void;
-        $pollSizeChanges(): any;
         checkForSizeChanges(): void;
-        $setFontMetrics(measure: any): void;
         getCharacterWidth(): any;
         getLineHeight(): any;
         setPadding(padding: any): void;
-        $updateEolChar(): boolean;
     }
 
     export class Marker {
@@ -393,7 +365,6 @@ export namespace Ace {
         drawSingleLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraLength: any, extraStyle: any): any;
         drawMultiLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         drawTextMarker(stringBuilder: any, range: any, clazz: any, layerConfig: any, extraStyle: any): void;
-        $getTop(row: any, layerConfig: any): number;
         update(config: any): void;
         elt(className: any, css: any): void;
         setMarkers(markers: any): void;
@@ -403,7 +374,6 @@ export namespace Ace {
 
     export class Lines {
         createCell(row: any, config: any, session: any, initElement: any): any;
-        $cacheCell(cell: any): void;
         last(): any;
         unshift(cell: any): void;
         push(cell: any): void;
@@ -419,20 +389,14 @@ export namespace Ace {
 
     export class Gutter {
         getRegion(point: any): "markers" | "foldWidgets";
-        $computePadding(): any;
         getShowFoldWidgets(): any;
         setShowFoldWidgets(show: any): void;
         getShowLineNumbers(): any;
         setShowLineNumbers(show: any): void;
         setHighlightGutterLine(highlightGutterLine: any): void;
-        $renderCell(cell: any, config: any, fold: any, row: any): any;
-        $renderLines(config: any, firstRow: any, lastRow: any): {};
         scrollLines(config: any): any;
         updateLineHighlight(): void;
-        $updateCursorRow(): void;
-        $updateGutterWidth(config: any): void;
         update(config: any): void;
-        $updateAnnotations(delta: any): void;
         setAnnotations(annotations: any): void;
         removeGutterDecoration(row: any, className: any): void;
         addGutterDecoration(row: any, className: any): void;
@@ -441,22 +405,14 @@ export namespace Ace {
 
     export class FontMetrics {
         transformCoordinates(clientPos: any, elPos: any): {};
-        $initTransformMeasureNodes(): void;
-        $getZoom(element: any): any;
         destroy(): void;
         getCharacterWidth(ch: any): any;
-        $measureCharWidth(ch: any): number;
-        $measureSizes(node: any): { height: any; width: number; };
         setPolling(val: any): void;
-        $pollSizeChanges(): any;
-        $addObserver(): void;
         checkForSizeChanges(size: any): void;
-        $setMeasureNodeStyles(style: any, isRoot: any): void;
     }
 
     export class Cursor {
         destroy(): void;
-        $setOverwrite(overwrite: any): void;
         update(config: any): void;
         isCursorInView(pixelPos: any, config: any): boolean;
         getPixelPosition(position: any, onScreen: any): { left: any; top: number; };
@@ -470,9 +426,6 @@ export namespace Ace {
         setBlinking(blinking: any): void;
         setSession(session: any): void;
         setPadding(padding: any): void;
-        $stopCssAnimation(): void;
-        $startCssAnimation(): void;
-        $updateOpacity(val: any): void;
     }
 
     export class MultiHashHandler {
@@ -535,10 +488,7 @@ export namespace Ace {
         updateCounter(): void;
         find(skipCurrent: any, backwards: any, preventScroll: any): void;
         highlight(re: any): void;
-        $syncOptions(preventScroll: any): void;
         setSearchRange(range: any): void;
-        $init(): void;
-        $initElements(sb: any): void;
         setSession(e: any): void;
         setEditor(editor: any): void;
     }
@@ -554,18 +504,14 @@ export namespace Ace {
     }
 
     export class Mode {
-        $createKeywordList(): any;
         getKeywords(append: any): any;
         transformAction(state: any, action: any, editor: any, session: any, param: any): any;
-        $delegator(method: any, args: any, defaultHandler: any): any;
         allowAutoInsert(): boolean;
         getLanguageMode(position: any): "R" | "HTML";
         toggleCommentLines(state: any, doc: any, startRow: any, endRow: any): void;
         getMatching(session: any, row: any, column: any, tokenRange: any): any;
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
         createWorker(session: any): any;
-        $calculateIndent(line: any, tab: any): any;
-        $toIndent(str: any): any;
         autoOutdent(state: any, doc: any, row: any): void;
         checkOutdent(state: any, line: any, input: any): any;
         getNextLineIndent(state: any, line: any, tab: any): any;
@@ -573,21 +519,10 @@ export namespace Ace {
     }
 
     export class ElasticTabstopsLite {
-        $izip(widths: any, tabs: any): {};
-        $izip_longest(iterables: any): {};
-        $adjustRow(row: any, widths: any): void;
-        $tabsForRow(row: any): {};
-        $rightmostSelectionInCell(selectionColumns: any, cellRightEdge: any): number;
-        $setBlockCellWidthsToMax(cellWidths: any): any;
-        $selectionColumnsForRow(row: any): {};
-        $cellWidthsForRow(row: any): any;
-        $findCellWidthsForBlock(row: any): { cellWidths: {}; firstRow: any; };
         processRows(rows: any): void;
     }
 
     export class BracketMatch {
-        $findClosingBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
-        $findOpeningBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
         getMatchingBracketRanges(pos: Point): null | Range[];
         getBracketRange(pos: any): any;
         findMatchingBracket(position: any, chr: any): any;
@@ -628,11 +563,9 @@ export namespace Ace {
 
     export class BackgroundTokenizer {
         cleanup(): void;
-        $tokenizeRow(row: any): any;
         getState(row: Number): string;
         getTokens(row: Number): Token[];
         stop(): void;
-        $updateOnChange(delta: any): void;
         scheduleStart(): void;
         start(startRow: Number): void;
         on(name: 'update', callback: (e: Object) => void): void;
@@ -667,7 +600,6 @@ export namespace Ace {
         detach(): void;
         openPopup(editor: any, prefix: any, keepPopupPosition: any): void;
         getPopup(): any;
-        $init(): any;
     }
 
     export class AcePopup {
@@ -677,7 +609,6 @@ export namespace Ace {
     export type NewLineMode = 'auto' | 'unix' | 'windows';
 
     export class Anchor implements EventEmitter {
-        $clipPositionToDocument(row: Number, column: Number): Ace.Point;
         on(name: 'change', callback: (e: Object) => void): void;
         onChange(delta: Ace.Delta): void;
         constructor(doc: Document, row: Number, column: Number);
@@ -712,14 +643,9 @@ export namespace Ace {
     }
 
     export class Document implements EventEmitter {
-        $splitAndapplyLargeDelta(delta: any, MAX: any): void;
-        $safeApplyDelta(delta: any): void;
         on(name: 'change', callback: (e: Object) => void): void;
-        $clipPosition(position: any): any;
         removeLines(firstRow: any, lastRow: any): any;
         insertLines(row: any, lines: any): any;
-        $detectNewLine(text: any): void;
-        $split(text: any): any;
         constructor(textOrLines: String | String[]);
         setValue(text: string): void;
         getValue(): string;
@@ -814,15 +740,11 @@ export namespace Ace {
 
     interface Folding {
         tokenizerUpdateFoldWidgets(e: any): void;
-        $toggleFoldWidget(row: any, options: any): any;
         onFoldWidgetClick(row: any, e: any): void;
-        $setFolding(foldMode: any): void;
         foldAllComments(): void;
         foldToLevel(level: any): void;
-        $cloneFoldData(): {};
         getRowFoldStart(docRow: any, startFoldRow: any): any;
         getRowFoldEnd(docRow: any, startFoldRow: any): any;
-        $addFoldLine(foldLine: any): any;
         getFoldAt(row: number, column: number, side: number): Fold;
         getFoldsInRange(range: Range): Fold[];
         getFoldsInRangeList(ranges: Range[]): Fold[];
@@ -1084,9 +1006,6 @@ export namespace Ace {
     }
 
     export class Tokenizer {
-        $arrayTokens(str: any): {};
-        $applyToken(str: any): {};
-        $setMaxTokenCount(m: any): void;
         constructor(rules: Object);
         removeCapturingGroups(src: string): string;
         createSplitterRegexp(src: string, flag?: string): RegExp;
@@ -1155,10 +1074,8 @@ export namespace Ace {
     }
 
     export class UndoManager {
-        $prettyPrint(delta: any): any;
         fromJSON(): void;
         toJSON(): void;
-        $syncRev(): void;
         getChangedLines(from: any, to: any): void;
         getChangedRanges(from: any, to: any): void;
         constructor();
@@ -1186,34 +1103,12 @@ export namespace Ace {
 
     export class EditSession implements EventEmitter, OptionsProvider {
         getSelectionMarkers(): any;
-        $setFontMetrics(fm: any): void;
         getDocumentLastRowColumnPosition(docRow: Number, docColumn: Number): any;
         getRowLength(row: Number): Number;
-        $getStringScreenWidth(str: String, maxScreenColumn: Number, screenColumn: Number): [Number];
-        $getDisplayTokens(str: String, offset: Number): {};
-        $computeWrapSplits(tokens: any, wrapLimit: any, tabSize: any): {};
-        $updateWrapData(firstRow: any, lastRow: any): void;
-        $updateRowLengthCache(firstRow: any, lastRow: any, b: any): void;
-        $updateInternalDataOnChange(delta: any): any;
-        $constrainWrapLimit(wrapLimit: any, min: any, max: any): any;
-        $clipRangeToDocument(range: any): any;
-        $clipPositionToDocument(row: any, column: any): { row: any; column: any; };
-        $clipColumnToRow(row: any, column: any): any;
-        $clipRowToDocument(row: any): any;
-        $moveLines(firstRow: any, lastRow: any, dir: any): number;
-        $getUndoSelection(deltas: any, isUndo: any): any;
-        $computeWidth(force: any): any;
-        $startWorker(): void;
-        $stopWorker(): void;
-        $onChangeMode(mode: any, $isPlaceholder: any): void;
         onReloadTokenizer(e: any): void;
-        $detectNewLine(text: String): void;
-        $syncInformUndoManager(): void;
         toString(): String;
         onChange(delta: any): void;
         onChangeFold(e: any): void;
-        $getRowCacheIndex(cacheArray: any, val: any): number;
-        $resetRowCache(docRow: any): void;
         on(name: 'changeWrapLimit'): void;
         on(name: 'changeWrapMode'): void;
         on(name: 'changeMode'): void;
@@ -1371,7 +1266,6 @@ export namespace Ace {
     }
 
     export class KeyBinding {
-        $callKeyboardHandlers(hashId: any, keyString: any, keyCode: any, e: any): boolean;
         setDefaultHandler(handler: KeyboardHandler): void;
         setKeyboardHandler(handler: KeyboardHandler): void;
         addKeyboardHandler(handler: KeyboardHandler, pos?: number): void;
@@ -1429,23 +1323,11 @@ export namespace Ace {
         removeExtraToken(row: any, column: any): void;
         addToken(text: any, type: any, row: any, column: any): void;
         screenToTextCoordinates(x: any, y: any): any;
-        $calcSteps(fromValue: any, toValue: any): {};
         removeGutterDecoration(row: any, className: any): void;
         addGutterDecoration(row: any, className: any): void;
-        $getLongestLine(): any;
-        $updateLines(): boolean;
-        $computeLayerConfig(): number;
-        $autosize(): void;
-        $renderChanges(changes: any, force: any): any;
-        $updateScrollBarH(): void;
-        $updateScrollBarV(): void;
         setMargin(top: any, bottom: any, left: any, right: any): void;
-        $moveTextAreaToCursor(): void;
-        $updatePrintMargin(): void;
         onGutterResize(width: any): void;
-        $updateCachedSize(force: any, gutterWidth: any, width: any, height: any): number;
         onResize(force: Boolean, gutterWidth: Number, width: Number, height: Number): number;
-        $updateSizeAsync(): void;
         onChangeTabSize(): void;
         onChangeNewLineMode(): void;
         updateCharacterSize(): void;
@@ -1582,13 +1464,10 @@ export namespace Ace {
         detach(): void;
         moveCursorShortWordLeft(): any;
         moveCursorShortWordRight(): any;
-        $shortWordEndIndex(rightOfCursor: any): number;
         wouldMoveIntoSoftTab(cursor: Object, tabSize: Number, direction: Number): boolean;
         getLineRange(row: any, excludeLastChar: any): any;
         moveToPosition(pos: Object): void;
         moveTo(row: Number, column: Number): void;
-        $moveSelection(mover: any): void;
-        $setSelection(anchorRow: any, anchorColumn: any, cursorRow: any, cursorColumn: any): void;
         getSelectionLead(): Object;
         getSelectionAnchor(): Object;
         setSelectionAnchor(row: Number, column: Number): void;
@@ -1599,9 +1478,6 @@ export namespace Ace {
         toggleBlockSelection(): void;
         joinSelections(): void;
         splitIntoLines(): void;
-        $initRangeList(): void;
-        $onRemoveRange(removed: any): void;
-        $onAddRange(range: any): void;
         mergeOverlappingRanges(): void;
         substractPoint(pos: Range): any;
         toSingleRange(range: any): void;
@@ -1689,22 +1565,15 @@ export namespace Ace {
         resetSelection(): void;
     }
 
-    export interface Editor extends OptionsProvider, EventEmitter {
+    export class Editor implements OptionsProvider, EventEmitter {
         expandSnippet(options: any): any;
         insertSnippet(content: any, options: any): any;
-        $reAlignText(lines: any, forceLeft: any): any;
         alignCursors(): void;
         selectMore(dir: Number, skip: Boolean, stopAtFirst: any): void;
         transposeSelections(dir: Number): void;
         selectMoreLines(dir: Number, skip: Boolean): void;
-        $checkMultiselectChange(e: any, anchor: any): void;
         exitMultiSelectMode(): void;
         forEachSelection(cmd: Object, args: String, options: any): any;
-        $onMultiSelectExec(e: any): any;
-        $onSingleSelect(e: any): void;
-        $onMultiSelect(e: any): void;
-        $onRemoveRange(e: any): void;
-        $onAddRange(e: any): void;
         removeSelectionMarkers(ranges: any): void;
         removeSelectionMarker(range: Range): void;
         addSelectionMarker(orientedRange: Range): Range;
@@ -1712,16 +1581,10 @@ export namespace Ace {
         showSettingsMenu(): void;
         showKeyboardShortcuts(): void;
         prompt(message: any, options: any, callback: any): void;
-        $resetCursorStyle(): void;
         revealRange(range: any, animate: any): void;
-        $tryReplace(range: any, replacement: any): any;
-        $moveByPage(dir: any, select: any): void;
-        $getVisibleRowCount(): number;
         onCompositionEnd(): void;
         onCompositionUpdate(text: any): void;
         onCompositionStart(compositionState: any): void;
-        $getSelectedRows(range: any): { first: any; last: any; };
-        $moveLines(dir: any, copy: any): void;
         toggleWord(): void;
         getNumberAt(row: any, column: any): { value: any; start: any; end: any; };
         removeToLineEnd(): void;
@@ -1730,7 +1593,6 @@ export namespace Ace {
         applyComposition(text: any, composition: any): void;
         onTextInput(text: any, composition: any): any;
         autoIndent(): void;
-        $handlePaste(e: any): any;
         onCut(): void;
         onCopy(): void;
         onChangeFold(): void;
@@ -1741,24 +1603,29 @@ export namespace Ace {
         onChangeBreakpoint(): void;
         onChangeBackMarker(): void;
         onChangeFrontMarker(): void;
-        $getSelectionHighLightRegexp(): any;
         onSelectionChange(e: any): void;
-        $updateHighlightActiveLine(): void;
         onCursorChange(): void;
         onScrollLeftChange(): void;
         onScrollTopChange(): void;
         onTokenizerUpdate(e: any): void;
         onDocumentChange(delta: any): void;
-        $cursorChange(): void;
         onBlur(e: any): void;
         onFocus(e: any): void;
-        $highlightTags(): void;
-        $highlightBrackets(): void;
-        $historyTracker(e: any): void;
         endOperation(e: any): any;
         startOperation(commandEvent: any): void;
-        $initOperationListeners(): void;
         constructor(renderer: VirtualRenderer, session: EditSession);
+        once(name: string, callback: Function): void;
+        setDefaultHandler(name: string, callback: Function): void;
+        removeDefaultHandler(name: string, callback: Function): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+        off(name: string, callback: Function): void;
+        removeListener(name: string, callback: Function): void;
+        removeEventListener(name: string, callback: Function): void;
+        _emit(eventName: any, e: any);
+        _signal(eventName: any, e: any): void;
+        removeAllListeners(name?: string): void;
+        setOptions(optList: { [key: string]: any; }): void;
+        getOptions(optionNames?: string[] | { [key: string]: any; }): { [key: string]: any; };
         container: HTMLElement;
         renderer: VirtualRenderer;
         id: string;

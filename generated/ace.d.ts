@@ -40,7 +40,6 @@ export namespace Ace {
          * @returns {Element}
          **/
         getElement(): Element;
-        $init(): any;
         /**
          * @param {Element} parentNode
          *
@@ -101,7 +100,6 @@ export namespace Ace {
     export class Generator {
         toArray(breakOnError: any, callback: any): void;
         end(breakOnError: any, callback: any): void;
-        $arrayOp(arrayMethod: any, args: any): any;
         reverse(): any;
         join(separator: any): any;
         sort(compare: any): any;
@@ -148,7 +146,6 @@ export namespace Ace {
         expandSnippetForSelection(editor: any, options: any): boolean;
         expandWithTab(editor: any, options: any): any;
         getActiveScopes(editor: any): {};
-        $getScope(editor: any): any;
         insertSnippet(editor: any, snippetText: any): any;
         insertSnippetForSelection(editor: any, snippetText: any): void;
         resolveVariables(snippet: any, editor: any): {};
@@ -173,9 +170,6 @@ export namespace Ace {
      *
      **/
     export class Search {
-        $matchIterator(session: any, options: any): false | { forEach: (callback: any) => void; };
-        $assembleMultilineRegExp(needle: any, modifier: any): {};
-        $assembleRegExp(options: any, $disableFakeMultiline: any): any;
         /**
          * Searches for `options.needle` in `input`, and, if found, replaces it with `replacement`.
          * @param {String} input The text to search in
@@ -367,7 +361,6 @@ export namespace Ace {
     }
 
     export class RangeList {
-        $onChange(delta: any): void;
         detach(): void;
         attach(session: any): void;
         removeAll(): any;
@@ -597,13 +590,11 @@ export namespace Ace {
     }
 
     export class MatchingParensOutdent {
-        $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
         checkOutdent(line: any, input: any): any;
     }
 
     export class MatchingBraceOutdent {
-        $getIndent(line: any): any;
         autoOutdent(doc: any, row: any): number;
         checkOutdent(line: any, input: any): any;
     }
@@ -628,8 +619,6 @@ export namespace Ace {
          */
         getBeginEndBlock(session: any, row: any, column: any, matchSequence: string): Range;
         rubyBlock(session: any, row: any, column: any, tokenRange: any): any;
-        $tryMode(state: any, session: any, foldStyle: any, row: any): any;
-        $getMode(state: any): any;
         luaBlock(session: any, row: any, column: any, tokenRange: any): any;
         latexSection(session: any, row: any, column: any): any;
         latexBlock(session: any, row: any, column: any, returnRange: any): any;
@@ -667,14 +656,10 @@ export namespace Ace {
         getWidgetsAtRow(row: any): {};
         removeLineWidget(w: any): void;
         addLineWidget(w: any): any;
-        $registerLineWidget(w: any): any;
-        $updateRows(): void;
         updateOnChange(delta: any): void;
         updateOnFold(e: any, session: any): void;
         detach(e: any): void;
         attach(editor: any): void;
-        $onChangeEditor(e: any): void;
-        $getWidgetScreenLength(): number;
         getRowLength(row: any): any;
     }
 
@@ -700,32 +685,18 @@ export namespace Ace {
 
     export class Text {
         destroy(): void;
-        $useLineGroups(): any;
-        $getFoldLineTokens(row: any, foldLine: any): {};
-        /** row is either first row of foldline or not in fold**/
-        $renderLine(parent: any, row: any, foldLine: any): void;
-        $renderOverflowMessage(parent: any, screenColumn: any, token: any, value: any, hide: any): void;
-        $renderSimpleLine(parent: any, tokens: any): any;
-        $renderWrappedLine(parent: any, tokens: any, splits: any): void;
-        $createLineElement(parent: any): any;
         renderIndentGuide(parent: any, value: any, max: any): any;
-        $renderToken(parent: any, screenColumn: any, token: any, value: any): any;
         update(config: any): void;
-        $renderLinesFragment(config: any, firstRow: any, lastRow: any): {};
         scrollLines(config: any): any;
         updateLines(config: any, firstRow: any, lastRow: any): any;
         onChangeTabSize(): void;
-        $computeTabString(): void;
         setDisplayIndentGuides(display: any): boolean;
         setShowInvisibles(showInvisibles: any): boolean;
         setSession(session: any): void;
-        $pollSizeChanges(): any;
         checkForSizeChanges(): void;
-        $setFontMetrics(measure: any): void;
         getCharacterWidth(): any;
         getLineHeight(): any;
         setPadding(padding: any): void;
-        $updateEolChar(): boolean;
     }
 
     export class Marker {
@@ -739,7 +710,6 @@ export namespace Ace {
         drawMultiLineMarker(stringBuilder: any, range: any, clazz: any, config: any, extraStyle: any): void;
         /** Draws a marker, which spans a range of text on multiple lines **/
         drawTextMarker(stringBuilder: any, range: any, clazz: any, layerConfig: any, extraStyle: any): void;
-        $getTop(row: any, layerConfig: any): number;
         update(config: any): void;
         elt(className: any, css: any): void;
         setMarkers(markers: any): void;
@@ -749,7 +719,6 @@ export namespace Ace {
 
     export class Lines {
         createCell(row: any, config: any, session: any, initElement: any): any;
-        $cacheCell(cell: any): void;
         last(): any;
         unshift(cell: any): void;
         push(cell: any): void;
@@ -765,20 +734,14 @@ export namespace Ace {
 
     export class Gutter {
         getRegion(point: any): "markers" | "foldWidgets";
-        $computePadding(): any;
         getShowFoldWidgets(): any;
         setShowFoldWidgets(show: any): void;
         getShowLineNumbers(): any;
         setShowLineNumbers(show: any): void;
         setHighlightGutterLine(highlightGutterLine: any): void;
-        $renderCell(cell: any, config: any, fold: any, row: any): any;
-        $renderLines(config: any, firstRow: any, lastRow: any): {};
         scrollLines(config: any): any;
         updateLineHighlight(): void;
-        $updateCursorRow(): void;
-        $updateGutterWidth(config: any): void;
         update(config: any): void;
-        $updateAnnotations(delta: any): void;
         setAnnotations(annotations: any): void;
         removeGutterDecoration(row: any, className: any): void;
         addGutterDecoration(row: any, className: any): void;
@@ -788,22 +751,14 @@ export namespace Ace {
     export class FontMetrics {
         /** general transforms from element coordinates x to screen coordinates u have the form**/
         transformCoordinates(clientPos: any, elPos: any): {};
-        $initTransformMeasureNodes(): void;
-        $getZoom(element: any): any;
         destroy(): void;
         getCharacterWidth(ch: any): any;
-        $measureCharWidth(ch: any): number;
-        $measureSizes(node: any): { height: any; width: number; };
         setPolling(val: any): void;
-        $pollSizeChanges(): any;
-        $addObserver(): void;
         checkForSizeChanges(size: any): void;
-        $setMeasureNodeStyles(style: any, isRoot: any): void;
     }
 
     export class Cursor {
         destroy(): void;
-        $setOverwrite(overwrite: any): void;
         update(config: any): void;
         isCursorInView(pixelPos: any, config: any): boolean;
         getPixelPosition(position: any, onScreen: any): { left: any; top: number; };
@@ -817,9 +772,6 @@ export namespace Ace {
         setBlinking(blinking: any): void;
         setSession(session: any): void;
         setPadding(padding: any): void;
-        $stopCssAnimation(): void;
-        $startCssAnimation(): void;
-        $updateOpacity(val: any): void;
     }
 
     export class MultiHashHandler {
@@ -900,10 +852,7 @@ export namespace Ace {
         updateCounter(): void;
         find(skipCurrent: any, backwards: any, preventScroll: any): void;
         highlight(re: any): void;
-        $syncOptions(preventScroll: any): void;
         setSearchRange(range: any): void;
-        $init(): void;
-        $initElements(sb: any): void;
         setSession(e: any): void;
         setEditor(editor: any): void;
     }
@@ -923,18 +872,14 @@ export namespace Ace {
      var RCodeModel = require("mode/r_code_model").RCodeModel;
      **/
     export class Mode {
-        $createKeywordList(): any;
         getKeywords(append: any): any;
         transformAction(state: any, action: any, editor: any, session: any, param: any): any;
-        $delegator(method: any, args: any, defaultHandler: any): any;
         allowAutoInsert(): boolean;
         getLanguageMode(position: any): "R" | "HTML";
         toggleCommentLines(state: any, doc: any, startRow: any, endRow: any): void;
         getMatching(session: any, row: any, column: any, tokenRange: any): any;
         getCompletions(state: any, session: any, pos: any, prefix: any): any;
         createWorker(session: any): any;
-        $calculateIndent(line: any, tab: any): any;
-        $toIndent(str: any): any;
         autoOutdent(state: any, doc: any, row: any): void;
         checkOutdent(state: any, line: any, input: any): any;
         getNextLineIndent(state: any, line: any, tab: any): any;
@@ -942,23 +887,10 @@ export namespace Ace {
     }
 
     export class ElasticTabstopsLite {
-        /** an even more (naive) Python port**/
-        $izip(widths: any, tabs: any): {};
-        /** the is a (naive) Python port--but works for these purposes**/
-        $izip_longest(iterables: any): {};
-        $adjustRow(row: any, widths: any): void;
-        $tabsForRow(row: any): {};
-        $rightmostSelectionInCell(selectionColumns: any, cellRightEdge: any): number;
-        $setBlockCellWidthsToMax(cellWidths: any): any;
-        $selectionColumnsForRow(row: any): {};
-        $cellWidthsForRow(row: any): any;
-        $findCellWidthsForBlock(row: any): { cellWidths: {}; firstRow: any; };
         processRows(rows: any): void;
     }
 
     export class BracketMatch {
-        $findClosingBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
-        $findOpeningBracket(bracket: any, position: any, typeRe: any): { row: any; column: any; };
         /**
          * Returns:
          * * null if there is no any bracket at `pos`;
@@ -1061,7 +993,6 @@ export namespace Ace {
      **/
     export class BackgroundTokenizer {
         cleanup(): void;
-        $tokenizeRow(row: any): any;
         /**
          * Returns the state of tokenization at the end of a row.
          * @param {Number} row The row to get state at
@@ -1078,7 +1009,6 @@ export namespace Ace {
          * Stops tokenizing.
          **/
         stop(): void;
-        $updateOnChange(delta: any): void;
         /**
          * Sets pretty long delay to prevent the tokenizer from interfering with the user
          */
@@ -1147,7 +1077,6 @@ export namespace Ace {
         detach(): void;
         openPopup(editor: any, prefix: any, keepPopupPosition: any): void;
         getPopup(): any;
-        $init(): any;
     }
 
     /**
@@ -1173,14 +1102,6 @@ export namespace Ace {
 
 
     export class Anchor implements EventEmitter {
-        /**
-         * Clips the anchor position to the specified row and column.
-         * @param {Number} row The row index to clip the anchor to
-         * @param {Number} column The column index to clip the anchor to
-         * @returns {Ace.Point}
-         *
-         **/
-        $clipPositionToDocument(row: Number, column: Number): Ace.Point;
         /**
          * Fires whenever the anchor position changes.
          *
@@ -1281,8 +1202,6 @@ export namespace Ace {
 
 
     export class Document implements EventEmitter {
-        $splitAndapplyLargeDelta(delta: any, MAX: any): void;
-        $safeApplyDelta(delta: any): void;
         /**
          * Fires whenever the document changes.
          *
@@ -1306,12 +1225,9 @@ export namespace Ace {
          *
          **/
         on(name: 'change', callback: (e: Object) => void): void;
-        $clipPosition(position: any): any;
         removeLines(firstRow: any, lastRow: any): any;
         /** Deprecated methods retained for backwards compatibility.**/
         insertLines(row: any, lines: any): any;
-        $detectNewLine(text: any): void;
-        $split(text: any): any;
         /**
          *
          * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
@@ -1696,15 +1612,11 @@ export namespace Ace {
 
     interface Folding {
         tokenizerUpdateFoldWidgets(e: any): void;
-        $toggleFoldWidget(row: any, options: any): any;
         onFoldWidgetClick(row: any, e: any): void;
-        $setFolding(foldMode: any): void;
         foldAllComments(): void;
         foldToLevel(level: any): void;
-        $cloneFoldData(): {};
         getRowFoldStart(docRow: any, startFoldRow: any): any;
         getRowFoldEnd(docRow: any, startFoldRow: any): any;
-        $addFoldLine(foldLine: any): any;
         /**
          * Looks up a fold at a given row/column. Possible values for side:
          *
@@ -2349,9 +2261,6 @@ export namespace Ace {
 
 
     export class Tokenizer {
-        $arrayTokens(str: any): {};
-        $applyToken(str: any): {};
-        $setMaxTokenCount(m: any): void;
         /**
          * Constructs a new tokenizer based on the given rules and flags.
          * @param {Object} rules The highlighting rules
@@ -2491,10 +2400,8 @@ export namespace Ace {
 
 
     export class UndoManager {
-        $prettyPrint(delta: any): any;
         fromJSON(): void;
         toJSON(): void;
-        $syncRev(): void;
         getChangedLines(from: any, to: any): void;
         getChangedRanges(from: any, to: any): void;
         /**
@@ -2588,11 +2495,6 @@ export namespace Ace {
     export class EditSession implements EventEmitter, OptionsProvider {
         getSelectionMarkers(): any;
         /**
-         * @private
-         *
-         */
-        $setFontMetrics(fm: any): void;
-        /**
          * For the given document row and column, this returns the document position of the last row.
          * @param {Number} docRow
          * @param {Number} docColumn
@@ -2607,49 +2509,9 @@ export namespace Ace {
          **/
         getRowLength(row: Number): Number;
         /**
-         * Calculates the width of the string `str` on the screen while assuming that the string starts at the first column on the screen.
-         * @param {String} str The string to calculate the screen width of
-         * @param {Number} maxScreenColumn
-         * @param {Number} screenColumn
-         * @returns {[Number]} Returns an `int[]` array with two elements:<br/>
-         * The first position indicates the number of columns for `str` on screen.<br/>
-         * The second value contains the position of the document column that this function read until.
-         *
-         **/
-        $getStringScreenWidth(str: String, maxScreenColumn: Number, screenColumn: Number): [Number];
-        /**
-         * Given a string, returns an array of the display characters, including tabs and spaces.
-         * @param {String} str The string to check
-         * @param {Number} offset The value to start at
-         *
-         **/
-        $getDisplayTokens(str: String, offset: Number): {};
-        $computeWrapSplits(tokens: any, wrapLimit: any, tabSize: any): {};
-        $updateWrapData(firstRow: any, lastRow: any): void;
-        $updateRowLengthCache(firstRow: any, lastRow: any, b: any): void;
-        $updateInternalDataOnChange(delta: any): any;
-        $constrainWrapLimit(wrapLimit: any, min: any, max: any): any;
-        $clipRangeToDocument(range: any): any;
-        $clipPositionToDocument(row: any, column: any): { row: any; column: any; };
-        $clipColumnToRow(row: any, column: any): any;
-        $clipRowToDocument(row: any): any;
-        $moveLines(firstRow: any, lastRow: any, dir: any): number;
-        $getUndoSelection(deltas: any, isUndo: any): any;
-        $computeWidth(force: any): any;
-        $startWorker(): void;
-        $stopWorker(): void;
-        $onChangeMode(mode: any, $isPlaceholder: any): void;
-        /**
          * Reloads all the tokens on the current session. This function calls [[BackgroundTokenizer.start `BackgroundTokenizer.start ()`]] to all the rows; it also emits the `'tokenizerUpdate'` event.
          **/
         onReloadTokenizer(e: any): void;
-        /**
-         * If `text` contains either the newline (`\n`) or carriage-return ('\r') characters, `$autoNewLine` stores that value.
-         * @param {String} text A block of text
-         *
-         **/
-        $detectNewLine(text: String): void;
-        $syncInformUndoManager(): void;
         /**
          * Returns the current [[Document `Document`]] as a string.
          * @method toString
@@ -2666,12 +2528,6 @@ export namespace Ace {
         toString(): String;
         onChange(delta: any): void;
         onChangeFold(e: any): void;
-        $getRowCacheIndex(cacheArray: any, val: any): number;
-        /**
-         * @param {Number} row The row to work with
-         *
-         **/
-        $resetRowCache(docRow: any): void;
         /**
          * Emitted when the wrapping limit changes.
          *
@@ -3514,7 +3370,6 @@ export namespace Ace {
 
 
     export class KeyBinding {
-        $callKeyboardHandlers(hashId: any, keyString: any, keyCode: any, e: any): boolean;
 
         setDefaultHandler(handler: KeyboardHandler): void;
 
@@ -3602,7 +3457,6 @@ export namespace Ace {
         removeExtraToken(row: any, column: any): void;
         addToken(text: any, type: any, row: any, column: any): void;
         screenToTextCoordinates(x: any, y: any): any;
-        $calcSteps(fromValue: any, toValue: any): {};
         /**
          * Deprecated; (moved to [[EditSession]])
          * @deprecated
@@ -3614,19 +3468,8 @@ export namespace Ace {
          * @deprecated
          **/
         addGutterDecoration(row: any, className: any): void;
-        $getLongestLine(): any;
-        $updateLines(): boolean;
-        $computeLayerConfig(): number;
-        $autosize(): void;
-        $renderChanges(changes: any, force: any): any;
-        $updateScrollBarH(): void;
-        $updateScrollBarV(): void;
         setMargin(top: any, bottom: any, left: any, right: any): void;
-        /** move text input over the cursor**/
-        $moveTextAreaToCursor(): void;
-        $updatePrintMargin(): void;
         onGutterResize(width: any): void;
-        $updateCachedSize(force: any, gutterWidth: any, width: any, height: any): number;
         /**
          * [Triggers a resize of the editor.]{: #VirtualRenderer.onResize}
          * @param {Boolean} force If `true`, recomputes the size, even if the height and width haven't changed
@@ -3636,7 +3479,6 @@ export namespace Ace {
          *
          **/
         onResize(force: Boolean, gutterWidth: Number, width: Number, height: Number): number;
-        $updateSizeAsync(): void;
         onChangeTabSize(): void;
         onChangeNewLineMode(): void;
         updateCharacterSize(): void;
@@ -4144,7 +3986,6 @@ export namespace Ace {
         detach(): void;
         moveCursorShortWordLeft(): any;
         moveCursorShortWordRight(): any;
-        $shortWordEndIndex(rightOfCursor: any): number;
         /**
          *
          * Returns `true` if moving the character next to the cursor in the specified direction is a soft tab.
@@ -4166,8 +4007,6 @@ export namespace Ace {
          *
          **/
         moveTo(row: Number, column: Number): void;
-        $moveSelection(mover: any): void;
-        $setSelection(anchorRow: any, anchorColumn: any, cursorRow: any, cursorColumn: any): void;
         /**
          * Returns an object containing the `row` and `column` of the calling selection lead.
          * @returns {Object}
@@ -4228,10 +4067,6 @@ export namespace Ace {
          * @method Selection.splitIntoLines
          **/
         splitIntoLines(): void;
-        /** adds multicursor support to selection**/
-        $initRangeList(): void;
-        $onRemoveRange(removed: any): void;
-        $onAddRange(range: any): void;
         /**
          * Merges overlapping ranges ensuring consistency after changes
          * @method Selection.mergeOverlappingRanges
@@ -4556,10 +4391,9 @@ export namespace Ace {
      **/
 
 
-    export interface Editor extends OptionsProvider, EventEmitter {
+    export class Editor implements OptionsProvider, EventEmitter {
         expandSnippet(options: any): any;
         insertSnippet(content: any, options: any): any;
-        $reAlignText(lines: any, forceLeft: any): any;
         /**
          * Aligns the cursors or selected text.
          * @method Editor.alignCursors
@@ -4587,7 +4421,6 @@ export namespace Ace {
          * @method Editor.selectMoreLines
          */
         selectMoreLines(dir: Number, skip: Boolean): void;
-        $checkMultiselectChange(e: any, anchor: any): void;
         /**
          * Removes all the selections except the last added one.
          * @method Editor.exitMultiSelectMode
@@ -4600,11 +4433,6 @@ export namespace Ace {
          * @method Editor.forEachSelection
          **/
         forEachSelection(cmd: Object, args: String, options: any): any;
-        $onMultiSelectExec(e: any): any;
-        $onSingleSelect(e: any): void;
-        $onMultiSelect(e: any): void;
-        $onRemoveRange(e: any): void;
-        $onAddRange(e: any): void;
         removeSelectionMarkers(ranges: any): void;
         /**
          * Removes the selection marker.
@@ -4632,34 +4460,10 @@ export namespace Ace {
          * opens a prompt displaying message
          **/
         prompt(message: any, options: any, callback: any): void;
-        $resetCursorStyle(): void;
         revealRange(range: any, animate: any): void;
-        $tryReplace(range: any, replacement: any): any;
-        $moveByPage(dir: any, select: any): void;
-        /**
-         * Returns the number of currently visible rows.
-         * @returns {Number}
-         **/
-        $getVisibleRowCount(): number;
         onCompositionEnd(): void;
         onCompositionUpdate(text: any): void;
         onCompositionStart(compositionState: any): void;
-        /**
-         * Returns an object indicating the currently selected rows. The object looks like this:
-         *
-         * ```json
-         * { first: range.start.row, last: range.end.row }
-         * ```
-         *
-         * @returns {Object}
-         **/
-        $getSelectedRows(range: any): { first: any; last: any; };
-        /**
-         * for internal use
-         * @ignore
-         *
-         **/
-        $moveLines(dir: any, copy: any): void;
         toggleWord(): void;
         /**
          * Works like [[EditSession.getTokenAt]], except it returns a number.
@@ -4678,7 +4482,6 @@ export namespace Ace {
         applyComposition(text: any, composition: any): void;
         onTextInput(text: any, composition: any): any;
         autoIndent(): void;
-        $handlePaste(e: any): any;
         /**
          * Called whenever a text "cut" happens.
          **/
@@ -4695,9 +4498,7 @@ export namespace Ace {
         onChangeBreakpoint(): void;
         onChangeBackMarker(): void;
         onChangeFrontMarker(): void;
-        $getSelectionHighLightRegexp(): any;
         onSelectionChange(e: any): void;
-        $updateHighlightActiveLine(): void;
         /**
          * Emitted when the selection changes.
          *
@@ -4707,16 +4508,10 @@ export namespace Ace {
         onScrollTopChange(): void;
         onTokenizerUpdate(e: any): void;
         onDocumentChange(delta: any): void;
-        $cursorChange(): void;
         onBlur(e: any): void;
         onFocus(e: any): void;
-        /** todo: move to mode.getMatching**/
-        $highlightTags(): void;
-        $highlightBrackets(): void;
-        $historyTracker(e: any): void;
         endOperation(e: any): any;
         startOperation(commandEvent: any): void;
-        $initOperationListeners(): void;
         /**
          * Creates a new `Editor` object.
          *
@@ -4727,6 +4522,18 @@ export namespace Ace {
          * @constructor
          **/
         constructor(renderer: VirtualRenderer, session: EditSession);
+        once(name: string, callback: Function): void;
+        setDefaultHandler(name: string, callback: Function): void;
+        removeDefaultHandler(name: string, callback: Function): void;
+        addEventListener(name: string, callback: Function, capturing?: boolean): void;
+        off(name: string, callback: Function): void;
+        removeListener(name: string, callback: Function): void;
+        removeEventListener(name: string, callback: Function): void;
+        _emit(eventName: any, e: any);
+        _signal(eventName: any, e: any): void;
+        removeAllListeners(name?: string): void;
+        setOptions(optList: { [key: string]: any; }): void;
+        getOptions(optionNames?: string[] | { [key: string]: any; }): { [key: string]: any; };
         container: HTMLElement;
         renderer: VirtualRenderer;
         id: string;
