@@ -1,5 +1,5 @@
 {
-  "title": "Ace Documentation",
+  "title": "Ace API Reference",
   "readme": "assets/ace_readme.md",
   "entryPoints": [
     "generated/ace.d.ts"
