@@ -88,19 +88,19 @@ class AceGitLinkPlugin extends ConverterComponent {
 }
 
 function getSourceUrlFromFile(aceObjects, reflection) {
-    var pattern = /ace\/src(.)*/i;
+    var pattern = /ace\/(src.*)/i;
 
     if (reflection.kindString === "Interface" || reflection.kindString === "Class") {
         var source = aceObjects[reflection.name];
         if (source && source.sourceName) {
             if (source.described) {
                 return {
-                    "source": (source.sourceName.match(pattern)) ? source.sourceName.match(pattern)[0] : source.sourceName,
+                    "source": (source.sourceName.match(pattern)) ? source.sourceName.match(pattern)[1] : source.sourceName,
                     "line": source.line
                 };
             } else {
                 return {
-                    "source": (source.sourceName.match(pattern)) ? source.sourceName.match(pattern)[0] : source.sourceName,
+                    "source": (source.sourceName.match(pattern)) ? source.sourceName.match(pattern)[1] : source.sourceName,
                     "line": source.line,
                     log: "No described class in classes.json: " + reflection.name + "\r\n"
                 };
@@ -113,13 +113,13 @@ function getSourceUrlFromFile(aceObjects, reflection) {
             if (parentSource && parentSource.sourceName) {
                 if (parentSource.described) {
                     return {
-                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                         "line": parentSource.line
                     };
                 } else {
                     if (!reflection.inheritedFrom && !reflection.implementationOf) {
                         return {
-                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                             "line": parentSource.line,
                             log: "No described method in classes.json: " + reflection.name + ". Class:" + reflection.parent.parent.name + "\r\n"
                         };
@@ -135,13 +135,13 @@ function getSourceUrlFromFile(aceObjects, reflection) {
                 if (parentSource && parentSource.sourceName) {
                     if (parentSource.described) {
                         return {
-                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                             "line": parentSource.line
                         };
                     } else {
                         if (!reflection.inheritedFrom && !reflection.implementationOf) {
                             return {
-                                "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                                "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                                 "line": parentSource.line,
                                 log: "No described event in classes.json: " + eventName + ". Class:" + reflection.parent.parent.name + "\r\n"
                             };
@@ -156,13 +156,13 @@ function getSourceUrlFromFile(aceObjects, reflection) {
             if (parentSource && parentSource.sourceName) {
                 if (parentSource.described) {
                     return {
-                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                         "line": parentSource.line
                     };
                 } else {
                     if (!reflection.inheritedFrom && !reflection.implementationOf) {
                         return {
-                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                             "line": parentSource.line,
                             log: "No constructor in classes.json: " + reflection.name + ". Class:" + reflection.parent.parent.name + "\r\n"
                         };
@@ -176,13 +176,13 @@ function getSourceUrlFromFile(aceObjects, reflection) {
             if (parentSource && parentSource.sourceName) {
                 if (parentSource.described) {
                     return {
-                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                        "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                         "line": parentSource.line
                     };
                 } else {
                     if (!reflection.inheritedFrom && !reflection.implementationOf) {
                         return {
-                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[0] : parentSource.sourceName,
+                            "source": (parentSource.sourceName.match(pattern)) ? parentSource.sourceName.match(pattern)[1] : parentSource.sourceName,
                             "line": parentSource.line,
                             log: "No described property in classes.json: " + reflection.name + ". Class:" + reflection.parent.name + "\r\n"
                         };

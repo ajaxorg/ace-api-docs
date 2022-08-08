@@ -13979,7 +13979,7 @@
             "params": {}
         },
         "addSession": {
-            "line": 21,
+            "line": 22,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -13989,7 +13989,7 @@
             "described": true
         },
         "add": {
-            "line": 33,
+            "line": 34,
             "jsDoc": [
                 "/**\r\n     * Provides a means for implementing your own undo manager. `options` has one property, `args`, an [[Array `Array`]], with two elements:\r\n     *\r\n     * - `args[0]` is an array of deltas\r\n     * - `args[1]` is the document to associate with\r\n     *\r\n     * @param {Object} options Contains additional properties\r\n     *\r\n     **/"
             ],
@@ -14003,7 +14003,7 @@
             "described": true
         },
         "addSelection": {
-            "line": 47,
+            "line": 52,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14014,7 +14014,7 @@
             "described": true
         },
         "startNewGroup": {
-            "line": 54,
+            "line": 59,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14023,7 +14023,7 @@
             "described": true
         },
         "markIgnored": {
-            "line": 59,
+            "line": 64,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14034,7 +14034,7 @@
             "described": true
         },
         "getSelection": {
-            "line": 72,
+            "line": 77,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14045,7 +14045,7 @@
             "described": true
         },
         "getRevision": {
-            "line": 84,
+            "line": 89,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14054,7 +14054,7 @@
             "described": true
         },
         "getDeltas": {
-            "line": 88,
+            "line": 93,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14065,16 +14065,6 @@
             "described": true
         },
         "getChangedRanges": {
-            "line": 104,
-            "jsDoc": [],
-            "sourceName": "ace_new/ace/src/undomanager.js",
-            "params": {
-                "return": "void",
-                "from": "any",
-                "to": "any"
-            }
-        },
-        "getChangedLines": {
             "line": 109,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
@@ -14084,8 +14074,18 @@
                 "to": "any"
             }
         },
+        "getChangedLines": {
+            "line": 114,
+            "jsDoc": [],
+            "sourceName": "ace_new/ace/src/undomanager.js",
+            "params": {
+                "return": "void",
+                "from": "any",
+                "to": "any"
+            }
+        },
         "undo": {
-            "line": 120,
+            "line": 125,
             "jsDoc": [
                 "/**\r\n     * [Perform an undo operation on the document, reverting the last change.]{: #UndoManager.undo}\r\n     * @param {Boolean} dontSelect {:dontSelect}\r\n     *\r\n     * @returns {Range} The range of the undo.\r\n     **/"
             ],
@@ -14098,7 +14098,7 @@
             "described": true
         },
         "redo": {
-            "line": 153,
+            "line": 158,
             "jsDoc": [
                 "/**\r\n     * [Perform a redo operation on the document, reimplementing the last change.]{: #UndoManager.redo}\r\n     * @param {Boolean} dontSelect {:dontSelect}\r\n     *\r\n     **/"
             ],
@@ -14111,7 +14111,7 @@
             "described": true
         },
         "$syncRev": {
-            "line": 181,
+            "line": 186,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14119,7 +14119,7 @@
             }
         },
         "reset": {
-            "line": 192,
+            "line": 197,
             "jsDoc": [
                 "/**\r\n     * Destroys the stack of undo and redo redo operations.\r\n     **/"
             ],
@@ -14130,7 +14130,7 @@
             "described": true
         },
         "canUndo": {
-            "line": 208,
+            "line": 213,
             "jsDoc": [
                 "/**\r\n     * Returns `true` if there are undo operations left to perform.\r\n     * @returns {Boolean}\r\n     **/"
             ],
@@ -14141,7 +14141,7 @@
             "described": true
         },
         "canRedo": {
-            "line": 216,
+            "line": 221,
             "jsDoc": [
                 "/**\r\n     * Returns `true` if there are redo operations left to perform.\r\n     * @returns {Boolean}\r\n     **/"
             ],
@@ -14152,7 +14152,7 @@
             "described": true
         },
         "bookmark": {
-            "line": 223,
+            "line": 228,
             "jsDoc": [
                 "/**\r\n     * Marks the current status clean\r\n     **/"
             ],
@@ -14164,7 +14164,7 @@
             "described": true
         },
         "isAtBookmark": {
-            "line": 233,
+            "line": 238,
             "jsDoc": [
                 "/**\r\n     * Returns if the current status is clean\r\n     * @returns {Boolean}\r\n     **/"
             ],
@@ -14175,7 +14175,7 @@
             "described": true
         },
         "toJSON": {
-            "line": 237,
+            "line": 242,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14183,7 +14183,7 @@
             }
         },
         "fromJSON": {
-            "line": 241,
+            "line": 246,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
@@ -14191,7 +14191,7 @@
             }
         },
         "$prettyPrint": {
-            "line": 250,
+            "line": 255,
             "jsDoc": [],
             "sourceName": "ace_new/ace/src/undomanager.js",
             "params": {
