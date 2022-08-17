@@ -4,7 +4,7 @@
   "entryPoints": [
     "generated/ace.d.ts"
   ],
-  "gitLink": "https://github.com/ajaxorg/ace/tree/v1.9.2/",
+  "gitLink": "https://github.com/ajaxorg/ace/tree/v1.9.6",
   "exclude": {
     "classes": [
       "Array",

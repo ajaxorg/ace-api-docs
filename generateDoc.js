@@ -21,7 +21,9 @@ app.options.setCompilerOptions(options["entryPoints"], {
 app.options.addDeclaration({name: 'acegitlink'});
 app.converter.addComponent('acegitlink', acegitlink);
 app.renderer.addComponent('borrowstag', borrowsTag);
-app.options.setValue("acegitlink", options["gitLink"]);
+var gitLink = options["gitLink"];
+if (gitLink.charAt(gitLink.length - 1) !== '/') gitLink += '/';
+app.options.setValue("acegitlink", gitLink);
 var projectReflection = app.convert();
 
 app.generateDocs(projectReflection, process.argv[2]);
