@@ -3,7 +3,7 @@
 requires node >= 8
 
 ```
-node generateAnnotations.js AceDirName/lib/ace/src
+node generateAnnotations.js AceDirName/ace/src
 ```
 
 Creates `classes.json` file in directory `generated`.
@@ -18,9 +18,9 @@ node generateNewDts.js ace.d.ts
 There will be some information in `generated\declarations.log` that you could use for improving declaration file. (Missing events, methods, constructors)
 
 The final step will generate output documentation with TypeDoc.
-You will need to change `generateDoc.js` with your settings. Main parameters described in `https://typedoc.org/api/`
+You will need to change `generator-options.json` with your settings. 
 
-Important! Change `acegitlink` parameter with used Ace release link - for example: `https://github.com/ajaxorg/ace/tree/v1.4.2/`  
+Important! Change `gitLink` parameter with used Ace release link - for example: `https://github.com/ajaxorg/ace/tree/v1.4.2/`  
 
 ```
 node generateDoc.js doc
