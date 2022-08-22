@@ -1,6 +1,7 @@
 "use strict";
 var ts = require("typescript");
 var fs = require("fs");
+const {EOL} = require('os');
 var propObjects = {};
 var options = JSON.parse(fs.readFileSync("generator-options.json", "utf8").toString());
 
@@ -87,7 +88,7 @@ function generateAnnotations(path, options, output = {}) {
             }
             output = mergeGeneratedObjects(output, docs);
 
-            console.log(path + " finished\r\n");
+            console.log(path + " finished" + EOL);
         }
         else if (stat.isDirectory()) {
             var files = fs.readdirSync(path).sort();
@@ -188,7 +189,7 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                             logs = logs + "Duplicate property '" + propertyName + "' determinator. Class: " + className
                                 + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
                                 + output[className][propertyName].sourceName + ":"
-                                + output[className][propertyName].line + "\r\n";
+                                + output[className][propertyName].line + EOL;
                         }
                     }
                 }
@@ -352,7 +353,7 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className
                             + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
                             + output[className][functionName].sourceName + ":" + output[className][functionName].line
-                            + "\r\n";
+                            + EOL;
                     }
                     if (secondFunctionName) {
                         if (!output[className].hasOwnProperty(secondFunctionName)
@@ -368,7 +369,7 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                             logs = logs + "Duplicate function '" + secondFunctionName + "' determinator. Class: "
                                 + className + ". Filename: " + fileNames[0] + ":" + currentLine
                                 + ". First implementation: " + output[className][secondFunctionName].sourceName + ":"
-                                + output[className][secondFunctionName].line + "\r\n";
+                                + output[className][secondFunctionName].line + EOL;
                         }
                     }
 
@@ -455,7 +456,7 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         logs = logs + "Duplicate function '" + functionName + "' determinator. Class: " + className
                             + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
                             + output[className][functionName].sourceName + ":" + output[className][functionName].line
-                            + "\r\n";
+                            + EOL;
                     }
 
                     identifiers.length = 0;

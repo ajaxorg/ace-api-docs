@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {value: true});
 var ts = require("typescript");
 var fs = require("fs");
+const {EOL} = require('os');
 var logs = '';
 var edits = [];
 var foundClassName = '';
@@ -18,13 +19,13 @@ function createLanguageServiceHost(options) {
             this.files[fileName] = ts.ScriptSnapshot.fromString(text);
         },
         "getCompilationSettings": function () {
-            return ts.getDefaultCompilerOptions()
+            return ts.getDefaultCompilerOptions();
         },
         "getScriptFileNames": function () {
-            return Object.keys(this.files)
+            return Object.keys(this.files);
         },
         "getScriptVersion": function (_fileName) {
-            return "0"
+            return "0";
         },
         "getScriptSnapshot": function (fileName) {
             return this.files[fileName];
@@ -35,7 +36,7 @@ function createLanguageServiceHost(options) {
         "getDefaultLibFileName": function () {
             return ts.getDefaultLibFilePath(options);
         }
-    }
+    };
 
 }
 
@@ -45,7 +46,7 @@ function createDefaultFormatCodeSettings() {
         indentSize: 4,
         tabSize: 4,
         indentStyle: ts.IndentStyle.Smart,
-        newLineCharacter: "\r\n",
+        newLineCharacter: EOL,
         convertTabsToSpaces: true,
         insertSpaceAfterCommaDelimiter: true,
         insertSpaceAfterSemicolonInForStatements: true,
@@ -92,7 +93,7 @@ function generateDocumentation(fileNames, options) {
             if (foundClass) {
                 edits.push({
                     pos: node.parent.pos,
-                    text: "\r\n" + jsDocPrettify(foundClass)
+                    text: EOL + jsDocPrettify(foundClass)
                 });
             }
             else {
@@ -102,7 +103,7 @@ function generateDocumentation(fileNames, options) {
                     jsDoc: [],
                     sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
                     described: true
-                }
+                };
             }
         }
         else {
@@ -111,7 +112,7 @@ function generateDocumentation(fileNames, options) {
                 if (foundConstructor) {
                     edits.push({
                         pos: node.pos,
-                        text: "\r\n" + jsDocPrettify(foundConstructor)
+                        text: EOL + jsDocPrettify(foundConstructor)
                     });
                 }
                 else {
@@ -121,7 +122,7 @@ function generateDocumentation(fileNames, options) {
                         jsDoc: [],
                         sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
                         described: true
-                    }
+                    };
                 }
             }
             else {
@@ -131,7 +132,7 @@ function generateDocumentation(fileNames, options) {
                     if (foundEvent) {
                         edits.push({
                             pos: node.parent.pos,
-                            text: "\r\n" + jsDocPrettify(foundEvent)
+                            text: EOL + jsDocPrettify(foundEvent)
                         });
                     }
                     else {
@@ -141,7 +142,7 @@ function generateDocumentation(fileNames, options) {
                             jsDoc: [],
                             sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
                             described: true
-                        }
+                        };
                     }
                 }
                 else {
@@ -151,7 +152,7 @@ function generateDocumentation(fileNames, options) {
                         if (foundMethod) {
                             edits.push({
                                 pos: node.parent.pos,
-                                text: "\r\n" + jsDocPrettify(foundMethod)
+                                text: EOL + jsDocPrettify(foundMethod)
                             });
                         }
                         else {
@@ -162,7 +163,7 @@ function generateDocumentation(fileNames, options) {
                                 jsDoc: [],
                                 sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
                                 described: true
-                            }
+                            };
                         }
                     }
                     else {
@@ -173,7 +174,7 @@ function generateDocumentation(fileNames, options) {
                             if (foundProperty) {
                                 edits.push({
                                     pos: node.parent.pos,
-                                    text: "\r\n" + jsDocPrettify(foundProperty)
+                                    text: EOL + jsDocPrettify(foundProperty)
                                 });
                             }
                             else {
@@ -185,7 +186,7 @@ function generateDocumentation(fileNames, options) {
                                         jsDoc: [],
                                         sourceName: fileNames[0].match(/ace\.d\.ts/)[0],
                                         described: true
-                                    }
+                                    };
                                 }
                             }
                         }
@@ -246,17 +247,17 @@ function jsDocPrettify(aceObject) {
     let jsDoc = '';
     if (aceObject && aceObject.jsDoc) {
         for (var k = 0; k < aceObject.jsDoc.length; k++) {
-            jsDoc = jsDoc + aceObject.jsDoc[k] + "\r\n";
+            jsDoc = jsDoc + aceObject.jsDoc[k] + EOL;
         }
     }
-    jsDoc = jsDoc.replace(/\s{2,}/g, '\r\n ');
+    jsDoc = jsDoc.replace(/\s{2,}/g, EOL + ' ');
     return jsDoc;
 }
 
 function implicitlyCreateClasses(content, withJsDoc) {
     for (var className in classes) {
         if (!classes[className].described) {
-            let regExp = new RegExp('namespace Ace .*\\r\\n', 'g');
+            let regExp = new RegExp('namespace Ace .*' + EOL, 'g');
             let match = regExp.exec(content);
             if (regExp.lastIndex != 0) {
                 let jsDoc = '';
@@ -265,11 +266,11 @@ function implicitlyCreateClasses(content, withJsDoc) {
                 }
                 edits.push({
                     pos: regExp.lastIndex,
-                    text: jsDoc + "export class " + className + " {\r\n}\r\n\r\n"
+                    text: jsDoc + "export class " + className + " {" + EOL + "}" + EOL + EOL
                 });
             }
 
-            logs = logs + "No such class name '" + className + "' in declaration file. Implicitly created.\r\n"
+            logs = logs + "No such class name '" + className + "' in declaration file. Implicitly created." + EOL;
         }
     }
 }
@@ -301,11 +302,11 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 }
                                 edits.push({
                                     pos: regExp.lastIndex + 3,
-                                    text: jsDoc + "" + propName + ": " + type + ";\r\n"
+                                    text: jsDoc + "" + propName + ": " + type + ";" + EOL
                                 });
                             }
                             logs = logs + "No such property name '" + propName + "' in declaration file. Class: "
-                                + className + ". Implicitly created.\r\n";
+                                + className + ". Implicitly created." + EOL;
                             break;
                         case /_event/.test(method):
                             let eventName = method.match(/([\w$]*)_event/)[1];
@@ -331,11 +332,11 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 }
                                 edits.push({
                                     pos: regExp.lastIndex + 3,
-                                    text: jsDoc + "on(name: '" + eventName + "'" + callbackExpr + "): void" + ";\r\n"
+                                    text: jsDoc + "on(name: '" + eventName + "'" + callbackExpr + "): void" + ";" + EOL
                                 });
                             }
                             logs = logs + "No such event name '" + eventName + "' in declaration file. Class: "
-                                + className + ". Implicitly created.\r\n";
+                                + className + ". Implicitly created." + EOL;
                             break;
                         case (method === "construct"):
                             regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
@@ -371,11 +372,11 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 }
                                 edits.push({
                                     pos: regExp.lastIndex + 3,
-                                    text: jsDoc + "constructor(" + allParams.join(', ') + ")" + returnType + ";\r\n"
+                                    text: jsDoc + "constructor(" + allParams.join(', ') + ")" + returnType + ";" + EOL
                                 });
                             }
                             logs = logs + "No constructor in declaration file. Class: " + className
-                                + ". Implicitly created.\r\n";
+                                + ". Implicitly created." + EOL;
                             break;
                         default:
                             regExp = new RegExp('(class|interface) ' + className + ' [^{]*', 'gm');
@@ -411,12 +412,12 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                 }
                                 edits.push({
                                     pos: regExp.lastIndex + 3,
-                                    text: jsDoc + method + "(" + allParams.join(', ') + ")" + returnType + ";\r\n"
+                                    text: jsDoc + method + "(" + allParams.join(', ') + ")" + returnType + ";" + EOL
                                 });
                             }
 
                             logs = logs + "No such method name '" + method + "' in declaration file. Class: "
-                                + className + ". Implicitly created.\r\n";
+                                + className + ". Implicitly created." + EOL;
                             break;
                     }
                 }
@@ -433,7 +434,7 @@ function applyEditsToFile(filename, format) {
         .sort((a, b) => b.pos - a.pos)
         .forEach(edit => {
             end = edit.text + start.slice(edit.pos) + end;
-            start = start.slice(0, edit.pos)
+            start = start.slice(0, edit.pos);
         });
     end = start + end;
     if (format) {
