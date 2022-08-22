@@ -1,7 +1,7 @@
 "use strict";
 var ts = require("typescript");
 var fs = require("fs");
-const {EOL} = require('os');
+const EOL = '\n';
 var propObjects = {};
 var options = JSON.parse(fs.readFileSync("generator-options.json", "utf8").toString());
 

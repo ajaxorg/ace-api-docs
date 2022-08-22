@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {value: true});
 var ts = require("typescript");
 var fs = require("fs");
-const {EOL} = require('os');
+const EOL = '\n';
 var logs = '';
 var edits = [];
 var foundClassName = '';
@@ -257,7 +257,7 @@ function jsDocPrettify(aceObject) {
 function implicitlyCreateClasses(content, withJsDoc) {
     for (var className in classes) {
         if (!classes[className].described) {
-            let regExp = new RegExp('namespace Ace .*' + EOL, 'g');
+            let regExp = new RegExp('namespace Ace\\s*{\\s*' + EOL, 'g');
             let match = regExp.exec(content);
             if (regExp.lastIndex != 0) {
                 let jsDoc = '';
@@ -301,7 +301,7 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     jsDoc = jsDocPrettify(classes[className][method]);
                                 }
                                 edits.push({
-                                    pos: regExp.lastIndex + 3,
+                                    pos: regExp.lastIndex + 2,
                                     text: jsDoc + "" + propName + ": " + type + ";" + EOL
                                 });
                             }
@@ -331,7 +331,7 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     jsDoc = jsDocPrettify(classes[className][method]);
                                 }
                                 edits.push({
-                                    pos: regExp.lastIndex + 3,
+                                    pos: regExp.lastIndex + 2,
                                     text: jsDoc + "on(name: '" + eventName + "'" + callbackExpr + "): void" + ";" + EOL
                                 });
                             }
@@ -371,7 +371,7 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     jsDoc = jsDocPrettify(classes[className][method]);
                                 }
                                 edits.push({
-                                    pos: regExp.lastIndex + 3,
+                                    pos: regExp.lastIndex + 2,
                                     text: jsDoc + "constructor(" + allParams.join(', ') + ")" + returnType + ";" + EOL
                                 });
                             }
@@ -411,7 +411,7 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
                                     jsDoc = jsDocPrettify(classes[className][method]);
                                 }
                                 edits.push({
-                                    pos: regExp.lastIndex + 3,
+                                    pos: regExp.lastIndex + 2,
                                     text: jsDoc + method + "(" + allParams.join(', ') + ")" + returnType + ";" + EOL
                                 });
                             }
