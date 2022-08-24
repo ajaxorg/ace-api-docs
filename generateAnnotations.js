@@ -75,7 +75,10 @@ function generateAnnotations(path, options, output = {}) {
         if (stat.isFile() && /\.js$/.test(path)) {
             var fileArr = [];
             fileArr.push(path);
-            if (/_test/.test(path) || /vim/.test(path) || /highlight_rules/.test(path)) return;
+            if (/_test.js$/.test(path) || /vim.js$/.test(path)) return;
+            if (/lib\/ace\/mode\/(?!behaviour|folding|text.js|text_highlight_rules.js)/.test(path)) return;
+            if (/\.(css|snippets)\.js$/.test(path)) return;
+            
             var docs = generateDocumentation(fileArr, options);
             //prefer Classes with jsDoc
             for (var a in docs) {
@@ -93,7 +96,8 @@ function generateAnnotations(path, options, output = {}) {
         else if (stat.isDirectory()) {
             var files = fs.readdirSync(path).sort();
             files.forEach(function (name) {
-                add(path + "/" + name)
+                if (/\s/.test(name)) return;
+                add(path + "/" + name);
             });
         }
     }

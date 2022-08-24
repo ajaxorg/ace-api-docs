@@ -2,7 +2,7 @@
 
 requires node >= 8
 
-```
+```bash
 node generateAnnotations.js AceDirName/ace/src
 ```
 
@@ -11,7 +11,7 @@ There will be warnings in `generated\annotations.log` for duplicated classes\met
 
 Apply `classes.json` file to declaration with command
 
-```
+```bash
 node generateNewDts.js ace.d.ts
 ```
 
@@ -20,9 +20,10 @@ There will be some information in `generated\declarations.log` that you could us
 The final step will generate output documentation with TypeDoc.
 You will need to change `generator-options.json` with your settings. 
 
-Important! Change `gitLink` parameter with used Ace release link - for example: `https://github.com/ajaxorg/ace/tree/v1.4.2/`  
+Important! Set `ACE_VERSION` variable which is used with `gitLink` parameter to constuct Ace release link - for example: `https://github.com/ajaxorg/ace/tree/v1.4.2/`  
 
-```
+```bash
+export ACE_VERSION="v$(node -p 'require("../package.json").version')"
 node generateDoc.js doc
 ```
 
@@ -32,8 +33,9 @@ Also log file will be created in `generated` dir with name `documentation.log`
 
 
 
-```
-node generateAnnotations.js ace/lib/ace
+```bash
+export ACE_VERSION="v$(node -p 'require("ace/package.json").version')"
+node generateAnnotations.js ace/src
 node generateNewDts.js ace.d.ts
 node generateDoc.js doc
 ```

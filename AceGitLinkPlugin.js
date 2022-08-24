@@ -33,7 +33,7 @@ class AceGitLinkPlugin extends ConverterComponent {
             var reflection = project.reflections[key];
             if (reflection.kind === 4096 && reflection.parent && reflection.parent.kind === 2048 && reflection.parent.parent && reflection.parent.parent.kind === 128) {
                 if (!reflection.comment) {
-                    removeReflection(project, reflection.parent);
+                    // removeReflection(project, reflection.parent);
                     this.logs = this.logs + "Warning: ignoring method without comment: " + reflection.name + ". Class: " + reflection.parent.parent.name + "\r\n";
                 }
             }

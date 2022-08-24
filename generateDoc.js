@@ -23,6 +23,8 @@ app.converter.addComponent('acegitlink', acegitlink);
 app.renderer.addComponent('borrowstag', borrowsTag);
 var gitLink = options["gitLink"];
 if (gitLink.charAt(gitLink.length - 1) !== '/') gitLink += '/';
+gitLink += process.env.ACE_VERSION + "/";
+
 app.options.setValue("acegitlink", gitLink);
 var projectReflection = app.convert();
 
