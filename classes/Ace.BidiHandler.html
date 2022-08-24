@@ -97,12 +97,22 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#getDocumentRow" class="tsd-kind-icon">get<wbr>Document<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#getPosLeft" class="tsd-kind-icon">get<wbr>Pos<wbr>Left</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#getSelections" class="tsd-kind-icon">get<wbr>Selections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#getSplitIndex" class="tsd-kind-icon">get<wbr>Split<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#isBidiRow" class="tsd-kind-icon">is<wbr>Bidi<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#isRtlLine" class="tsd-kind-icon">is<wbr>Rtl<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#markAsDirty" class="tsd-kind-icon">mark<wbr>AsDirty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#offsetToCol" class="tsd-kind-icon">offset<wbr>ToCol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#setContentWidth" class="tsd-kind-icon">set<wbr>Content<wbr>Width</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#setEolChar" class="tsd-kind-icon">set<wbr>Eol<wbr>Char</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#setRtlDirection" class="tsd-kind-icon">set<wbr>Rtl<wbr>Direction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#setShowInvisibles" class="tsd-kind-icon">set<wbr>Show<wbr>Invisibles</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#updateBidiMap" class="tsd-kind-icon">update<wbr>Bidi<wbr>Map</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#updateCharacterWidths" class="tsd-kind-icon">update<wbr>Character<wbr>Widths</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.BidiHandler.html#updateRowLine" class="tsd-kind-icon">update<wbr>Row<wbr>Line</a></li>
 							</ul>
 						</section>
 					</div>
@@ -146,6 +156,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getDocumentRow" class="tsd-anchor"></a>
+					<h3>get<wbr>Document<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Document<wbr>Row<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L75">../src/bidihandler.js:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getPosLeft" class="tsd-anchor"></a>
 					<h3>get<wbr>Pos<wbr>Left</h3>
@@ -217,6 +244,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getSplitIndex" class="tsd-anchor"></a>
+					<h3>get<wbr>Split<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Split<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L87">../src/bidihandler.js:87</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="isBidiRow" class="tsd-anchor"></a>
 					<h3>is<wbr>Bidi<wbr>Row</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -246,6 +290,29 @@
 								</li>
 								<li>
 									<h5>splitIndex: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isRtlLine" class="tsd-anchor"></a>
+					<h3>is<wbr>Rtl<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Rtl<wbr>Line<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L208">../src/bidihandler.js:208</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -307,6 +374,141 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onChange" class="tsd-anchor"></a>
+					<h3>on<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L63">../src/bidihandler.js:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>delta: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setContentWidth" class="tsd-anchor"></a>
+					<h3>set<wbr>Content<wbr>Width</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Content<wbr>Width<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L204">../src/bidihandler.js:204</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setEolChar" class="tsd-anchor"></a>
+					<h3>set<wbr>Eol<wbr>Char</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Eol<wbr>Char<span class="tsd-signature-symbol">(</span>eolChar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L200">../src/bidihandler.js:200</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>eolChar: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setRtlDirection" class="tsd-anchor"></a>
+					<h3>set<wbr>Rtl<wbr>Direction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rtl<wbr>Direction<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, isRtlDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L216">../src/bidihandler.js:216</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>editor: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>isRtlDir: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setShowInvisibles" class="tsd-anchor"></a>
+					<h3>set<wbr>Show<wbr>Invisibles</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Show<wbr>Invisibles<span class="tsd-signature-symbol">(</span>showInvisibles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L195">../src/bidihandler.js:195</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>showInvisibles: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateBidiMap" class="tsd-anchor"></a>
+					<h3>update<wbr>Bidi<wbr>Map</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Bidi<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L158">../src/bidihandler.js:158</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updateCharacterWidths" class="tsd-anchor"></a>
 					<h3>update<wbr>Character<wbr>Widths</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -328,6 +530,32 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fontMetrics: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateRowLine" class="tsd-anchor"></a>
+					<h3>update<wbr>Row<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Row<wbr>Line<span class="tsd-signature-symbol">(</span>docRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, splitIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/bidihandler.js#L107">../src/bidihandler.js:107</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>docRow: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>splitIndex: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -358,13 +586,22 @@
 								<a href="Ace.BidiHandler.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#getDocumentRow" class="tsd-kind-icon">get<wbr>Document<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.BidiHandler.html#getPosLeft" class="tsd-kind-icon">get<wbr>Pos<wbr>Left</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.BidiHandler.html#getSelections" class="tsd-kind-icon">get<wbr>Selections</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#getSplitIndex" class="tsd-kind-icon">get<wbr>Split<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.BidiHandler.html#isBidiRow" class="tsd-kind-icon">is<wbr>Bidi<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#isRtlLine" class="tsd-kind-icon">is<wbr>Rtl<wbr>Line</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.BidiHandler.html#markAsDirty" class="tsd-kind-icon">mark<wbr>AsDirty</a>
@@ -373,7 +610,28 @@
 								<a href="Ace.BidiHandler.html#offsetToCol" class="tsd-kind-icon">offset<wbr>ToCol</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#setContentWidth" class="tsd-kind-icon">set<wbr>Content<wbr>Width</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#setEolChar" class="tsd-kind-icon">set<wbr>Eol<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#setRtlDirection" class="tsd-kind-icon">set<wbr>Rtl<wbr>Direction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#setShowInvisibles" class="tsd-kind-icon">set<wbr>Show<wbr>Invisibles</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#updateBidiMap" class="tsd-kind-icon">update<wbr>Bidi<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.BidiHandler.html#updateCharacterWidths" class="tsd-kind-icon">update<wbr>Character<wbr>Widths</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.BidiHandler.html#updateRowLine" class="tsd-kind-icon">update<wbr>Row<wbr>Line</a>
 							</li>
 						</ul>
 					</li>

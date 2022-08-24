@@ -86,6 +86,22 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#autoOutdent" class="tsd-kind-icon">auto<wbr>Outdent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#checkOutdent" class="tsd-kind-icon">check<wbr>Outdent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#createModeDelegates" class="tsd-kind-icon">create<wbr>Mode<wbr>Delegates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#createWorker" class="tsd-kind-icon">create<wbr>Worker</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#getCompletions" class="tsd-kind-icon">get<wbr>Completions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#getKeywords" class="tsd-kind-icon">get<wbr>Keywords</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#getNextLineIndent" class="tsd-kind-icon">get<wbr>Next<wbr>Line<wbr>Indent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#getTokenizer" class="tsd-kind-icon">get<wbr>Tokenizer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#toggleBlockComment" class="tsd-kind-icon">toggle<wbr>Block<wbr>Comment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#toggleCommentLines" class="tsd-kind-icon">toggle<wbr>Comment<wbr>Lines</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.SyntaxMode.html#transformAction" class="tsd-kind-icon">transform<wbr>Action</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -102,6 +118,318 @@
 							<aside class="tsd-sources">
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.SyntaxMode.html" class="tsd-signature-type" data-tsd-kind="Class">SyntaxMode</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="autoOutdent" class="tsd-anchor"></a>
+					<h3>auto<wbr>Outdent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">auto<wbr>Outdent<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, doc<span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L394">ace.d.ts:394</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>doc: <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkOutdent" class="tsd-anchor"></a>
+					<h3>check<wbr>Outdent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Outdent<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L393">ace.d.ts:393</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>line: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>input: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createModeDelegates" class="tsd-anchor"></a>
+					<h3>create<wbr>Mode<wbr>Delegates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Mode<wbr>Delegates<span class="tsd-signature-symbol">(</span>mapping<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L397">ace.d.ts:397</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mapping: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createWorker" class="tsd-anchor"></a>
+					<h3>create<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Worker<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L396">ace.d.ts:396</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getCompletions" class="tsd-anchor"></a>
+					<h3>get<wbr>Completions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Completions<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a>, pos<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Completion.html" class="tsd-signature-type" data-tsd-kind="Interface">Completion</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L404">ace.d.ts:404</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+								</li>
+								<li>
+									<h5>pos: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+								</li>
+								<li>
+									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Completion.html" class="tsd-signature-type" data-tsd-kind="Interface">Completion</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getKeywords" class="tsd-anchor"></a>
+					<h3>get<wbr>Keywords</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Keywords<span class="tsd-signature-symbol">(</span>append<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L403">ace.d.ts:403</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> append: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getNextLineIndent" class="tsd-anchor"></a>
+					<h3>get<wbr>Next<wbr>Line<wbr>Indent</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Line<wbr>Indent<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tab<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L392">ace.d.ts:392</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>line: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>tab: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getTokenizer" class="tsd-anchor"></a>
+					<h3>get<wbr>Tokenizer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tokenizer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Tokenizer.html" class="tsd-signature-type" data-tsd-kind="Class">Tokenizer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L383">ace.d.ts:383</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Tokenizer.html" class="tsd-signature-type" data-tsd-kind="Class">Tokenizer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toggleBlockComment" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Block<wbr>Comment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Block<wbr>Comment<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a>, range<span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a>, cursor<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L388">ace.d.ts:388</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+								</li>
+								<li>
+									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+								</li>
+								<li>
+									<h5>cursor: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toggleCommentLines" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Comment<wbr>Lines</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Comment<wbr>Lines<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a>, startRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L384">ace.d.ts:384</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+								</li>
+								<li>
+									<h5>startRow: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>endRow: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="transformAction" class="tsd-anchor"></a>
+					<h3>transform<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">transform<wbr>Action<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, editor<span class="tsd-signature-symbol">: </span><a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a>, session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/ace.d.ts#L398">ace.d.ts:398</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>action: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>editor: <a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a></h5>
+								</li>
+								<li>
+									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
+								</li>
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -128,6 +456,39 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="Ace.SyntaxMode.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#autoOutdent" class="tsd-kind-icon">auto<wbr>Outdent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#checkOutdent" class="tsd-kind-icon">check<wbr>Outdent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#createModeDelegates" class="tsd-kind-icon">create<wbr>Mode<wbr>Delegates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#createWorker" class="tsd-kind-icon">create<wbr>Worker</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#getCompletions" class="tsd-kind-icon">get<wbr>Completions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#getKeywords" class="tsd-kind-icon">get<wbr>Keywords</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#getNextLineIndent" class="tsd-kind-icon">get<wbr>Next<wbr>Line<wbr>Indent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#getTokenizer" class="tsd-kind-icon">get<wbr>Tokenizer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#toggleBlockComment" class="tsd-kind-icon">toggle<wbr>Block<wbr>Comment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#toggleCommentLines" class="tsd-kind-icon">toggle<wbr>Comment<wbr>Lines</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.SyntaxMode.html#transformAction" class="tsd-kind-icon">transform<wbr>Action</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -143,6 +504,7 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 		</div>
 	</div>

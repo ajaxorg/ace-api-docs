@@ -89,11 +89,28 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#_findEndTagInLine" class="tsd-kind-icon">_find<wbr>End<wbr>Tag<wbr>InLine</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#_getFirstTagInLine" class="tsd-kind-icon">_get<wbr>First<wbr>Tag<wbr>InLine</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#_pop" class="tsd-kind-icon">_pop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#_readTagBackward" class="tsd-kind-icon">_read<wbr>Tag<wbr>Backward</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#_readTagForward" class="tsd-kind-icon">_read<wbr>Tag<wbr>Forward</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#closingBracketBlock" class="tsd-kind-icon">closing<wbr>Bracket<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getBeginEndBlock" class="tsd-kind-icon">get<wbr>Begin<wbr>End<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getCommentFoldWidget" class="tsd-kind-icon">get<wbr>Comment<wbr>Fold<wbr>Widget</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getCommentRegionBlock" class="tsd-kind-icon">get<wbr>Comment<wbr>Region<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getFoldWidget" class="tsd-kind-icon">get<wbr>Fold<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getFoldWidgetRange" class="tsd-kind-icon">get<wbr>Fold<wbr>Widget<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getRegionBlock" class="tsd-kind-icon">get<wbr>Region<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getSectionRange" class="tsd-kind-icon">get<wbr>Section<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#getUsingStatementBlock" class="tsd-kind-icon">get<wbr>Using<wbr>Statement<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#indentationBlock" class="tsd-kind-icon">indentation<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#isHeading" class="tsd-kind-icon">is<wbr>Heading</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#latexBlock" class="tsd-kind-icon">latex<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#latexSection" class="tsd-kind-icon">latex<wbr>Section</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#luaBlock" class="tsd-kind-icon">lua<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#openingBracketBlock" class="tsd-kind-icon">opening<wbr>Bracket<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#rubyBlock" class="tsd-kind-icon">ruby<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.FoldMode.html#vbsBlock" class="tsd-kind-icon">vbs<wbr>Block</a></li>
 							</ul>
 						</section>
 					</div>
@@ -118,6 +135,38 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_findEndTagInLine" class="tsd-anchor"></a>
+					<h3>_find<wbr>End<wbr>Tag<wbr>InLine</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_find<wbr>End<wbr>Tag<wbr>InLine<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tagName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, startColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L93">../src/mode/folding/xml.js:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>tagName: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>startColumn: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="_getFirstTagInLine" class="tsd-anchor"></a>
 					<h3>_get<wbr>First<wbr>Tag<wbr>InLine</h3>
@@ -150,6 +199,55 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_pop" class="tsd-anchor"></a>
+					<h3>_pop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_pop<span class="tsd-signature-symbol">(</span>stack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L163">../src/mode/folding/xml.js:163</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stack: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>tag: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_readTagBackward" class="tsd-anchor"></a>
+					<h3>_read<wbr>Tag<wbr>Backward</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_read<wbr>Tag<wbr>Backward<span class="tsd-signature-symbol">(</span>iterator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L138">../src/mode/folding/xml.js:138</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>iterator: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="_readTagForward" class="tsd-anchor"></a>
 					<h3>_read<wbr>Tag<wbr>Forward</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -171,6 +269,41 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>iterator: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="closingBracketBlock" class="tsd-anchor"></a>
+					<h3>closing<wbr>Bracket<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">closing<wbr>Bracket<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, bracket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, typeRe<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/fold_mode.js#L78">../src/mode/folding/fold_mode.js:78</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>bracket: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>typeRe: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -214,6 +347,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getCommentFoldWidget" class="tsd-anchor"></a>
+					<h3>get<wbr>Comment<wbr>Fold<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Comment<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;start&quot;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L51">../src/mode/folding/xml.js:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;start&quot;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getCommentRegionBlock" class="tsd-anchor"></a>
 					<h3>get<wbr>Comment<wbr>Region<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -242,6 +401,177 @@
 								</li>
 								<li>
 									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getFoldWidget" class="tsd-anchor"></a>
+					<h3>get<wbr>Fold<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Widget<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, foldStyle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L33">../src/mode/folding/xml.js:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>foldStyle: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getFoldWidgetRange" class="tsd-anchor"></a>
+					<h3>get<wbr>Fold<wbr>Widget<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fold<wbr>Widget<wbr>Range<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, foldStyle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/xml.js#L179">../src/mode/folding/xml.js:179</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>foldStyle: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getRegionBlock" class="tsd-anchor"></a>
+					<h3>get<wbr>Region<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Region<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/csharp.js#L77">../src/mode/folding/csharp.js:77</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>line: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getSectionRange" class="tsd-anchor"></a>
+					<h3>get<wbr>Section<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Section<wbr>Range<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/cstyle.js#L100">../src/mode/folding/cstyle.js:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getUsingStatementBlock" class="tsd-anchor"></a>
+					<h3>get<wbr>Using<wbr>Statement<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Using<wbr>Statement<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, line<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/csharp.js#L55">../src/mode/folding/csharp.js:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>line: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="indentationBlock" class="tsd-anchor"></a>
+					<h3>indentation<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">indentation<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/fold_mode.js#L28">../src/mode/folding/fold_mode.js:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -279,6 +609,198 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="latexBlock" class="tsd-anchor"></a>
+					<h3>latex<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">latex<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, returnRange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/latex.js#L50">../src/mode/folding/latex.js:50</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>returnRange: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="latexSection" class="tsd-anchor"></a>
+					<h3>latex<wbr>Section</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">latex<wbr>Section<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/latex.js#L110">../src/mode/folding/latex.js:110</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="luaBlock" class="tsd-anchor"></a>
+					<h3>lua<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">lua<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tokenRange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/lua.js#L80">../src/mode/folding/lua.js:80</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>tokenRange: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="openingBracketBlock" class="tsd-anchor"></a>
+					<h3>opening<wbr>Bracket<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">opening<wbr>Bracket<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, bracket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, typeRe<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/fold_mode.js#L61">../src/mode/folding/fold_mode.js:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>bracket: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>typeRe: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rubyBlock" class="tsd-anchor"></a>
+					<h3>ruby<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">ruby<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tokenRange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/ruby.js#L111">../src/mode/folding/ruby.js:111</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>tokenRange: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="vbsBlock" class="tsd-anchor"></a>
+					<h3>vbs<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">vbs<wbr>Block<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tokenRange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.9.6/../src/mode/folding/vbscript.js#L72">../src/mode/folding/vbscript.js:72</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>tokenRange: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -303,19 +825,70 @@
 								<a href="Ace.FoldMode.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#_findEndTagInLine" class="tsd-kind-icon">_find<wbr>End<wbr>Tag<wbr>InLine</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.FoldMode.html#_getFirstTagInLine" class="tsd-kind-icon">_get<wbr>First<wbr>Tag<wbr>InLine</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#_pop" class="tsd-kind-icon">_pop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#_readTagBackward" class="tsd-kind-icon">_read<wbr>Tag<wbr>Backward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.FoldMode.html#_readTagForward" class="tsd-kind-icon">_read<wbr>Tag<wbr>Forward</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#closingBracketBlock" class="tsd-kind-icon">closing<wbr>Bracket<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.FoldMode.html#getBeginEndBlock" class="tsd-kind-icon">get<wbr>Begin<wbr>End<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getCommentFoldWidget" class="tsd-kind-icon">get<wbr>Comment<wbr>Fold<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.FoldMode.html#getCommentRegionBlock" class="tsd-kind-icon">get<wbr>Comment<wbr>Region<wbr>Block</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getFoldWidget" class="tsd-kind-icon">get<wbr>Fold<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getFoldWidgetRange" class="tsd-kind-icon">get<wbr>Fold<wbr>Widget<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getRegionBlock" class="tsd-kind-icon">get<wbr>Region<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getSectionRange" class="tsd-kind-icon">get<wbr>Section<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#getUsingStatementBlock" class="tsd-kind-icon">get<wbr>Using<wbr>Statement<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#indentationBlock" class="tsd-kind-icon">indentation<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.FoldMode.html#isHeading" class="tsd-kind-icon">is<wbr>Heading</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#latexBlock" class="tsd-kind-icon">latex<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#latexSection" class="tsd-kind-icon">latex<wbr>Section</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#luaBlock" class="tsd-kind-icon">lua<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#openingBracketBlock" class="tsd-kind-icon">opening<wbr>Bracket<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#rubyBlock" class="tsd-kind-icon">ruby<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.FoldMode.html#vbsBlock" class="tsd-kind-icon">vbs<wbr>Block</a>
 							</li>
 						</ul>
 					</li>
