@@ -88,7 +88,7 @@ class AceGitLinkPlugin extends ConverterComponent {
 }
 
 function getSourceUrlFromFile(aceObjects, reflection) {
-    var pattern = /ace\/(src.*)/i;
+    var pattern = /\/(src.*)/i;
 
     if (reflection.kindString === "Interface" || reflection.kindString === "Class") {
         var source = aceObjects[reflection.name];
