@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StatusBar | Ace API Reference</title>
+	<title>Decorator | Ace API Reference</title>
 	<meta name="description" content="Documentation for Ace API Reference">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/Ace.html">Ace</a>
 				</li>
 				<li>
-					<a href="Ace.StatusBar.html">StatusBar</a>
+					<a href="Ace.Decorator.html">Decorator</a>
 				</li>
 			</ul>
-			<h1>Class StatusBar</h1>
+			<h1>Class Decorator</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StatusBar</span>
+						<span class="target">Decorator</span>
 					</li>
 				</ul>
 			</section>
@@ -83,13 +83,13 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.StatusBar.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.Decorator.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.StatusBar.html#updateStatus" class="tsd-kind-icon">update<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Decorator.html#compensateFoldRows" class="tsd-kind-icon">compensate<wbr>Fold<wbr>Rows</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,13 +101,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Status<wbr>Bar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.StatusBar.html" class="tsd-signature-type" data-tsd-kind="Class">StatusBar</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Decorator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Decorator.html" class="tsd-signature-type" data-tsd-kind="Class">Decorator</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="Ace.StatusBar.html" class="tsd-signature-type" data-tsd-kind="Class">StatusBar</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Decorator.html" class="tsd-signature-type" data-tsd-kind="Class">Decorator</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -115,25 +115,28 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateStatus" class="tsd-anchor"></a>
-					<h3>update<wbr>Status</h3>
+					<a name="compensateFoldRows" class="tsd-anchor"></a>
+					<h3>compensate<wbr>Fold<wbr>Rows</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Status<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">compensate<wbr>Fold<wbr>Rows<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, foldData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/ext/statusbar.js#L22">src/ext/statusbar.js:22</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/layer/decorators.js#L113">src/layer/decorators.js:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>editor: <span class="tsd-signature-type">any</span></h5>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>foldData: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -155,13 +158,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-namespace">
-						<a href="Ace.StatusBar.html" class="tsd-kind-icon">Status<wbr>Bar</a>
+						<a href="Ace.Decorator.html" class="tsd-kind-icon">Decorator</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="Ace.StatusBar.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="Ace.Decorator.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.StatusBar.html#updateStatus" class="tsd-kind-icon">update<wbr>Status</a>
+								<a href="Ace.Decorator.html#compensateFoldRows" class="tsd-kind-icon">compensate<wbr>Fold<wbr>Rows</a>
 							</li>
 						</ul>
 					</li>

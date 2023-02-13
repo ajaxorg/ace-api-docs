@@ -103,7 +103,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#getHeight" class="tsd-kind-icon">get<wbr>Height</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#onMouseDown" class="tsd-kind-icon">on<wbr>Mouse<wbr>Down</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#onScroll" class="tsd-kind-icon">on<wbr>Scroll</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#scrollLeftFromThumbLeft" class="tsd-kind-icon">scroll<wbr>Left<wbr>From<wbr>Thumb<wbr>Left</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#setInnerWidth" class="tsd-kind-icon">set<wbr>Inner<wbr>Width</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#setScrollLeft" class="tsd-kind-icon">set<wbr>Scroll<wbr>Left</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.HScrollBar.html#setScrollWidth" class="tsd-kind-icon">set<wbr>Scroll<wbr>Width</a></li>
@@ -125,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L169">src/scrollbar.js:169</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar.js#L169">src/scrollbar.js:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,7 +171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L189">src/scrollbar.js:189</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar.js#L189">src/scrollbar.js:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -221,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L206">src/scrollbar.js:206</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L311">src/scrollbar_custom.js:311</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -230,6 +232,37 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onMouseDown" class="tsd-anchor"></a>
+					<h3>on<wbr>Mouse<wbr>Down</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Mouse<wbr>Down<span class="tsd-signature-symbol">(</span>eType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L268">src/scrollbar_custom.js:268</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Emitted when the scroll thumb dragged or scrollbar canvas clicked.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>eType: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>e: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -243,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L194">src/scrollbar.js:194</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar.js#L194">src/scrollbar.js:194</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -251,27 +284,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setInnerWidth" class="tsd-anchor"></a>
-					<h3>set<wbr>Inner<wbr>Width</h3>
+					<a name="scrollLeftFromThumbLeft" class="tsd-anchor"></a>
+					<h3>scroll<wbr>Left<wbr>From<wbr>Thumb<wbr>Left</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Inner<wbr>Width<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>Left<wbr>From<wbr>Thumb<wbr>Left<span class="tsd-signature-symbol">(</span>thumbLeft<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L223">src/scrollbar.js:223</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L320">src/scrollbar_custom.js:320</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the inner width of the scroll bar, in pixels.</p>
+									<p>Returns new left for scroll thumb</p>
 								</div>
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd><p>Use setScrollWidth instead</p>
-									</dd>
-								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>thumbLeft: <span class="tsd-signature-type">Number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setInnerWidth" class="tsd-anchor"></a>
+					<h3>set<wbr>Inner<wbr>Width</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Inner<wbr>Width<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L350">src/scrollbar_custom.js:350</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the inner and scroll width of the scroll bar, in pixels.</p>
+								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -279,6 +335,12 @@
 									<h5>width: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The new inner width</p>
+									</div>
+								</li>
+								<li>
+									<h5>force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Forcely update width</p>
 									</div>
 								</li>
 							</ul>
@@ -290,13 +352,13 @@
 					<a name="setScrollLeft" class="tsd-anchor"></a>
 					<h3>set<wbr>Scroll<wbr>Left</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Scroll<wbr>Left<span class="tsd-signature-symbol">(</span>scrollLeft<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Scroll<wbr>Left<span class="tsd-signature-symbol">(</span>scrollLeft<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L239">src/scrollbar.js:239</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L370">src/scrollbar_custom.js:370</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +369,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>scrollLeft: <span class="tsd-signature-type">any</span></h5>
+									<h5>scrollLeft: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new scroll left</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -318,18 +383,18 @@
 					<a name="setScrollWidth" class="tsd-anchor"></a>
 					<h3>set<wbr>Scroll<wbr>Width</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Scroll<wbr>Width<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Scroll<wbr>Width<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L231">src/scrollbar.js:231</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L350">src/scrollbar_custom.js:350</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the scroll width of the scroll bar, in pixels.</p>
+									<p>Sets the inner and scroll width of the scroll bar, in pixels.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -337,7 +402,13 @@
 								<li>
 									<h5>width: <span class="tsd-signature-type">Number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The new scroll width</p>
+										<p>The new inner width</p>
+									</div>
+								</li>
+								<li>
+									<h5>force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Forcely update width</p>
 									</div>
 								</li>
 							</ul>
@@ -355,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.10.0/src/scrollbar.js#L214">src/scrollbar.js:214</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.1/src/scrollbar_custom.js#L336">src/scrollbar_custom.js:336</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,7 +477,13 @@
 								<a href="Ace.HScrollBar.html#getHeight" class="tsd-kind-icon">get<wbr>Height</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.HScrollBar.html#onMouseDown" class="tsd-kind-icon">on<wbr>Mouse<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.HScrollBar.html#onScroll" class="tsd-kind-icon">on<wbr>Scroll</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.HScrollBar.html#scrollLeftFromThumbLeft" class="tsd-kind-icon">scroll<wbr>Left<wbr>From<wbr>Thumb<wbr>Left</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.HScrollBar.html#setInnerWidth" class="tsd-kind-icon">set<wbr>Inner<wbr>Width</a>
