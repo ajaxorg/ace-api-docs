@@ -68,14 +68,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Contains the text of the document. Document can be attached to several <a href="Ace.EditSession.html"><code>EditSession</code></a>s.
-						At its core, <code>Document</code>s are just an array of strings, with each row in the document matching up to the array index.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -98,12 +90,6 @@
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.Document.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Events</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-event tsd-parent-kind-class"><a href="Ace.Document.html#on" class="tsd-kind-icon">on</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -130,11 +116,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insert" class="tsd-kind-icon">insert</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insertFullLines" class="tsd-kind-icon">insert<wbr>Full<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insertInLine" class="tsd-kind-icon">insert<wbr>InLine</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insertLines" class="tsd-kind-icon">insert<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insertMergedLines" class="tsd-kind-icon">insert<wbr>Merged<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#insertNewLine" class="tsd-kind-icon">insert<wbr>New<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#isNewLine" class="tsd-kind-icon">is<wbr>New<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#on" class="tsd-kind-icon">on</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#pos" class="tsd-kind-icon">pos</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#positionToIndex" class="tsd-kind-icon">position<wbr>ToIndex</a></li>
@@ -144,7 +130,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeEventListener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeFullLines" class="tsd-kind-icon">remove<wbr>Full<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeInLine" class="tsd-kind-icon">remove<wbr>InLine</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeLines" class="tsd-kind-icon">remove<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeListener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#removeNewLine" class="tsd-kind-icon">remove<wbr>New<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Document.html#replace" class="tsd-kind-icon">replace</a></li>
@@ -164,113 +149,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Document<span class="tsd-signature-symbol">(</span>textOrLines<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Document<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L23">src/document.js:23</a></li>
-								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <code>Document</code>. If <code>text</code> is included, the <code>Document</code> contains those strings; otherwise, it&#39;s empty.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>textOrLines: <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>text The starting text</p>
-										</div>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Events</h2>
-				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
-					<a name="on" class="tsd-anchor"></a>
-					<h3>on</h3>
-					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;change&quot;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, capturing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/lib/event_emitter.js#L96">src/lib/event_emitter.js:96</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fires whenever the document changes.</p>
-								</div>
-								<p>Several methods trigger different <code>&quot;change&quot;</code> events. Below is a list of each action type, followed by each property that&#39;s also available:</p>
-								<p><code>&quot;insert&quot;</code></p>
-								<p><code>range</code>: the <a href="Ace.Range.html">Range</a> of the change within the document</p>
-								<p><code>lines</code>: the lines being added</p>
-								<p><code>&quot;remove&quot;</code></p>
-								<p><code>range</code>: the <a href="Ace.Range.html">Range</a> of the change within the document</p>
-								<p><code>lines</code>: the lines being removed</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>name: <span class="tsd-signature-type">&quot;change&quot;</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>e: <span class="tsd-signature-type">Object</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in :</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> capturing: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -288,7 +173,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_emit">_emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L86">ace.d.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L86">ace.d.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -315,7 +200,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_signal">_signal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L88">ace.d.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L88">ace.d.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -342,7 +227,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#addEventListener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L70">ace.d.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L70">ace.d.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -371,21 +256,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L539">src/document.js:539</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L65">ace.d.ts:65</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Applies <code>delta</code> to the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>delta: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A delta object (can include &quot;insert&quot; and &quot;remove&quot; actions)</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> doNotValidate: <span class="tsd-signature-type">boolean</span></h5>
@@ -405,21 +282,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L519">src/document.js:519</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L63">ace.d.ts:63</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Applies all changes in <code>deltas</code> to the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>deltas: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An array of delta objects (can include &quot;insert&quot; and &quot;remove&quot; actions)</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -436,7 +305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L268">src/document.js:268</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L53">ace.d.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -462,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L285">src/document.js:285</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L54">ace.d.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -485,27 +354,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L65">src/document.js:65</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L38">ace.d.ts:38</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <code>Anchor</code> to define a floating point in the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The row number to use</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The column number to use</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></h4>
@@ -522,14 +380,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L168">src/document.js:168</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L45">ace.d.ts:45</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns all lines in the document as string array.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -544,14 +397,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L175">src/document.js:175</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L46">ace.d.ts:46</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the number of rows in the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -566,21 +414,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L151">src/document.js:151</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L43">ace.d.ts:43</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a verbatim copy of the given line as it is in the document</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The row index to retrieve</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -597,27 +437,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L161">src/document.js:161</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L44">ace.d.ts:44</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns an array of strings of the rows between <code>firstRow</code> and <code>lastRow</code>. This function is inclusive of <code>lastRow</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>firstRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The first row index to retrieve</p>
-									</div>
 								</li>
 								<li>
 									<h5>lastRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The final row index to retrieve</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -634,21 +463,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L195">src/document.js:195</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L48">ace.d.ts:48</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns all the text within <code>range</code> as an array of lines.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The range to work with.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -665,18 +486,10 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L103">src/document.js:103</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L39">ace.d.ts:39</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the newline character that&#39;s being used, depending on the value of <code>newLineMode</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>If <code>newLineMode == windows</code>, <code>\r\n</code> is returned.</p>
-							<p>If <code>newLineMode == unix</code>, <code>\n</code> is returned.</p>
-							<p>If <code>newLineMode == auto</code>, the value of <code>autoNewLine</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -690,14 +503,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L133">src/document.js:133</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L41">ace.d.ts:41</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>[Returns the type of newlines being used; either <code>windows</code>, <code>unix</code>, or <code>auto</code>]{: #Document.getNewLineMode}</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/Ace.html#NewLineMode" class="tsd-signature-type" data-tsd-kind="Type alias">NewLineMode</a></h4>
 						</li>
 					</ul>
@@ -712,21 +520,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L185">src/document.js:185</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L47">ace.d.ts:47</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns all the text within <code>range</code> as a single string.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The range to work with.</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -743,14 +543,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L55">src/document.js:55</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L37">ace.d.ts:37</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns all the lines in the document as a single string, joined by the new line character.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -765,33 +560,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L628">src/document.js:628</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L67">ace.d.ts:67</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Converts an index position in a document to a <code>{row, column}</code> object.</p>
-								</div>
-								<p>Index refers to the &quot;absolute position&quot; of a character in the document. For example:</p>
-								<pre><code class="language-javascript"><span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">; </span><span style="color: #008000">// 10 characters, plus one for newline</span>
-<span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">y</span><span style="color: #000000"> = -</span><span style="color: #098658">1</span><span style="color: #000000">;</span>
-</code></pre>
-								<p>Here, <code>y</code> is an index 15: 11 characters for the first row, and 5 characters until <code>y</code> in the second.</p>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An index to convert</p>
-									</div>
 								</li>
 								<li>
 									<h5>startRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>A <code>{row, column}</code> object of the <code>index</code> position</p>
 						</li>
 					</ul>
 				</section>
@@ -806,50 +587,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L232">src/document.js:232</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L49">ace.d.ts:49</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts a block of <code>text</code> at the indicated <code>position</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The position to start inserting at; it&#39;s an object that looks like <code>{ row: row, column: column}</code></p>
-									</div>
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A chunk of text to insert</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>The position ({row, column}) of the last line of <code>text</code>. If the length of <code>text</code> is 0, this function simply returns <code>position</code>.</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L232">src/document.js:232</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L49">ace.d.ts:49</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts a block of <code>text</code> at the indicated <code>position</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <span class="tsd-signature-symbol">{ </span>column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The position to start inserting at; it&#39;s an object that looks like <code>{ row: row, column: column}</code></p>
-									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -861,13 +622,9 @@
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A chunk of text to insert</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>The position ({row, column}) of the last line of <code>text</code>. If the length of <code>text</code> is 0, this function simply returns <code>position</code>.</p>
 						</li>
 					</ul>
 				</section>
@@ -881,40 +638,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L336">src/document.js:336</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L56">ace.d.ts:56</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts the elements in <code>lines</code> into the document as full lines (does not merge with existing line), starting at the row index given by <code>row</code>. This method also triggers the <code>&quot;change&quot;</code> event.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The index of the row to insert at</p>
-									</div>
 								</li>
 								<li>
 									<h5>lines: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An array of strings</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>Contains the final row and column, like this:</p>
-							<pre><code>
-<span style="color: #000000">{row: </span><span style="color: #001080">endRow</span><span style="color: #000000">, column: </span><span style="color: #098658">0</span><span style="color: #000000">}</span>
-
-</code></pre>
-							<p>If <code>lines</code> is empty, this function returns an object containing the current row, and column, like this:</p>
-							<pre><code>
-<span style="color: #000000">{row: </span><span style="color: #001080">row</span><span style="color: #000000">, column: </span><span style="color: #098658">0</span><span style="color: #000000">}</span>
-
-</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -928,73 +664,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L254">src/document.js:254</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L51">ace.d.ts:51</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts <code>text</code> into the <code>position</code> at the current row. This method also triggers the <code>&quot;change&quot;</code> event.</p>
-								</div>
-								<p>This differs from the <code>insert</code> method in two ways:</p>
-								<ol>
-									<li><p>This does NOT handle newline characters (single-line text only).</p>
-									</li>
-									<li><p>This is faster than the <code>insert</code> method for single-line text insertions.</p>
-									</li>
-								</ol>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>position: <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The position to insert at; it&#39;s an object that looks like <code>{ row: row, column: column}</code></p>
-									</div>
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A chunk of text</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>Returns an object containing the final row and column, like this:</p>
-							<pre><code>
-<span style="color: #000000">{row: </span><span style="color: #001080">endRow</span><span style="color: #000000">, column: </span><span style="color: #098658">0</span><span style="color: #000000">}</span>
-
-</code></pre>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="insertLines" class="tsd-anchor"></a>
-					<h3>insert<wbr>Lines</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">insert<wbr>Lines<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, lines<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L212">src/document.js:212</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Deprecated methods retained for backwards compatibility.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>row: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>lines: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1008,14 +690,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L372">src/document.js:372</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L57">ace.d.ts:57</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Inserts the elements in <code>lines</code> into the document, starting at the position index given by <code>row</code>. This method also triggers the <code>&quot;change&quot;</code> event.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1023,22 +700,9 @@
 								</li>
 								<li>
 									<h5>lines: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An array of strings</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h4>
-							<p>Contains the final row and column, like this:</p>
-							<pre><code>
-<span style="color: #000000">{row: </span><span style="color: #001080">endRow</span><span style="color: #000000">, column: </span><span style="color: #098658">0</span><span style="color: #000000">}</span>
-
-</code></pre>
-							<p>If <code>lines</code> is empty, this function returns an object containing the current row, and column, like this:</p>
-							<pre><code>
-<span style="color: #000000">{row: </span><span style="color: #001080">row</span><span style="color: #000000">, column: </span><span style="color: #098658">0</span><span style="color: #000000">}</span>
-
-</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -1052,7 +716,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L220">src/document.js:220</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L52">ace.d.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1075,21 +739,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L142">src/document.js:142</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L42">ace.d.ts:42</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if <code>text</code> is a newline character (either <code>\r\n</code>, <code>\r</code>, or <code>\n</code>).</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The text to check</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1107,7 +763,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L72">ace.d.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L72">ace.d.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1117,6 +773,36 @@
 								</li>
 								<li>
 									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, capturing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L74">ace.d.ts:74</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> capturing: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1134,7 +820,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L76">ace.d.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L76">ace.d.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1160,7 +846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L289">src/document.js:289</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L55">ace.d.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1186,33 +872,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L655">src/document.js:655</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L68">ace.d.ts:68</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Converts the <code>{row, column}</code> position in a document to the character&#39;s index.</p>
-								</div>
-								<p>Index refers to the &quot;absolute position&quot; of a character in the document. For example:</p>
-								<pre><code class="language-javascript"><span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">; </span><span style="color: #008000">// 10 characters, plus one for newline</span>
-<span style="color: #0000FF">var</span><span style="color: #000000"> </span><span style="color: #001080">y</span><span style="color: #000000"> = -</span><span style="color: #098658">1</span><span style="color: #000000">;</span>
-</code></pre>
-								<p>Here, <code>y</code> is an index 15: 11 characters for the first row, and 5 characters until <code>y</code> in the second.</p>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>pos: <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>{row, column}</code> to convert</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> startRow: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The index position in the document</p>
 						</li>
 					</ul>
 				</section>
@@ -1226,25 +898,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L395">src/document.js:395</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L58">ace.d.ts:58</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the <code>range</code> from the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A specified Range to remove</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>Returns the new <code>start</code> property of the range, which contains <code>startRow</code> and <code>startColumn</code>. If <code>range</code> is empty, this function returns the unmodified value of <code>range.start</code>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1259,7 +922,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeAllListeners">removeAllListeners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L90">ace.d.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L90">ace.d.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1283,7 +946,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeDefaultHandler">removeDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L78">ace.d.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L78">ace.d.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1310,7 +973,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeEventListener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L80">ace.d.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L80">ace.d.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1336,31 +999,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L436">src/document.js:436</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L60">ace.d.ts:60</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes a range of full lines. This method also triggers the <code>&quot;change&quot;</code> event.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>firstRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The first row to be removed</p>
-									</div>
 								</li>
 								<li>
 									<h5>lastRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The last row to be removed</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>Returns all the removed lines.</p>
 						</li>
 					</ul>
 				</section>
@@ -1374,63 +1025,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L415">src/document.js:415</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L59">ace.d.ts:59</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the specified columns from the <code>row</code>. This method also triggers a <code>&quot;change&quot;</code> event.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The row to remove from</p>
-									</div>
 								</li>
 								<li>
 									<h5>startColumn: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The column to start removing at</p>
-									</div>
 								</li>
 								<li>
 									<h5>endColumn: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The column to stop removing at</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>Returns an object containing <code>startRow</code> and <code>startColumn</code>, indicating the new row and column values.<br/>If <code>startColumn</code> is equal to <code>endColumn</code>, this function returns nothing.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="removeLines" class="tsd-anchor"></a>
-					<h3>remove<wbr>Lines</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Lines<span class="tsd-signature-symbol">(</span>firstRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, lastRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L216">src/document.js:216</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>firstRow: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>lastRow: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1445,7 +1055,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeListener">removeListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L82">ace.d.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L82">ace.d.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1471,21 +1081,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L471">src/document.js:471</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L61">ace.d.ts:61</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the new line between <code>row</code> and the row immediately following it. This method also triggers the <code>&quot;change&quot;</code> event.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The row to check</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1502,34 +1104,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L492">src/document.js:492</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L62">ace.d.ts:62</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Replaces a range in the document with the new <code>text</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A specified Range to replace</p>
-									</div>
 								</li>
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new text to use as a replacement</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
-							<p>Returns an object containing the final row and column, like this:</p>
-							<p>{row: endRow, column: 0}
-								If the text and range are empty, this function returns an object containing the current <code>range.start</code> value.
-							If the text is the exact same as what currently exists, this function returns an object containing the current <code>range.end</code> value.</p>
 						</li>
 					</ul>
 				</section>
@@ -1543,21 +1130,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L603">src/document.js:603</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L66">ace.d.ts:66</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Reverts <code>delta</code> from the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>delta: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A delta object (can include &quot;insert&quot; and &quot;remove&quot; actions)</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1574,21 +1153,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L529">src/document.js:529</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L64">ace.d.ts:64</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Reverts all changes in <code>deltas</code> from the document.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>deltas: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An array of delta objects (can include &quot;insert&quot; and &quot;remove&quot; actions)</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1606,7 +1177,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#setDefaultHandler">setDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L84">ace.d.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L84">ace.d.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1632,21 +1203,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L121">src/document.js:121</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L40">ace.d.ts:40</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>[Sets the new line mode.]{: #Document.setNewLineMode.desc}</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>newLineMode: <a href="../modules/Ace.html#NewLineMode" class="tsd-signature-type" data-tsd-kind="Type alias">NewLineMode</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>{: #Document.setNewLineMode.param}</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1663,21 +1226,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/document.js#L46">src/document.js:46</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L36">ace.d.ts:36</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Replaces all the lines in the current <code>Document</code> with the value of <code>text</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The text to use</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1706,9 +1261,6 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="Ace.Document.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-event tsd-parent-kind-class">
-								<a href="Ace.Document.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#_emit" class="tsd-kind-icon">_emit</a>
@@ -1774,9 +1326,6 @@
 								<a href="Ace.Document.html#insertInLine" class="tsd-kind-icon">insert<wbr>InLine</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.Document.html#insertLines" class="tsd-kind-icon">insert<wbr>Lines</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#insertMergedLines" class="tsd-kind-icon">insert<wbr>Merged<wbr>Lines</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1787,6 +1336,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#off" class="tsd-kind-icon">off</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.Document.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#once" class="tsd-kind-icon">once</a>
@@ -1814,9 +1366,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#removeInLine" class="tsd-kind-icon">remove<wbr>InLine</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.Document.html#removeLines" class="tsd-kind-icon">remove<wbr>Lines</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Document.html#removeListener" class="tsd-kind-icon">remove<wbr>Listener</a>

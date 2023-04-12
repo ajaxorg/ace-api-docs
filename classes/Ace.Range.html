@@ -68,13 +68,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>This object is used in various places to indicate a region within the editor. To better visualize how this works, imagine a rectangle. Each quadrant of the rectangle is analogous to a range, as ranges contain a starting row and starting column, and an ending row, and ending column.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -142,55 +135,12 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>startRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, startColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, endRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, endColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L18">src/range.js:18</a></li>
-								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <code>Range</code> object with the given starting and ending rows and columns.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>startRow: <span class="tsd-signature-type">Number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting row</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>startColumn: <span class="tsd-signature-type">Number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The starting column</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>endRow: <span class="tsd-signature-type">Number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ending row</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>endColumn: <span class="tsd-signature-type">Number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The ending column</p>
-										</div>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
 						</li>
 					</ul>
@@ -204,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L173">ace.d.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L173">ace.d.ts:173</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/ace.d.ts#L172">ace.d.ts:172</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L172">ace.d.ts:172</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,27 +181,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L345">src/range.js:345</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L193">ace.d.ts:193</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the part of the current <code>Range</code> that occurs within the boundaries of <code>firstRow</code> and <code>lastRow</code> as a new <code>Range</code> object.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>firstRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The starting row</p>
-									</div>
 								</li>
 								<li>
 									<h5>lastRow: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The ending row</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
@@ -268,14 +207,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L398">src/range.js:398</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L197">ace.d.ts:197</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a duplicate of the calling range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
 						</li>
 					</ul>
@@ -290,14 +224,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L406">src/range.js:406</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L198">ace.d.ts:198</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a range containing the starting and ending rows of the original range, but with a column value of <code>0</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
 						</li>
 					</ul>
@@ -312,46 +241,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L266">src/range.js:266</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L189">ace.d.ts:189</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>This method returns one of the following numbers:</p>
-							<ul>
-								<li><code>1</code> if <code>row</code> is greater than the calling range</li>
-								<li><code>-1</code> if <code>row</code> is less then the calling range</li>
-								<li><code>0</code> otherwise</li>
-							</ul>
-							<p>If the starting row of the calling range is equal to <code>row</code>, and:</p>
-							<ul>
-								<li><code>column</code> is greater than or equal to the calling range&#39;s starting column, this returns <code>0</code></li>
-								<li>Otherwise, it returns -1</li>
-							</ul>
-							<p>If the ending row of the calling range is equal to <code>row</code>, and:</p>
-							<ul>
-								<li><code>column</code> is less than or equal to the calling range&#39;s ending column, this returns <code>0</code></li>
-								<li>Otherwise, it returns 1</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -365,35 +267,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L312">src/range.js:312</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L191">ace.d.ts:191</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>This method returns one of the following numbers:</p>
-							<ul>
-								<li><code>1</code> if calling range&#39;s ending column and calling range&#39;s ending row are equal <code>row</code> and <code>column</code>.</li>
-								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -407,36 +293,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L329">src/range.js:329</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L192">ace.d.ts:192</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares the <code>row</code> and <code>column</code> with the start and end <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>This method returns one of the following numbers:</p>
-							<ul>
-								<li><code>1</code> if the ending row of the calling range is equal to <code>row</code>, and the ending column of the calling range is equal to <code>column</code></li>
-								<li><code>-1</code> if the starting row of the calling range is equal to <code>row</code>, and the starting column of the calling range is equal to <code>column</code></li>
-								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -450,26 +319,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L118">src/range.js:118</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L179">ace.d.ts:179</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares the row and column of <code>p</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range (by calling <a href="Ace.Range.html#compare">Range.compare</a>).</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>p: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A point to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -486,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L460">src/range.js:460</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/src/range.js#L460">src/range.js:460</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,38 +373,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L83">src/range.js:83</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L178">ace.d.ts:178</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares <code>this</code> range (A) with another range (B).</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>This method returns one of the following numbers:</p>
-							<ul>
-								<li><code>-2</code>: (B) is in front of (A), and doesn&#39;t intersect with (A)</li>
-								<li><code>-1</code>: (B) begins before (A) but ends inside of (A)</li>
-								<li><code>0</code>: (B) is completely inside of (A) OR (A) is completely inside of (B)</li>
-								<li><code>+1</code>: (B) begins inside of (A) but ends outside of (A)</li>
-								<li><code>+2</code>: (B) is after (A) and doesn&#39;t intersect with (A)</li>
-								<li><code>42</code>: FTW state: (B) ends in (A) but starts outside of (A)</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -562,35 +396,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L296">src/range.js:296</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L190">ace.d.ts:190</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares the <code>row</code> and <code>column</code> with the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of the calling range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>This method returns one of the following numbers:</p>
-							<ul>
-								<li><code>-1</code> if calling range&#39;s starting column and calling range&#39;s starting row are equal <code>row</code> and <code>column</code></li>
-								<li>Otherwise, it returns the value after calling <a href="Ace.Range.html#compare"><code>compare()</code></a>.</li>
-							</ul>
 						</li>
 					</ul>
 				</section>
@@ -604,36 +422,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L67">src/range.js:67</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L177">ace.d.ts:177</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> provided are within the given range. This can better be expressed as returning <code>true</code> if:
-									```javascript</p>
-								</div>
-								<p>this.start.row &lt;= row &lt;= this.end.row &amp;&amp;</p>
-								<p>this.start.column &lt;= column &lt;= this.end.column
-								```</p>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to check for</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to check for</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -650,26 +448,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L128">src/range.js:128</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L180">ace.d.ts:180</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Checks the start and end <a href="../interfaces/Ace.Point.html">Point</a>&#39;s of <code>range</code> and compares them to the calling range. Returns <code>true</code> if the <code>range</code> is contained within the caller&#39;s range.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#comparePoint">Range.comparePoint</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -686,31 +471,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L365">src/range.js:365</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L194">ace.d.ts:194</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Changes the <code>row</code> and <code>column</code> for the calling range for both the starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A new row to extend to</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A new column to extend to</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-							<p>The original range with the new row</p>
 						</li>
 					</ul>
 				</section>
@@ -724,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L449">src/range.js:449</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/src/range.js#L449">src/range.js:449</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -761,32 +534,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L201">src/range.js:201</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L186">ace.d.ts:186</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -803,32 +560,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L238">src/range.js:238</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L188">ace.d.ts:188</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range&#39;s ending <a href="../interfaces/Ace.Point.html">Point</a>.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -845,32 +586,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L219">src/range.js:219</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L187">ace.d.ts:187</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the <code>row</code> and <code>column</code> are within the given range&#39;s starting <a href="../interfaces/Ace.Point.html">Point</a>.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>related</dt>
-									<dd><p><a href="Ace.Range.html#compare">Range.compare</a></p>
-									</dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -887,21 +612,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L137">src/range.js:137</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L181">ace.d.ts:181</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if passed in <code>range</code> intersects with the one calling this method.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -918,14 +635,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L382">src/range.js:382</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L195">ace.d.ts:195</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the calling range is empty (starting <a href="../interfaces/Ace.Point.html">Point</a> == ending <a href="../interfaces/Ace.Point.html">Point</a>).</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -940,27 +652,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L148">src/range.js:148</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L182">ace.d.ts:182</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the caller&#39;s ending row is the same as <code>row</code>, and if the caller&#39;s ending column is the same as <code>column</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -977,21 +678,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L36">src/range.js:36</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L175">ace.d.ts:175</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if and only if the starting row and column, and ending row and column, are equivalent to those given by <code>range</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>range: <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range to check against</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1008,14 +701,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L390">src/range.js:390</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L196">ace.d.ts:196</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the range spans across multiple lines.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -1030,27 +718,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L158">src/range.js:158</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L183">ace.d.ts:183</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns <code>true</code> if the caller&#39;s starting row is the same as <code>row</code>, and if the caller&#39;s starting column is the same as <code>column</code>.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to compare with</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to compare with</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1067,18 +744,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L434">src/range.js:434</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L200">ace.d.ts:200</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Shift the calling range by <code>row</code> and <code>column</code> values.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>experimental</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1102,27 +770,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L184">src/range.js:184</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L185">ace.d.ts:185</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets the starting row and column for the range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to set</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to set</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1139,27 +796,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L168">src/range.js:168</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L184">ace.d.ts:184</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets the starting row and column for the range.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A row to set</p>
-									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A column to set</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1176,21 +822,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L418">src/range.js:418</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L199">ace.d.ts:199</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Given the current <code>Range</code>, this function converts those starting and ending <a href="../interfaces/Ace.Point.html">Point</a>&#39;s into screen positions, and then returns a new <code>Range</code> object.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>session: <a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>EditSession</code> to retrieve coordinates from</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
@@ -1207,17 +845,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.15.3/src/range.js#L50">src/range.js:50</a></li>
+									<li>Defined in :</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a string containing the range&#39;s row and column information, given like this:
-									```</p>
-								</div>
-								<p>[start.row/start.column] -&gt; [end.row/end.column]
-								```</p>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
