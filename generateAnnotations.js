@@ -75,8 +75,8 @@ function generateAnnotations(path, options, output = {}) {
         if (stat.isFile() && /\.js$/.test(path)) {
             var fileArr = [];
             fileArr.push(path);
-            if (/_test.js$/.test(path) || /vim.js$/.test(path)) return;
-            if (/lib\/ace\/mode\/(?!behaviour|folding|text.js|text_highlight_rules.js)/.test(path)) return;
+            if (/test/.test(path) || /vim.js$/.test(path)) return;
+            if (/src\/mode\/(?!behaviour|folding|text.js|text_highlight_rules.js)/.test(path)) return;
             if (/\.(css|snippets)\.js$/.test(path)) return;
             
             var docs = generateDocumentation(fileArr, options);
@@ -200,49 +200,17 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 identifiers.length = 0;
             }
         }
-        else if (ts.isVariableStatement(node) || ts.isFunctionDeclaration(node)) {
+        else if (ts.isVariableStatement(node) || ts.isFunctionDeclaration(node) || ts.isClassDeclaration(node)) {
             let className = findName(node).escapedText;
             if (checkValidName(className) === true) {
                 findNames(node);
                 if (identifiers.indexOf('require') == -1) {
                     let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.getStart()).line + 1;
-                    let construct;
-                    let events = {};
-                    if (node.jsDoc) {
-                        let jsDoc = [];
-                        for (var k = 0; k < node.jsDoc.length; k++) {
-                            let jsDocText = node.jsDoc[k].getFullText();
-                            if (/@constructor/.test(jsDocText)) {
-                                let params = getParametersFromJsDoc(node.jsDoc[k]);
-                                construct = {
-                                    line: currentLine,
-                                    jsDoc: [jsDocText],
-                                    sourceName: fileNames[0],
-                                    params: params
-                                }
-                            }
-                            else if (/@event/.test(jsDocText)) {
-                                let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                                let eventLine = ts.getLineAndCharacterOfPosition(
-                                    sourceFile, node.jsDoc[k].getStart()).line + 1;
-                                let params = getParametersFromJsDoc(node.jsDoc[k]);
-                                events[eventName] = {
-                                    line: eventLine,
-                                    jsDoc: [jsDocText],
-                                    sourceName: fileNames[0],
-                                    params: params
-                                }
-                            }
-                            else {
-                                jsDoc.push(jsDocText);
-                            }
-                        }
-                        docs = jsDoc;
-                    }
-                    var comment = transformCommentToJsDoc(node);
-                    if (comment) {
-                        docs.push(comment);
-                    }
+                    
+                    let allDocs = getAllJsDocs(node, currentLine);
+                    let construct = allDocs.construct;
+                    let events = allDocs.events;
+                    docs = allDocs.docs;
 
                     getPropertiesOfClass(node);
 
@@ -260,6 +228,43 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         output[className] = mergeGeneratedObjects(output[className], propObjects);
                     }
 
+                }
+            }
+         } else if (ts.isMethodDeclaration(node) || ts.isConstructorDeclaration(node)) {
+            let methodName;
+            if (ts.isConstructorDeclaration(node)) {
+                methodName = "construct"
+            } else {
+                methodName = node.name.escapedText;
+            }
+            let currentLine = ts.getLineAndCharacterOfPosition(sourceFile, node.getStart()).line + 1;
+            let className = node.parent.name.escapedText;
+            if (className && checkValidName(className) === true) {
+                let params = getParametersFromNode(node);
+                let allDocs = getAllJsDocs(node, currentLine, params);
+                let events = allDocs.events;
+                docs = allDocs.docs;
+                
+                if (!output[className]) {
+                    output[className] = {};
+                }
+                if (!output[className].hasOwnProperty(methodName) || methodName == "construct") {
+                    output[className][methodName] = {
+                        line: currentLine,
+                        jsDoc: docs,
+                        sourceName: fileNames[0],
+                        params: params
+                    }
+                }
+                else {
+                    logs = logs + "Duplicate function '" + methodName + "' determinator. Class: " + className
+                        + ". Filename: " + fileNames[0] + ":" + currentLine + ". First implementation: "
+                        + output[className][methodName].sourceName + ":" + output[className][methodName].line
+                        + EOL;
+                }
+
+                if (Object.keys(events).length !== 0 && events.constructor === Object) {
+                    output[className] = mergeGeneratedObjects(output[className], events);
                 }
             }
         }
@@ -291,47 +296,11 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 while (identifiers.indexOf('prototype') !== -1) {
                     identifiers.splice(identifiers.indexOf('prototype'), 1);
                 }
-                let events = {};
 
                 let params = getParametersFromNode(node);
-                if (expStatNode.jsDoc) {
-                    let jsDoc = [];
-                    for (var k = 0; k < expStatNode.jsDoc.length; k++) {
-                        let jsDocText = expStatNode.jsDoc[k].getFullText();
-                        if (/@event/.test(jsDocText)) {
-                            let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                            let eventLine = ts.getLineAndCharacterOfPosition(
-                                sourceFile, expStatNode.jsDoc[k].getStart()).line + 1;
-                            let params = getParametersFromJsDoc(expStatNode.jsDoc[k]);
-                            events[eventName] = {
-                                line: eventLine,
-                                jsDoc: [jsDocText],
-                                sourceName: fileNames[0],
-                                params: params
-                            }
-                        }
-                        else {
-                            jsDoc.push(jsDocText);
-                            if (Object.keys(params).length > 0) {
-                                for (let prop in params) {
-                                    if (params[prop] == 'any' || params[prop] == '{}') {
-                                        let paramTypeFromJsDoc = getParameterTypeFromJsDoc(expStatNode.jsDoc[k], prop);
-                                        if (paramTypeFromJsDoc) {
-                                            params[prop] = paramTypeFromJsDoc;
-                                        }
-                                    }
-                                }
-
-                            }
-                        }
-                    }
-                    docs = jsDoc;
-                }
-
-                var comment = transformCommentToJsDoc(expStatNode);
-                if (comment) {
-                    docs.push(comment);
-                }
+                let allDocs = getAllJsDocs(expStatNode, currentLine, params);
+                let events = allDocs.events;
+                docs = allDocs.docs;
 
                 var className;
                 if (ts.isFunctionDeclaration(findNode)) {
@@ -396,7 +365,6 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                 if (checkValidName(className) === true && functionName != 'prototype' && (ts.isFunctionExpression(
                     node.parent.right) || (ts.isBinaryExpression(node.parent.right) && ts.isFunctionExpression(
                     node.parent.right.right)))) {
-                    let events = {};
                     let functionNode;
                     if (ts.isFunctionExpression(node.parent.right)) {
                         functionNode = node.parent.right;
@@ -404,46 +372,12 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                     else {
                         functionNode = node.parent.right.right;
                     }
-
+                    
                     let params = getParametersFromNode(functionNode);
-                    if (node.parent.parent.jsDoc) {
-                        let jsDoc = [];
-                        for (var k = 0; k < node.parent.parent.jsDoc.length; k++) {
-                            let jsDocText = node.parent.parent.jsDoc[k].getFullText();
-                            if (/@event/.test(jsDocText)) {
-                                let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
-                                let eventLine = ts.getLineAndCharacterOfPosition(
-                                    sourceFile, node.parent.parent.jsDoc[k].getStart()).line + 1;
-                                let params = getParametersFromJsDoc(node.parent.parent.jsDoc[k]);
-                                events[eventName] = {
-                                    line: eventLine,
-                                    jsDoc: [jsDocText],
-                                    sourceName: fileNames[0],
-                                    params: params
-                                }
-                            }
-                            else {
-                                jsDoc.push(jsDocText);
-                                if (Object.keys(params).length > 0) {
-                                    for (let prop in params) {
-                                        if (params[prop] == 'any' || params[prop] == '{}') {
-                                            let paramTypeFromJsDoc = getParameterTypeFromJsDoc(
-                                                node.parent.parent.jsDoc[k], prop);
-                                            if (paramTypeFromJsDoc) {
-                                                params[prop] = paramTypeFromJsDoc;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        docs = jsDoc;
-                    }
-
-                    var comment = transformCommentToJsDoc(node.parent.parent);
-                    if (comment) {
-                        docs.push(comment);
-                    }
+                    let allDocs = getAllJsDocs(node.parent.parent, currentLine, params);
+                    let events = allDocs.events;
+                    docs = allDocs.docs;
+                    
                     if (!output[className]) {
                         output[className] = {};
                     }
@@ -474,6 +408,70 @@ function generateDocumentation(fileNames, options, identifiers = []) {
         ts.forEachChild(node, visit);
         identifiers.length = 0;
 
+    }
+
+    /**
+     *
+     * @param node
+     * @param {number} currentLine
+     * @param [params]
+     * @return {{docs: *[], construct: {}, events: {}}}
+     */
+    function getAllJsDocs(node, currentLine, params) {
+        let docs = [];
+        let construct;
+        let events = {};
+        if (node.jsDoc) {
+            let jsDoc = [];
+            for (var k = 0; k < node.jsDoc.length; k++) {
+                let jsDocText = node.jsDoc[k].getFullText();
+                if (/@constructor/.test(jsDocText)) {
+                    let params = getParametersFromJsDoc(node.jsDoc[k]);
+                    construct = {
+                        line: currentLine,
+                        jsDoc: [jsDocText],
+                        sourceName: fileNames[0],
+                        params: params
+                    }
+                }
+                else if (/@event/.test(jsDocText)) {
+                    let eventName = jsDocText.match(/@event ([\w]*)/)[1] + "_event";
+                    let eventLine = ts.getLineAndCharacterOfPosition(
+                        sourceFile, node.jsDoc[k].getStart()).line + 1;
+                    let params = getParametersFromJsDoc(node.jsDoc[k]);
+                    events[eventName] = {
+                        line: eventLine,
+                        jsDoc: [jsDocText],
+                        sourceName: fileNames[0],
+                        params: params
+                    }
+                }
+                else {
+                    jsDoc.push(jsDocText);
+                    if (params && Object.keys(params).length > 0) {
+                        for (let prop in params) {
+                            if (params[prop] == 'any' || params[prop] == '{}') {
+                                let paramTypeFromJsDoc = getParameterTypeFromJsDoc(node.jsDoc[k], prop);
+                                if (paramTypeFromJsDoc) {
+                                    params[prop] = paramTypeFromJsDoc;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            docs = jsDoc;
+        }
+        var comment = transformCommentToJsDoc(node);
+        if (comment) {
+            docs.push(comment);
+        }
+        return {
+            events,
+            docs,
+            construct
+        };
     }
 
     function getPropertiesOfClass(node) {
@@ -531,10 +529,11 @@ function generateDocumentation(fileNames, options, identifiers = []) {
     }
 
     function getParametersFromNode(node) {
+        if (!node.parameters) return ;
         let signature = checker.getSignatureFromDeclaration(node);
         let returnType = checker.getReturnTypeOfSignature(signature);
         let params = {
-            return: checker.typeToString(returnType)
+            return: !ts.isConstructorDeclaration(node) ? checker.typeToString(returnType) : undefined
         };
         if (node.parameters && node.parameters.length > 0) {
             for (let i = 0; i < node.parameters.length; i++) {
@@ -558,7 +557,8 @@ function generateDocumentation(fileNames, options, identifiers = []) {
                         }
 
                         var paramType = jsDocNode.tags[i].typeExpression.getFullText();
-                        return paramType.substring(1, paramType.length - 1) + optional;
+                        paramType = paramType.substring(1, paramType.length - 1) + optional;
+                        return (paramType === "Array") ? "any[]" : paramType;
                     }
                 }
             }
