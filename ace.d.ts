@@ -322,6 +322,17 @@ export namespace Ace {
         type: string;
     }
 
+    export interface MarkerGroupItem {
+        range: Range;
+        className: string;
+    }
+
+    export class MarkerGroup {
+        constructor(session: EditSession);
+        setMarkers(markers: MarkerGroupItem[]): void;
+        getMarkerAtPosition(pos: Position): MarkerGroupItem;
+    }
+    
     export interface Command {
         name?: string;
         bindKey?: string | { mac?: string, win?: string };
