@@ -226,6 +226,7 @@ export namespace Ace {
         showFoldWidgets: boolean;
         showLineNumbers: boolean;
         displayIndentGuides: boolean;
+        highlightIndentGuides: boolean;
         highlightGutterLine: boolean;
         hScrollBarAlwaysVisible: boolean;
         vScrollBarAlwaysVisible: boolean;
@@ -235,9 +236,11 @@ export namespace Ace {
         minLines: number;
         scrollPastEnd: boolean;
         fixedWidthGutter: boolean;
+        customScrollbar: boolean;
         theme: string;
         hasCssTransforms: boolean;
         maxPixelHeight: number;
+        useSvgGutterIcons: boolean;
     }
 
     export interface MouseHandlerOptions {
@@ -261,11 +264,15 @@ export namespace Ace {
         behavioursEnabled: boolean;
         wrapBehavioursEnabled: boolean;
         enableAutoIndent: boolean;
+        enableBasicAutocompletion: boolean | Completer[],
+        enableLiveAutocompletion: boolean | Completer[],
+        enableSnippets: boolean,
         autoScrollEditorIntoView: boolean;
         keyboardHandler: string | null;
         placeholder: string;
         value: string;
         session: EditSession;
+        relativeLineNumbers: boolean;
     }
 
     export interface SearchOptions {
@@ -276,7 +283,7 @@ export namespace Ace {
         skipCurrent: boolean;
         range: Range;
         preserveCase: boolean;
-        regExp: RegExp;
+        regExp: boolean;
         wholeWord: boolean;
         caseSensitive: boolean;
         wrap: boolean;
@@ -355,15 +362,26 @@ export namespace Ace {
         start?: number;
     }
 
-    export interface Completion {
-        value: string;
-        score: number;
+    interface BaseCompletion {
+        score?: number;
         meta?: string;
-        name?: string;
         caption?: string;
+        docHTML?: string;
+        docText?: string;
+        completerId?: string;
     }
 
-    export class Tokenizer {
+    export interface SnippetCompletion extends BaseCompletion {
+        snippet: string;
+    }
+
+    export interface ValueCompletion extends BaseCompletion {
+        value: string;
+    }
+
+    export type Completion = SnippetCompletion | ValueCompletion
+
+    export interface Tokenizer {
         removeCapturingGroups(src: string): string;
         createSplitterRegexp(src: string, flag?: string): RegExp;
         getLineTokens(line: string, startState: string | string[]): Token[];
@@ -413,6 +431,8 @@ export namespace Ace {
         all(): { [key: string]: any };
         moduleUrl(name: string, component?: string): string;
         setModuleUrl(name: string, subst: string): string;
+        setLoader(cb: Function): void;
+        setModuleLoader(name: string, onLoad: Function): void;
         loadModule(moduleName: string | [string, string],
                    onLoad?: (module: any) => void): void;
         init(packaged: any): any;
@@ -445,6 +465,10 @@ export namespace Ace {
         canRedo(): boolean;
         bookmark(rev?: number): void;
         isAtBookmark(): boolean;
+        hasUndo(): boolean;
+        hasRedo(): boolean;
+        isClean(): boolean;
+        markClean(rev?: number): void;
     }
 
     export interface Position {
@@ -507,7 +531,7 @@ export namespace Ace {
                   inFront?: boolean): number;
         addDynamicMarker(marker: MarkerLike, inFront: boolean): MarkerLike;
         removeMarker(markerId: number): void;
-        getMarkers(inFront?: boolean): MarkerLike[];
+        getMarkers(inFront?: boolean): { [id: number]: MarkerLike };
         highlight(re: RegExp): void;
         highlightLines(startRow: number,
                        endRow: number,
@@ -738,6 +762,8 @@ export namespace Ace {
         showComposition(position: number): void;
         setCompositionText(text: string): void;
         hideComposition(): void;
+        setGhostText(text: string, position: Point): void;
+        removeGhostText(): void;
         setTheme(theme: string, callback?: () => void): void;
         getTheme(): string;
         setStyle(style: string, include?: boolean): void;
@@ -964,6 +990,8 @@ export namespace Ace {
         removeWordLeft(): void;
         removeLineToEnd(): void;
         splitLine(): void;
+        setGhostText(text: string, position: Point): void;
+        removeGhostText(): void;
         transposeLetters(): void;
         toLowerCase(): void;
         toUpperCase(): void;
@@ -1004,10 +1032,10 @@ export namespace Ace {
         jumpToMatching(select: boolean, expand: boolean): void;
         gotoLine(lineNumber: number, column: number, animate: boolean): void;
         navigateTo(row: number, column: number): void;
-        navigateUp(): void;
-        navigateDown(): void;
-        navigateLeft(): void;
-        navigateRight(): void;
+        navigateUp(times?: number): void;
+        navigateDown(times?: number): void;
+        navigateLeft(times?: number): void;
+        navigateRight(times?: number): void;
         navigateLineStart(): void;
         navigateLineEnd(): void;
         navigateFileEnd(): void;
@@ -1037,6 +1065,94 @@ export namespace Ace {
                        position: Point,
                        prefix: string,
                        callback: CompleterCallback): void;
+        getDocTooltip?(item: Completion): undefined | string | Completion;
+        id?: string;
+    }
+
+    export class AceInline {
+        show(editor: Editor, completion: Completion, prefix: string): void;
+
+        isOpen(): void;
+
+        hide(): void;
+
+        destroy(): void;
+    }
+
+    interface CompletionOptions {
+        matches?: Completion[];
+    }
+
+    type CompletionProviderOptions = {
+        exactMatch?: boolean;
+        ignoreCaption?: boolean;
+    }
+
+    type CompletionRecord = {
+        all: Completion[];
+        filtered: Completion[];
+        filterText: string;
+    } | CompletionProviderOptions
+
+    type GatherCompletionRecord = {
+        prefix: string;
+        matches: Completion[];
+        finished: boolean;
+    }
+
+    type CompletionCallbackFunction = (err: Error | undefined, data: GatherCompletionRecord) => void;
+    type CompletionProviderCallback = (err: Error | undefined, completions: CompletionRecord, finished: boolean) => void;
+
+    export class CompletionProvider {
+        insertByIndex(editor: Editor, index: number, options: CompletionProviderOptions): boolean;
+
+        insertMatch(editor: Editor, data: Completion, options: CompletionProviderOptions): boolean;
+
+        completions: CompletionRecord;
+
+        gatherCompletions(editor: Editor, callback: CompletionCallbackFunction): boolean;
+
+        provideCompletions(editor: Editor, options: CompletionProviderOptions, callback: CompletionProviderCallback): void;
+
+        detach(): void;
+    }
+
+    export class Autocomplete {
+        constructor();
+
+        autoInsert?: boolean;
+        autoSelect?: boolean;
+        exactMatch?: boolean;
+        inlineEnabled?: boolean;
+
+        getPopup(): AcePopup;
+
+        showPopup(editor: Editor, options: CompletionOptions): void;
+
+        detach(): void;
+
+        destroy(): void;
+    }
+
+    type AcePopupNavigation = "up" | "down" | "start" | "end";
+
+    export class AcePopup {
+        constructor(parentNode: HTMLElement);
+
+        setData(list: Completion[], filterText: string): void;
+
+        getData(row: number): Completion;
+
+        getRow(): number;
+        getRow(line: number): void;
+
+        hide(): void;
+
+        show(pos: Point, lineHeight: number, topdownOnly: boolean): void;
+
+        tryShow(pos: Point, lineHeight: number, anchor: "top" | "bottom" | undefined, forceShow?: boolean): boolean;
+
+        goTo(where: AcePopupNavigation): void;
     }
 }
 
@@ -1046,3 +1162,79 @@ export const config: Ace.Config;
 export function require(name: string): any;
 export function edit(el: Element | string, options?: Partial<Ace.EditorOptions>): Ace.Editor;
 export function createEditSession(text: Ace.Document | string, mode: Ace.SyntaxMode): Ace.EditSession;
+
+export const VirtualRenderer: {
+    new(container: HTMLElement, theme?: string): Ace.VirtualRenderer;
+};
+export const EditSession: {
+    new(text: string | Document, mode?: Ace.SyntaxMode): Ace.EditSession;
+};
+export const UndoManager: {
+    new(): Ace.UndoManager;
+};
+export const Range: {
+    new(startRow: number, startColumn: number, endRow: number, endColumn: number): Ace.Range;
+    fromPoints(start: Ace.Point, end: Ace.Point): Ace.Range;
+    comparePoints(p1: Ace.Point, p2: Ace.Point): number;
+};
+
+
+type InlineAutocompleteAction = "prev" | "next" | "first" | "last";
+
+type TooltipCommandEnabledFunction = (editor: Ace.Editor) => boolean;
+
+interface TooltipCommand extends Ace.Command {
+    enabled: TooltipCommandEnabledFunction | boolean,
+    position?: number;
+}
+
+export class InlineAutocomplete {
+    constructor();
+
+    getInlineRenderer(): Ace.AceInline;
+
+    getInlineTooltip(): InlineTooltip;
+
+    getCompletionProvider(): Ace.CompletionProvider;
+
+    show(editor: Ace.Editor): void;
+
+    isOpen(): boolean;
+
+    detach(): void;
+
+    destroy(): void;
+
+    goTo(action: InlineAutocompleteAction): void;
+
+    tooltipEnabled: boolean;
+    commands: Record<string, TooltipCommand>
+
+    getIndex(): number;
+
+    setIndex(value: number): void;
+
+    getLength(): number;
+
+    getData(index?: number): Ace.Completion | undefined;
+
+    updateCompletions(options: Ace.CompletionOptions): void;
+}
+
+export class InlineTooltip {
+    constructor(parentElement: HTMLElement);
+
+    setCommands(commands: Record<string, TooltipCommand>): void;
+
+    show(editor: Ace.Editor): void;
+
+    updatePosition(): void;
+
+    updateButtons(force?: boolean): void;
+
+    isShown(): boolean;
+
+    detach(): void;
+
+    destroy(): void;
+}
