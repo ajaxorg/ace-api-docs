@@ -19,7 +19,7 @@ function createLanguageServiceHost(options) {
             this.files[fileName] = ts.ScriptSnapshot.fromString(text);
         },
         "getCompilationSettings": function () {
-            return ts.getDefaultCompilerOptions();
+            return options;
         },
         "getScriptFileNames": function () {
             return Object.keys(this.files);
@@ -28,14 +28,22 @@ function createLanguageServiceHost(options) {
             return "0";
         },
         "getScriptSnapshot": function (fileName) {
-            return this.files[fileName];
+            if (this.files[fileName])
+                return this.files[fileName];
+            if (!fs.existsSync(fileName)) {
+                return undefined;
+            }
+            return ts.ScriptSnapshot.fromString(fs.readFileSync(fileName).toString());
         },
         "getCurrentDirectory": function () {
             return process.cwd();
         },
-        "getDefaultLibFileName": function () {
-            return ts.getDefaultLibFilePath(options);
-        }
+        "getDefaultLibFileName": options => ts.getDefaultLibFilePath(options),
+        fileExists: ts.sys.fileExists,
+        readFile: ts.sys.readFile,
+        readDirectory: ts.sys.readDirectory,
+        directoryExists: ts.sys.directoryExists,
+        getDirectories: ts.sys.getDirectories,
     };
 
 }
@@ -67,10 +75,15 @@ function createDefaultFormatCodeSettings() {
     };
 }
 
-function formatDts(filename, text, options) {
+function createLanguageService(filename, text, options) {
     var host = createLanguageServiceHost(options);
     host.addFile(filename, text);
-    const languageService = ts.createLanguageService(host);
+    return ts.createLanguageService(host);
+}
+
+function formatDts(filename, text, options) {
+    
+    const languageService = createLanguageService(filename, text, options);
     let formatEdits = languageService.getFormattingEditsForDocument(filename, createDefaultFormatCodeSettings());
     formatEdits
         .sort((a, b) => a.span.start - b.span.start)
@@ -80,7 +93,43 @@ function formatDts(filename, text, options) {
             const tail = text.slice(edit.span.start + edit.span.length);
             text = `${head}${edit.newText}${tail}`;
         });
+    
     return text;
+}
+
+/**
+ * This method would correct non-existent types inherited from jsDoc
+ * @param {string} filename
+ * @param {string} text
+ * @param options
+ * @return {string}
+ */
+function correctDeclaration(filename, text, options) {
+    delete options.lib;
+    delete options.types;
+    const languageService = createLanguageService(filename, text, options);
+    let semanticDiagnostics = languageService.getSemanticDiagnostics(filename);
+    semanticDiagnostics
+        .sort((a, b) => a.start - b.start)
+        .reverse()
+        .forEach(edit => {
+            if (text[edit.start - 1] === '.') {
+                const boundaryIndex = findPreviousBoundary(text, edit.start);
+                const head = text.slice(0, boundaryIndex + 1);
+                const tail = text.slice(edit.start + edit.length);
+                text = `${head}any${tail}`;
+            }
+        });
+    return text;
+}
+
+function findPreviousBoundary(text, startIndex) {
+    for (let i = startIndex - 1; i >= 0; i--) {
+        if (text[i] === '\n' || text[i] === ':') {
+            return i;
+        }
+    }
+    return -1;
 }
 
 function generateDocumentation(fileNames, options) {
@@ -212,9 +261,16 @@ function generateDocumentation(fileNames, options) {
     }
 
     function propertyResolver(propName) {
-        if (classes[foundClassName] && classes[foundClassName][propName + "_prop"]) {
-            classes[foundClassName][propName + "_prop"].described = true;
-            return classes[foundClassName][propName + "_prop"];
+        if (classes[foundClassName]) {
+            if (classes[foundClassName][propName + "_prop"]) {
+                classes[foundClassName][propName + "_prop"].described = true;
+                return classes[foundClassName][propName + "_prop"];
+            }
+            if (classes[foundClassName][propName]) { 
+                //In case of MethodSignature in code and PropertyDeclaration in d.ts we will return method's jsDoc's
+                classes[foundClassName][propName].described = true;
+                return classes[foundClassName][propName];
+            }
         }
     }
 
@@ -427,7 +483,7 @@ function implictlyCreateLowLevelDeclarations(content, withJsDoc) {
     fs.writeFileSync(dir + "/declarations.log", logs);
 }
 
-function applyEditsToFile(filename, format) {
+function applyEditsToFile(filename, format, correct) {
     var start = fs.readFileSync(filename, "utf8");
     var end = "";
     edits
@@ -440,8 +496,20 @@ function applyEditsToFile(filename, format) {
     if (format) {
         end = formatDts(filename, end, options);
     }
+    if (correct) {
+        end = correctDeclaration(filename, end, options);
+    }
     fs.writeFileSync(filename, end);
     return end;
+}
+
+function processDeclaration(fileName, content, withJsDoc) {
+    edits = [];
+    implicitlyCreateClasses(content, withJsDoc);
+    content = applyEditsToFile(fileName);
+    edits = [];
+    implictlyCreateLowLevelDeclarations(content, withJsDoc);
+    applyEditsToFile(fileName, true, true);
 }
 
 fs.copyFileSync(process.argv[2], dir + "/ace.d.ts");
@@ -460,18 +528,8 @@ generateDocumentation([dir + "/ace.d.ts"], options, false);
 fs.writeFileSync(dir + "/classes.json", JSON.stringify(classes, undefined, 4));
 
 var content = applyEditsToFile(dir + "/ace.d.ts");
-edits = [];
-implicitlyCreateClasses(content, true);
-content = applyEditsToFile(dir + "/ace.d.ts");
-edits = [];
-implictlyCreateLowLevelDeclarations(content, true);
-applyEditsToFile(dir + "/ace.d.ts", true);
+processDeclaration(dir + "/ace.d.ts", content, true);
 
 fs.copyFileSync(process.argv[2], dir + "/ace-without-comments.d.ts");
-edits = [];
 content = fs.readFileSync(dir + "/ace-without-comments.d.ts", "utf8");
-implicitlyCreateClasses(content);
-content = applyEditsToFile(dir + "/ace-without-comments.d.ts");
-edits = [];
-implictlyCreateLowLevelDeclarations(content);
-applyEditsToFile(dir + "/ace-without-comments.d.ts", true);
+processDeclaration(dir + "/ace-without-comments.d.ts", content, false);
