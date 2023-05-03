@@ -68,6 +68,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Defines a floating pointer in the document. Whenever text is inserted or deleted before the cursor, the position of the anchor is updated.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,6 +100,12 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Events</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="Ace.Anchor.html#on" class="tsd-kind-icon">on</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#_emit" class="tsd-kind-icon">_emit</a></li>
@@ -103,7 +116,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#getDocument" class="tsd-kind-icon">get<wbr>Document</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#getPosition" class="tsd-kind-icon">get<wbr>Position</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#off" class="tsd-kind-icon">off</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#removeAllListeners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.Anchor.html#removeDefaultHandler" class="tsd-kind-icon">remove<wbr>Default<wbr>Handler</a></li>
@@ -122,13 +135,124 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Anchor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Anchor<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L17">src/anchor.js:17</a></li>
+								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new <code>Anchor</code> and associates it with a document.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>doc: <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The document to associate with the anchor</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting row position</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The starting column position</p>
+										</div>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Anchor.html" class="tsd-signature-type" data-tsd-kind="Class">Anchor</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;change&quot;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, capturing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/lib/event_emitter.js#L96">src/lib/event_emitter.js:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fires whenever the anchor position changes.</p>
+								</div>
+								<p>Both of these objects have a <code>row</code> and <code>column</code> property corresponding to the position.</p>
+								<p>Events that can trigger this function include <a href="Ace.Anchor.html#setPosition"><code>setPosition()</code></a>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">&quot;change&quot;</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>e: <span class="tsd-signature-type">Object</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in :</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> capturing: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,7 +270,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_emit">_emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L27">ace.d.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L27">ace.d.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -173,7 +297,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_signal">_signal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L29">ace.d.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L29">ace.d.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -200,7 +324,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#addEventListener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L11">ace.d.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L11">ace.d.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -229,13 +353,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L9">ace.d.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L119">src/anchor.js:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>When called, the <code>&quot;change&quot;</code> event listener is appended.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>doc: <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The document to associate with</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -252,9 +384,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L8">ace.d.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L110">src/anchor.js:110</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>When called, the <code>&quot;change&quot;</code> event listener is removed.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -269,9 +406,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L6">ace.d.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L40">src/anchor.js:40</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the current document.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Document.html" class="tsd-signature-type" data-tsd-kind="Class">Document</a></h4>
 						</li>
 					</ul>
@@ -286,9 +428,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L5">ace.d.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L31">src/anchor.js:31</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an object identifying the <code>row</code> and <code>column</code> position of the current anchor.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.Position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a></h4>
 						</li>
 					</ul>
@@ -304,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L13">ace.d.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L13">ace.d.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -321,29 +468,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="on" class="tsd-anchor"></a>
-					<h3>on</h3>
+					<a name="onChange" class="tsd-anchor"></a>
+					<h3>on<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, capturing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>delta<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L15">ace.d.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L61">src/anchor.js:61</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Internal function called when <code>&quot;change&quot;</code> event fired.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> capturing: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>delta: <a href="../interfaces/Ace.Delta.html" class="tsd-signature-type" data-tsd-kind="Interface">Delta</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -361,7 +508,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L17">ace.d.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L17">ace.d.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -388,7 +535,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeAllListeners">removeAllListeners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L31">ace.d.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L31">ace.d.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -412,7 +559,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeDefaultHandler">removeDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L19">ace.d.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L19">ace.d.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -439,7 +586,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeEventListener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L21">ace.d.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L21">ace.d.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -466,7 +613,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeListener">removeListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L23">ace.d.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L23">ace.d.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -493,7 +640,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#setDefaultHandler">setDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L25">ace.d.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L25">ace.d.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -519,19 +666,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L7">ace.d.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/anchor.js#L79">src/anchor.js:79</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the anchor position to the specified row and column. If <code>noClip</code> is <code>true</code>, the position is not clipped.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The row index to move the anchor to</p>
+									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The column index to move the anchor to</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> noClip: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Identifies if you want the position to be clipped</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -561,6 +722,9 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="Ace.Anchor.html#on" class="tsd-kind-icon">on</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#_emit" class="tsd-kind-icon">_emit</a>
 							</li>
@@ -586,7 +750,7 @@
 								<a href="Ace.Anchor.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.Anchor.html#on" class="tsd-kind-icon">on</a>
+								<a href="Ace.Anchor.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.Anchor.html#once" class="tsd-kind-icon">once</a>
@@ -624,7 +788,11 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 		</div>
 	</div>

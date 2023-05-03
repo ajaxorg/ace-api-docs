@@ -68,6 +68,18 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The class that is responsible for drawing everything you see on the screen!</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>related</dt>
+						<dd><p>editor.renderer</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -112,6 +124,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#_emit" class="tsd-kind-icon">_emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#_signal" class="tsd-kind-icon">_signal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#addEventListener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#addGutterDecoration" class="tsd-kind-icon">add<wbr>Gutter<wbr>Decoration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#addToken" class="tsd-kind-icon">add<wbr>Token</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#adjustWrapLimit" class="tsd-kind-icon">adjust<wbr>Wrap<wbr>Limit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#alignCursor" class="tsd-kind-icon">align<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#animateScrolling" class="tsd-kind-icon">animate<wbr>Scrolling</a></li>
@@ -120,12 +134,14 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#freeze" class="tsd-kind-icon">freeze</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getAnimatedScroll" class="tsd-kind-icon">get<wbr>Animated<wbr>Scroll</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getContainerElement" class="tsd-kind-icon">get<wbr>Container<wbr>Element</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getDisplayIndentGuide" class="tsd-kind-icon">get<wbr>Display<wbr>Indent<wbr>Guide</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getDisplayIndentGuides" class="tsd-kind-icon">get<wbr>Display<wbr>Indent<wbr>Guides</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getFadeFoldWidgets" class="tsd-kind-icon">get<wbr>Fade<wbr>Fold<wbr>Widgets</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getFirstFullyVisibleRow" class="tsd-kind-icon">get<wbr>First<wbr>Fully<wbr>Visible<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getFirstVisibleRow" class="tsd-kind-icon">get<wbr>First<wbr>Visible<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getHScrollBarAlwaysVisible" class="tsd-kind-icon">getHScroll<wbr>Bar<wbr>Always<wbr>Visible</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getHighlightGutterLine" class="tsd-kind-icon">get<wbr>Highlight<wbr>Gutter<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getHighlightIndentGuides" class="tsd-kind-icon">get<wbr>Highlight<wbr>Indent<wbr>Guides</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getLastFullyVisibleRow" class="tsd-kind-icon">get<wbr>Last<wbr>Fully<wbr>Visible<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getLastVisibleRow" class="tsd-kind-icon">get<wbr>Last<wbr>Visible<wbr>Row</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#getMouseEventTarget" class="tsd-kind-icon">get<wbr>Mouse<wbr>Event<wbr>Target</a></li>
@@ -145,15 +161,22 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#hideComposition" class="tsd-kind-icon">hide<wbr>Composition</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#hideCursor" class="tsd-kind-icon">hide<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#isScrollableBy" class="tsd-kind-icon">is<wbr>Scrollable<wbr>By</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#mock" class="tsd-kind-icon">mock</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#off" class="tsd-kind-icon">off</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#onChangeNewLineMode" class="tsd-kind-icon">on<wbr>Change<wbr>New<wbr>Line<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#onChangeTabSize" class="tsd-kind-icon">on<wbr>Change<wbr>Tab<wbr>Size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#onGutterResize" class="tsd-kind-icon">on<wbr>Gutter<wbr>Resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#onResize" class="tsd-kind-icon">on<wbr>Resize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#pixelToScreenCoordinates" class="tsd-kind-icon">pixel<wbr>ToScreen<wbr>Coordinates</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeAllListeners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeDefaultHandler" class="tsd-kind-icon">remove<wbr>Default<wbr>Handler</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeEventListener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeExtraToken" class="tsd-kind-icon">remove<wbr>Extra<wbr>Token</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeGhostText" class="tsd-kind-icon">remove<wbr>Ghost<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeGutterDecoration" class="tsd-kind-icon">remove<wbr>Gutter<wbr>Decoration</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#removeListener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#screenToTextCoordinates" class="tsd-kind-icon">screen<wbr>ToText<wbr>Coordinates</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scrollBy" class="tsd-kind-icon">scroll<wbr>By</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scrollCursorIntoView" class="tsd-kind-icon">scroll<wbr>Cursor<wbr>Into<wbr>View</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#scrollSelectionIntoView" class="tsd-kind-icon">scroll<wbr>Selection<wbr>Into<wbr>View</a></li>
@@ -169,8 +192,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setDefaultHandler" class="tsd-kind-icon">set<wbr>Default<wbr>Handler</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setDisplayIndentGuides" class="tsd-kind-icon">set<wbr>Display<wbr>Indent<wbr>Guides</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setFadeFoldWidgets" class="tsd-kind-icon">set<wbr>Fade<wbr>Fold<wbr>Widgets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setGhostText" class="tsd-kind-icon">set<wbr>Ghost<wbr>Text</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setHScrollBarAlwaysVisible" class="tsd-kind-icon">setHScroll<wbr>Bar<wbr>Always<wbr>Visible</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setHighlightGutterLine" class="tsd-kind-icon">set<wbr>Highlight<wbr>Gutter<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setHighlightIndentGuides" class="tsd-kind-icon">set<wbr>Highlight<wbr>Indent<wbr>Guides</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setMargin" class="tsd-kind-icon">set<wbr>Margin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setMouseCursor" class="tsd-kind-icon">set<wbr>Mouse<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="Ace.VirtualRenderer.html#setOption" class="tsd-kind-icon">set<wbr>Option</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setOptions" class="tsd-kind-icon">set<wbr>Options</a></li>
@@ -184,13 +210,14 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setStyle" class="tsd-kind-icon">set<wbr>Style</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setTheme" class="tsd-kind-icon">set<wbr>Theme</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#setVScrollBarAlwaysVisible" class="tsd-kind-icon">setVScroll<wbr>Bar<wbr>Always<wbr>Visible</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#showComposition" class="tsd-kind-icon">show<wbr>Composition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="Ace.VirtualRenderer.html#showComposition" class="tsd-kind-icon">show<wbr>Composition</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#showCursor" class="tsd-kind-icon">show<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#textToScreenCoordinates" class="tsd-kind-icon">text<wbr>ToScreen<wbr>Coordinates</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#unfreeze" class="tsd-kind-icon">unfreeze</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#unsetStyle" class="tsd-kind-icon">unset<wbr>Style</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateBackMarkers" class="tsd-kind-icon">update<wbr>Back<wbr>Markers</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateBreakpoints" class="tsd-kind-icon">update<wbr>Breakpoints</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateCharacterSize" class="tsd-kind-icon">update<wbr>Character<wbr>Size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateFontSize" class="tsd-kind-icon">update<wbr>Font<wbr>Size</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.VirtualRenderer.html#updateFrontMarkers" class="tsd-kind-icon">update<wbr>Front<wbr>Markers</a></li>
@@ -210,12 +237,34 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Virtual<wbr>Renderer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.VirtualRenderer.html" class="tsd-signature-type" data-tsd-kind="Class">VirtualRenderer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Virtual<wbr>Renderer<span class="tsd-signature-symbol">(</span>container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, theme<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.VirtualRenderer.html" class="tsd-signature-type" data-tsd-kind="Class">VirtualRenderer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L35">src/virtual_renderer.js:35</a></li>
+								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a new <code>VirtualRenderer</code> within the <code>container</code> specified, applying the given <code>theme</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>container: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The root element of the editor</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> theme: <span class="tsd-signature-type">String</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.VirtualRenderer.html" class="tsd-signature-type" data-tsd-kind="Class">VirtualRenderer</a></h4>
 						</li>
 					</ul>
@@ -229,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">$padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L662">ace.d.ts:662</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L697">ace.d.ts:697</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">character<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L658">ace.d.ts:658</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L693">ace.d.ts:693</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L655">ace.d.ts:655</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L690">ace.d.ts:690</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +308,7 @@
 					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L657">ace.d.ts:657</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L692">ace.d.ts:692</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">line<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L659">ace.d.ts:659</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L694">ace.d.ts:694</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L660">ace.d.ts:660</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L695">ace.d.ts:695</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -289,7 +338,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroll<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L661">ace.d.ts:661</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L696">ace.d.ts:696</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +348,7 @@
 					<div class="tsd-signature tsd-kind-icon">scroller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L656">ace.d.ts:656</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L691">ace.d.ts:691</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -317,7 +366,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_emit">_emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L770">ace.d.ts:770</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L807">ace.d.ts:807</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -344,7 +393,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#_signal">_signal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L772">ace.d.ts:772</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L809">ace.d.ts:809</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -371,7 +420,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#addEventListener">addEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L750">ace.d.ts:750</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L787">ace.d.ts:787</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -391,6 +440,73 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addGutterDecoration" class="tsd-anchor"></a>
+					<h3>add<wbr>Gutter<wbr>Decoration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Gutter<wbr>Decoration<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, className<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1137">src/virtual_renderer.js:1137</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated; (moved to <a href="Ace.EditSession.html">EditSession</a>)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>className: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addToken" class="tsd-anchor"></a>
+					<h3>add<wbr>Token</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Token<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1637">src/virtual_renderer.js:1637</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="adjustWrapLimit" class="tsd-anchor"></a>
 					<h3>adjust<wbr>Wrap<wbr>Limit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -400,9 +516,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L672">ace.d.ts:672</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L425">src/virtual_renderer.js:425</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adjusts the wrap limit, which is the number of characters that can fit within the width of the edit area on screen.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -417,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L723">ace.d.ts:723</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1296">src/virtual_renderer.js:1296</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -443,7 +564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L728">ace.d.ts:728</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1343">src/virtual_renderer.js:1343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -481,7 +602,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L747">ace.d.ts:747</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1766">src/virtual_renderer.js:1766</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -498,9 +619,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L748">ace.d.ts:748</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1773">src/virtual_renderer.js:1773</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Destroys the text and cursor layers for this renderer.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -515,7 +641,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L705">ace.d.ts:705</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L777">src/virtual_renderer.js:777</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -532,9 +658,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L674">ace.d.ts:674</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L444">src/virtual_renderer.js:444</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether an animated scroll happens or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -549,10 +680,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L689">ace.d.ts:689</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L573">src/virtual_renderer.js:573</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the root element containing this renderer.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getDisplayIndentGuide" class="tsd-anchor"></a>
+					<h3>get<wbr>Display<wbr>Indent<wbr>Guide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Display<wbr>Indent<wbr>Guide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L465">src/virtual_renderer.js:465</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -566,7 +719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L678">ace.d.ts:678</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L713">ace.d.ts:713</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -583,7 +736,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L686">ace.d.ts:686</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L531">src/virtual_renderer.js:531</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -600,9 +753,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L693">ace.d.ts:693</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L661">src/virtual_renderer.js:661</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the first fully visible row. &quot;Fully&quot; here means that the characters in the row are not truncated; that the top and the bottom of the row are on the screen.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -617,9 +775,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L692">ace.d.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L652">src/virtual_renderer.js:652</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Returns the index of the first visible row.]{: #VirtualRenderer.getFirstVisibleRow}</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -634,9 +797,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L702">ace.d.ts:702</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L732">src/virtual_renderer.js:732</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the horizontal scrollbar is set to be always visible.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -651,10 +819,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L688">ace.d.ts:688</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L543">src/virtual_renderer.js:543</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getHighlightIndentGuides" class="tsd-anchor"></a>
+					<h3>get<wbr>Highlight<wbr>Indent<wbr>Guides</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Highlight<wbr>Indent<wbr>Guides<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L473">src/virtual_renderer.js:473</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -668,9 +853,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L694">ace.d.ts:694</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L670">src/virtual_renderer.js:670</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the last fully visible row. &quot;Fully&quot; here means that the characters in the row are not truncated; that the top and the bottom of the row are on the screen.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -685,9 +875,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L695">ace.d.ts:695</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L684">src/virtual_renderer.js:684</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Returns the index of the last visible row.]{: #VirtualRenderer.getLastVisibleRow}</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -702,9 +897,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L690">ace.d.ts:690</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L582">src/virtual_renderer.js:582</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the element that the mouse events are attached to</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
 					</ul>
@@ -720,7 +920,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.OptionsProvider.html">OptionsProvider</a>.<a href="../interfaces/Ace.OptionsProvider.html#getOption">getOption</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L665">ace.d.ts:665</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L700">ace.d.ts:700</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -750,7 +950,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.OptionsProvider.html">OptionsProvider</a>.<a href="../interfaces/Ace.OptionsProvider.html#getOptions">getOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L752">ace.d.ts:752</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L789">ace.d.ts:789</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -778,9 +978,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L682">ace.d.ts:682</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L510">src/virtual_renderer.js:510</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the print margin column is being shown or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -795,9 +1000,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L721">ace.d.ts:721</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1282">src/virtual_renderer.js:1282</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the last visible row, regardless of whether it&#39;s fully visible or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -812,9 +1022,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L719">ace.d.ts:719</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1266">src/virtual_renderer.js:1266</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>{:EditSession.getScrollLeft}</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p>EditSession.getScrollLeft</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -829,9 +1049,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L718">ace.d.ts:718</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1257">src/virtual_renderer.js:1257</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>{:EditSession.getScrollTop}</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p>EditSession.getScrollTop</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -846,9 +1076,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L720">ace.d.ts:720</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1274">src/virtual_renderer.js:1274</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the first visible row, regardless of whether it&#39;s fully visible or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -863,9 +1098,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L684">ace.d.ts:684</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L518">src/virtual_renderer.js:518</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the gutter is being shown.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -880,9 +1120,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L676">ace.d.ts:676</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L462">src/virtual_renderer.js:462</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether invisible characters are being shown or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -897,9 +1142,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L680">ace.d.ts:680</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L494">src/virtual_renderer.js:494</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the print margin is being shown or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -914,9 +1164,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L691">ace.d.ts:691</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L591">src/virtual_renderer.js:591</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the element to which the hidden text area is added.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 						</li>
 					</ul>
@@ -931,9 +1186,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L742">ace.d.ts:742</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1728">src/virtual_renderer.js:1728</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Returns the path of the current theme.]{: #VirtualRenderer.getTheme}</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -948,9 +1208,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L704">ace.d.ts:704</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L747">src/virtual_renderer.js:747</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the horizontal scrollbar is set to be always visible.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -965,9 +1230,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L740">ace.d.ts:740</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1583">src/virtual_renderer.js:1583</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Hides the current composition.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -982,9 +1252,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L712">ace.d.ts:712</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1179">src/virtual_renderer.js:1179</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Hides the cursor icon.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -999,36 +1274,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L733">ace.d.ts:733</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1453">src/virtual_renderer.js:1453</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if you can still scroll by either parameter; in other words, you haven&#39;t reached the end of the file or line.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>deltaX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The x value to scroll by</p>
+									</div>
 								</li>
 								<li>
 									<h5>deltaY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The y value to scroll by</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mock" class="tsd-anchor"></a>
-					<h3>mock</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/src/test/all_browser.js#L96">src/test/all_browser.js:96</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1043,7 +1312,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L754">ace.d.ts:754</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L791">ace.d.ts:791</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1070,7 +1339,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L756">ace.d.ts:756</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L793">ace.d.ts:793</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1090,6 +1359,112 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onChangeNewLineMode" class="tsd-anchor"></a>
+					<h3>on<wbr>Change<wbr>New<wbr>Line<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<wbr>New<wbr>Line<wbr>Mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L261">src/virtual_renderer.js:261</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onChangeTabSize" class="tsd-anchor"></a>
+					<h3>on<wbr>Change<wbr>Tab<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<wbr>Tab<wbr>Size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L267">src/virtual_renderer.js:267</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onGutterResize" class="tsd-anchor"></a>
+					<h3>on<wbr>Gutter<wbr>Resize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Gutter<wbr>Resize<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L408">src/virtual_renderer.js:408</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onResize" class="tsd-anchor"></a>
+					<h3>on<wbr>Resize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Boolean</span>, gutterWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L311">src/virtual_renderer.js:311</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Triggers a resize of the editor.]{: #VirtualRenderer.onResize}</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>force: <span class="tsd-signature-type">Boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If <code>true</code>, recomputes the size, even if the height and width haven&#39;t changed</p>
+									</div>
+								</li>
+								<li>
+									<h5>gutterWidth: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The width of the gutter in pixels</p>
+									</div>
+								</li>
+								<li>
+									<h5>width: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The width of the editor in pixels</p>
+									</div>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">Number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The hiehgt of the editor, in pixels</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="once" class="tsd-anchor"></a>
 					<h3>once</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1100,7 +1475,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L758">ace.d.ts:758</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L795">ace.d.ts:795</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1126,7 +1501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L735">ace.d.ts:735</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1466">src/virtual_renderer.js:1466</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1167,7 +1542,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeAllListeners">removeAllListeners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L774">ace.d.ts:774</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L811">ace.d.ts:811</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1191,7 +1566,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeDefaultHandler">removeDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L760">ace.d.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L797">ace.d.ts:797</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1218,7 +1593,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeEventListener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L762">ace.d.ts:762</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L799">ace.d.ts:799</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1228,6 +1603,84 @@
 								</li>
 								<li>
 									<h5>callback: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeExtraToken" class="tsd-anchor"></a>
+					<h3>remove<wbr>Extra<wbr>Token</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Extra<wbr>Token<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, column<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1662">src/virtual_renderer.js:1662</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>column: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeGhostText" class="tsd-anchor"></a>
+					<h3>remove<wbr>Ghost<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Ghost<wbr>Text<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1625">src/virtual_renderer.js:1625</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeGutterDecoration" class="tsd-anchor"></a>
+					<h3>remove<wbr>Gutter<wbr>Decoration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Gutter<wbr>Decoration<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, className<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1145">src/virtual_renderer.js:1145</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deprecated; (moved to <a href="Ace.EditSession.html">EditSession</a>)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>className: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1245,7 +1698,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#removeListener">removeListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L764">ace.d.ts:764</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L801">ace.d.ts:801</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1262,6 +1715,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="screenToTextCoordinates" class="tsd-anchor"></a>
+					<h3>screen<wbr>ToText<wbr>Coordinates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">screen<wbr>ToText<wbr>Coordinates<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1485">src/virtual_renderer.js:1485</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="scrollBy" class="tsd-anchor"></a>
 					<h3>scroll<wbr>By</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1271,16 +1750,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L732">ace.d.ts:732</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1441">src/virtual_renderer.js:1441</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the editor across both x- and y-axes.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>deltaX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The x value to scroll by</p>
+									</div>
 								</li>
 								<li>
 									<h5>deltaY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The y value to scroll by</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1297,9 +1787,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L717">ace.d.ts:717</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1201">src/virtual_renderer.js:1201</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the cursor into the first visibile area of the editor</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1323,7 +1818,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L714">ace.d.ts:714</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1191">src/virtual_renderer.js:1191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1352,16 +1847,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L731">ace.d.ts:731</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1431">src/virtual_renderer.js:1431</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the editor across both x- and y-axes.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The x value to scroll to</p>
+									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The y value to scroll to</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1378,22 +1884,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L724">ace.d.ts:724</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1331">src/virtual_renderer.js:1331</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gracefully scrolls the editor to the row indicated.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>line: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A line number</p>
+									</div>
 								</li>
 								<li>
 									<h5>center: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If <code>true</code>, centers the editor the to indicated line</p>
+									</div>
 								</li>
 								<li>
 									<h5>animate: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If <code>true</code> animates scrolling</p>
+									</div>
 								</li>
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Function to be called after the animation has finished</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -1422,13 +1945,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L722">ace.d.ts:722</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1292">src/virtual_renderer.js:1292</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gracefully scrolls from the top of the editor to the row indicated.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>related</dt>
+									<dd><p>EditSession.setScrollTop</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A row id</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1445,13 +1981,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L730">ace.d.ts:730</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1420">src/virtual_renderer.js:1420</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the editor across the x-axis to the pixel indicated.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>scrollLeft: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The position to scroll to</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1468,13 +2012,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L729">ace.d.ts:729</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1405">src/virtual_renderer.js:1405</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scrolls the editor to the y pixel indicated.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>scrollTop: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The position to scroll to</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1491,13 +2043,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L673">ace.d.ts:673</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L436">src/virtual_renderer.js:436</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to have an animated scroll or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shouldAnimate: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to show animated scrolls</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1514,13 +2074,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L710">ace.d.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1162">src/virtual_renderer.js:1162</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets annotations for the gutter.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>annotations: <a href="../interfaces/Ace.Annotation.html" class="tsd-signature-type" data-tsd-kind="Interface">Annotation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array containing annotations</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1537,13 +2105,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L739">ace.d.ts:739</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1573">src/virtual_renderer.js:1573</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string of text to use</p>
+										<p>Sets the inner text of the current composition to <code>text</code>.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1560,7 +2132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L745">ace.d.ts:745</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1754">src/virtual_renderer.js:1754</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1584,7 +2156,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.EventEmitter.html">EventEmitter</a>.<a href="../interfaces/Ace.EventEmitter.html#setDefaultHandler">setDefaultHandler</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L766">ace.d.ts:766</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L803">ace.d.ts:803</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1610,7 +2182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L677">ace.d.ts:677</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L469">src/virtual_renderer.js:469</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1633,13 +2205,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L685">ace.d.ts:685</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L535">src/virtual_renderer.js:535</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>show: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setGhostText" class="tsd-anchor"></a>
+					<h3>set<wbr>Ghost<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Ghost<wbr>Text<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1598">src/virtual_renderer.js:1598</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <a href="../interfaces/Ace.Point.html" class="tsd-signature-type" data-tsd-kind="Interface">Point</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1656,13 +2254,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L701">ace.d.ts:701</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L740">src/virtual_renderer.js:740</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show the horizontal scrollbar or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>alwaysVisible: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to make the horizontal scroll bar visible</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1679,13 +2285,68 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L687">ace.d.ts:687</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L539">src/virtual_renderer.js:539</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shouldHighlight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setHighlightIndentGuides" class="tsd-anchor"></a>
+					<h3>set<wbr>Highlight<wbr>Indent<wbr>Guides</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Highlight<wbr>Indent<wbr>Guides<span class="tsd-signature-symbol">(</span>highlight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L477">src/virtual_renderer.js:477</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>highlight: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setMargin" class="tsd-anchor"></a>
+					<h3>set<wbr>Margin</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Margin<span class="tsd-signature-symbol">(</span>top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, bottom<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L716">src/virtual_renderer.js:716</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>top: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>bottom: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>left: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>right: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1702,13 +2363,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L746">ace.d.ts:746</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1762">src/virtual_renderer.js:1762</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cursorStyle: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A css cursor style</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1726,7 +2390,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.OptionsProvider.html">OptionsProvider</a>.<a href="../interfaces/Ace.OptionsProvider.html#setOption">setOption</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L664">ace.d.ts:664</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L699">ace.d.ts:699</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1759,7 +2423,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/Ace.OptionsProvider.html">OptionsProvider</a>.<a href="../interfaces/Ace.OptionsProvider.html#setOptions">setOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L768">ace.d.ts:768</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/ace.d.ts#L805">ace.d.ts:805</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1787,13 +2451,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L696">ace.d.ts:696</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L693">src/virtual_renderer.js:693</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the padding for all the layers.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>padding: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A new padding value (in pixels)</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1810,13 +2482,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L681">ace.d.ts:681</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L502">src/virtual_renderer.js:502</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show the print margin column or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>showPrintMargin: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to show the print margin column</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1833,7 +2513,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L697">ace.d.ts:697</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L703">src/virtual_renderer.js:703</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1865,9 +2545,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L667">ace.d.ts:667</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L197">src/virtual_renderer.js:197</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Associates the renderer with an <a href="Ace.EditSession.html"><code>EditSession</code></a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1888,13 +2573,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L683">ace.d.ts:683</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L527">src/virtual_renderer.js:527</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show the gutter or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>show: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to show the gutter</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1911,13 +2604,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L675">ace.d.ts:675</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L453">src/virtual_renderer.js:453</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show invisible characters or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>showInvisibles: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to show invisibles</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1934,13 +2635,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L679">ace.d.ts:679</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L486">src/virtual_renderer.js:486</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show the print margin or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>showPrintMargin: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to show the print margin</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1957,9 +2666,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L743">ace.d.ts:743</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1741">src/virtual_renderer.js:1741</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Methods allows to add / remove CSS classnames to the editor element.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1983,9 +2697,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L741">ace.d.ts:741</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1673">src/virtual_renderer.js:1673</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Sets a new theme for the editor. <code>theme</code> should exist, and be a directory path, like <code>ace/theme/textmate</code>.]{: #VirtualRenderer.setTheme}</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -2021,30 +2740,38 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L703">ace.d.ts:703</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L755">src/virtual_renderer.js:755</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Identifies whether you want to show the horizontal scrollbar or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>alwaysVisible: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Set to <code>true</code> to make the horizontal scroll bar visible</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="showComposition" class="tsd-anchor"></a>
-					<h3>show<wbr>Composition</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> show<wbr>Composition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
 						<li class="tsd-signature tsd-kind-icon">show<wbr>Composition<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L738">ace.d.ts:738</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1549">src/virtual_renderer.js:1549</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2067,9 +2794,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L713">ace.d.ts:713</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1187">src/virtual_renderer.js:1187</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Shows the cursor icon.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2084,16 +2816,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L734">ace.d.ts:734</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1512">src/virtual_renderer.js:1512</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an object containing the <code>pageX</code> and <code>pageY</code> coordinates of the document position.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>row: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The document row position</p>
+									</div>
 								</li>
 								<li>
 									<h5>column: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The document column position</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>pageX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>pageY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -2118,7 +2861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L706">ace.d.ts:706</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L781">src/virtual_renderer.js:781</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2135,13 +2878,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L744">ace.d.ts:744</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1750">src/virtual_renderer.js:1750</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>[Removes the class <code>style</code> from the editor.]{: #VirtualRenderer.unsetStyle}</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>style: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A class name</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2158,9 +2909,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L708">ace.d.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1127">src/virtual_renderer.js:1127</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Schedules an update to all the back markers in the document.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2175,9 +2931,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L709">ace.d.ts:709</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1153">src/virtual_renderer.js:1153</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Redraw breakpoints.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateCharacterSize" class="tsd-anchor"></a>
+					<h3>update<wbr>Character<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Character<wbr>Size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L178">src/virtual_renderer.js:178</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>this.$logChanges = function(changes) {</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2192,9 +2975,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L711">ace.d.ts:711</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1171">src/virtual_renderer.js:1171</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the cursor icon.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2209,9 +2997,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L671">ace.d.ts:671</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L293">src/virtual_renderer.js:293</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the font size.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2226,9 +3019,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L707">ace.d.ts:707</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1118">src/virtual_renderer.js:1118</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Schedules an update to all the front markers in the document.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2243,13 +3041,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L670">ace.d.ts:670</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L283">src/virtual_renderer.js:283</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggers a full update of all the layers, for all the rows.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>If <code>true</code>, forces the changes through</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2266,16 +3072,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L668">ace.d.ts:668</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L228">src/virtual_renderer.js:228</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggers a partial update of the text, from the range given by the two parameters.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>firstRow: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The first row to update</p>
+									</div>
 								</li>
 								<li>
 									<h5>lastRow: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The last row to update</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
@@ -2295,9 +3112,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L669">ace.d.ts:669</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L275">src/virtual_renderer.js:275</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggers a full update of the text, for all the rows.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2312,9 +3134,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L737">ace.d.ts:737</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1540">src/virtual_renderer.js:1540</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Blurs the current container.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2329,9 +3156,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.17.0/ace.d.ts#L736">ace.d.ts:736</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.18.1/src/virtual_renderer.js#L1532">src/virtual_renderer.js:1532</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Focuses the current container.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -2393,6 +3225,12 @@
 								<a href="Ace.VirtualRenderer.html#addEventListener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#addGutterDecoration" class="tsd-kind-icon">add<wbr>Gutter<wbr>Decoration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#addToken" class="tsd-kind-icon">add<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#adjustWrapLimit" class="tsd-kind-icon">adjust<wbr>Wrap<wbr>Limit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2417,6 +3255,9 @@
 								<a href="Ace.VirtualRenderer.html#getContainerElement" class="tsd-kind-icon">get<wbr>Container<wbr>Element</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#getDisplayIndentGuide" class="tsd-kind-icon">get<wbr>Display<wbr>Indent<wbr>Guide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#getDisplayIndentGuides" class="tsd-kind-icon">get<wbr>Display<wbr>Indent<wbr>Guides</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2433,6 +3274,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#getHighlightGutterLine" class="tsd-kind-icon">get<wbr>Highlight<wbr>Gutter<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#getHighlightIndentGuides" class="tsd-kind-icon">get<wbr>Highlight<wbr>Indent<wbr>Guides</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#getLastFullyVisibleRow" class="tsd-kind-icon">get<wbr>Last<wbr>Fully<wbr>Visible<wbr>Row</a>
@@ -2492,13 +3336,22 @@
 								<a href="Ace.VirtualRenderer.html#isScrollableBy" class="tsd-kind-icon">is<wbr>Scrollable<wbr>By</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.VirtualRenderer.html#mock" class="tsd-kind-icon">mock</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#onChangeNewLineMode" class="tsd-kind-icon">on<wbr>Change<wbr>New<wbr>Line<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#onChangeTabSize" class="tsd-kind-icon">on<wbr>Change<wbr>Tab<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#onGutterResize" class="tsd-kind-icon">on<wbr>Gutter<wbr>Resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#onResize" class="tsd-kind-icon">on<wbr>Resize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#once" class="tsd-kind-icon">once</a>
@@ -2516,7 +3369,19 @@
 								<a href="Ace.VirtualRenderer.html#removeEventListener" class="tsd-kind-icon">remove<wbr>Event<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#removeExtraToken" class="tsd-kind-icon">remove<wbr>Extra<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#removeGhostText" class="tsd-kind-icon">remove<wbr>Ghost<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#removeGutterDecoration" class="tsd-kind-icon">remove<wbr>Gutter<wbr>Decoration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#removeListener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#screenToTextCoordinates" class="tsd-kind-icon">screen<wbr>ToText<wbr>Coordinates</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#scrollBy" class="tsd-kind-icon">scroll<wbr>By</a>
@@ -2564,10 +3429,19 @@
 								<a href="Ace.VirtualRenderer.html#setFadeFoldWidgets" class="tsd-kind-icon">set<wbr>Fade<wbr>Fold<wbr>Widgets</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#setGhostText" class="tsd-kind-icon">set<wbr>Ghost<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#setHScrollBarAlwaysVisible" class="tsd-kind-icon">setHScroll<wbr>Bar<wbr>Always<wbr>Visible</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#setHighlightGutterLine" class="tsd-kind-icon">set<wbr>Highlight<wbr>Gutter<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#setHighlightIndentGuides" class="tsd-kind-icon">set<wbr>Highlight<wbr>Indent<wbr>Guides</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#setMargin" class="tsd-kind-icon">set<wbr>Margin</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#setMouseCursor" class="tsd-kind-icon">set<wbr>Mouse<wbr>Cursor</a>
@@ -2608,7 +3482,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#setVScrollBarAlwaysVisible" class="tsd-kind-icon">setVScroll<wbr>Bar<wbr>Always<wbr>Visible</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="Ace.VirtualRenderer.html#showComposition" class="tsd-kind-icon">show<wbr>Composition</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2628,6 +3502,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#updateBreakpoints" class="tsd-kind-icon">update<wbr>Breakpoints</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Ace.VirtualRenderer.html#updateCharacterSize" class="tsd-kind-icon">update<wbr>Character<wbr>Size</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="Ace.VirtualRenderer.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a>
@@ -2670,6 +3547,12 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 		</div>
 	</div>
