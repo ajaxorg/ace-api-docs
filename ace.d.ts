@@ -1204,7 +1204,7 @@ export class InlineAutocomplete {
 
     getInlineRenderer(): Ace.AceInline;
 
-    getInlineTooltip(): InlineTooltip;
+    getInlineTooltip(): CommandBarTooltip;
 
     getCompletionProvider(): Ace.CompletionProvider;
 
@@ -1219,7 +1219,7 @@ export class InlineAutocomplete {
     goTo(action: InlineAutocompleteAction): void;
 
     tooltipEnabled: boolean;
-    commands: Record<string, TooltipCommand>
+    commands: Record<string, Ace.Command>
 
     getIndex(): number;
 
@@ -1232,18 +1232,22 @@ export class InlineAutocomplete {
     updateCompletions(options: Ace.CompletionOptions): void;
 }
 
-export class InlineTooltip {
+export class CommandBarTooltip {
     constructor(parentElement: HTMLElement);
 
-    setCommands(commands: Record<string, TooltipCommand>): void;
+    registerCommand(id: string, command: TooltipCommand): void;
 
-    show(editor: Ace.Editor): void;
+    attach(editor: Ace.Editor): void;
 
     updatePosition(): void;
 
-    updateButtons(force?: boolean): void;
+    update(): void;
 
     isShown(): boolean;
+
+    getAlwaysShow(): boolean;
+
+    setAlwaysShow(alwaysShow: boolean): void;
 
     detach(): void;
 
