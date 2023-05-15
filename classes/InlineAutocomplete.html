@@ -104,6 +104,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#blurListener" class="tsd-kind-icon">blur<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#changeListener" class="tsd-kind-icon">change<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#createInlineTooltip" class="tsd-kind-icon">create<wbr>Inline<wbr>Tooltip</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#detach" class="tsd-kind-icon">detach</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#for" class="tsd-kind-icon">for</a></li>
@@ -116,7 +117,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#goTo" class="tsd-kind-icon">go<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#insertMatch" class="tsd-kind-icon">insert<wbr>Match</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#isOpen" class="tsd-kind-icon">is<wbr>Open</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#mousewheelListener" class="tsd-kind-icon">mousewheel<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#setIndex" class="tsd-kind-icon">set<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#show" class="tsd-kind-icon">show</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineAutocomplete.html#updateCompletions" class="tsd-kind-icon">update<wbr>Completions</a></li>
@@ -137,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L36">src/ext/inline_autocomplete.js:36</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L28">src/ext/inline_autocomplete.js:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="InlineAutocomplete.html" class="tsd-signature-type" data-tsd-kind="Class">InlineAutocomplete</a></h4>
@@ -150,10 +150,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="commands" class="tsd-anchor"></a>
 					<h3>commands</h3>
-					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/TooltipCommand.html" class="tsd-signature-type" data-tsd-kind="Interface">TooltipCommand</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/Ace.Command.html" class="tsd-signature-type" data-tsd-kind="Interface">Command</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/ace.d.ts#L1222">ace.d.ts:1222</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/ace.d.ts#L1222">ace.d.ts:1222</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">tooltip<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/ace.d.ts#L1221">ace.d.ts:1221</a></li>
+							<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/ace.d.ts#L1221">ace.d.ts:1221</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L124">src/ext/inline_autocomplete.js:124</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L109">src/ext/inline_autocomplete.js:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -203,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L113">src/ext/inline_autocomplete.js:113</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L98">src/ext/inline_autocomplete.js:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -217,6 +217,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createInlineTooltip" class="tsd-anchor"></a>
+					<h3>create<wbr>Inline<wbr>Tooltip</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Inline<wbr>Tooltip<span class="tsd-signature-symbol">(</span>parentEl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L360">src/ext/inline_autocomplete.js:360</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Factory method to create a command bar tooltip for inline autocomplete.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parentEl: <span class="tsd-signature-type">HTMLElement</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The parent element where the tooltip HTML elements will be added.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></h4>
+							<p>The command bar tooltip for inline autocomplete</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -226,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L288">src/ext/inline_autocomplete.js:288</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L267">src/ext/inline_autocomplete.js:267</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -243,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L260">src/ext/inline_autocomplete.js:260</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L240">src/ext/inline_autocomplete.js:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -260,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L348">src/ext/inline_autocomplete.js:348</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L313">src/ext/inline_autocomplete.js:313</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -283,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L188">src/ext/inline_autocomplete.js:188</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L168">src/ext/inline_autocomplete.js:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.CompletionProvider.html" class="tsd-signature-type" data-tsd-kind="Class">CompletionProvider</a></h4>
@@ -300,7 +332,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L161">src/ext/inline_autocomplete.js:161</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L141">src/ext/inline_autocomplete.js:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L169">src/ext/inline_autocomplete.js:169</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L149">src/ext/inline_autocomplete.js:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -340,7 +372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L51">src/ext/inline_autocomplete.js:51</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L42">src/ext/inline_autocomplete.js:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.AceInline.html" class="tsd-signature-type" data-tsd-kind="Class">AceInline</a></h4>
@@ -351,16 +383,16 @@
 					<a name="getInlineTooltip" class="tsd-anchor"></a>
 					<h3>get<wbr>Inline<wbr>Tooltip</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Inline<wbr>Tooltip<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="InlineTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">InlineTooltip</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Inline<wbr>Tooltip<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L57">src/ext/inline_autocomplete.js:57</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L48">src/ext/inline_autocomplete.js:48</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="InlineTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">InlineTooltip</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -374,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L154">src/ext/inline_autocomplete.js:154</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L134">src/ext/inline_autocomplete.js:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -391,7 +423,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L134">src/ext/inline_autocomplete.js:134</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L113">src/ext/inline_autocomplete.js:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -414,7 +446,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L107">src/ext/inline_autocomplete.js:107</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L92">src/ext/inline_autocomplete.js:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -431,33 +463,10 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L173">src/ext/inline_autocomplete.js:173</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L153">src/ext/inline_autocomplete.js:153</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="mousewheelListener" class="tsd-anchor"></a>
-					<h3>mousewheel<wbr>Listener</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">mousewheel<wbr>Listener<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L128">src/ext/inline_autocomplete.js:128</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>e: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -471,7 +480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L177">src/ext/inline_autocomplete.js:177</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L157">src/ext/inline_autocomplete.js:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -494,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L70">src/ext/inline_autocomplete.js:70</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L60">src/ext/inline_autocomplete.js:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,7 +531,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L218">src/ext/inline_autocomplete.js:218</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/inline_autocomplete.js#L198">src/ext/inline_autocomplete.js:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -547,6 +556,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="CommandBarTooltip.html" class="tsd-kind-icon">Command<wbr>Bar<wbr>Tooltip</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
@@ -566,6 +578,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="InlineAutocomplete.html#changeListener" class="tsd-kind-icon">change<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="InlineAutocomplete.html#createInlineTooltip" class="tsd-kind-icon">create<wbr>Inline<wbr>Tooltip</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="InlineAutocomplete.html#destroy" class="tsd-kind-icon">destroy</a>
@@ -604,9 +619,6 @@
 								<a href="InlineAutocomplete.html#isOpen" class="tsd-kind-icon">is<wbr>Open</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineAutocomplete.html#mousewheelListener" class="tsd-kind-icon">mousewheel<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="InlineAutocomplete.html#setIndex" class="tsd-kind-icon">set<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -619,9 +631,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="InlineTooltip.html" class="tsd-kind-icon">Inline<wbr>Tooltip</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/TooltipCommand.html" class="tsd-kind-icon">Tooltip<wbr>Command</a>
 					</li>

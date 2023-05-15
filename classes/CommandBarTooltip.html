@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InlineTooltip | Ace API Reference</title>
+	<title>CommandBarTooltip | Ace API Reference</title>
 	<meta name="description" content="Documentation for Ace API Reference">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">Ace API Reference</a>
 				</li>
 				<li>
-					<a href="InlineTooltip.html">InlineTooltip</a>
+					<a href="CommandBarTooltip.html">CommandBarTooltip</a>
 				</li>
 			</ul>
-			<h1>Class InlineTooltip</h1>
+			<h1>Class CommandBarTooltip</h1>
 		</div>
 	</div>
 </header>
@@ -68,15 +68,20 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Displays a command tooltip above the selection, with clickable elements.</p>
+						<p>Displays a command tooltip above the currently active line selection, with clickable elements.</p>
 					</div>
+					<p>Internally it is a composite of two tooltips, one for the main tooltip and one for the
+						overflowing commands.
+						The commands are added sequentially in registration order.
+						When attached to an editor, it is either always shown or only when the active line is hovered
+					with mouse, depending on the alwaysShow property.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InlineTooltip</span>
+						<span class="target">CommandBarTooltip</span>
 					</li>
 				</ul>
 			</section>
@@ -87,19 +92,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="InlineTooltip.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="CommandBarTooltip.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#destroy" class="tsd-kind-icon">destroy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#detach" class="tsd-kind-icon">detach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#isShown" class="tsd-kind-icon">is<wbr>Shown</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#setCommands" class="tsd-kind-icon">set<wbr>Commands</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#show" class="tsd-kind-icon">show</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#updateButtons" class="tsd-kind-icon">update<wbr>Buttons</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="InlineTooltip.html#updatePosition" class="tsd-kind-icon">update<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#attach" class="tsd-kind-icon">attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#detach" class="tsd-kind-icon">detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#getAlwaysShow" class="tsd-kind-icon">get<wbr>Always<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#isMoreOptionsShown" class="tsd-kind-icon">is<wbr>More<wbr>Options<wbr>Shown</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#isShown" class="tsd-kind-icon">is<wbr>Shown</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#registerCommand" class="tsd-kind-icon">register<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#setAlwaysShow" class="tsd-kind-icon">set<wbr>Always<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="CommandBarTooltip.html#updatePosition" class="tsd-kind-icon">update<wbr>Position</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,37 +119,60 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Inline<wbr>Tooltip<span class="tsd-signature-symbol">(</span>parentElement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="InlineTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">InlineTooltip</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Command<wbr>Bar<wbr>Tooltip<span class="tsd-signature-symbol">(</span>parentElement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L404">src/ext/inline_autocomplete.js:404</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L50">src/ext/command_bar.js:50</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates the inline command tooltip helper which displays the available keyboard commands for the user.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>parentElement: <span class="tsd-signature-type">HTMLElement</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-										</div>
-									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="InlineTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">InlineTooltip</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="CommandBarTooltip.html" class="tsd-signature-type" data-tsd-kind="Class">CommandBarTooltip</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attach" class="tsd-anchor"></a>
+					<h3>attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L144">src/ext/command_bar.js:144</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attaches the clickable command bar tooltip to an editor</p>
+								</div>
+								<p>Depending on the alwaysShow parameter it either displays the tooltip immediately,
+								or subscribes to the necessary events to display the tooltip on hover.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>editor: <a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
@@ -152,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L558">src/ext/inline_autocomplete.js:558</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L266">src/ext/command_bar.js:266</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -169,10 +200,49 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L544">src/ext/inline_autocomplete.js:544</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L251">src/ext/command_bar.js:251</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detaches the tooltip from the editor.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getAlwaysShow" class="tsd-anchor"></a>
+					<h3>get<wbr>Always<wbr>Show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Always<wbr>Show<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L118">src/ext/command_bar.js:118</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isMoreOptionsShown" class="tsd-anchor"></a>
+					<h3>is<wbr>More<wbr>Options<wbr>Shown</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>More<wbr>Options<wbr>Shown<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L114">src/ext/command_bar.js:114</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -186,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L469">src/ext/inline_autocomplete.js:469</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L110">src/ext/command_bar.js:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -194,27 +264,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="setCommands" class="tsd-anchor"></a>
-					<h3>set<wbr>Commands</h3>
+					<a name="registerCommand" class="tsd-anchor"></a>
+					<h3>register<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Commands<span class="tsd-signature-symbol">(</span>commands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/TooltipCommand.html" class="tsd-signature-type" data-tsd-kind="Interface">TooltipCommand</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Command<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, command<span class="tsd-signature-symbol">: </span><a href="../interfaces/TooltipCommand.html" class="tsd-signature-type" data-tsd-kind="Interface">TooltipCommand</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L424">src/ext/inline_autocomplete.js:424</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L88">src/ext/command_bar.js:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>This function sets the commands. Note that it is advised to call this before calling show, otherwise there are no buttons to render</p>
+									<p>Registers a command on the command bar tooltip.</p>
 								</div>
+								<p>The commands are added in sequential order. If there is not enough space on the main
+								toolbar, the remaining elements are added to the overflow menu.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>commands: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/TooltipCommand.html" class="tsd-signature-type" data-tsd-kind="Interface">TooltipCommand</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>command: <a href="../interfaces/TooltipCommand.html" class="tsd-signature-type" data-tsd-kind="Interface">TooltipCommand</a></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -224,27 +299,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="show" class="tsd-anchor"></a>
-					<h3>show</h3>
+					<a name="setAlwaysShow" class="tsd-anchor"></a>
+					<h3>set<wbr>Always<wbr>Show</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Always<wbr>Show<span class="tsd-signature-symbol">(</span>alwaysShow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L459">src/ext/inline_autocomplete.js:459</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L130">src/ext/command_bar.js:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Displays the clickable command bar tooltip</p>
+									<p>Sets the display mode of the tooltip</p>
 								</div>
+								<p>When true, the tooltip is always displayed while it is attached to an editor.
+								When false, the tooltip is displayed only when the mouse hovers over the active editor line.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>editor: <a href="Ace.Editor.html" class="tsd-signature-type" data-tsd-kind="Class">Editor</a></h5>
+									<h5>alwaysShow: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -252,29 +329,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateButtons" class="tsd-anchor"></a>
-					<h3>update<wbr>Buttons</h3>
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Buttons<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L516">src/ext/inline_autocomplete.js:516</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L244">src/ext/command_bar.js:244</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates the buttons in the command bar tooltip. Should be called every time when any of the buttons can become disabled or enabled.</p>
+									<p>Updates each command element in the tooltip.</p>
 								</div>
+								<p>This is automatically called on certain events, but can be called manually as well.</p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -289,12 +361,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.19.0/src/ext/inline_autocomplete.js#L476">src/ext/inline_autocomplete.js:476</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.21.0/src/ext/command_bar.js#L168">src/ext/command_bar.js:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates the position of the command bar tooltip. It aligns itself above the topmost selection in the editor.</p>
+									<p>Updates the position of the command bar tooltip. It aligns itself above the active line in the editor.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -313,42 +385,51 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="InlineAutocomplete.html" class="tsd-kind-icon">Inline<wbr>Autocomplete</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="InlineTooltip.html" class="tsd-kind-icon">Inline<wbr>Tooltip</a>
+						<a href="CommandBarTooltip.html" class="tsd-kind-icon">Command<wbr>Bar<wbr>Tooltip</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="InlineTooltip.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="CommandBarTooltip.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#destroy" class="tsd-kind-icon">destroy</a>
+								<a href="CommandBarTooltip.html#attach" class="tsd-kind-icon">attach</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#detach" class="tsd-kind-icon">detach</a>
+								<a href="CommandBarTooltip.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#isShown" class="tsd-kind-icon">is<wbr>Shown</a>
+								<a href="CommandBarTooltip.html#detach" class="tsd-kind-icon">detach</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#setCommands" class="tsd-kind-icon">set<wbr>Commands</a>
+								<a href="CommandBarTooltip.html#getAlwaysShow" class="tsd-kind-icon">get<wbr>Always<wbr>Show</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#show" class="tsd-kind-icon">show</a>
+								<a href="CommandBarTooltip.html#isMoreOptionsShown" class="tsd-kind-icon">is<wbr>More<wbr>Options<wbr>Shown</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#updateButtons" class="tsd-kind-icon">update<wbr>Buttons</a>
+								<a href="CommandBarTooltip.html#isShown" class="tsd-kind-icon">is<wbr>Shown</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="InlineTooltip.html#updatePosition" class="tsd-kind-icon">update<wbr>Position</a>
+								<a href="CommandBarTooltip.html#registerCommand" class="tsd-kind-icon">register<wbr>Command</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CommandBarTooltip.html#setAlwaysShow" class="tsd-kind-icon">set<wbr>Always<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CommandBarTooltip.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="CommandBarTooltip.html#updatePosition" class="tsd-kind-icon">update<wbr>Position</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="InlineAutocomplete.html" class="tsd-kind-icon">Inline<wbr>Autocomplete</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/TooltipCommand.html" class="tsd-kind-icon">Tooltip<wbr>Command</a>
 					</li>
