@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OccurKeyboardHandler | Ace API Reference</title>
+	<title>GutterKeyboardEvent | Ace API Reference</title>
 	<meta name="description" content="Documentation for Ace API Reference">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,21 +58,28 @@
 					<a href="../modules/Ace.html">Ace</a>
 				</li>
 				<li>
-					<a href="Ace.OccurKeyboardHandler.html">OccurKeyboardHandler</a>
+					<a href="Ace.GutterKeyboardEvent.html">GutterKeyboardEvent</a>
 				</li>
 			</ul>
-			<h1>Class OccurKeyboardHandler</h1>
+			<h1>Class GutterKeyboardEvent</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Custom Ace gutter keyboard event</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">OccurKeyboardHandler</span>
+						<span class="target">GutterKeyboardEvent</span>
 					</li>
 				</ul>
 			</section>
@@ -83,16 +90,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.OccurKeyboardHandler.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Ace.GutterKeyboardEvent.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.OccurKeyboardHandler.html#attach" class="tsd-kind-icon">attach</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.OccurKeyboardHandler.html#handleKeyboard" class="tsd-kind-icon">handle<wbr>Keyboard</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.OccurKeyboardHandler.html#installIn" class="tsd-kind-icon">install<wbr>In</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.OccurKeyboardHandler.html#uninstallFrom" class="tsd-kind-icon">uninstall<wbr>From</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.GutterKeyboardEvent.html#getKey" class="tsd-kind-icon">get<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.GutterKeyboardEvent.html#getRow" class="tsd-kind-icon">get<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.GutterKeyboardEvent.html#isInAnnotationLane" class="tsd-kind-icon">is<wbr>InAnnotation<wbr>Lane</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Ace.GutterKeyboardEvent.html#isInFoldLane" class="tsd-kind-icon">is<wbr>InFold<wbr>Lane</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,13 +111,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Occur<wbr>Keyboard<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.OccurKeyboardHandler.html" class="tsd-signature-type" data-tsd-kind="Class">OccurKeyboardHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Gutter<wbr>Keyboard<wbr>Event<span class="tsd-signature-symbol">(</span>domEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, gutterKeyboardHandler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.GutterKeyboardEvent.html" class="tsd-signature-type" data-tsd-kind="Class">GutterKeyboardEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/keyboard/gutter_handler.js#L442">src/keyboard/gutter_handler.js:442</a></li>
+								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="Ace.OccurKeyboardHandler.html" class="tsd-signature-type" data-tsd-kind="Class">OccurKeyboardHandler</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>domEvent: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>gutterKeyboardHandler: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.GutterKeyboardEvent.html" class="tsd-signature-type" data-tsd-kind="Class">GutterKeyboardEvent</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -118,103 +137,94 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="attach" class="tsd-anchor"></a>
-					<h3>attach</h3>
+					<a name="getKey" class="tsd-anchor"></a>
+					<h3>get<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Key<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/commands/occur_commands.js#L50">src/commands/occur_commands.js:50</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/keyboard/gutter_handler.js#L452">src/keyboard/gutter_handler.js:452</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>editor: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the key that was presssed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>the key that was pressed.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="handleKeyboard" class="tsd-anchor"></a>
-					<h3>handle<wbr>Keyboard</h3>
+					<a name="getRow" class="tsd-anchor"></a>
+					<h3>get<wbr>Row</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Keyboard<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, hashId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, keyCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/commands/occur_commands.js#L56">src/commands/occur_commands.js:56</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/keyboard/gutter_handler.js#L461">src/keyboard/gutter_handler.js:461</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>data: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>hashId: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>keyCode: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the row in the gutter that was focused after the keyboard event was handled.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the key that was pressed.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="installIn" class="tsd-anchor"></a>
-					<h3>install<wbr>In</h3>
+					<a name="isInAnnotationLane" class="tsd-anchor"></a>
+					<h3>is<wbr>InAnnotation<wbr>Lane</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">install<wbr>In<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>InAnnotation<wbr>Lane<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/commands/occur_commands.js#L63">src/commands/occur_commands.js:63</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/keyboard/gutter_handler.js#L470">src/keyboard/gutter_handler.js:470</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>editor: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether focus is on the annotation lane after the keyboard event was handled.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if focus was on the annotation lane after the keyboard event.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="uninstallFrom" class="tsd-anchor"></a>
-					<h3>uninstall<wbr>From</h3>
+					<a name="isInFoldLane" class="tsd-anchor"></a>
+					<h3>is<wbr>InFold<wbr>Lane</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">uninstall<wbr>From<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>InFold<wbr>Lane<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/commands/occur_commands.js#L69">src/commands/occur_commands.js:69</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.0/src/keyboard/gutter_handler.js#L479">src/keyboard/gutter_handler.js:479</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>editor: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether focus is on the fold lane after the keyboard event was handled.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if focus was on the fold lane after the keyboard event.</p>
 						</li>
 					</ul>
 				</section>
@@ -236,22 +246,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-namespace">
-						<a href="Ace.OccurKeyboardHandler.html" class="tsd-kind-icon">Occur<wbr>Keyboard<wbr>Handler</a>
+						<a href="Ace.GutterKeyboardEvent.html" class="tsd-kind-icon">Gutter<wbr>Keyboard<wbr>Event</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="Ace.OccurKeyboardHandler.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="Ace.GutterKeyboardEvent.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.OccurKeyboardHandler.html#attach" class="tsd-kind-icon">attach</a>
+								<a href="Ace.GutterKeyboardEvent.html#getKey" class="tsd-kind-icon">get<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.OccurKeyboardHandler.html#handleKeyboard" class="tsd-kind-icon">handle<wbr>Keyboard</a>
+								<a href="Ace.GutterKeyboardEvent.html#getRow" class="tsd-kind-icon">get<wbr>Row</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.OccurKeyboardHandler.html#installIn" class="tsd-kind-icon">install<wbr>In</a>
+								<a href="Ace.GutterKeyboardEvent.html#isInAnnotationLane" class="tsd-kind-icon">is<wbr>InAnnotation<wbr>Lane</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="Ace.OccurKeyboardHandler.html#uninstallFrom" class="tsd-kind-icon">uninstall<wbr>From</a>
+								<a href="Ace.GutterKeyboardEvent.html#isInFoldLane" class="tsd-kind-icon">is<wbr>InFold<wbr>Lane</a>
 							</li>
 						</ul>
 					</li>
