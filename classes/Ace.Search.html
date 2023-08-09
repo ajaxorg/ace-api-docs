@@ -119,24 +119,57 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L25">src/search.js:25</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L31">src/search.js:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Creates a new <code>Search</code> object. The following search options are available:</p>
 								</div>
-								<ul>
-									<li><code>needle</code>: The string or regular expression you&#39;re looking for</li>
-									<li><code>backwards</code>: Whether to search backwards from where cursor currently is. Defaults to <code>false</code>.</li>
-									<li><code>wrap</code>: Whether to wrap the search back to the beginning when it hits the end. Defaults to <code>false</code>.</li>
-									<li><code>caseSensitive</code>: Whether the search ought to be case-sensitive. Defaults to <code>false</code>.</li>
-									<li><code>wholeWord</code>: Whether the search matches only on whole words. Defaults to <code>false</code>.</li>
-									<li><code>range</code>: The <a href="Ace.Range.html">Range</a> to search within. Set this to <code>null</code> for the whole document</li>
-									<li><code>regExp</code>: Whether the search is a regular expression or not. Defaults to <code>false</code>.</li>
-									<li><code>start</code>: The starting <a href="Ace.Range.html">Range</a> or cursor position to begin the search</li>
-									<li><code>skipCurrent</code>: Whether or not to include the current line in the search. Default to <code>false</code>.</li>
-								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>property</dt>
+									<dd><p>{string|RegExp} [needle] - The string or regular expression you&#39;re looking for</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [backwards] - Whether to search backwards from where cursor currently is</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [wrap] - Whether to wrap the search back to the beginning when it hits the end</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [caseSensitive] - Whether the search ought to be case-sensitive</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [wholeWord] - Whether the search matches only on whole words</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{Range|null} [range] - The <a href="Ace.Range.html">Range</a> to search within. Set this to <code>null</code> for the whole document</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [regExp] - Whether the search is a regular expression or not</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{Range|Position} [start] - The starting <a href="Ace.Range.html">Range</a> or cursor position to begin the search</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [skipCurrent] - Whether or not to include the current line in the search</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [$isMultiLine] - true, if needle has \n or \r\n</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [preserveCase]</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [preventScroll]</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{boolean} [$supportsUnicodeFlag] - internal property, determine if browser supports unicode flag</p>
+									</dd>
+									<dt>property</dt>
+									<dd><p>{any} [re]</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="Ace.Search.html" class="tsd-signature-type" data-tsd-kind="Class">Search</a></h4>
 						</li>
@@ -149,13 +182,13 @@
 					<a name="find" class="tsd-anchor"></a>
 					<h3>find</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L65">src/search.js:65</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L71">src/search.js:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,7 +205,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -180,13 +213,13 @@
 					<a name="findAll" class="tsd-anchor"></a>
 					<h3>find<wbr>All</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>All<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>All<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><a href="Ace.EditSession.html" class="tsd-signature-type" data-tsd-kind="Class">EditSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L94">src/search.js:94</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L98">src/search.js:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,7 +236,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="Ace.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -211,13 +244,13 @@
 					<a name="getOptions" class="tsd-anchor"></a>
 					<h3>get<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L46">src/search.js:46</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L53">src/search.js:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,7 +258,7 @@
 									<p>[Returns an object containing all the search options.]{: #Search.getOptions}</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -239,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L173">src/search.js:173</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L177">src/search.js:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,13 +307,13 @@
 					<a name="set" class="tsd-anchor"></a>
 					<h3>set</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Search.html" class="tsd-signature-type" data-tsd-kind="Class">Search</a></li>
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Ace.Search.html" class="tsd-signature-type" data-tsd-kind="Class">Search</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L37">src/search.js:37</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L44">src/search.js:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -295,7 +328,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-type">Object</span></h5>
+									<h5>options: <a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An object containing all the new search properties</p>
 									</div>
@@ -309,13 +342,13 @@
 					<a name="setOptions" class="tsd-anchor"></a>
 					<h3>set<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.23.4/src/search.js#L55">src/search.js:55</a></li>
+									<li>Defined in <a href="https://github.com/ajaxorg/ace/tree/v1.24.0/src/search.js#L62">src/search.js:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,7 +364,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-type">Object</span></h5>
+									<h5>options: <a href="../interfaces/Ace.SearchOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>object containing all the search propertie</p>
 									</div>
