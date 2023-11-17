@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "es2019",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "generated"
+  },
+  "exclude": [
+    "node_modules",
+    "../src/test/**/*",
+    "../src/**/*_test.js",
+    "../src/keyboard/vim.js",
+    "../src/keyboard/emacs.js",
+    "../src/keyboard/sublime.js",
+    "../src/keyboard/vscode.js",
+    "../src/mode/**/*",
+    "../ace-internal.d.ts",
+    "../src/snippets/**/*",
+    "../src/theme/**/*"
+  ],
+  "include": [
+    "../src/**/*",
+    "../ace.d.ts"
+  ],
+  "typedocOptions": {
+    "name": "Ace API Reference",
+    "readme": "assets/ace_readme.md",
+    "excludeReferences": true,
+    "sourceLinkExternal": true,
+    "entryPoints": [
+      "../src/**/*",
+      "../ace.d.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "../src/test/**/*",
+      "../src/**/*_test.js",
+      "../src/keyboard/vim.js",
+      "../src/keyboard/emacs.js",
+      "../src/keyboard/sublime.js",
+      "../src/keyboard/vscode.js",
+      "../src/mode/**/*",
+      "../ace-internal.d.ts",
+      "../src/snippets/**/*",
+      "../src/theme/**/*"
+    ]
+  }
+}
