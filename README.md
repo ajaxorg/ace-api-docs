@@ -1,6 +1,6 @@
 # Ace documentation generator
 
-requires node >= 8
+requires node >= 16
 
 Important! Set `ACE_VERSION` variable which is used with `gitLink` parameter to constuct Ace release link - for example: `https://github.com/ajaxorg/ace/tree/v1.4.2/`  
 
