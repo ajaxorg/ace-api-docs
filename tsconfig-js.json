@@ -4,11 +4,11 @@
     "noImplicitAny": false,
     "module": "commonjs",
     "target": "es2019",
-    "allowJs": false,
+    "allowJs": true,
     "checkJs": false,
-    "skipLibCheck": true,
     "outDir": "generated",
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "declaration": false
   },
   "exclude": [
     "node_modules",
@@ -19,15 +19,14 @@
     "../src/keyboard/sublime.js",
     "../src/keyboard/vscode.js",
     "../src/mode/**/*",
-    "../ace-internal.d.ts",
     "../src/snippets/**/*",
-    "../src/theme/**/*"
+    "../src/theme/**/*",
+    "../src/**/*.d.ts"
   ],
   "include": [
-    "../src/**/*",
-    "../ace.d.ts",
-    "../interfaces.d.ts"
-
+    "../src/**/*.js",
+    "../interfaces.d.ts",
+    "../ace-internal.d.ts"
   ],
   "typedocOptions": {
     "name": "Ace API Reference",
@@ -35,8 +34,7 @@
     "excludeReferences": true,
     "sourceLinkExternal": true,
     "entryPoints": [
-      "../src/**/*",
-      "../ace.d.ts",
+      "../src/**/*.js",
       "../interfaces.d.ts"
     ],
     "exclude": [
@@ -48,9 +46,9 @@
       "../src/keyboard/sublime.js",
       "../src/keyboard/vscode.js",
       "../src/mode/**/*",
-      "../ace-internal.d.ts",
       "../src/snippets/**/*",
-      "../src/theme/**/*"
+      "../src/theme/**/*",
+      "../src/**/*.d.ts"
     ]
   }
 }
