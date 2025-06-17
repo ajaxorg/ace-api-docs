@@ -1,4 +1,5 @@
 var typedoc = require('typedoc');
+const {fixAceInternalReferences} = require("./filterModules");
 
 async function main() {
     const app = await typedoc.Application.bootstrapWithPlugins({
@@ -7,6 +8,8 @@ async function main() {
     });
 
     const projectReflection = await app.convert();
+
+    fixAceInternalReferences(projectReflection);
 
     if (projectReflection) {
         await app.generateDocs(projectReflection, process.argv[2] || "doc");
